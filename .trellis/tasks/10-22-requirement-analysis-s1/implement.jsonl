@@ -1,0 +1,12 @@
+{"file": ".trellis/spec/backend/index.md", "reason": "后端与本地工具开发规范索引"}
+{"file": ".trellis/spec/backend/quality-guidelines.md", "reason": "Python 应用层与契约测试质量要求参考"}
+{"file": "CS-Autonomous-Testing-Framework-v0.1.md", "reason": "项目总纲、S1 边界与证据要求"}
+{"file": "../examples/src/testing_platform/domain/requirements.py", "reason": "复用现有需求领域模型并设计兼容扩展"}
+{"file": "../examples/src/testing_platform/ports/agent_gateway.py", "reason": "复用可替换的 AgentGateway 契约"}
+{"file": "../examples/src/testing_platform/infrastructure/hermes/gateway.py", "reason": "复用 Hermes 首版运行时适配"}
+{"file": "../examples/src/testing_platform/infrastructure/hermes/skill_registry.py", "reason": "复用外部 Skill 注册机制"}
+{"file": "../examples/src/testing_platform/infrastructure/documents/requirements.py", "reason": "确认现有纯文本读取入口及待扩展缺口"}
+{"file": "../examples/skills/test-case-design/SKILL.md", "reason": "历史需求与用例混合 Skill，仅作兼容和边界参考"}
+{"file": "openspec/changes/build-requirement-analysis-s1/design.md", "reason": "已批准的详细技术设计"}
+{"file": "openspec/changes/build-requirement-analysis-s1/specs/document-ingestion/spec.md", "reason": "文档摄取行为契约"}
+{"file": "openspec/changes/build-requirement-analysis-s1/specs/requirement-analysis/spec.md", "reason": "需求分析行为契约"}

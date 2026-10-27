@@ -1,0 +1,34 @@
+{
+  "schema_version": "evaluation-lock/v1",
+  "run_id": "cf1cde1b-07c2-410e-a4df-54644de90830",
+  "run_report_lock_sha256": "5bd0f97aa7dc49470a3d22c14b67684db658ad6134a0436976b7895c9178a07a",
+  "files": [
+    {
+      "path": "evaluation/requirement-analysis/formal-round-02-evaluation-result.json",
+      "size_bytes": 1176,
+      "sha256": "a6df87da8c5c63b0c1372898290c572e1e251565436e81936afe0c66fa96e906"
+    },
+    {
+      "path": "evaluation/requirement-analysis/formal-round-02-adjudication-summary.json",
+      "size_bytes": 1815,
+      "sha256": "3fa668132316bed23bbcc0f7c4c7deb3be887f9715ad07edfbc5b12a9408f2c1"
+    },
+    {
+      "path": "evaluation/requirement-analysis/reviews/formal-round-02-reviewer-source-decisions.json",
+      "size_bytes": 16254,
+      "sha256": "1d096d3b9d6528f0d7d14b0424d1280625bc4197a49de6b2194be6093890eb26"
+    },
+    {
+      "path": "evaluation/requirement-analysis/reviews/formal-round-02-reviewer-category-decisions.json",
+      "size_bytes": 13221,
+      "sha256": "bf190c0659c25e16a2ae912e3047b11710b185d0c94716d02eea13846879e4e4"
+    },
+    {
+      "path": "artifacts/requirement-analysis/formal-round-02/assessment-v6.md",
+      "size_bytes": 3539,
+      "sha256": "ce13fef2cafaa50fbdaa3045a41ddbf632bf101af0cbb28f394483fa3c2de172"
+    }
+  ],
+  "locked_after_run_report": true,
+  "formal_result": "passed"
+}

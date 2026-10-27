@@ -1,0 +1,129 @@
+{
+  "schema_version": "ground-truth/v1",
+  "material_sha256": "2dd2ec5a4ab55152844c94a1252d97e25da37cc120f9a9c2e3053fb4590f1fc0",
+  "matching_rules_version": "s1-v1",
+  "partial_credit": 0.5,
+  "reviewer_ids": ["reviewer-a", "reviewer-b"],
+  "requirements": [
+    {
+      "id": "GT-F-001",
+      "category": "functional",
+      "statement": "初始化仿真场景时，将场景相关数据写入或修改数据库，并提供场景统一发布主题；该过程包含场景创建、修改和发布三个主题。",
+      "source_segment_ids": ["seg-bfcd94453087e97f98e8b55d9daaee533d2016a86fe537a12ad75d1c91bb6e4a"],
+      "atomicity_basis": "同一段落定义同一业务能力及其三个组成操作。",
+      "critical_tokens": ["创建", "修改", "发布", "三个主题"]
+    },
+    {
+      "id": "GT-I-001",
+      "category": "interface",
+      "statement": "仿真端创建场景发送到数据服务时使用主题 $Simulate_Scene_Create。",
+      "source_segment_ids": ["seg-44f26afd3e8a4dc2b56780880db803396e5f975b6ceaeffa5e2df41128ecbbe3"],
+      "atomicity_basis": "主题名称是可独立核验的接口规则。",
+      "critical_tokens": ["$Simulate_Scene_Create"]
+    },
+    {
+      "id": "GT-B-001",
+      "category": "boundary",
+      "statement": "场景标识 id 在创建时等于 0。",
+      "source_segment_ids": ["seg-102326df51600213c106ae8bb8e3ad41e276150ac506d62a5d58ee961ff5b688"],
+      "atomicity_basis": "表格备注给出单一初始化边界。",
+      "critical_tokens": ["id", "0"]
+    },
+    {
+      "id": "GT-B-002",
+      "category": "boundary",
+      "statement": "场景名称 scene_name 必须全局唯一，不能重复。",
+      "source_segment_ids": ["seg-533681104645e3bd0c5214c3e1ba11a6330e2105860e2584edfaf680e84c5529"],
+      "atomicity_basis": "表格备注给出唯一性约束。",
+      "critical_tokens": ["scene_name", "全局唯一", "不能重复"]
+    },
+    {
+      "id": "GT-I-002",
+      "category": "interface",
+      "statement": "场景 type 字段为 Int，取值 1、2、3、4，分别表示山地、海岛、城市、沙漠。",
+      "source_segment_ids": ["seg-2e6b353adea8c88001927eabe74217c12dab5e466d301f4edb573432f22c5fc1", "seg-8fb71a54fb6f9bb70bb905f421cda6c82cc870590c101d76efe3cdf2dabc895e", "seg-66e87be8bacc98c11fd8eb5e63e5e104a1a4e097b10d1a46419b455be8ac4b60"],
+      "atomicity_basis": "字段名、类型和枚举映射共同构成一个接口字段规则。",
+      "critical_tokens": ["type", "Int", "1", "2", "3", "4"]
+    },
+    {
+      "id": "GT-I-003",
+      "category": "interface",
+      "statement": "场景 weather_type 字段为 int，取值 1 至 7，分别表示晴、阴、雨、雾、雪、风、沙尘。",
+      "source_segment_ids": ["seg-c412b76069555d0b5cac3a82ef00e2af0645b08a994643dbc33e9c8b6a55f095", "seg-dc2515c328dc07f7c37658247802d0a98d29f6a1b03448e55f3a539d262cf586", "seg-b092901ccb7273217c2f1d9b5b841ad416f15779bafe71ac02b9b3fc063479a0"],
+      "atomicity_basis": "字段名、类型和枚举映射共同构成一个接口字段规则。",
+      "critical_tokens": ["weather_type", "int", "1", "2", "3", "4", "5", "6", "7"]
+    },
+    {
+      "id": "GT-F-002",
+      "category": "functional",
+      "statement": "无人装备管理包括装备注册、装备列表查询和装备列表发布三个主题。",
+      "source_segment_ids": ["seg-cd63fb0803f1731e6c337d9f97f67f9f99328e5039ebdf775888942dcf708dbf"],
+      "atomicity_basis": "同一段落列出同一业务域的三个操作。",
+      "critical_tokens": ["装备注册", "装备列表查询", "装备列表发布", "三个主题"]
+    },
+    {
+      "id": "GT-F-003",
+      "category": "functional",
+      "statement": "装备注册使用主题 $Equipment_Unmanned_Register；装备 id 等于 0 时新增装备，否则修改装备数据。",
+      "source_segment_ids": ["seg-ad672aa6af750128b1cbcbdd238700c9867c015b63f2a40f6584b5bc6d85696a"],
+      "atomicity_basis": "主题和 id 条件共同决定注册操作的分支行为。",
+      "critical_tokens": ["$Equipment_Unmanned_Register", "id 等于 0", "新增", "否则", "修改"]
+    },
+    {
+      "id": "GT-F-004",
+      "category": "functional",
+      "statement": "算法调度包含搜索算法请求、搜索航线规划结果回复、攻击任务规划算法请求和攻击航线规划结果回复四个主题。",
+      "source_segment_ids": ["seg-18b454189c561282d73eb6629f12327019dbdce28bbfa3b0aef66be3978b9cfd"],
+      "atomicity_basis": "同一段落列出算法调度接口的四个组成消息。",
+      "critical_tokens": ["四个主题", "搜索算法请求", "搜索航线规划结果回复", "攻击任务规划算法请求", "攻击航线规划结果回复"]
+    },
+    {
+      "id": "GT-I-004",
+      "category": "interface",
+      "statement": "搜索任务规划算法请求使用主题 $ALGORITHM_SEARCH_v1.0。",
+      "source_segment_ids": ["seg-0330c81e56a0c429404dec346c5f0c759ddaf870137eb5dde39c0e7277578d18"],
+      "atomicity_basis": "主题名称是可独立核验的接口规则。",
+      "critical_tokens": ["$ALGORITHM_SEARCH_v1.0"]
+    },
+    {
+      "id": "GT-I-005",
+      "category": "interface",
+      "statement": "攻击任务规划算法请求使用主题 $ALGORITHM_PLAN_v1.0。",
+      "source_segment_ids": ["seg-3418ae7e640fa1a5887969830f92339d66beabbb48fd15adf0a7baaee4f10d35"],
+      "atomicity_basis": "主题名称是可独立核验的接口规则。",
+      "critical_tokens": ["$ALGORITHM_PLAN_v1.0"]
+    },
+    {
+      "id": "GT-I-006",
+      "category": "interface",
+      "statement": "装备状态数据发送使用主题 $Equipment_Status_Heat。",
+      "source_segment_ids": ["seg-3aa81bb290a9d3d2ea0af9938a0164edb119a0cd1e3c93230b966fd8aa94f871"],
+      "atomicity_basis": "主题名称是可独立核验的状态接口规则。",
+      "critical_tokens": ["$Equipment_Status_Heat"]
+    },
+    {
+      "id": "GT-I-007",
+      "category": "interface",
+      "statement": "敌方威胁状态数据发送使用主题 $Enemy_Threat_Status_Heat。",
+      "source_segment_ids": ["seg-eaaeebb3b59193920f328239a9d3d01942a1df37316fb3c82a11af13b24ae4ef"],
+      "atomicity_basis": "主题名称是可独立核验的状态接口规则。",
+      "critical_tokens": ["$Enemy_Threat_Status_Heat"]
+    },
+    {
+      "id": "GT-I-008",
+      "category": "interface",
+      "statement": "态势数据回复到任务规划端使用主题 $Situation_Response_Task。",
+      "source_segment_ids": ["seg-df165ec9062124fb9800f9df1b17a7fab217c9e15fea107bab85f102bfbac134"],
+      "atomicity_basis": "主题名称是可独立核验的回复接口规则。",
+      "critical_tokens": ["$Situation_Response_Task"]
+    },
+    {
+      "id": "GT-I-009",
+      "category": "interface",
+      "statement": "设备离线消息使用主题 $Offline_Device_Ids，并包含场景 ID、装备 ID 列表、威胁 ID 列表和目标 ID 列表。",
+      "source_segment_ids": ["seg-c7a75ec0daf65fb072f3436b4d42bf3ca6a9c84ce1fd2685b08c19863329ff09", "seg-1da2d1661a9aefa54d38162159e90a6963e5fd3bec31888a3630169ec8acef32", "seg-509a5d0477530d61db06d8c4e670c8281360581cb156bdba3e29fd85ba55cf03"],
+      "atomicity_basis": "主题标题和表格字段共同构成设备离线消息契约。",
+      "critical_tokens": ["$Offline_Device_Ids", "scene_id", "equipment_ids"]
+    }
+  ]
+}

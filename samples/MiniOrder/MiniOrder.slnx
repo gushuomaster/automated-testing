@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/MiniOrder.Core/MiniOrder.Core.csproj" />
+  <Project Path="src/MiniOrder.App/MiniOrder.App.csproj" />
+  <Project Path="src/MiniOrder.Verification/MiniOrder.Verification.csproj" />
+</Solution>

@@ -1,0 +1,28 @@
+{
+  "id": "miniorder-uia-blind-experiment",
+  "name": "miniorder-uia-blind-experiment",
+  "title": "MiniOrder 首轮 UIA 黑盒自主测试实验",
+  "description": "冻结 MiniOrder 匿名三版本基线，使用独立测试上下文完成流程预演、正式盲测、报告锁定与真值评分。",
+  "status": "in_progress",
+  "dev_type": null,
+  "scope": null,
+  "package": null,
+  "priority": "P1",
+  "creator": "--help",
+  "assignee": "--help",
+  "createdAt": "2026-10-21",
+  "completedAt": null,
+  "branch": "main",
+  "base_branch": "main",
+  "worktree_path": null,
+  "commit": null,
+  "pr_url": null,
+  "subtasks": [],
+  "children": [],
+  "parent": "10-20-miniorder-mvp",
+  "relatedFiles": [],
+  "notes": "",
+  "meta": {
+    "delivery_status": "completed-awaiting-user-commit-and-archive"
+  }
+}

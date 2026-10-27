@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AssemblyName>MiniOrder</AssemblyName>
+    <RootNamespace>MiniOrder.App</RootNamespace>
+    <Product>MiniOrder</Product>
+    <AssemblyTitle>MiniOrder</AssemblyTitle>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MiniOrder.Core\MiniOrder.Core.csproj" />
+  </ItemGroup>
+</Project>

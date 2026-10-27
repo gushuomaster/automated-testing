@@ -1,0 +1,107 @@
+{
+  "$defs": {
+    "InputFile": {
+      "additionalProperties": false,
+      "properties": {
+        "document_id": {
+          "title": "Document Id",
+          "type": "string"
+        },
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "format": {
+          "title": "Format",
+          "type": "string"
+        },
+        "size_bytes": {
+          "minimum": 0,
+          "title": "Size Bytes",
+          "type": "integer"
+        },
+        "sha256": {
+          "pattern": "^[a-f0-9]{64}$",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "ready",
+            "unsupported"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "construction",
+            "calibration",
+            "development",
+            "regression",
+            "formal"
+          ],
+          "title": "Role",
+          "type": "string"
+        }
+      },
+      "required": [
+        "document_id",
+        "path",
+        "name",
+        "format",
+        "size_bytes",
+        "sha256",
+        "status",
+        "role"
+      ],
+      "title": "InputFile",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "input-manifest/v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "files": {
+      "items": {
+        "$ref": "#/$defs/InputFile"
+      },
+      "title": "Files",
+      "type": "array"
+    },
+    "config": {
+      "additionalProperties": true,
+      "title": "Config",
+      "type": "object"
+    },
+    "config_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Config Sha256",
+      "type": "string"
+    },
+    "duplicate_paths": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Duplicate Paths",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "files",
+    "config_sha256"
+  ],
+  "title": "InputManifest",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:testing-platform:input-manifest/v1"
+}

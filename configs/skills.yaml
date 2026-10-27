@@ -1,0 +1,7 @@
+version: 1
+skills:
+  requirement-analysis:
+    path: ../skills/requirement-analysis
+    owner: hermes-testing-platform
+    version: 1.0.0
+    description: 从 Document IR 提取、归并并核验可追溯的原子需求，不生成测试用例。

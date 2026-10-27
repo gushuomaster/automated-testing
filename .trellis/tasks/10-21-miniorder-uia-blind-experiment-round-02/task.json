@@ -1,0 +1,28 @@
+{
+  "id": "miniorder-uia-blind-experiment-round-02",
+  "name": "miniorder-uia-blind-experiment-round-02",
+  "title": "MiniOrder 第二轮 UIA 独立盲测实验",
+  "description": "在不修改 MiniOrder 业务、需求、种子和评分权重的前提下，修正 Sky 工具入口和争议证据核验规则，完成三版本第二轮独立盲测及两轮对比评估。",
+  "status": "in_progress",
+  "dev_type": null,
+  "scope": null,
+  "package": null,
+  "priority": "P1",
+  "creator": "--help",
+  "assignee": "--help",
+  "createdAt": "2026-10-21",
+  "completedAt": null,
+  "branch": "main",
+  "base_branch": "main",
+  "worktree_path": null,
+  "commit": null,
+  "pr_url": null,
+  "subtasks": [],
+  "children": [],
+  "parent": "10-20-miniorder-mvp",
+  "relatedFiles": [],
+  "notes": "",
+  "meta": {
+    "delivery_status": "completed-awaiting-user-commit-and-archive"
+  }
+}

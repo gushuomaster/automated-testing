@@ -1,0 +1,634 @@
+{
+  "$defs": {
+    "AnalysisIssue": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "title": "Id",
+          "type": "string"
+        },
+        "description": {
+          "title": "Description",
+          "type": "string"
+        },
+        "impact": {
+          "title": "Impact",
+          "type": "string"
+        },
+        "requirement_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Requirement Ids",
+          "type": "array"
+        },
+        "source_evidence": {
+          "items": {
+            "$ref": "#/$defs/SourceReference"
+          },
+          "title": "Source Evidence",
+          "type": "array"
+        }
+      },
+      "required": [
+        "id",
+        "description",
+        "impact"
+      ],
+      "title": "AnalysisIssue",
+      "type": "object"
+    },
+    "ParsedRequirements": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "default": "1.0",
+          "enum": [
+            "1.0",
+            "2.0"
+          ],
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "source": {
+          "$ref": "#/$defs/SourceDocument"
+        },
+        "requirements": {
+          "items": {
+            "$ref": "#/$defs/RequirementItem"
+          },
+          "title": "Requirements",
+          "type": "array"
+        },
+        "unresolved_fields": {
+          "items": {
+            "$ref": "#/$defs/UnresolvedField"
+          },
+          "title": "Unresolved Fields",
+          "type": "array"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        },
+        "additional_sources": {
+          "items": {
+            "$ref": "#/$defs/SourceDocument"
+          },
+          "title": "Additional Sources",
+          "type": "array"
+        },
+        "ambiguities": {
+          "items": {
+            "$ref": "#/$defs/AnalysisIssue"
+          },
+          "title": "Ambiguities",
+          "type": "array"
+        },
+        "conflicts": {
+          "items": {
+            "$ref": "#/$defs/AnalysisIssue"
+          },
+          "title": "Conflicts",
+          "type": "array"
+        },
+        "recommendations": {
+          "items": {
+            "$ref": "#/$defs/TestTypeRecommendation"
+          },
+          "title": "Recommendations",
+          "type": "array"
+        },
+        "failed_segments": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Failed Segments",
+          "type": "array"
+        },
+        "trace_index": {
+          "additionalProperties": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array"
+          },
+          "title": "Trace Index",
+          "type": "object"
+        }
+      },
+      "required": [
+        "source",
+        "requirements"
+      ],
+      "title": "ParsedRequirements",
+      "type": "object"
+    },
+    "RequirementItem": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "default": "",
+          "title": "Title",
+          "type": "string"
+        },
+        "description": {
+          "default": "",
+          "title": "Description",
+          "type": "string"
+        },
+        "requirement_type": {
+          "default": "",
+          "title": "Requirement Type",
+          "type": "string"
+        },
+        "priority": {
+          "default": "",
+          "title": "Priority",
+          "type": "string"
+        },
+        "risk": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Risk"
+        },
+        "acceptance_criteria": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Acceptance Criteria",
+          "type": "array"
+        },
+        "constraints": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Constraints",
+          "type": "array"
+        },
+        "source_evidence": {
+          "items": {
+            "$ref": "#/$defs/SourceReference"
+          },
+          "title": "Source Evidence",
+          "type": "array"
+        },
+        "target": {
+          "default": "",
+          "title": "Target",
+          "type": "string"
+        },
+        "categories": {
+          "items": {
+            "enum": [
+              "functional",
+              "performance",
+              "interface",
+              "boundary",
+              "security",
+              "constraint",
+              "exception"
+            ],
+            "type": "string"
+          },
+          "title": "Categories",
+          "type": "array"
+        },
+        "conditions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Conditions",
+          "type": "array"
+        },
+        "expected_behavior": {
+          "default": "",
+          "title": "Expected Behavior",
+          "type": "string"
+        },
+        "information_nature": {
+          "default": "explicit",
+          "enum": [
+            "explicit",
+            "derived",
+            "historical",
+            "assumption"
+          ],
+          "title": "Information Nature",
+          "type": "string"
+        },
+        "rationale": {
+          "default": "",
+          "title": "Rationale",
+          "type": "string"
+        },
+        "confidence": {
+          "anyOf": [
+            {
+              "maximum": 1,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Confidence"
+        },
+        "verification_status": {
+          "anyOf": [
+            {
+              "enum": [
+                "supported",
+                "partially_supported",
+                "unsupported",
+                "indeterminate"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Verification Status"
+        }
+      },
+      "required": [
+        "id"
+      ],
+      "title": "RequirementItem",
+      "type": "object"
+    },
+    "SourceDocument": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "default": "",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "name": {
+          "default": "",
+          "title": "Name",
+          "type": "string"
+        },
+        "media_type": {
+          "default": "",
+          "title": "Media Type",
+          "type": "string"
+        }
+      },
+      "required": [
+        "path"
+      ],
+      "title": "SourceDocument",
+      "type": "object"
+    },
+    "SourceLocator": {
+      "additionalProperties": false,
+      "properties": {
+        "format": {
+          "enum": [
+            "markdown",
+            "docx",
+            "pdf"
+          ],
+          "title": "Format",
+          "type": "string"
+        },
+        "part": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Part"
+        },
+        "block": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Block"
+        },
+        "xpath": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Xpath"
+        },
+        "line_start": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Line Start"
+        },
+        "line_end": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Line End"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "x": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "X"
+        },
+        "y": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Y"
+        },
+        "coordinate_system": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Coordinate System"
+        },
+        "text_matrix": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Text Matrix"
+        },
+        "current_matrix": {
+          "anyOf": [
+            {
+              "items": {
+                "type": "number"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Current Matrix"
+        }
+      },
+      "required": [
+        "format"
+      ],
+      "title": "SourceLocator",
+      "type": "object"
+    },
+    "SourceReference": {
+      "additionalProperties": false,
+      "properties": {
+        "path": {
+          "title": "Path",
+          "type": "string"
+        },
+        "sha256": {
+          "default": "",
+          "title": "Sha256",
+          "type": "string"
+        },
+        "section": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Section"
+        },
+        "page": {
+          "anyOf": [
+            {
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Page"
+        },
+        "excerpt": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Excerpt"
+        },
+        "segment_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Segment Id"
+        },
+        "locator": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/SourceLocator"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      },
+      "required": [
+        "path"
+      ],
+      "title": "SourceReference",
+      "type": "object"
+    },
+    "TestTypeRecommendation": {
+      "additionalProperties": false,
+      "properties": {
+        "requirement_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Requirement Ids",
+          "type": "array"
+        },
+        "test_type": {
+          "title": "Test Type",
+          "type": "string"
+        },
+        "rationale": {
+          "title": "Rationale",
+          "type": "string"
+        },
+        "confidence": {
+          "maximum": 1,
+          "minimum": 0,
+          "title": "Confidence",
+          "type": "number"
+        }
+      },
+      "required": [
+        "requirement_ids",
+        "test_type",
+        "rationale",
+        "confidence"
+      ],
+      "title": "TestTypeRecommendation",
+      "type": "object"
+    },
+    "UnresolvedField": {
+      "additionalProperties": false,
+      "properties": {
+        "field_name": {
+          "title": "Field Name",
+          "type": "string"
+        },
+        "reason": {
+          "title": "Reason",
+          "type": "string"
+        },
+        "requirement_id": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Requirement Id"
+        }
+      },
+      "required": [
+        "field_name",
+        "reason"
+      ],
+      "title": "UnresolvedField",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "requirement-baseline/v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "parsed": {
+      "$ref": "#/$defs/ParsedRequirements"
+    }
+  },
+  "required": [
+    "schema_version",
+    "parsed"
+  ],
+  "title": "RequirementBaseline",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:testing-platform:requirement-baseline/v1"
+}

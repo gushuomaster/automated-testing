@@ -1,0 +1,371 @@
+[
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-001",
+    "truth_id": "GT-F-001",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "仿真过程调度的对象与行为完整对应真值，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-002",
+    "truth_id": "GT-F-002",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "场景设置功能完整对应真值，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-003",
+    "truth_id": "GT-F-003",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "显示设置功能完整对应真值，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-004",
+    "truth_id": "GT-F-004",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "任务分配算法选择行为与关键 token 完整保真，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-005",
+    "truth_id": "GT-F-005",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "任务分配算法参数设置行为与关键 token 完整保真，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-006",
+    "truth_id": "GT-F-006",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "航迹规划算法选择行为与关键 token 完整保真，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-007",
+    "truth_id": "GT-F-007",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "航迹规划算法参数设置行为与关键 token 完整保真，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-008",
+    "truth_id": "GT-F-008",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "实时威胁信息收集行为完整对应真值，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-009",
+    "truth_id": "GT-F-009",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "实时威胁信息处理行为完整对应真值，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-010",
+    "truth_id": "GT-F-010",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "任务分配结果的手工调整对象与行为完整保真，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-011",
+    "truth_id": "GT-F-011",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "静态航迹规划结果的手动调整对象与行为完整保真，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-012",
+    "truth_id": "GT-F-012",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "结果数据存储功能完整对应真值，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-013",
+    "truth_id": "GT-F-013",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "仿真回放启动行为完整对应真值，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-014",
+    "truth_id": "GT-F-014",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "仿真回放暂停行为完整对应真值，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-015",
+    "truth_id": "GT-F-015",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "仿真回放终止行为完整对应真值，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-016",
+    "truth_id": "GT-F-016",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "倍速设置能力及1倍速到32倍速范围完整保真，functional 主类别一致；附加 boundary 标签不替代主类别。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-017",
+    "truth_id": "GT-P-001",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "任务分配至少支持50架无人机的数量与比较关系完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-018",
+    "truth_id": "GT-P-002",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "任务分配至少支持50个飞行目标的数量与比较关系完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-019",
+    "truth_id": "GT-P-003",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "静态环境、静态航路规划适用条件、最多500个威胁体均完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-020",
+    "truth_id": "GT-P-004",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "实时环境、实时航路规划适用条件、最多50个威胁体均完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-021",
+    "truth_id": "GT-P-005",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "各方向坐标精度10-4 km的对象、数值和单位完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-022",
+    "truth_id": "GT-P-006",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "无人机飞行方向精度10-4 rad的对象、数值和单位完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-023",
+    "truth_id": "GT-P-007",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "威胁概率精确到10-8且概率值无量纲的数值和限定完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-024",
+    "truth_id": "GT-P-008",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "无人机探测半径精度10-4km的对象、数值和单位完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-025",
+    "truth_id": "GT-P-009",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "飞行速率精度10-2 m/s的数值和单位完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-026",
+    "truth_id": "GT-P-010",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "最大转弯角精度10-6 rad/s按原文单位完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-027",
+    "truth_id": "GT-P-011",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "单架无人机、至少、实时显示100个航路点均完整保真并包含performance主类别；额外functional标签会进入功能精确率分母，属于跨主类别过度标注。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-028",
+    "truth_id": "GT-P-012",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "各航路点位置精度10-4 km3按原文异常单位完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-029",
+    "truth_id": "GT-P-013",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "任务分配算法最大计算时间10s的对象、上限和单位完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-030",
+    "truth_id": "GT-P-014",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "静态航迹规划算法最大50s及不包含威胁探测与更新时间的限定完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-031",
+    "truth_id": "GT-P-015",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "实时航迹规划算法最大单点3s及不包含威胁探测与更新时间的限定完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-032",
+    "truth_id": "GT-P-016",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "任务空间小于200km200km8km的适用条件与初始化时间不大于10秒完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-033",
+    "truth_id": "GT-P-017",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "输出合并场景正常显示与更新频率规则；按原子性只绑定关键 token 更完整且主类别一致的GT-P-017，设定更新频率不小于0.5秒/场景帧完整保真，GT-F-018不重复绑定。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-034",
+    "truth_id": "GT-P-018",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "航路缩放场景、威胁源大于10、航路点大于20及延迟不大于2秒均完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-035",
+    "truth_id": "GT-F-017",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "服务器实时显示多架无人机飞行过程的对象、行为和限定完整保真，functional 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-036",
+    "truth_id": "GT-P-019",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "指控中心服务器与无人机节点计算机的视景时间误差不超过2秒完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-037",
+    "truth_id": "GT-P-020",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "信息传输延迟不超过1秒的对象、比较关系、数值和单位完整保真，performance 主类别一致。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-038",
+    "truth_id": "GT-I-001",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "网络数据交换设备上行端口速率1000M完整保真并包含interface主类别；额外performance标签会进入性能精确率分母，属于跨主类别过度标注。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-039",
+    "truth_id": "GT-I-002",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "网络数据交换设备下行端口速率100M完整保真并包含interface主类别；额外performance标签会进入性能精确率分母，属于跨主类别过度标注。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-040",
+    "truth_id": "GT-I-003",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "网络数据交换设备上行端口数量4口完整保真，interface 主类别一致；附加 boundary 标签不替代主类别。"
+  },
+  {
+    "reviewer_id": "reviewer-category",
+    "output_id": "REQ-041",
+    "truth_id": "GT-I-004",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "网络数据交换设备下行端口数量24口完整保真，interface 主类别一致；附加 boundary 标签不替代主类别。"
+  }
+]

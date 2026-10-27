@@ -1,0 +1,15 @@
+{
+  "schema_version": "matching-rules/v1",
+  "version": "s1-v6-material-a",
+  "material_sha256": "a2c757297ccc99a1f2d517d19c65ea231ffbaac34a9366ffb4e5707537fdd90e",
+  "complete": "输出的对象、行为、条件和预期与一条真值一致，且该真值全部 critical_tokens 的数值、单位、比较关系和限定词保真。",
+  "partial": "输出可唯一识别对应真值且核心行为正确，但缺少非关键限定；partial_credit 固定为 0.5。",
+  "no_match": "输出没有对应真值、改变规则语义、把示例写成强制规则，或缺失/改写任一关键数值、单位、比较关系或限定词。",
+  "duplicate": "同一真值已有一个正向匹配时，其余语义重复输出标记 duplicate，不增加召回。",
+  "disputed": "两名复核者对 truth_id、状态、来源有效性或关键错误不一致；裁决前按 0 分并阻止正式通过。",
+  "source_locator_valid": "所有用于支持该输出的 segment_id 均存在于冻结材料 Document IR，且至少一个引用片段直接支持被匹配规则；只引用标题或无关片段为无效。",
+  "critical_error": "关键数值、单位、比较关系、适用条件或对象被改写时登记原值与实际值；即使能匹配真值也阻止正式通过。",
+  "atomicity": "一个输出只能正向匹配一条真值。输出合并多条可独立规则时，只能匹配其中证据最完整的一条，其余真值保持未匹配；输出拆分同一真值时仅一个输出可正向匹配，其余为 duplicate。",
+  "category": "类别指标使用真值的唯一主类别与输出 categories。功能、性能和接口不相互替代；多类别输出仍按其声明的每个类别进入对应精确率分母。",
+  "review": "reviewer-source 先核对来源与原子化，reviewer-category 独立核对语义、主类别和关键 token；两者在看到对方决定前分别保存逐条决定。"
+}

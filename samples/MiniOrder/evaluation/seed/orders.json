@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "orders": [
+    {
+      "orderNumber": "MO-20260115-0001",
+      "customerName": "晨光商店",
+      "productName": "无线键盘",
+      "quantity": 2,
+      "unitPrice": 129.50,
+      "amount": 259.00,
+      "status": "新建",
+      "createdAt": "2026-01-15T09:30:00+08:00"
+    },
+    {
+      "orderNumber": "MO-20260115-0002",
+      "customerName": "海风科技",
+      "productName": "显示器支架",
+      "quantity": 1,
+      "unitPrice": 299.00,
+      "amount": 299.00,
+      "status": "新建",
+      "createdAt": "2026-01-15T10:15:00+08:00"
+    }
+  ]
+}

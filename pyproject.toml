@@ -1,0 +1,28 @@
+[project]
+name = "hermes-testing-platform"
+version = "0.2.0"
+description = "面向自主测试实验的需求分析与测试工作流平台"
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.13,<3",
+    "python-docx==1.2.0",
+    "pypdf==6.10.0",
+    "markdown-it-py==4.2.0",
+    "jsonschema==4.26.0",
+    "PyYAML==6.0.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.2", "reportlab==4.4.10"]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"
+

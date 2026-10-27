@@ -1,0 +1,371 @@
+[
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-001",
+    "truth_id": "GT-F-001",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-7d44795ccfa4d2740ee27f83141c75cec3bef2997210ecd88bee777ee0f50d4d 第5行直接支持仿真过程调度功能；输出为单一原子规则，来源定位与语义完整。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-002",
+    "truth_id": "GT-F-002",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-b3cd9864050287d8e4c837d7c9113522d9c651f00928674df31fe94b9ee60522 第6行直接列明场景设置；该输出已与同句中的显示设置原子化拆分，来源定位有效。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-003",
+    "truth_id": "GT-F-003",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-b3cd9864050287d8e4c837d7c9113522d9c651f00928674df31fe94b9ee60522 第6行直接列明显示设置；该输出已与同句中的场景设置原子化拆分，来源定位有效。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-004",
+    "truth_id": "GT-F-004",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-105728b9cca4051d9cb726fd04fb776c7a49c41cc6fe8451d9211d0822e0a109 第7行直接支持任务分配算法选择；输出与参数设置分别原子化，定位有效。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-005",
+    "truth_id": "GT-F-005",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-105728b9cca4051d9cb726fd04fb776c7a49c41cc6fe8451d9211d0822e0a109 第7行直接支持任务分配算法参数设置；输出与算法选择分别原子化，定位有效。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-006",
+    "truth_id": "GT-F-006",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-feede60e95e995b69e599f834182607f3f4b672743c48a424deb6f353c166e4c 第8行直接支持航迹规划算法选择；输出与参数设置分别原子化，定位有效。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-007",
+    "truth_id": "GT-F-007",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-feede60e95e995b69e599f834182607f3f4b672743c48a424deb6f353c166e4c 第8行直接支持航迹规划算法参数设置；输出与算法选择分别原子化，定位有效。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-008",
+    "truth_id": "GT-F-008",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-e0e0d5837ced47a56d5c0d60d47330a9014e509001bf6393b250036a680f0826 第9行直接支持实时威胁信息收集；输出与处理功能分别原子化，定位有效。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-009",
+    "truth_id": "GT-F-009",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-e0e0d5837ced47a56d5c0d60d47330a9014e509001bf6393b250036a680f0826 第9行直接支持实时威胁信息处理；输出与收集功能分别原子化，定位有效。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-010",
+    "truth_id": "GT-F-010",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-d9ed712d5f575f53eca8522ab51981f36a7bbf6aee330620bbfd6e7fb5559f6b 第10行直接支持手工调整任务分配结果；输出为单一原子规则。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-011",
+    "truth_id": "GT-F-011",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-8ca13d2a3eb83253dbbbe17083f71c179440396f1fa777deff73ecea2be30047 第11行直接支持手动调整静态航迹规划结果；输出为单一原子规则。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-012",
+    "truth_id": "GT-F-012",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-fcda6747200fe0f8192b76383644519b933b0c8cecd60709f30de0022257da1a 第12行直接支持结果数据存储；输出为单一原子规则。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-013",
+    "truth_id": "GT-F-013",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-7d1a3c1bc3830c6125d35ad269a2ea1d65394413a921653dfdccc38aaf984f8f 第13行直接列明启动仿真回放；输出已与暂停、终止分别原子化。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-014",
+    "truth_id": "GT-F-014",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-7d1a3c1bc3830c6125d35ad269a2ea1d65394413a921653dfdccc38aaf984f8f 第13行直接列明暂停仿真回放；输出已与启动、终止分别原子化。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-015",
+    "truth_id": "GT-F-015",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-7d1a3c1bc3830c6125d35ad269a2ea1d65394413a921653dfdccc38aaf984f8f 第13行直接列明终止仿真回放；输出已与启动、暂停分别原子化。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-016",
+    "truth_id": "GT-F-016",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-39295ecd65e1e5689c5ff09083e6fc33638ddf06b8fa8c1b455b21bf93b36653 第14至15行直接支持仿真回放倍速设置及1倍速到32倍速范围，关键范围完整保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-017",
+    "truth_id": "GT-P-001",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-361d798df0d7f70bbe1b5961a9f5a5c017b27534abf9d1aa703f9c690cd408df 第18行直接支持至少50架无人机；输出已与飞行目标容量原子化拆分，数量和下限关系保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-018",
+    "truth_id": "GT-P-002",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-361d798df0d7f70bbe1b5961a9f5a5c017b27534abf9d1aa703f9c690cd408df 第18行直接支持至少50个飞行目标；输出已与无人机容量原子化拆分，数量和下限关系保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-019",
+    "truth_id": "GT-P-003",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-1bcfa32d05881b3c5bdc8f772975ab0d357d41ed265365024fd9f8ccc08d712a 第19行直接支持静态算法环境最多500个不同类型威胁体，适用对象、数量和上限关系完整。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-020",
+    "truth_id": "GT-P-004",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-b0a49a5d4edd15a345834417390f3b1e7b7d101930da8a9da1b1fb32868ef621 第20行直接支持实时算法环境最多50个不同类型威胁体，适用对象、数量和上限关系完整。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-021",
+    "truth_id": "GT-P-005",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-a6d5e04137eeab27bef923aab2f834275d80561d5bc88dac3ca97923d2b8de91 第21行直接支持各方向坐标精度10-4 km，数值和单位保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-022",
+    "truth_id": "GT-P-006",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-38ef49c6a5825e453b3b78867fe5b47514f243a792658a84c15009e5317a01d0 第22行直接支持无人机飞行方向精度10-4 rad，数值和单位保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-023",
+    "truth_id": "GT-P-007",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-09074aaee4e81ceca71dd6b1374b37cfbfd9b877e7f7741d8aba3dde1285c20a 第23行直接支持威胁概率精确到10-8且无量纲，两项限定均保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-024",
+    "truth_id": "GT-P-008",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-15544ef4c11cd8338e2fd66a72b465d05a5e420b8109d7f21467866ed1ad76aa 第24行直接支持探测半径精度10-4km；输出已与同句其他精度指标原子化拆分。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-025",
+    "truth_id": "GT-P-009",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-15544ef4c11cd8338e2fd66a72b465d05a5e420b8109d7f21467866ed1ad76aa 第24行直接支持飞行速率精度10-2 m/s；输出已与同句其他精度指标原子化拆分。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-026",
+    "truth_id": "GT-P-010",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-15544ef4c11cd8338e2fd66a72b465d05a5e420b8109d7f21467866ed1ad76aa 第24行直接支持最大转弯角精度10-6 rad/s；输出保留原文单位并与同句其他指标拆分。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-027",
+    "truth_id": "GT-P-011",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-a8d66f5066e04b05f91658ef598681e3e983de80531cd071a220c19435b5985e 第25行直接支持单架无人机实时显示至少100个航路点；输出与位置精度规则原子化拆分。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-028",
+    "truth_id": "GT-P-012",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-a8d66f5066e04b05f91658ef598681e3e983de80531cd071a220c19435b5985e 第25行直接支持航路点位置精度10-4 km3；输出保留原文单位并与显示容量拆分。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-029",
+    "truth_id": "GT-P-013",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-13b81fb0495fc451e3fe3ef3df4c82bc8aefea4b2792f3abf4fa68e3b3efb819 第26行直接支持任务分配算法最大计算时间10s，数值、单位和上限语义完整。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-030",
+    "truth_id": "GT-P-014",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-5c6a55dd3a9cede08813eb16ebcbbad708bf29e5e2fbae50fc47ee309d0def1e 第27行直接支持静态航迹规划算法最大50s且不含威胁探测与更新时间；输出与实时算法规则原子化拆分。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-031",
+    "truth_id": "GT-P-015",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-5c6a55dd3a9cede08813eb16ebcbbad708bf29e5e2fbae50fc47ee309d0def1e 第27行直接支持实时航迹规划算法最大单点3s且不含威胁探测与更新时间；输出与静态算法规则拆分。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-032",
+    "truth_id": "GT-P-016",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-eb4eee51e3510a6fc50320b0e150dd09c30fd9aa40794be009fcadba53fcd049 第28行直接支持任务空间小于200km200km8km时初始化不大于10秒，条件和阈值完整保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-033",
+    "truth_id": "GT-P-017",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-f6439028fb9da371c870191821dcec6f529d48308edc456085ae4ba91acff098 第29行直接支持更新频率不小于0.5秒/场景帧。该输出还合并了可独立检查的正常显示行为；按原子化规则仅正向匹配证据完整的 GT-P-017，GT-F-018 不由本输出另行匹配。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-034",
+    "truth_id": "GT-P-018",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-f6439028fb9da371c870191821dcec6f529d48308edc456085ae4ba91acff098 第29行直接支持缩放场景、威胁源大于10、航路点大于20及延迟不大于2秒，全部触发条件与阈值保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-035",
+    "truth_id": "GT-F-017",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-abe190530df3156b9aea9ea15904f6a39ba26a5f8fb00d42cf84d003f062c11e 第30至31行直接支持服务器实时显示多架无人机飞行过程；输出已与时间误差和传输延迟规则拆分。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-036",
+    "truth_id": "GT-P-019",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-abe190530df3156b9aea9ea15904f6a39ba26a5f8fb00d42cf84d003f062c11e 第30至31行直接支持两端视景时间误差不超过2秒；对象、比较关系和阈值完整。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-037",
+    "truth_id": "GT-P-020",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-abe190530df3156b9aea9ea15904f6a39ba26a5f8fb00d42cf84d003f062c11e 第30至31行直接支持信息传输延迟不超过1秒；比较关系和阈值完整。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-038",
+    "truth_id": "GT-I-001",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-bed708756924cdb7e7963bc3efb8023493370f4f65eeec5f105a69c08ecec92c 第34行直接支持上行端口速率1000M，端口方向、数值和单位保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-039",
+    "truth_id": "GT-I-002",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-8ac9b6b835fa113ac43389ad7e4e7e59e0dc580b1cb394bfe0f404fb372f5399 第35行直接支持下行端口速率100M，端口方向、数值和单位保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-040",
+    "truth_id": "GT-I-003",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-83f0ab337331d0449c330d499729cea4cf96a0c65397dfe34c67fd45cc8fcee3 第36行直接支持上行端口数量4口，端口方向和数量保真。"
+  },
+  {
+    "reviewer_id": "reviewer-source",
+    "output_id": "REQ-041",
+    "truth_id": "GT-I-004",
+    "status": "complete",
+    "source_locator_valid": true,
+    "critical_errors": [],
+    "rationale": "冻结片段 seg-9eba86c0340642f1c6c8b84eb5e514ced1e8f59354c00a32ce5df090bd803d3b 第37行直接支持下行端口数量24口，端口方向和数量保真。"
+  }
+]

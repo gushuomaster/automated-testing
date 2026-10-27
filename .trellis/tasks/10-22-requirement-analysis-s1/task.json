@@ -1,0 +1,36 @@
+{
+  "id": "requirement-analysis-s1",
+  "name": "requirement-analysis-s1",
+  "title": "第一阶段需求解析能力",
+  "description": "复用现有 testing_platform 与可替换 Hermes 运行时，建立多格式需求解析、原子需求提取、来源追溯和独立核验的第一阶段能力。",
+  "status": "in_progress",
+  "dev_type": null,
+  "scope": null,
+  "package": null,
+  "priority": "P2",
+  "creator": "--help",
+  "assignee": "--help",
+  "createdAt": "2026-10-22",
+  "completedAt": null,
+  "branch": "main",
+  "base_branch": "main",
+  "worktree_path": null,
+  "commit": null,
+  "pr_url": null,
+  "subtasks": [],
+  "children": [],
+  "parent": null,
+  "relatedFiles": [
+    "CS-Autonomous-Testing-Framework-v0.1.md",
+    "openspec/changes/build-requirement-analysis-s1/design.md",
+    "../examples/src/testing_platform/domain/requirements.py",
+    "../examples/src/testing_platform/ports/agent_gateway.py"
+  ],
+  "notes": "项目主需求基线为 CS-Autonomous-Testing-Framework-v0.1.md；MiniOrder、技术要求.docx 和历史 XLSX 分别用于校准、开发验证和回归。",
+  "meta": {
+    "openspec_change": "build-requirement-analysis-s1",
+    "planning_status": "revised-after-existing-platform-review",
+    "runtime_decision": "Hermes via replaceable AgentGateway",
+    "canonical_repo": "D:\\project\\agent\\automated-testing"
+  }
+}

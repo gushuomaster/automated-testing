@@ -1,0 +1,3 @@
+{"file": "openspec/changes/build-miniorder-mvp/specs/order-management/spec.md", "reason": "核对订单行为和边界"}
+{"file": "openspec/changes/build-miniorder-mvp/specs/black-box-experiment-fixture/spec.md", "reason": "核对缺陷矩阵、重置与隔离"}
+{"file": "openspec/changes/build-miniorder-mvp/tasks.md", "reason": "核对全部实施任务与验证结果"}

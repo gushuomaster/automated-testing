@@ -1,0 +1,100 @@
+{
+  "$defs": {
+    "ReconciliationMerge": {
+      "additionalProperties": false,
+      "properties": {
+        "requirement_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "title": "Requirement Ids",
+          "type": "array"
+        },
+        "retained_id": {
+          "minLength": 1,
+          "title": "Retained Id",
+          "type": "string"
+        },
+        "rationale": {
+          "minLength": 1,
+          "title": "Rationale",
+          "type": "string"
+        }
+      },
+      "required": [
+        "requirement_ids",
+        "retained_id",
+        "rationale"
+      ],
+      "title": "ReconciliationMerge",
+      "type": "object"
+    },
+    "ReconciliationRelation": {
+      "additionalProperties": false,
+      "properties": {
+        "requirement_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "title": "Requirement Ids",
+          "type": "array"
+        },
+        "description": {
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "impact": {
+          "minLength": 1,
+          "title": "Impact",
+          "type": "string"
+        }
+      },
+      "required": [
+        "requirement_ids",
+        "description",
+        "impact"
+      ],
+      "title": "ReconciliationRelation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "requirement-reconciliation/v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "merges": {
+      "items": {
+        "$ref": "#/$defs/ReconciliationMerge"
+      },
+      "title": "Merges",
+      "type": "array"
+    },
+    "conflicts": {
+      "items": {
+        "$ref": "#/$defs/ReconciliationRelation"
+      },
+      "title": "Conflicts",
+      "type": "array"
+    },
+    "ambiguities": {
+      "items": {
+        "$ref": "#/$defs/ReconciliationRelation"
+      },
+      "title": "Ambiguities",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version"
+  ],
+  "title": "RequirementReconciliation",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:testing-platform:requirement-reconciliation/v1"
+}

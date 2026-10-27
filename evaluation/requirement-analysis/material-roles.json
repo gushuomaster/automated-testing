@@ -1,0 +1,63 @@
+{
+  "schema_version": "material-roles/v1",
+  "materials": [
+    {
+      "id": "formal-dds-mqtt-v1-2-2",
+      "path": "D:/资料/2024.09.30/DDS&MQTT消息格式主题定义_v1.2.2.docx",
+      "sha256": "2dd2ec5a4ab55152844c94a1252d97e25da37cc120f9a9c2e3053fb4590f1fc0",
+      "role": "regression",
+      "allowed_in_formal_score": false,
+      "purpose": "已参与 v1-v6 诊断与实现调整，仅用于不计分回归，禁止进入后续正式泛化成绩"
+    },
+    {
+      "id": "project-construction-baseline",
+      "path": "CS-Autonomous-Testing-Framework-v0.1.md",
+      "sha256": "0e9b6023e7523d805be993b786848df45d31a83f1b07db84406be49b4d1bff4c",
+      "role": "construction",
+      "allowed_in_formal_score": false,
+      "purpose": "定义 S1 建设目标与验收边界，不作为解析准确率样本"
+    },
+    {
+      "id": "miniorder-calibration",
+      "path": "docs/miniorder/MiniOrder-Requirements.md",
+      "sha256": "033bee6c01fe24ddae53d449b309f44b470a864cdd4583bb4bd7b17b4fdc603f",
+      "role": "calibration",
+      "allowed_in_formal_score": false,
+      "purpose": "已知中文校准集"
+    },
+    {
+      "id": "technical-requirements-development",
+      "path": "技术要求.docx",
+      "sha256": "749165227cf612383acea7baf8ddd5f73a37f17dc47ca7506469c4fb8d133520",
+      "role": "development",
+      "allowed_in_formal_score": false,
+      "purpose": "复杂 DOCX 开发验证集"
+    },
+    {
+      "id": "formal-v6-material-a",
+      "path": "samples/requirement-analysis/formal-v6/material-a.md",
+      "sha256": "a2c757297ccc99a1f2d517d19c65ea231ffbaac34a9366ffb4e5707537fdd90e",
+      "role": "formal",
+      "allowed_in_formal_score": true,
+      "purpose": "从未参与开发的本机 DOCX 逐字选取并匿名化的功能、性能与接口正式盲测材料"
+    },
+    {
+      "id": "historical-benchmark",
+      "path": "../examples/tests/fixtures/requirement_extraction_benchmark.md",
+      "sha256": "4bf1a56510fceafcd50c90bc1474b3b4b7f8807b0b90a94bebfadb3c55beb525",
+      "role": "regression",
+      "allowed_in_formal_score": false,
+      "purpose": "需求编号与禁止编造快速回归，不作真值"
+    },
+    {
+      "id": "historical-xlsx",
+      "path": "../examples/var/artifacts/矢量地图工具需求规格说明书v1.4.2_测试用例.xlsx",
+      "sha256": "f32b4610fb44cc7854cc0bb0c3a82d83a5449b6cd757e6bfb2bb635d63ccd5bb",
+      "role": "regression",
+      "allowed_in_formal_score": false,
+      "purpose": "结构化追踪链路历史证据，不作需求答案"
+    }
+  ],
+  "formal_material": "formal-v6-material-a",
+  "formal_status": "v6_frozen_material_truth_and_rules_ready_for_single_formal_run"
+}

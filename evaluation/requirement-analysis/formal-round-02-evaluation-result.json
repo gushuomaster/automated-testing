@@ -1,0 +1,21 @@
+{
+  "schema_version": "evaluation-result/v1",
+  "role": "formal",
+  "report_sha256": "5bd0f97aa7dc49470a3d22c14b67684db658ad6134a0436976b7895c9178a07a",
+  "metrics": {
+    "precision": {"numerator": 41.0, "denominator": 41, "value": 1.0},
+    "recall": {"numerator": 41.0, "denominator": 42, "value": 0.9761904761904762},
+    "source_locator_validity": {"numerator": 41.0, "denominator": 41, "value": 1.0},
+    "unsupported_output_ratio": {"numerator": 0.0, "denominator": 41, "value": 0.0},
+    "f1": {"numerator": 0.9879518072289156, "denominator": 1, "value": 0.9879518072289156},
+    "functional_precision": {"numerator": 17.0, "denominator": 18, "value": 0.9444444444444444},
+    "functional_recall": {"numerator": 17.0, "denominator": 18, "value": 0.9444444444444444},
+    "performance_precision": {"numerator": 20.0, "denominator": 22, "value": 0.9090909090909091},
+    "performance_recall": {"numerator": 20.0, "denominator": 20, "value": 1.0},
+    "interface_precision": {"numerator": 4.0, "denominator": 4, "value": 1.0},
+    "interface_recall": {"numerator": 4.0, "denominator": 4, "value": 1.0}
+  },
+  "critical_errors": [],
+  "unresolved": [],
+  "passed": true
+}

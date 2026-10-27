@@ -1,0 +1,21 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <LangVersion>latest</LangVersion>
+    <MiniOrderVariant Condition="'$(MiniOrderVariant)' == ''">Baseline</MiniOrderVariant>
+    <DefineConstants Condition="'$(MiniOrderVariant)' == 'VariantA'">$(DefineConstants);MINIORDER_VARIANT_A</DefineConstants>
+    <DefineConstants Condition="'$(MiniOrderVariant)' == 'VariantB'">$(DefineConstants);MINIORDER_VARIANT_B</DefineConstants>
+    <ArtifactsRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\..\artifacts\miniorder'))</ArtifactsRoot>
+    <BaseOutputPath>$(ArtifactsRoot)\build\$(MiniOrderVariant)\$(MSBuildProjectName)\bin\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(ArtifactsRoot)\build\$(MiniOrderVariant)\$(MSBuildProjectName)\obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+  <Target Name="ValidateMiniOrderVariant" BeforeTargets="BeforeBuild">
+    <Error Condition="'$(MiniOrderVariant)' != 'Baseline' and '$(MiniOrderVariant)' != 'VariantA' and '$(MiniOrderVariant)' != 'VariantB'"
+           Text="MiniOrderVariant 必须是 Baseline、VariantA 或 VariantB。" />
+    <Error Condition="'$(IsPublishing)' == 'true' and '$(MiniOrderVariantExplicit)' != 'true'"
+           Text="发行构建必须显式指定 MiniOrderVariant，并设置 MiniOrderVariantExplicit=true。" />
+  </Target>
+</Project>

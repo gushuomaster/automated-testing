@@ -1,0 +1,84 @@
+{
+  "$defs": {
+    "VerificationFinding": {
+      "additionalProperties": false,
+      "properties": {
+        "requirement_id": {
+          "title": "Requirement Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "supported",
+            "partially_supported",
+            "unsupported",
+            "indeterminate"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "code": {
+          "title": "Code",
+          "type": "string"
+        },
+        "message": {
+          "title": "Message",
+          "type": "string"
+        },
+        "segment_ids": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Segment Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "requirement_id",
+        "status",
+        "code",
+        "message"
+      ],
+      "title": "VerificationFinding",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "verification-result/v1",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "baseline_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Baseline Sha256",
+      "type": "string"
+    },
+    "method": {
+      "enum": [
+        "deterministic",
+        "semantic"
+      ],
+      "title": "Method",
+      "type": "string"
+    },
+    "findings": {
+      "items": {
+        "$ref": "#/$defs/VerificationFinding"
+      },
+      "title": "Findings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "baseline_sha256",
+    "method",
+    "findings"
+  ],
+  "title": "VerificationResult",
+  "type": "object",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:testing-platform:verification-result/v1"
+}

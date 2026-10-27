@@ -1,0 +1,3 @@
+{"file":"evaluation/miniorder/readiness-report.md","reason":"核对样本前置条件与已知工具限制"}
+{"file":"openspec/changes/build-miniorder-mvp/specs/order-management/spec.md","reason":"评估方核对业务覆盖与真值，不向测试方传递"}
+{"file":"openspec/changes/build-miniorder-mvp/specs/black-box-experiment-fixture/spec.md","reason":"核对匿名构建、重置与黑盒交付边界"}

@@ -1,0 +1,8 @@
+{"file": ".trellis/spec/backend/quality-guidelines.md", "reason": "完整质量检查规范"}
+{"file": ".trellis/spec/backend/error-handling.md", "reason": "失败状态和错误处理审计"}
+{"file": "CS-Autonomous-Testing-Framework-v0.1.md", "reason": "核对S1结论范围与总纲一致"}
+{"file": "../examples/src/testing_platform/domain/requirements.py", "reason": "核对迁移后的需求模型保持来源契约和兼容性"}
+{"file": "../examples/src/testing_platform/ports/agent_gateway.py", "reason": "核对 Agent 运行时仍通过可替换端口接入"}
+{"file": "openspec/changes/build-requirement-analysis-s1/design.md", "reason": "核对实现遵守技术边界"}
+{"file": "openspec/changes/build-requirement-analysis-s1/specs/document-ingestion/spec.md", "reason": "验证文档摄取契约"}
+{"file": "openspec/changes/build-requirement-analysis-s1/specs/requirement-analysis/spec.md", "reason": "验证需求分析与指标契约"}

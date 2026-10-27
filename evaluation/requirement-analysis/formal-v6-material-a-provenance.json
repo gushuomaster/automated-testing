@@ -1,0 +1,33 @@
+{
+  "schema_version": "formal-material-provenance/v1",
+  "source": {
+    "path": "D:/资料/任务规划仿真平台/交付代码 CCSP-SH-2022.12.25/文档/全部文档/全部文档/所有文档/南航项目验收大纲.2013.10.29.docx",
+    "sha256": "dc6fbd874a60626ac45c98b4147343c833fbd91b4e0fd5a2da018d37bae044b5",
+    "size_bytes": 52341,
+    "nonempty_paragraphs": 207,
+    "tables": 2,
+    "nonempty_table_rows": 12
+  },
+  "derived_material": {
+    "path": "samples/requirement-analysis/formal-v6/material-a.md",
+    "sha256": "a2c757297ccc99a1f2d517d19c65ea231ffbaac34a9366ffb4e5707537fdd90e",
+    "size_bytes": 2284,
+    "method": "从未参与开发的源 DOCX 逐字选择条款并匿名化标题；没有改写选中条款",
+    "selected_requirement_lines": 27,
+    "adapter_segments": 31,
+    "adapter_issues": 0
+  },
+  "independence_check": {
+    "method": "去除空白后的 5 字符片段重合率，以源 DOCX 片段集合为分母",
+    "dds_overlap": 0.001186,
+    "technical_requirements_overlap": 0.001186,
+    "miniorder_overlap": 0.000395,
+    "project_framework_overlap": 0.0,
+    "used_in_v1_to_v6_implementation_adjustment": false
+  },
+  "visual_review": {
+    "status": "not_available",
+    "reason": "Codex bundled workspace runtime 未提供 LibreOffice soffice.exe；未使用用户安装的桌面 LibreOffice 绕过",
+    "structural_review": "python-docx 1.2.0 已读取全部非空段落和表格，项目 DOCX Adapter 的匿名派生材料前检查无异常"
+  }
+}

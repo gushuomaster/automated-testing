@@ -1,0 +1,3 @@
+{"file": "openspec/changes/build-miniorder-mvp/specs/order-management/spec.md", "reason": "订单业务行为与边界契约"}
+{"file": "openspec/changes/build-miniorder-mvp/specs/black-box-experiment-fixture/spec.md", "reason": "实验版本、重置和隔离契约"}
+{"file": "openspec/changes/build-miniorder-mvp/design.md", "reason": "已批准技术设计与实现边界"}

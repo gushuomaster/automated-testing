@@ -1,0 +1,45 @@
+{
+  "schema_version": "formal-adjudication-summary/v1",
+  "run_id": "cf1cde1b-07c2-410e-a4df-54644de90830",
+  "report_lock": {
+    "internal_sha256": "5bd0f97aa7dc49470a3d22c14b67684db658ad6134a0436976b7895c9178a07a",
+    "file_sha256": "a8dbfaba4a4c79cecf86aeb1326c7e951658fc7399f8dba2dcf8fcd95c30791e",
+    "files": 29,
+    "verified": true
+  },
+  "reviewers": [
+    {
+      "id": "reviewer-source",
+      "path": "evaluation/requirement-analysis/reviews/formal-round-02-reviewer-source-decisions.json",
+      "sha256": "1d096d3b9d6528f0d7d14b0424d1280625bc4197a49de6b2194be6093890eb26"
+    },
+    {
+      "id": "reviewer-category",
+      "path": "evaluation/requirement-analysis/reviews/formal-round-02-reviewer-category-decisions.json",
+      "sha256": "bf190c0659c25e16a2ae912e3047b11710b185d0c94716d02eea13846879e4e4"
+    }
+  ],
+  "output_requirements": 41,
+  "truth_requirements": 42,
+  "agreed_complete": 41,
+  "agreed_partial": 0,
+  "agreed_no_match": 0,
+  "agreed_duplicate": 0,
+  "disputed": 0,
+  "source_locator_valid": 41,
+  "critical_errors": [],
+  "unmatched_truth_ids": ["GT-F-018"],
+  "unmatched_output_ids": [],
+  "category_overlabels": {
+    "REQ-027": ["functional"],
+    "REQ-038": ["performance"],
+    "REQ-039": ["performance"]
+  },
+  "deterministic_verifier_adjudication": {
+    "affected_output_ids": ["REQ-029", "REQ-030", "REQ-031"],
+    "finding_code": "NUMERIC_FIDELITY_ERROR",
+    "final_classification": "deterministic_verifier_false_positive",
+    "reason": "输出用不大于表达来源中的最大计算时间，数值、单位、上限语义和排除条件均未改变；两名独立评估者一致确认无关键保真错误。原始核验发现保持在锁定报告中。"
+  },
+  "evaluation_result": "evaluation/requirement-analysis/formal-round-02-evaluation-result.json"
+}
