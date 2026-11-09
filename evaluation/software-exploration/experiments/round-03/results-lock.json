@@ -1,0 +1,205 @@
+{
+  "schema_version": "s2-round03-results-lock/v1",
+  "locked_at": "2026-10-29T08:13:59.981579+00:00",
+  "algorithm": "SHA256 exact bytes; paths relative to repository; no signature or OS sandbox claim",
+  "formal_completed": 1,
+  "strict_protocol_passes": 0,
+  "scope": "最终报告/裁决/任务快照及原始7项锁、独立复验8项锁索引；深层原始证据按各自锁复核",
+  "files": [
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-s2-round03/check.jsonl",
+      "size_bytes": 239,
+      "sha256": "093d4f51306f2dd6de29b7a4629d87b491288bd2621571eedc05dcfaac3cfb0e"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-s2-round03/design.md",
+      "size_bytes": 1037,
+      "sha256": "7ed38a76d7706079b5a9046f8cceb4b00dace30f91c2affe1e672c5b04b59feb"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-s2-round03/implement.jsonl",
+      "size_bytes": 238,
+      "sha256": "f539d09baa00a037c15c483c7d8ae03bb8d3d3c4c9205c8b57802d371a8ac836"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-s2-round03/implement.md",
+      "size_bytes": 729,
+      "sha256": "cfe26a10c2e93728e175a7cb4cefdc064405c513e069eec0356161ee2b540e3e"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-s2-round03/notes.md",
+      "size_bytes": 1727,
+      "sha256": "e99dc5336760c9be9c0e9f720f822e038d4a0236b8dfeb46068fa8ab6bb10088"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-s2-round03/prd.md",
+      "size_bytes": 1166,
+      "sha256": "32b3ea7b9b500ac475ef307698df4b120a3007b35dd281e6434492108bd7b0b8"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-s2-round03/task.json",
+      "size_bytes": 761,
+      "sha256": "8f28db6bf2d93baf374911e24b79312fe6d4c66b20fd7253950240f54ec8605d"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/assemble-evaluation.py",
+      "size_bytes": 5595,
+      "sha256": "f46b18b536db0bc57887eeb931a978f8e2ef0390152fd336a44bb0c715ea41b7"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/dispatch-manifest.json",
+      "size_bytes": 791,
+      "sha256": "6a3bb506adabac49fc519131fa9749767995be5705720d96e64273b8535de513"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/evaluator-replay/evidence-lock.json",
+      "size_bytes": 1406,
+      "sha256": "cdddbefa205f9906a8b1615393a6769b1dbfd09d24839f971b738310e0b19000"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/integrity-audit.py",
+      "size_bytes": 2898,
+      "sha256": "ad3e305bc4912d1ae1049a9d4812cbffa95fda8b9c774b57d8335ec74323e0ce"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/lock-results.py",
+      "size_bytes": 2045,
+      "sha256": "85ebacc75829057d32b06fb791bcc13d091dd217fc57f5fab329904eed9c3acc"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/post-run-integrity.json",
+      "size_bytes": 1524,
+      "sha256": "eec71e0a904607b28843f59a559185376072d5149174594f75c68c386f5a8a92"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/pre-run-integrity.json",
+      "size_bytes": 3176,
+      "sha256": "5dd9d1f0eb55bb63d595ee2ec17dca0505b841b6663a4e947cd1a412943fb029"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/run-01/report-lock.json",
+      "size_bytes": 1493,
+      "sha256": "45dbd8368e9101d650536d69aa7fe564ae029fff24c173c151577de98409645a"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/adjudications/final-decisions.json",
+      "size_bytes": 52686,
+      "sha256": "ae784fa5efbb3444c0a86b2f9c16cd5056f5390a1ccf22f9d659120c2889a562"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/adjudications/frozen-scorer-result.json",
+      "size_bytes": 33960,
+      "sha256": "94575840247a9beb2b3b5dc122c4865ba6d813a4628cc370986f7f008db5e443"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/adjudications/lock-verification.json",
+      "size_bytes": 7122,
+      "sha256": "0c8d0de61a72eb0ebb18ee8b6cb7fc2011e1ffab87556aacda5545008d13fc48"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/adjudications/mapping-decisions.json",
+      "size_bytes": 36459,
+      "sha256": "04c71580e6556bd7bb08d6dd3ec6db06f122644d07009dcbdd98fb112072b938"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/adjudications/notes.md",
+      "size_bytes": 6517,
+      "sha256": "29e3cf8453bf1445925cd246fd343432be760762652912d9c84f68972f7fca50"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/adjudications/runtime-audit.json",
+      "size_bytes": 36815,
+      "sha256": "c11ba17c954770c43b08b0a5bfc7b66045818b328a3c7cfbafa2c944ceb8dbb4"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/adjudications/summary.json",
+      "size_bytes": 12276,
+      "sha256": "459e875568c2c1c85f45e75ecb06fd240b7ae21d432b87d883e1ef2173f99808"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/capture-protocol.json",
+      "size_bytes": 1316,
+      "sha256": "8482d435c4fb127b7c62cce484983dd9923bb65b1587d2a13820a882a32945d7"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/final-evaluation.md",
+      "size_bytes": 8772,
+      "sha256": "d696939c0d9367d362d955975477793a521d7ead512ab50fe4affe2eae391738"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/freeze-lock.json",
+      "size_bytes": 136,
+      "sha256": "3f6f786355b405fac31dfb76271f2687756b5b1cf5026ab7ac3a4850809ef1ea"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/freeze.json",
+      "size_bytes": 5071,
+      "sha256": "214508b52fc67d6354a082bb5cba78804798c36e28f923534a58ec212cb01628"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/index.md",
+      "size_bytes": 1489,
+      "sha256": "a1cd56e44deea0c7b6db9f970f66277744b7ef0d217969d0c6c4931a02760bbf"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/inputs/requirements.json",
+      "size_bytes": 19323,
+      "sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/isolation.md",
+      "size_bytes": 1746,
+      "sha256": "a5b5727b92f0ebac8160f9c017683893f1aa3509b075c061982025b668153a20"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/launch-instructions.md",
+      "size_bytes": 1056,
+      "sha256": "ef410e64950fdb62cb073be5fec172eb438c87068e888f649c28c77e7a82e1fe"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/protocol-addendum.md",
+      "size_bytes": 3144,
+      "sha256": "6f869bb84a9f3c810a0d3af9b156cd555ad12b8f4b2d20478bbe4f39f469158f"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/protocol-base.md",
+      "size_bytes": 3767,
+      "sha256": "4a7cd9821ec208a3d22695fdbe495e5b82fdb166ee7638d0aeb122ed6f9cbfb4"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/protocol-inherited-round02.md",
+      "size_bytes": 3111,
+      "sha256": "de99d2d00ac2ddbbeb190cb28eb8513aa2c5b185f5ed7344f13958f762bbbac0"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/quality-review.md",
+      "size_bytes": 7559,
+      "sha256": "529e64d374348af2780c157248426cfa59be0e8b15dcf9f2fab2fe9d9f1d6986"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/report.schema.json",
+      "size_bytes": 4313,
+      "sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/status-report.md",
+      "size_bytes": 1265,
+      "sha256": "f4c4d1d3afd2a68f536a909867118aafbee271fd2abc94765aebbf52402bebee"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/test-agent-prompt.md",
+      "size_bytes": 3869,
+      "sha256": "3e44180eb91876ebce7b240737d5b994f04d465199f61173a04676a72d34cfc6"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/test-bundle.md",
+      "size_bytes": 57719,
+      "sha256": "5e19b7b5ecf4ee7f22433b8a3618ce5e9feb02b2cdd205c3dd5bc14d1f4e6edf"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/tool-guide.md",
+      "size_bytes": 28057,
+      "sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227"
+    }
+  ]
+}

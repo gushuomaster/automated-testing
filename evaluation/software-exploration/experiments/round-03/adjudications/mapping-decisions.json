@@ -1,0 +1,1299 @@
+{
+  "schema_version": "s2-round03-independent-mapping-decisions/v1",
+  "run_id": "s2-r03-run01",
+  "adjudicated_at": "2026-10-29T07:54:05.386955+00:00",
+  "report_lock_sha256": "220d929337622e4f5669384a4f6631db631cd24e0b81228d0c75cbbe3ab7c264",
+  "basis": "锁后独立语义与原始日志审查，未操作GUI、未读内部业务数据；未将日志支持冒充独立路径复现。",
+  "supported_mapping_ids": [
+    "REQ-001",
+    "REQ-002",
+    "REQ-003",
+    "REQ-005",
+    "REQ-006",
+    "REQ-007",
+    "REQ-008",
+    "REQ-009",
+    "REQ-010",
+    "REQ-011",
+    "REQ-012",
+    "REQ-013",
+    "REQ-014",
+    "REQ-015",
+    "REQ-016",
+    "REQ-017",
+    "REQ-018",
+    "REQ-019",
+    "REQ-020",
+    "REQ-021",
+    "REQ-022",
+    "REQ-023",
+    "REQ-024",
+    "REQ-025",
+    "REQ-026",
+    "REQ-027",
+    "REQ-028",
+    "REQ-029",
+    "REQ-030",
+    "REQ-031",
+    "REQ-032",
+    "REQ-033",
+    "REQ-034",
+    "REQ-035",
+    "REQ-036",
+    "REQ-037",
+    "REQ-038",
+    "REQ-039",
+    "REQ-040",
+    "REQ-041",
+    "REQ-042",
+    "REQ-043",
+    "REQ-044",
+    "REQ-046",
+    "REQ-047",
+    "REQ-048"
+  ],
+  "unsupported_mapping_ids": [],
+  "inventory": [
+    {
+      "automation_id": "MiniOrderMainWindow",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。 主窗口UIA名称为MiniOrder主窗口，窗口列表/标题栏名称为MiniOrder - 订单管理，属同窗口证据。",
+      "session_call_ordinals": [
+        26
+      ]
+    },
+    {
+      "automation_id": "CreateOrderTab",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。 同ID也用于窗格，但原始树另有选项卡项目，类型声明有证据。",
+      "session_call_ordinals": [
+        26
+      ]
+    },
+    {
+      "automation_id": "QueryOrderTab",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。 同ID也用于窗格，但原始树另有选项卡项目，类型声明有证据。",
+      "session_call_ordinals": [
+        26
+      ]
+    },
+    {
+      "automation_id": "CustomerNameInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        26
+      ]
+    },
+    {
+      "automation_id": "ProductNameInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        26
+      ]
+    },
+    {
+      "automation_id": "QuantityInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        26
+      ]
+    },
+    {
+      "automation_id": "UnitPriceInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        26
+      ]
+    },
+    {
+      "automation_id": "OrderAmountOutput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-003",
+        "OBS-030"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        26,
+        38,
+        205
+      ]
+    },
+    {
+      "automation_id": "SaveOrderButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        26
+      ]
+    },
+    {
+      "automation_id": "ClearOrderButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-005",
+        "OBS-006"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        26,
+        50,
+        57
+      ]
+    },
+    {
+      "automation_id": "OrderFormStatus",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        26
+      ]
+    },
+    {
+      "automation_id": "QueryKeywordInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        71
+      ]
+    },
+    {
+      "automation_id": "StatusFilter",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        71
+      ]
+    },
+    {
+      "automation_id": "QueryOrdersButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        71
+      ]
+    },
+    {
+      "automation_id": "ClearFiltersButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008",
+        "OBS-024",
+        "OBS-025"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        71,
+        167,
+        172
+      ]
+    },
+    {
+      "automation_id": "QueryResultCount",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008",
+        "OBS-022",
+        "OBS-028"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        71,
+        155,
+        189
+      ]
+    },
+    {
+      "automation_id": "OrderResultsGrid",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008"
+      ],
+      "basis": "原始UIA树存在同AutomationId、名称和控件类型；报告状态与实际已观察/未确认范围相符。",
+      "session_call_ordinals": [
+        71
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "requirement_id": "REQ-001",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "唯一Windows桌面窗口及原生控件树支持运行入口映射，不推论部署或业务正确性。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-002",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-002",
+        "OBS-003",
+        "OBS-007",
+        "OBS-030"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        33,
+        38,
+        66,
+        205
+      ],
+      "reason": "录入页、输入字段及未保存瞬时输入/清理有实际UIA证据，未声称保存完成。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-003",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008",
+        "OBS-010",
+        "OBS-022"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71,
+        83,
+        155
+      ],
+      "reason": "查询页及Return后两行/零行结果支持查询入口和实际安全路径。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-004",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "formal_mapping": false,
+      "verdict": "NON_UI_CLASSIFICATION_CORRECT",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "文档的业务行为范围约束不对应独立GUI，NOT_UI_OBSERVABLE恰当。",
+      "independent_gui_replay": "NOT_SCORED"
+    },
+    {
+      "requirement_id": "REQ-005",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-030"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        205
+      ],
+      "reason": "客户名称编辑框和必填标签实际存在。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-006",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-030"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        205
+      ],
+      "reason": "商品名称编辑框和必填标签实际存在。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-007",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-002",
+        "OBS-004"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        33,
+        45
+      ],
+      "reason": "数量编辑框及2/空状态实际观察。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-008",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-003",
+        "OBS-007"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        38,
+        66
+      ],
+      "reason": "单价编辑框及3.50/空状态实际观察。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-009",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-003"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        38
+      ],
+      "reason": "金额输出字段及7.00显示实际观察。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-010",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "客户名称必填标签可见，仅作部分映射；实际必填处理未触发。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-011",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "客户名称输入入口存在，明确未观察长度规则，部分映射支持。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-012",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "商品名称必填标签可见，实际校验未执行，部分映射支持。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-013",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "商品名称入口存在，长度和字符计数未观察，部分映射支持。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-014",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-002",
+        "OBS-004"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        33,
+        45
+      ],
+      "reason": "数量入口及空状态可见，未触发保存校验，部分映射支持。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-015",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        33
+      ],
+      "reason": "数量2的整数输入已观察，未声称排斥非整数或完整类型验证。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-016",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-002"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        33
+      ],
+      "reason": "1～999标签及2状态可见，未声称边界和越界处理。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-017",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-003",
+        "OBS-007"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        38,
+        66
+      ],
+      "reason": "单价入口及空/3.50状态可见，未声称必填校验通过。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-018",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-003"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        38
+      ],
+      "reason": "3.50输入与7.00输出可见，其他格式未覆盖，部分映射恰当。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-019",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-003"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        38
+      ],
+      "reason": "定位单价字段但未观察边界/越界，保留部分映射与未知。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-020",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-003",
+        "OBS-030"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        38,
+        205
+      ],
+      "reason": "金额缺少settable标记而四输入框有该标记，支持只读输出入口映射；不等于主动改写验证。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-021",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-007",
+        "OBS-030"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        66,
+        205
+      ],
+      "reason": "首次任何GUI输入之前四字段无Value，最终再次无Value，支持本次空白初态。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-022",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-007",
+        "OBS-030"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        66,
+        205
+      ],
+      "reason": "初始/清理后金额均无Value，支持空白表单无计算结果。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-023",
+      "reported_status": "MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002",
+        "OBS-003"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        33,
+        38
+      ],
+      "reason": "2与3.50输入后7.00是实际路径；高于冻结真值的PARTIALLY_MAPPED只属状态诊断差异，未声称覆盖所有数值或实时阈值。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-024",
+      "reported_status": "MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-004",
+        "OBS-007"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        45,
+        66
+      ],
+      "reason": "清空数量使金额空是缺失操作数的实际状态，未声称其他格式；MAPPED限于报告声明范围，真值状态差异单列。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-025",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "保存按钮与输入字段可见，未执行全部字段检查，部分映射仅到入口。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-026",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "保存入口可见，无效保存结果明确未执行，部分映射恰当。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-027",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "保存与录入状态区域真实存在，提示形式未知，未虚构错误反馈。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-028",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-011",
+        "OBS-013"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        88,
+        100
+      ],
+      "reason": "保存与字段入口存在；未触发校验后焦点，另将焦点回读冲突作为工具问题，部分映射恰当。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-029",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "保存入口存在，未声称新增数量实际观察，部分映射恰当。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-030",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26
+      ],
+      "reason": "保存/录入状态入口真实，成功反馈未观察，部分映射恰当。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-031",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-008"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        71
+      ],
+      "reason": "保存入口及两条不同编号的结果列真实，未声称证明唯一性或生成过程。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-032",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71
+      ],
+      "reason": "已有编号形态可见，新生成格式未执行，部分映射支持。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-033",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71
+      ],
+      "reason": "编号日期和创建日期可见，保存当天本地日期及生成关系未证明，部分映射支持。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-034",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71
+      ],
+      "reason": "已有0001/0002及创建时间可见，未声称连续保存或生成顺序验证，部分映射支持。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-035",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71
+      ],
+      "reason": "已有状态新建可见，新保存初始状态未观察，部分映射支持。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-036",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008",
+        "OBS-028"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71,
+        189
+      ],
+      "reason": "查询结果网格及两条已有订单可见，数据目录范围未推断。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-037",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-009",
+        "OBS-010",
+        "OBS-019",
+        "OBS-022"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        78,
+        83,
+        138,
+        155
+      ],
+      "reason": "关键字入口、大小写片段和零结果路径有证据；客户/商品及完整语义未覆盖，部分映射恰当。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-038",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-011",
+        "OBS-013",
+        "OBS-014",
+        "OBS-016",
+        "OBS-027"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        88,
+        100,
+        105,
+        117,
+        184
+      ],
+      "reason": "全部/新建选项、选择新建和恢复全部真实；只有一种订单状态，精确匹配语义未证，部分映射恰当。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-039",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-014",
+        "OBS-018",
+        "OBS-019",
+        "OBS-022"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        105,
+        131,
+        138,
+        155
+      ],
+      "reason": "同时保留关键字/状态及两行/零行结果真实；未声称证明AND语义，部分映射恰当。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-040",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-023",
+        "OBS-024",
+        "OBS-025",
+        "OBS-026",
+        "OBS-027",
+        "OBS-028"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        162,
+        167,
+        172,
+        179,
+        184,
+        189
+      ],
+      "reason": "需求只要求清除筛选后恢复列表，未限定按钮；手动清字段/恢复全部/Return后两行有证据。按钮调用未确认被明确保留，不能将路径替换为成功按钮调用。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-041",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-019",
+        "OBS-022"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        138,
+        155
+      ],
+      "reason": "无匹配关键字Return后结果无数据行，公开路径和状态支持。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-042",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-022"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        155
+      ],
+      "reason": "同次零结果显示找到0条订单，有直接UIA文本。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-043",
+      "reported_status": "MAPPED",
+      "expected_status": "MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008",
+        "OBS-028"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71,
+        189
+      ],
+      "reason": "八列标题及两行八字段均在UIA树出现，支持显示映射。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-044",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008",
+        "OBS-028"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71,
+        189
+      ],
+      "reason": "已有字段显示真实，但保存时接受值不可从GUI建立，部分映射恰当。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-045",
+      "reported_status": "INDETERMINATE",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "formal_mapping": false,
+      "verdict": "NON_UI_CLASSIFICATION_MISMATCH",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-008"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        71
+      ],
+      "reason": "真值为NOT_UI_OBSERVABLE；报告INDETERMINATE保持保守未知，非UI分类精确/家族诊断不正确，不产生正式映射分子。",
+      "independent_gui_replay": "NOT_SCORED"
+    },
+    {
+      "requirement_id": "REQ-046",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71
+      ],
+      "reason": "当前查询列表是可见安全前缀，重启禁止且未声称复现跨重启行为，部分映射按冻结真值接受。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-047",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008",
+        "OBS-028"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71,
+        189
+      ],
+      "reason": "当前八字段显示是可见前缀，跨重启保留未观察，部分映射按冻结真值接受。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-048",
+      "reported_status": "PARTIALLY_MAPPED",
+      "expected_status": "PARTIALLY_MAPPED",
+      "formal_mapping": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        71
+      ],
+      "reason": "当前列表可见是安全前缀，目录选择/隔离未观察，部分映射按冻结真值接受，不当作目录隔离验证。",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-049",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "formal_mapping": false,
+      "verdict": "NON_UI_CLASSIFICATION_CORRECT",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-008",
+        "OBS-022"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        71,
+        155
+      ],
+      "reason": "网络依赖不能由当前GUI证明，NOT_UI_OBSERVABLE恰当。",
+      "independent_gui_replay": "NOT_SCORED"
+    },
+    {
+      "requirement_id": "REQ-050",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "formal_mapping": false,
+      "verdict": "NON_UI_CLASSIFICATION_CORRECT",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-008"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        71
+      ],
+      "reason": "外部设备依赖无本次GUI可观察独立状态，NOT_UI_OBSERVABLE恰当。",
+      "independent_gui_replay": "NOT_SCORED"
+    },
+    {
+      "requirement_id": "REQ-051",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "formal_mapping": false,
+      "verdict": "NON_UI_CLASSIFICATION_CORRECT",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-008"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        71
+      ],
+      "reason": "数据库服务器依赖不可由表单/列表确认，NOT_UI_OBSERVABLE恰当。",
+      "independent_gui_replay": "NOT_SCORED"
+    },
+    {
+      "requirement_id": "REQ-052",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "formal_mapping": false,
+      "verdict": "NON_UI_CLASSIFICATION_CORRECT",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-030"
+      ],
+      "evidence_references_valid": true,
+      "session_call_ordinals": [
+        26,
+        205
+      ],
+      "reason": "权限配置与完整流程在普通权限下运行不可由已启动GUI确认，NOT_UI_OBSERVABLE恰当。",
+      "independent_gui_replay": "NOT_SCORED"
+    }
+  ],
+  "schema_validation": {
+    "valid": true,
+    "error_count": 0,
+    "categories": {
+      "unexpected_root_property": 0,
+      "confidence_type": 0,
+      "summary_type": 0,
+      "other": 0
+    }
+  },
+  "evidence_integrity": {
+    "observation_count": 30,
+    "observation_ids_unique": true,
+    "mapping_ids_exact_52_unique": true,
+    "all_mapping_evidence_references_valid": true,
+    "all_observation_requirement_ids_valid": true
+  },
+  "path_review_status": "PENDING_INDEPENDENT_GUI_REPLAY",
+  "pending_path_ids": [
+    "REQ-001",
+    "REQ-002",
+    "REQ-003",
+    "REQ-005",
+    "REQ-006",
+    "REQ-007",
+    "REQ-008",
+    "REQ-009",
+    "REQ-010",
+    "REQ-011",
+    "REQ-012",
+    "REQ-013",
+    "REQ-014",
+    "REQ-015",
+    "REQ-016",
+    "REQ-017",
+    "REQ-018",
+    "REQ-019",
+    "REQ-020",
+    "REQ-021",
+    "REQ-022",
+    "REQ-023",
+    "REQ-024",
+    "REQ-025",
+    "REQ-026",
+    "REQ-027",
+    "REQ-028",
+    "REQ-029",
+    "REQ-030",
+    "REQ-031",
+    "REQ-032",
+    "REQ-033",
+    "REQ-034",
+    "REQ-035",
+    "REQ-036",
+    "REQ-037",
+    "REQ-038",
+    "REQ-039",
+    "REQ-040",
+    "REQ-041",
+    "REQ-042",
+    "REQ-043",
+    "REQ-044",
+    "REQ-046",
+    "REQ-047",
+    "REQ-048"
+  ],
+  "fully_reproducible_path_ids": [],
+  "safe_prefix_path_ids": [],
+  "non_reproducible_paths": {},
+  "path_partition_complete": false,
+  "no_final_scoring_before_replay": true,
+  "diagnostic_counts": {
+    "formal_mapping_count": 46,
+    "supported_formal_mapping_count": 46,
+    "unsupported_formal_mapping_count": 0,
+    "supported_inventory_count": 17,
+    "exact_status_matches": 46,
+    "reported_status_counts": {
+      "MAPPED": 18,
+      "NOT_UI_OBSERVABLE": 5,
+      "PARTIALLY_MAPPED": 28,
+      "INDETERMINATE": 1
+    },
+    "status_mismatches": [
+      "REQ-023",
+      "REQ-024",
+      "REQ-037",
+      "REQ-038",
+      "REQ-039",
+      "REQ-045"
+    ]
+  }
+}

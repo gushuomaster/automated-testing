@@ -1,0 +1,175 @@
+{
+  "schema_version": "s2-round03-independent-lock-verification/v1",
+  "verified_at": "2026-10-29T07:54:05.386955+00:00",
+  "report_lock_path": "artifacts/software-exploration/round-03/run-01/report-lock.json",
+  "report_lock_file_sha256": "45dbd8368e9101d650536d69aa7fe564ae029fff24c173c151577de98409645a",
+  "expected_exact_file_count": 7,
+  "actual_file_count": 7,
+  "files": [
+    {
+      "path": "session.jsonl",
+      "size_bytes": 797897,
+      "sha256": "bb495984bcfe15f331ee51bd7747ed4cb6aff0304e0f6980c7ab7057c147804e",
+      "actual_size_bytes": 797897,
+      "actual_sha256": "bb495984bcfe15f331ee51bd7747ed4cb6aff0304e0f6980c7ab7057c147804e",
+      "valid": true
+    },
+    {
+      "path": "raw-report.json",
+      "size_bytes": 43263,
+      "sha256": "c4745abaf5b6b5d6b10c0e10c981d71012bd20c5c5ad2a91045cd6d0e230ca90",
+      "actual_size_bytes": 43263,
+      "actual_sha256": "c4745abaf5b6b5d6b10c0e10c981d71012bd20c5c5ad2a91045cd6d0e230ca90",
+      "valid": true
+    },
+    {
+      "path": "tool-events.jsonl",
+      "size_bytes": 160446,
+      "sha256": "2ba8c8884b08b2ae2b8315dd31c7d04c553b0e998cbeffd123f351b73bf2cd32",
+      "actual_size_bytes": 160446,
+      "actual_sha256": "2ba8c8884b08b2ae2b8315dd31c7d04c553b0e998cbeffd123f351b73bf2cd32",
+      "valid": true
+    },
+    {
+      "path": "capture-manifest.json",
+      "size_bytes": 904,
+      "sha256": "09a2c73f5ecb9ac28ed0790c69034b3cb0f39b6497e8240c0e3c0edc8e51a21c",
+      "actual_size_bytes": 904,
+      "actual_sha256": "09a2c73f5ecb9ac28ed0790c69034b3cb0f39b6497e8240c0e3c0edc8e51a21c",
+      "valid": true
+    },
+    {
+      "path": "organizer-start.json",
+      "size_bytes": 439,
+      "sha256": "084bf0a308e30c52a557e796ced19b26d6797a5906c5abac6feb68f22fd8ce09",
+      "actual_size_bytes": 439,
+      "actual_sha256": "084bf0a308e30c52a557e796ced19b26d6797a5906c5abac6feb68f22fd8ce09",
+      "valid": true
+    },
+    {
+      "path": "organizer-finish.json",
+      "size_bytes": 489,
+      "sha256": "52ea814e5b22d261e6693f533041ce6cc19aaaaaceb8e51b56b3d74b945508cf",
+      "actual_size_bytes": 489,
+      "actual_sha256": "52ea814e5b22d261e6693f533041ce6cc19aaaaaceb8e51b56b3d74b945508cf",
+      "valid": true
+    },
+    {
+      "path": "organizer-cleanup.json",
+      "size_bytes": 1296,
+      "sha256": "92b63e97bc594573c979da0cde63e3c889c9eb68734c73d3ec117aa2f34ba790",
+      "actual_size_bytes": 1296,
+      "actual_sha256": "92b63e97bc594573c979da0cde63e3c889c9eb68734c73d3ec117aa2f34ba790",
+      "valid": true
+    }
+  ],
+  "files_valid": true,
+  "lock_sha256_algorithm": "SHA256 of files array serialized UTF8 ensure_ascii=False sort_keys=True separators=(comma,colon), no LF",
+  "computed_lock_sha256": "220d929337622e4f5669384a4f6631db631cd24e0b81228d0c75cbbe3ab7c264",
+  "recorded_lock_sha256": "220d929337622e4f5669384a4f6631db631cd24e0b81228d0c75cbbe3ab7c264",
+  "lock_sha256_valid": true,
+  "raw_report_exact_task_complete_last_agent_message": true,
+  "tool_events_exact_selected_session_objects": true,
+  "tool_events_count": 64,
+  "freeze_file_hash_matches_freeze_lock": true,
+  "freeze_files": [
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/protocol-base.md",
+      "valid": true,
+      "actual_size_bytes": 3767,
+      "actual_sha256": "4a7cd9821ec208a3d22695fdbe495e5b82fdb166ee7638d0aeb122ed6f9cbfb4"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/protocol-addendum.md",
+      "valid": true,
+      "actual_size_bytes": 3144,
+      "actual_sha256": "6f869bb84a9f3c810a0d3af9b156cd555ad12b8f4b2d20478bbe4f39f469158f"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/protocol-inherited-round02.md",
+      "valid": true,
+      "actual_size_bytes": 3111,
+      "actual_sha256": "de99d2d00ac2ddbbeb190cb28eb8513aa2c5b185f5ed7344f13958f762bbbac0"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/test-agent-prompt.md",
+      "valid": true,
+      "actual_size_bytes": 3869,
+      "actual_sha256": "3e44180eb91876ebce7b240737d5b994f04d465199f61173a04676a72d34cfc6"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/tool-guide.md",
+      "valid": true,
+      "actual_size_bytes": 28057,
+      "actual_sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/test-bundle.md",
+      "valid": true,
+      "actual_size_bytes": 57719,
+      "actual_sha256": "5e19b7b5ecf4ee7f22433b8a3618ce5e9feb02b2cdd205c3dd5bc14d1f4e6edf"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/inputs/requirements.json",
+      "valid": true,
+      "actual_size_bytes": 19323,
+      "actual_sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/report.schema.json",
+      "valid": true,
+      "actual_size_bytes": 4313,
+      "actual_sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/run-01/sut/MiniOrder.exe",
+      "valid": true,
+      "actual_size_bytes": 199790,
+      "actual_sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/run-01/data/orders.json",
+      "valid": true,
+      "actual_size_bytes": 594,
+      "actual_sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "docs/miniorder/MiniOrder-Requirements.md",
+      "valid": true,
+      "actual_size_bytes": 2329,
+      "actual_sha256": "033bee6c01fe24ddae53d449b309f44b470a864cdd4583bb4bd7b17b4fdc603f"
+    },
+    {
+      "path": "evaluation/software-exploration/ground-truth/miniorder-v1.json",
+      "valid": true,
+      "actual_size_bytes": 17049,
+      "actual_sha256": "becac5dc7adb502fd7bdea8d1031b2b53e7d8bc75bf7042c11ad1dad970ae574"
+    },
+    {
+      "path": "scripts/evaluate_software_exploration_s2.py",
+      "valid": true,
+      "actual_size_bytes": 15587,
+      "actual_sha256": "3af78ee7c1382ed678b09844f03bac812ce67189f4ebb1f261f2897056201cda"
+    },
+    {
+      "path": "scripts/capture_software_exploration_report.py",
+      "valid": true,
+      "actual_size_bytes": 1592,
+      "actual_sha256": "a1691fd7d2a20ead949ed7b464064d2b04773dd39997a9c780700cc06b61dce8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/agent-report.md",
+      "valid": true,
+      "actual_size_bytes": 1966,
+      "actual_sha256": "5fa933c8232b7221fec71a4f00a4335b1a7d3894d9b5c544be3ac0a669505c76"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/agent-events.json",
+      "valid": true,
+      "actual_size_bytes": 23853,
+      "actual_sha256": "77dab64ba6e95eba11c792b9089cf26ccb4b2cdcff5fd1a9206bf52095661b93"
+    }
+  ],
+  "freeze_all_files_valid": true,
+  "scope": "先核验原始锁，随后读取真值；仅哈希种子文件，不解析内部业务数据。"
+}

@@ -1,0 +1,12 @@
+{
+  "recorded_at": "2026-10-29T11:01:46.4130420+08:00",
+  "phase": "正式A/B开始前",
+  "previous_revision_sha256": "c599f7e7555ab310e2b5c9395305fc6f75b4f0a243de13527e833ae8d9335aef",
+  "reason": "首次健康检查精确标题提示不完整，补足为真实公开标题并消除两次页签切换的表述歧义",
+  "first_health_thread": "01a18599-a2b1-7123-b45b-37179eb830c1",
+  "first_health_lock_sha256": "247d51ac083ff20d82cadc5e966fef3073277d5c829f6860174cc1d71825a0bf",
+  "formal_inputs_changed": false,
+  "formal_attempts": 0,
+  "health_prompt_sha256": "a173964cba0556cbd4660bc43e849119c920396b21e9dc5d8a9ae07ad0cef971",
+  "health_prompt_path": "artifacts/software-exploration/round-02/diagnostics/health-check-prompt-02.md"
+}

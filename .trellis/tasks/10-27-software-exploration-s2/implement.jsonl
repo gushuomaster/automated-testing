@@ -1,0 +1,7 @@
+{"file":"CS-Autonomous-Testing-Framework-v0.1.md","reason":"S2 目标、输入、输出和统一验证方法的项目总纲"}
+{"file":"docs/miniorder/MiniOrder-Requirements.md","reason":"S2 受控样本的中文业务需求"}
+{"file":"docs/requirement-analysis/usage.md","reason":"S1 MiniOrder 校准基线位置、角色和能力边界"}
+{"file":"evaluation/miniorder/readiness-report.md","reason":"MiniOrder Baseline、UIA 可用性、哈希和已知工具限制"}
+{"file":"evaluation/miniorder/experiments/round-02/protocol.md","reason":"正确 Sky 入口、健康检查、预算和通用证据规则的已验证做法"}
+{"file":".trellis/spec/backend/requirement-analysis-contracts.md","reason":"S1 锁定输入、隔离和报告不覆盖契约"}
+{"file":".trellis/spec/frontend/component-guidelines.md","reason":"MiniOrder UIA、键盘路径和动作后回读约定"}

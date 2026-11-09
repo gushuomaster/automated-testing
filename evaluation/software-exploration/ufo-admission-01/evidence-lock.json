@@ -1,0 +1,1460 @@
+{
+  "schema_version": "ufo-admission-evidence-lock/v1",
+  "locked_at": "2026-10-29T07:11:30.968979+00:00",
+  "algorithm": "SHA-256 of exact bytes",
+  "status": "NOT_ADMITTED",
+  "formal_comparison_started": false,
+  "scope": "最小接入诊断、真实模型通用探针、独立Sky健康、离线wrapper、候选源码与任务/规范；不锁venv缓存，可按requirements重建，不是正式比较冻结。",
+  "files": [
+    {
+      "path": ".trellis/spec/backend/index.md",
+      "size_bytes": 1570,
+      "sha256": "1c4bc1d0647488595d185628da8808760c8b6320c02a252b81a4c435bd329f0b"
+    },
+    {
+      "path": ".trellis/spec/backend/ufo-admission-contracts.md",
+      "size_bytes": 3561,
+      "sha256": "0c34cef73deb215c89449f12ca8bc5f59e96e54f2dac264634cdfac097cec450"
+    },
+    {
+      "path": ".trellis/tasks/10-29-ufo-uia-admission/check.jsonl",
+      "size_bytes": 261,
+      "sha256": "a301390b6eccebbb9c1f7cf3edc7d9dbc76d6fdef841e076bb9adbc214227a69"
+    },
+    {
+      "path": ".trellis/tasks/10-29-ufo-uia-admission/design.md",
+      "size_bytes": 1788,
+      "sha256": "f82dce586737e5c1c0fbe34fb99c62e5154eb1946c2a917b3629f7b5d290c064"
+    },
+    {
+      "path": ".trellis/tasks/10-29-ufo-uia-admission/implement.jsonl",
+      "size_bytes": 266,
+      "sha256": "87f9697be0393715b51b9f05aceee96ade757cf20b1b2e5095bd7227e1038afa"
+    },
+    {
+      "path": ".trellis/tasks/10-29-ufo-uia-admission/implement.md",
+      "size_bytes": 1054,
+      "sha256": "fc392396a9230df801799cdb1ddddfa8dc59f4e7ce50094e34f86331d486350e"
+    },
+    {
+      "path": ".trellis/tasks/10-29-ufo-uia-admission/prd.md",
+      "size_bytes": 1908,
+      "sha256": "767682fc40e37c50b6a51d19515cf2ae68232d2dc7e89bb02a9b4b8636fa81a1"
+    },
+    {
+      "path": ".trellis/tasks/10-29-ufo-uia-admission/task.json",
+      "size_bytes": 1451,
+      "sha256": "8036b5a8672345f881c58ffdbb87b0c00f503a72a6818e0058ee88f0176bf5a5"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/.gitignore",
+      "size_bytes": 1347,
+      "sha256": "4bd88a37f4bcf1ccb746a7b17bcd32a1d4017afe7eb41f256db10ef2c2e3fd33"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/__init__.py",
+      "size_bytes": 3253,
+      "sha256": "1b2a479067194f25d6d36f5c281f5deaba7f505ce948f2dea8c116ee97b15630"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/endpoints/__init__.py",
+      "size_bytes": 519,
+      "sha256": "6287c33b08b58a6509fc689eb9b92ccad93f54fa247580c1e33f9cb662ee045b"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/endpoints/base.py",
+      "size_bytes": 4269,
+      "sha256": "1e7bb8e2b3596e86dd79a77eb813ff9533b89bfb9dc829f3d6b58cbb91923bc4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/endpoints/client_endpoint.py",
+      "size_bytes": 4750,
+      "sha256": "190187ce51125b339cb513278728fce5143d1c21f2ec46f490dbb2e49125e1d0"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/endpoints/constellation_endpoint.py",
+      "size_bytes": 5826,
+      "sha256": "0222c41a6da409d0c166e53629e6888383e9511493bc1fedc10f72d30ff8ed22"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/endpoints/server_endpoint.py",
+      "size_bytes": 4258,
+      "sha256": "640131eaee61fe463b85a29d7d84a5f619cc213eb570f6b14d69ef1e3ab9ea08"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/extensions/__init__.py",
+      "size_bytes": 333,
+      "sha256": "e44adc118fafe25af53abcdf066c712c41adc38d5ce896fbeba298fda2a31ea0"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/extensions/base.py",
+      "size_bytes": 1597,
+      "sha256": "b0c1caedb5011bcc356d9f6e93270a75ca013cf69c5e7ee044cf67d92a639301"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/extensions/middleware.py",
+      "size_bytes": 4715,
+      "sha256": "db1fffb0112e9272c9858b7b968b7ef483eb54f85cf02d9ef95618eb37b5a0b1"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/messages.py",
+      "size_bytes": 19243,
+      "sha256": "e4f2c477d85cccee0ada7c5497ddafc3a4aad25c8e8a0e838b24538bc8d93af7"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/protocol/__init__.py",
+      "size_bytes": 692,
+      "sha256": "0d7625e18c6fae48cdc5fcc6a97a782c6587da18cdd4f35a0a29ad33f8f51550"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/protocol/base.py",
+      "size_bytes": 21548,
+      "sha256": "e186e393df02f174986a32dc3a3521ae6e906f17ada6a18b61d4fec426420ff6"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/protocol/command.py",
+      "size_bytes": 2164,
+      "sha256": "a4590b23b120f481bcae645f98b31841b95e6f838b3d16519b20cf2c6dba7e22"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/protocol/device_info.py",
+      "size_bytes": 3613,
+      "sha256": "c2dfe6eec20a1b0f888dc622f64683b4361f36c2301968d35db6e78a82edf11c"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/protocol/heartbeat.py",
+      "size_bytes": 4125,
+      "sha256": "ce06bac4b8ce763c02ed646f0be327791ec81f431c9d6f72b7bcb4d1ae54eb7f"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/protocol/registration.py",
+      "size_bytes": 7052,
+      "sha256": "521b0be5779f8e7ddd01570471367a0c6ef04faf2b445b1ffa099fd18ac1104f"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/protocol/task_execution.py",
+      "size_bytes": 9469,
+      "sha256": "db0f317d9c884b37315bb72c3c9c14dcda323f62df8e4d13de4317e0db5087b8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/resilience/__init__.py",
+      "size_bytes": 530,
+      "sha256": "99324e14c3d3e01f3ba77af17b953292e16d0e16b3662c5c0c83fb49d8111726"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/resilience/heartbeat_manager.py",
+      "size_bytes": 4876,
+      "sha256": "eee9d210f1557d2fde56db59bef322888c659b98172e5ff26bc64074376417cb"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/resilience/reconnection.py",
+      "size_bytes": 7555,
+      "sha256": "772482bf143c7fc42ec4d5ee8dfa6d09bd4ca2ed8112d5695cf58a3c9c698951"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/resilience/timeout.py",
+      "size_bytes": 2780,
+      "sha256": "c2f5f10120ed3848d5b37dcd3b61a5a7093282a8d3fc0f161e3df2c3d9142c46"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/transport/__init__.py",
+      "size_bytes": 673,
+      "sha256": "de80d7cf90217ae0648c6458744887206f922e6a482207f03a126cd99a92b2cf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/transport/adapters.py",
+      "size_bytes": 7961,
+      "sha256": "61ade97a5204620fd30f83ae6bb3842e360f7eb5efa776f38cbaf84f6fea8180"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/transport/base.py",
+      "size_bytes": 3146,
+      "sha256": "894c77ba9c6909b7162fc60b6d60c5228a7629c7a3d1679f9893c74cc496c0e1"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/aip/transport/websocket.py",
+      "size_bytes": 19254,
+      "sha256": "667944ecf76e086f5acc1fdb1bcc49f2d8e9c1e608f0cf80b24b879f84b6a5db"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/CODE_OF_CONDUCT.md",
+      "size_bytes": 453,
+      "sha256": "539b1bfc810aa62738af95866bfe584d568b0dca71aebed0bd81db0bdaebade3"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/__init__.py",
+      "size_bytes": 673,
+      "sha256": "0ce20fc6fe2e2a15a9f1504bcd8de8d65cf08327cb33b1f4fad28706038d7527"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/config_loader.py",
+      "size_bytes": 23517,
+      "sha256": "cda3ed3f1a643f10fa3c0704550a37b236b66e893ddfca606659982040ff4f99"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/config_schemas.py",
+      "size_bytes": 30949,
+      "sha256": "8c622b722b008eab5696ec2b5cc984e8a03271b9162e32bf21fcaa2bf162ad91"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/galaxy/agent.yaml.template",
+      "size_bytes": 1051,
+      "sha256": "15d606c23d1867086b5acaf23e83c49c4ee2f50cd2c74e50aa455c931f1672ba"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/galaxy/constellation.yaml",
+      "size_bytes": 638,
+      "sha256": "57f0c9f0b8155557591085eb199c6b4d704157eab1bca6bda4b1948b6b6bdda4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/galaxy/devices.yaml",
+      "size_bytes": 2163,
+      "sha256": "86dae22066c7a80b82d4e80b07c63c7c2b6b8331ec113863ff7fbf04227d79cc"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/ufo/agents.yaml.template",
+      "size_bytes": 6295,
+      "sha256": "a0f58664fee3ded82c452415aa9d2ac904ee5d120cf7cba337b033ccf9806dea"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/ufo/mcp.yaml",
+      "size_bytes": 4287,
+      "sha256": "0e6303776c41094efb1cf3de32198b66b9f49854e49a761bd1fdbbfbf8d6f350"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/ufo/prices.yaml",
+      "size_bytes": 4332,
+      "sha256": "7ca48ffe4811dc7cc128396dc276c8ab4a4bd4f6b726bf9c7d1b1e9e4d3572ba"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/ufo/rag.yaml",
+      "size_bytes": 1311,
+      "sha256": "f1353c7e99dcbc5398c55e2163521ae7a01a9fb34cd0147ad81f3b0588561c1f"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/ufo/system.yaml",
+      "size_bytes": 5172,
+      "sha256": "edd0627b13ac0e60ce2e27fe38367e4d61599a7a436a29925599cb70d02e38ac"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/config/ufo/third_party.yaml",
+      "size_bytes": 1423,
+      "sha256": "7786d7187020bdd069979ca48ff91511052ffc244ebf3c298b606203601019e7"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/CONTRIBUTING.md",
+      "size_bytes": 1033,
+      "sha256": "840cbace8f3b83fc109d865d442ca737b757f5a894529b667292d00767b86439"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/DISCLAIMER.md",
+      "size_bytes": 3375,
+      "sha256": "f8a9218260a8b952c48a513eac3d1fe95a5dff2ab9f4d3b668cb081d6a032c6b"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/choose_path.md",
+      "size_bytes": 14578,
+      "sha256": "37a1c78209ce13f7a424d07720ff2f3e82eeca29af120bacda4acc77fbef3dab"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/models/azure_openai.md",
+      "size_bytes": 3931,
+      "sha256": "d13e2c7987bbba23775aa8f17c8e469d0304c3ce8b1976188da92781b04e3a6a"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/models/claude.md",
+      "size_bytes": 2706,
+      "sha256": "5eefd8fe2715e52974acc471ab5d160fa77bd43e1607649edd844942080f62be"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/models/custom_model.md",
+      "size_bytes": 4197,
+      "sha256": "642eac3b72699ba2f492b2e0b0851976306827e201c3331863cddc86d4e380f4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/models/deepseek.md",
+      "size_bytes": 2119,
+      "sha256": "9c3c4a371dd398c391cef8b9e941add026c58138d749864601199d7bc02d2239"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/models/gemini.md",
+      "size_bytes": 3079,
+      "sha256": "2595de7c9115e8207a6c68f7fb421d29bb30faa96402b0b80050b379a21f6e21"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/models/ollama.md",
+      "size_bytes": 2980,
+      "sha256": "72117d804993398edb8fcddf24901ae1935c449a3a3fd698083dadabdb7e5584"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/models/openai.md",
+      "size_bytes": 2547,
+      "sha256": "5a7ca50447024beb2aae7c7f8a30c4bc0bae4416411010f6ebdf4e52db3c32dd"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/models/operator.md",
+      "size_bytes": 3705,
+      "sha256": "0d7c0d8769ed4079abf9e51e9b62a07028c37a1dc520539bd8834f001ec51e7c"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/models/overview.md",
+      "size_bytes": 3735,
+      "sha256": "43eff85bec0bc12da1797501c2b26c1ac0e9b7d63d22008788a250d6959cf651"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/models/qwen.md",
+      "size_bytes": 2189,
+      "sha256": "cd075f4b7b402b1892dd793d81f93c74933b05aa3746cb9086485209a21323a0"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/agents_config.md",
+      "size_bytes": 15336,
+      "sha256": "7867eba913f9a3a0f221f531e1ab432d8ee428e99f770d67b116caacd38bf7e4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/extending.md",
+      "size_bytes": 9234,
+      "sha256": "921b47f17936043deb9d04f23e8910aa4a7b5105f89fb06a35976393e274b6ed"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/galaxy_agent.md",
+      "size_bytes": 15693,
+      "sha256": "4ce5685eac05c4d26ed012e9be68b5d86e4dc5ced51c3bd3a599971af6e17eb1"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/galaxy_constellation.md",
+      "size_bytes": 14481,
+      "sha256": "7c2956423b649adfaa8db040a8112e94bac160b073ea2c24b06e37dc43f90662"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/galaxy_devices.md",
+      "size_bytes": 24048,
+      "sha256": "04aa366d6d12ef3a3c7ce588fafed79bc4976b5df1b704df7fafd0dada97e53d"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/mcp_reference.md",
+      "size_bytes": 4991,
+      "sha256": "5457cdd27e4a1e1f52396fa88b93a684b61e807db6e0ddd79ddb464ef39634f8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/migration.md",
+      "size_bytes": 12070,
+      "sha256": "de7235351927b1c2400bc84f3e14a9b5ae7330dfc8adbf1ca7f3064425f160b3"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/overview.md",
+      "size_bytes": 14472,
+      "sha256": "416436d8c7c9fc915dbc71fe10180526c1baa4ad0dd21be98a38d3ec3bfde013"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/prices_config.md",
+      "size_bytes": 6257,
+      "sha256": "4b922db5431e465e890bbb66cee1357d1cd6477a3733f798e8059c146846f24d"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/rag_config.md",
+      "size_bytes": 15591,
+      "sha256": "6ffefbacca87223be8e80dc4f60e912e0a0f7f246d039f32e01e4407977c3c68"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/system_config.md",
+      "size_bytes": 18391,
+      "sha256": "db3cfe9aee5409e8958c637c4ce7c23775e9e817cea56a1f5ea11802140835f8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/configuration/system/third_party_config.md",
+      "size_bytes": 12568,
+      "sha256": "b7091470eebf210e5b4c344b9204980e31d985793a3bbdd850b3217552eb0dda"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/faq.md",
+      "size_bytes": 16430,
+      "sha256": "9db8e693de852881668f564b45b25a16122e281cec1b149984b42c5527ad7dc1"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/getting_started/migration_ufo2_to_galaxy.md",
+      "size_bytes": 21475,
+      "sha256": "5363e636352031bd579b1a72c4941e3b76f235d61f33887afbeb8039a29799fc"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/getting_started/more_guidance.md",
+      "size_bytes": 13925,
+      "sha256": "8059a9281e5d5eaaa53efc0e3a77c58dfe11a0826e018d147d010c35db5dbd10"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/getting_started/quick_start_galaxy.md",
+      "size_bytes": 23383,
+      "sha256": "604becc49250ff1a34d562bfe81e4feb3ef04faa4203d23a7c12de0ead3e8472"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/getting_started/quick_start_linux.md",
+      "size_bytes": 28358,
+      "sha256": "9dfb612b907e95f4e3888d9c312e1fb49b64d027fed0b95388451001501e1441"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/getting_started/quick_start_mobile.md",
+      "size_bytes": 39230,
+      "sha256": "450089c17c01c0092406de8cc294430066542397a59f5da7ffa35f07a55b3b35"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/getting_started/quick_start_ufo2.md",
+      "size_bytes": 12114,
+      "sha256": "960182759310140f81dc672e4f5762302ed4ce05a390ba9fb33844c3bc539c9d"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/index.md",
+      "size_bytes": 22993,
+      "sha256": "40396f04aa2091e58e8b0828db60239eeb3dc4b65c1e14e2185741fc34c1c668"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/docs/project_directory_structure.md",
+      "size_bytes": 23299,
+      "sha256": "4eb20f2a557de3ac504ef944c5ace56b1b0d21931fa9c63c92888b939415a468"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/documents/mkdocs.yml",
+      "size_bytes": 14935,
+      "sha256": "4c33f4765da79eb632a032fc04f2238dd8d3a76fbfba89926767992370133cbe"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/LICENSE",
+      "size_bytes": 1093,
+      "sha256": "903df5512f7d02609fed0c780a9b704f5a3eeb6e4d84ebe42a29845c81899a3c"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/README.md",
+      "size_bytes": 25432,
+      "sha256": "40d9a4010ab122ab50242a0cd7a5320e2fd16b3e53494d988eecdbd94fd8e6e8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/README_ZH.md",
+      "size_bytes": 24488,
+      "sha256": "360eb2d8d8677768fc255f69bd8d4ceca2060ec05484f3c2630f3b2c7d461f6b"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/requirements.txt",
+      "size_bytes": 1022,
+      "sha256": "86c66ce6a232100ab3922ddb43ab9902a1080dd43420f7f4158f6cf218574de8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/SECURITY.md",
+      "size_bytes": 2697,
+      "sha256": "891c6326bdd8ea026af23af20fd7dd7167b666f4bd4f63cf22dfdef09d5e78b2"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/__main__.py",
+      "size_bytes": 208,
+      "sha256": "0ac0e2f70ed5366adc3c77b22af54688e6dc3ab9878c60d40731458e082ccbd7"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/agent/__init__.py",
+      "size_bytes": 119,
+      "sha256": "e59985524914c8f36d124afe9e14fd36ce6680d4f3462aea430437b2f4e8821f"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/agent/app_agent.py",
+      "size_bytes": 28871,
+      "sha256": "6e6f93f242c8ab6e9992706912b90fa0ac5c191db07ecd563cf5e4516842560b"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/agent/basic.py",
+      "size_bytes": 13980,
+      "sha256": "b89d5a3c42e7964d4655b55ca772e3da322da13fe34a17713affb6dcfefc947d"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/agent/customized_agent.py",
+      "size_bytes": 9505,
+      "sha256": "328a10b5185c4592ff75c653a3db18a400fd91b09e3cb0862bef65448e751527"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/agent/evaluation_agent.py",
+      "size_bytes": 5345,
+      "sha256": "8e21c072d757a4b6fa6c5a88458ddf7b0ff89acea493cec799611e7bb0aab7a0"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/agent/host_agent.py",
+      "size_bytes": 16222,
+      "sha256": "0878a72e334a62ab3ad301644a71be7889d7aafd335629d7720bec2f735377bb"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/memory/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/memory/blackboard.py",
+      "size_bytes": 11301,
+      "sha256": "a9cc10ae8fa294594b6cfad68760b433f8519beafee3dafdad936adbf650b3c8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/memory/memory.py",
+      "size_bytes": 6363,
+      "sha256": "7ad4bc8827e142c443b2a93a498c47cd35e8c2e48cf6ca4884c0a87ee79fc6bc"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/presenters/__init__.py",
+      "size_bytes": 531,
+      "sha256": "8c1d80d0092d3554fa0b4687b3ea5de1c6d87cfba01a6b297f09dcfed63cb1ca"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/presenters/base_presenter.py",
+      "size_bytes": 2796,
+      "sha256": "9079d4dcc90cdc29f10e57a155803999eb258114a99fc8fe2d13b3c607526729"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/presenters/presenter_factory.py",
+      "size_bytes": 2910,
+      "sha256": "c6622a874c3b780558aa14f82e338a71c2a67b1ac29d907796480ab59910c344"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/presenters/rich_presenter.py",
+      "size_bytes": 43594,
+      "sha256": "2b1a063cd43eae1cc43310562166717ab729744b8f4ec9ce261a5aeef8d49330"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/__init__.py",
+      "size_bytes": 75,
+      "sha256": "6823abeac12c429bfdcf8709816140e2a3ace3126a725a98627c4e55cc622b64"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/app_agent_processor.py",
+      "size_bytes": 12499,
+      "sha256": "111cde640fcd4d311b22db243d52360872ed994e5dafd9676bec817bff90dfbf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/context/__init__.py",
+      "size_bytes": 75,
+      "sha256": "6823abeac12c429bfdcf8709816140e2a3ace3126a725a98627c4e55cc622b64"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/context/app_agent_processing_context.py",
+      "size_bytes": 5261,
+      "sha256": "8274a0b4cad3804bacbd8c2ab7c47584068076dacc696315837664be4cddd00f"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/context/host_agent_processing_context.py",
+      "size_bytes": 3188,
+      "sha256": "0eabfb4a22415e38a518439048915e6b64ac0c5dede503e3cc3126a3c9435e33"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/context/processing_context.py",
+      "size_bytes": 17635,
+      "sha256": "9ee9aa03e65ccdc1d6e8b2a6c076c20b17cfa29e636c5cbf783c219b26eeb4e4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/core/__init__.py",
+      "size_bytes": 75,
+      "sha256": "6823abeac12c429bfdcf8709816140e2a3ace3126a725a98627c4e55cc622b64"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/core/processing_middleware.py",
+      "size_bytes": 5539,
+      "sha256": "9cc7abeb154d0f98894237db05f6f2d45202bf1aa11f9b1f9b25dc2cc2c3b45b"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/core/processor_framework.py",
+      "size_bytes": 17455,
+      "sha256": "ee7db7109fe554b7bf90b42e1914430294f0cad46f37eb3d91b290c3caf509d4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/core/strategy_dependency.py",
+      "size_bytes": 21781,
+      "sha256": "5b49d31438001694b3b0a7a23e1e23aa3ba1b2888d3f57af645aa803a54eaec8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/customized/customized_agent_processor.py",
+      "size_bytes": 7182,
+      "sha256": "9fcdf627cfb3cf6327ad7ed742035814f822c0246e9668c36babe30078c028c3"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/host_agent_processor.py",
+      "size_bytes": 12382,
+      "sha256": "ee864369336f5f8752da6d10c0f9c236892f20b92976e41d3023cfb79daadcb8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/schemas/__init__.py",
+      "size_bytes": 75,
+      "sha256": "6823abeac12c429bfdcf8709816140e2a3ace3126a725a98627c4e55cc622b64"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/schemas/actions.py",
+      "size_bytes": 10470,
+      "sha256": "2f4bd4757c5edfe6751303b81f0309d7b60061a0d45068eb1c8aa1c0743c0080"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/schemas/log_schema.py",
+      "size_bytes": 1725,
+      "sha256": "c7e9ebbc7e56a0ba63097a4325522b1c33a294d4c6889579d2b5b181a7c135d1"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/schemas/response_schema.py",
+      "size_bytes": 1248,
+      "sha256": "5d6d0b62d1c3eb1f28ad93f9f48dc83847d1df5b4b548c721cb50bcb78d9019e"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/schemas/target.py",
+      "size_bytes": 5563,
+      "sha256": "8b27c1cb91e9b4dbb49e838dc1395db9ab48f4d8a2de23f5bf0af650a888148b"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/strategies/__init__.py",
+      "size_bytes": 75,
+      "sha256": "6823abeac12c429bfdcf8709816140e2a3ace3126a725a98627c4e55cc622b64"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/strategies/app_agent_processing_strategy.py",
+      "size_bytes": 74459,
+      "sha256": "b2ebd7c9b7c37f6ecd40e9a3423c537ca97d560fc4434b66d038b70cdbf8bf80"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/strategies/customized_agent_processing_strategy.py",
+      "size_bytes": 7435,
+      "sha256": "3877e5a2e5c85e7c6377bfedb462fef9a75d116133dce09b6bac116470d90b82"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/strategies/host_agent_processing_strategy.py",
+      "size_bytes": 52065,
+      "sha256": "34d761766ebe3332e68f34737989e65d31a7ef7d4c0eda0aa3e05fd0766b9255"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/strategies/linux_agent_strategy.py",
+      "size_bytes": 8728,
+      "sha256": "bfa061d488fa78e34ef95ebde32f0b638f7b4e1fc9bbc2066e75bf1dcc85c077"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/strategies/mobile_agent_strategy.py",
+      "size_bytes": 32513,
+      "sha256": "960ea77fd04d74998c002bbd03ec657f70b75cc8a39d63dbfbf2b975d56be3b2"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/strategies/processing_strategy.py",
+      "size_bytes": 12703,
+      "sha256": "eb0e7f84366bef44fbee26447b2bc2c49c8766a848c151ed650ad7223a75ec17"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/processors/strategies/strategy_dependency.py",
+      "size_bytes": 9683,
+      "sha256": "fb3971a665cf19f44062c44fd4a43dce1c9d06984a87f8426d32b44584a68b5c"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/states/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/states/app_agent_state.py",
+      "size_bytes": 14256,
+      "sha256": "c63e2df4882e730f25ed24a877613e8c68eafb8e6ab359d49812948200f1ceaa"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/states/basic.py",
+      "size_bytes": 4822,
+      "sha256": "d3ef560210de622231ee7c7ef7e122ef3e0c507365b4b69b9248c36fa47e15f9"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/states/evaluaton_agent_state.py",
+      "size_bytes": 3565,
+      "sha256": "a605dfcf4bba748b6a1725f59b7af18adb5ccf9762fb5ee6e9b4332a2f73e179"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/states/host_agent_state.py",
+      "size_bytes": 9823,
+      "sha256": "aad9e3fb5368946bfded6bcf6b82d8558710b86098caeb0763e7daf5102d7df4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/states/linux_agent_state.py",
+      "size_bytes": 7066,
+      "sha256": "be68b3d545b5bcb2badc44c44dad6fb925f7e583d2402a482899db133c5d7e8b"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/states/mobile_agent_state.py",
+      "size_bytes": 7118,
+      "sha256": "f08c80de3bd10ec0d4947da2efa7ad91c4065024b3c55fc72210900faa7b68ab"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/agents/states/operator_state.py",
+      "size_bytes": 12460,
+      "sha256": "eabc141e3cf1ffc4ab33e7777c420d1eb896246eb1634a4d288f4899bff08f00"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/__init__.py",
+      "size_bytes": 144,
+      "sha256": "f8304133d7dce7f9dbbbf16212e0e07ff5ff07a39338fc7210136d21899621f4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/action_execution.py",
+      "size_bytes": 4856,
+      "sha256": "3d3c16a90982c83777e3b73b28557592aba33683a414202bc3b717da0657b9c8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/basic.py",
+      "size_bytes": 4927,
+      "sha256": "5a1978455bdd7034f89c97776938eeebecfbaa28a0461cd14311e4049b08b7fd"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/excel/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/excel/excelclient.py",
+      "size_bytes": 17593,
+      "sha256": "ee4f8af693d471654b0abf533fcfd59c62c41ac7707639f79466098363df7a84"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/factory.py",
+      "size_bytes": 4430,
+      "sha256": "d690c1f84608f2ab8aa06aaf0fd82eae2d30d6f81accc81f794da1b896ef4dbd"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/powerpoint/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/powerpoint/powerpointclient.py",
+      "size_bytes": 7118,
+      "sha256": "2dc6f2f7b621dd2845e6dc3cc9d5c10df1ec932d3dd226ef62c9e39398fa17ac"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/shell/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/shell/shell_client.py",
+      "size_bytes": 46152,
+      "sha256": "918908541f5280747bbdf34253e8f2d9f71957b6691105da838cdea6fd2fe97a"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/web/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/web/webclient.py",
+      "size_bytes": 14322,
+      "sha256": "ba5657456943ef631b9f0f5f5d9f22eff744f2f7bc76af46307509bb301fc1e2"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/word/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/app_apis/word/wordclient.py",
+      "size_bytes": 10444,
+      "sha256": "809007757c39b60e80994e5d5d4345f5bb200be3733f70c975a44d68bd06cdc5"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/basic.py",
+      "size_bytes": 3130,
+      "sha256": "577c88b94fde6ef87ed390b516ff766af1dbd8916e93ec1988b6907e22cd8e31"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/path_validator.py",
+      "size_bytes": 8705,
+      "sha256": "3ca6d60caf05eb1e563192ab0f8144a93c2b60f82c21cd7aafc59433e20b2033"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/puppeteer.py",
+      "size_bytes": 10141,
+      "sha256": "0f771952867a8a2ded9f0d25a9619222a8ce89c4564e7ee223bbdc17764a6e36"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/ui_control/__init__.py",
+      "size_bytes": 156,
+      "sha256": "016ecc8fc9c55f05b8eb39a067871430bd8ad30d5003aa782bddd280295e43cb"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/ui_control/control_filter.py",
+      "size_bytes": 10587,
+      "sha256": "5b42eb5276e733376944f513756d6cc1617fd7bb04639fed6174cb03d6a24dac"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/ui_control/controller.py",
+      "size_bytes": 39150,
+      "sha256": "18cbb1815f1fc1e06f6cbef2d76516359a002bb56673ed71514d9e7318f97e8a"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/ui_control/grounding/__init__.py",
+      "size_bytes": 75,
+      "sha256": "6823abeac12c429bfdcf8709816140e2a3ace3126a725a98627c4e55cc622b64"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/ui_control/grounding/basic.py",
+      "size_bytes": 6141,
+      "sha256": "f7c6d74869d5dcb7b041ae8890b728c93d9c5bc5d1ad47846ecdb8d2c0b13c21"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/ui_control/grounding/omniparser.py",
+      "size_bytes": 9664,
+      "sha256": "e246f0b3d91750e7fa0208e4628201f0b97ca7f68d07c98f1b81fca1dbc9f8c4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/ui_control/inspector.py",
+      "size_bytes": 25155,
+      "sha256": "ad77a4b209e5387364e8554f3dfcf16d77ebf96d90d079035c0a552b770f6193"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/ui_control/screenshot.py",
+      "size_bytes": 58949,
+      "sha256": "0f027e395732c0a80c5cb62aeb8d6688ace45b1da01c06769866930065c7cb09"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/automator/ui_control/ui_tree.py",
+      "size_bytes": 11844,
+      "sha256": "fff5262cdd23f33955ef958577dd79f9c5d2e41434db673cf3778caf7cc9103e"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/client.py",
+      "size_bytes": 3620,
+      "sha256": "8a9351696d9ff98a48b05df7ac02dcb68f849c00010432612e392ed1d950de3b"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/computer.py",
+      "size_bytes": 32081,
+      "sha256": "74af753a4ddc017fd91a132efdcf640c2f28d5c484ad7750ee54de2adc64464e"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/device_info_provider.py",
+      "size_bytes": 7556,
+      "sha256": "b5ab44be4153ea565de3f83f2dca03503158c89092a29e8559d5010845d7e5c6"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/http_servers/hardware_mcp_server.py",
+      "size_bytes": 15697,
+      "sha256": "b9732cfd7ae0eb38c88236a8c61040cabd5a838194755590181e32b564202e0c"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/http_servers/linux_mcp_server.py",
+      "size_bytes": 29568,
+      "sha256": "ef6239235f0486ab48529ef26516950ebb7a8e5eb81b74b0c3df810760f02f89"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/http_servers/mobile_mcp_server.py",
+      "size_bytes": 57453,
+      "sha256": "33c980f715ccc4a056f174f022f62f10792429ec83dc783f8c0905edebacb805"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/local_servers/__init__.py",
+      "size_bytes": 2687,
+      "sha256": "de37c3b575cd125e04e438fc07eef43831d0e78efbf0274e2adc3f0bf9094cb0"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/local_servers/cli_mcp_server.py",
+      "size_bytes": 5577,
+      "sha256": "4bd250dc8ef2dd5979315a11d2b25408a78822765d0a3673a609dc0de4777f45"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/local_servers/constellation_mcp_server.py",
+      "size_bytes": 18365,
+      "sha256": "3b0e0df5c4950b63bd1ac1239257ccfc01e557fe93a3bebbeddade2fad96d3c3"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/local_servers/excel_wincom_mcp_server.py",
+      "size_bytes": 10337,
+      "sha256": "d93a393ffcb1fbe7daaa669a7d0520f7331fd7ac2211df3d88806a88f165c0dc"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/local_servers/pdf_reader_mcp_server.py",
+      "size_bytes": 13213,
+      "sha256": "47fd7b2d5c553acd32233eb56a2352e6553121c3f8c686414b776fc9a7062ee7"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/local_servers/ppt_wincom_mcp_server.py",
+      "size_bytes": 6366,
+      "sha256": "206a7cf6366354e98a956c0e8b2192b38a130bff35107fd11ccc8905f84f8907"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/local_servers/ui_mcp_server.py",
+      "size_bytes": 40439,
+      "sha256": "32ae3d04a17c3a1648e43950ce45031ef81075f1ee849457f98f4b4e08c091e3"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/local_servers/word_wincom_mcp_server.py",
+      "size_bytes": 8977,
+      "sha256": "e4cc83ddab530c1d91e239aabbd9f4d4b81b00d316af80af92ced7751114239d"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/mcp_registry.py",
+      "size_bytes": 4349,
+      "sha256": "d64ef72d801aa157353638d9231a22035de2749569a888e673173eec9a70af29"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/mcp/mcp_server_manager.py",
+      "size_bytes": 9292,
+      "sha256": "076bbce7e9352cee823f421cf8bd889b7b790e55636c229b2511f63a4180e86d"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/ufo_client.py",
+      "size_bytes": 5933,
+      "sha256": "2238a938ad75da5a27dcaf45f87ab16d925fbbfd2aecc853cd3714d4a5455090"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/client/websocket.py",
+      "size_bytes": 17627,
+      "sha256": "05f079a0b5ac7f605e02035b5a3cf183e9dbc59cfe6ce0d0493dc128feda0367"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/config/__init__.py",
+      "size_bytes": 6305,
+      "sha256": "ff11d272401e034a11d1f5bdd95d1f7e1c546b2a04ad39cca51052d1f08dde1e"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/experience/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/experience/experience_parser.py",
+      "size_bytes": 2234,
+      "sha256": "d7b10c19d0e700001963fd4310f1b4123c6da8c46262b2c1a83874bcaa7b1c4e"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/experience/summarizer.py",
+      "size_bytes": 7051,
+      "sha256": "b3d7bfefbe7c558265fb2f9cc5c9cdc70f3e0e8355aa109f74b58eaf3e2fe511"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/__init__.py",
+      "size_bytes": 377,
+      "sha256": "c9de1b0d42beffa13580391100d7d01bd76a01ec16845b3cf9af3ef65a26fa77"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/base.py",
+      "size_bytes": 6319,
+      "sha256": "0af0685c98d7ad0d88eecf416611ffd71ce0a68b15ccebc5d636846d8387171a"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/claude.py",
+      "size_bytes": 6001,
+      "sha256": "b01117268c18743e484f48e1c7a4d6dba47df08e2883da2d764042b441a392d2"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/cogagent.py",
+      "size_bytes": 3322,
+      "sha256": "18e3fb3735bfa80e6fbbdc8902bb4b18b20d00ce3c6b0df180068811c7591749"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/config_helper.py",
+      "size_bytes": 5732,
+      "sha256": "4f08dafc8f9610e16562f233d482fe1bf110b12205e2e14f9683e4c4f6f0e6ff"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/deepseek.py",
+      "size_bytes": 1829,
+      "sha256": "d448f6ef70ab868c0339ee10199ed67328d6457ab840bf83dd48c3fe937c30b4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/gemini.py",
+      "size_bytes": 10470,
+      "sha256": "4a30b23cf777a0755aa04c8a173c1e6e38069b0007c92b2bead00b68d71f1702"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/grounding_model/omniparser_service.py",
+      "size_bytes": 1221,
+      "sha256": "590c8f61b73237848036aec4474062e023e5f5509f3f38e61aace8d12262a706"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/llava.py",
+      "size_bytes": 21491,
+      "sha256": "5639770bda63c88c5d1712b1fba5a0631d8f55022f379fac9eac9d2d0c760116"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/llm_call.py",
+      "size_bytes": 4043,
+      "sha256": "72fabe3ee9df37987735552d33e86dcb171a552dae7b3e3a2668d02d911b386f"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/ollama.py",
+      "size_bytes": 2056,
+      "sha256": "95a4d9e7c79721fe1242695882fe4b8b047bd474c1ae91a668a424f88c546fd9"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/openai.py",
+      "size_bytes": 36631,
+      "sha256": "c142e4b20bff2de87a82a1fe07df2b0f91f72789e24789987759654bc2542093"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/placeholder.py",
+      "size_bytes": 2050,
+      "sha256": "55f380c0f5fb61501a4ced8ac1770eb4b288897888d0fe525b049060e9d685c9"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/qwen.py",
+      "size_bytes": 2043,
+      "sha256": "6ed6e6f56ecad3f3b4cbbdbbe5d3ae5b0a261df5a2bf16f6209564b16298c8f1"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/llm/response_schema.py",
+      "size_bytes": 4872,
+      "sha256": "5d6940d759643d28b5fc95beae5f1497ecc2fe4adc92e1797db39360771b2515"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/logging/__init__.py",
+      "size_bytes": 23,
+      "sha256": "2140a5ce32b81b1179fb041cb794bc1130a9400453d8ca14e63960cc4fc3c3ca"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/logging/setup.py",
+      "size_bytes": 1401,
+      "sha256": "9b7f116c4165b6556d45512c78f8d2178fdd8aa665d2661b0ab257b9d61a2294"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/basic.py",
+      "size_bytes": 33754,
+      "sha256": "64d272eb93751f063874661bc89cad576fed2491b6ba1bda0edaf0cc0bcb07fa"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/context.py",
+      "size_bytes": 15211,
+      "sha256": "86a468cf59a89b6de1eddd66ad6249a70f34a06cf5e6fc4c42ec934ed3e66625"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/dispatcher.py",
+      "size_bytes": 9436,
+      "sha256": "a9f625db8edf4165d58d8387129a8ca7afd8a62dfb767eab6cfc796d04e69e43"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/interactor.py",
+      "size_bytes": 6995,
+      "sha256": "ab815a2044ac78ad58db3e5721c3f576c64af1da919f81dd941ad5683904ef8e"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/session_pool.py",
+      "size_bytes": 15384,
+      "sha256": "8bfcdd41bd8f0079608a53bfcaf6a141ff178ae7dd65e3601e7e7bb390ef1238"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/sessions/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/sessions/linux_session.py",
+      "size_bytes": 5075,
+      "sha256": "cbef335952bdf9d35bc01480273bfaf692ba746f0eb4da3aa1f4d4b6a0a3a196"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/sessions/mobile_session.py",
+      "size_bytes": 5382,
+      "sha256": "6f13864ea99e5cbb1904004688db6f736fae47df5987ba06c4010a765d501836"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/sessions/plan_reader.py",
+      "size_bytes": 4162,
+      "sha256": "41d65a2957ba020846bd0928d372efdba48b743ae820761d28ed21c1e0880edb"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/sessions/platform_session.py",
+      "size_bytes": 5323,
+      "sha256": "e1aca82b90ae76ca9d6a0ea89ff24025425bb5b4ba95e8afd15d5006b02764fd"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/sessions/service_session.py",
+      "size_bytes": 1918,
+      "sha256": "1a88b108093591ffe191938d1832c30e551ec3cb3d2425992feed43bfb65bb0f"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/module/sessions/session.py",
+      "size_bytes": 18613,
+      "sha256": "dfb49f2ed3d7b14f45e04f17e8f161e5d4c350965820d079ff03fe9fe4a19525"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompter/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompter/agent_prompter.py",
+      "size_bytes": 15495,
+      "sha256": "da7b93072e12f8832ef9c877371ab8677acd45d5a2032ceed4804be2343f47bb"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompter/basic.py",
+      "size_bytes": 6491,
+      "sha256": "ce7ddda9bfeb74b347c412ef704de12d1bc4929d2faf0dbccb1cdde725390b55"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompter/customized/linux_agent_prompter.py",
+      "size_bytes": 5819,
+      "sha256": "c90805b936b97c0d17c9c9ee8f085a2945debe442f4c506c3e321ceca40170b6"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompter/customized/mobile_agent_prompter.py",
+      "size_bytes": 6575,
+      "sha256": "887df0fffe53790e027d99728296a3f7f962c472003aa0fd307bc3d09f5e0239"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompter/demonstration_prompter.py",
+      "size_bytes": 6031,
+      "sha256": "9f5046a1595f4615c524ad11ffa815f41ddb6513b9a55adc4f9abc924cb8be8f"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompter/eva_prompter.py",
+      "size_bytes": 13293,
+      "sha256": "46dcbee4477562db42fd491d50112946519afc3fff12adcc1fea9fe19ca5cd5a"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompter/experience_prompter.py",
+      "size_bytes": 6595,
+      "sha256": "7508fe7518f744ad253767baf8bfec7fc937c6eaf16c39ffc6240da18b5021f4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompter/prompt_sanitizer.py",
+      "size_bytes": 5168,
+      "sha256": "53df27a366a0d4c457e46a48b199365fc1f643a9e725236919c572fd89cff411"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/demonstration/demonstration_summary.yaml",
+      "size_bytes": 7615,
+      "sha256": "aeac470bdb67ff07f839ea8565ef240d22077d3f10c234d9f4959eba3ef4e2e4"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/evaluation/evaluate.yaml",
+      "size_bytes": 4342,
+      "sha256": "3cb153c81d7496dedc436a4b01dce4918bf53f0cca9071ced97ed9e3fd118c4a"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/examples/nonvisual/app_agent_example.yaml",
+      "size_bytes": 21060,
+      "sha256": "dab795e7ce357deedcb30f728a1f65c5ee969a61d9bd2b03cc72686758b19b90"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/examples/nonvisual/app_agent_example_as.yaml",
+      "size_bytes": 19733,
+      "sha256": "d21c3dea5ebae213a1eea812a18e69ded2dcdb766320c92093c943966b9389d1"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/examples/nonvisual/host_agent_example.yaml",
+      "size_bytes": 14926,
+      "sha256": "fba30bf1ff82a61bb5c8e014e5740ea6bcc192e0ae5431b852564209fd6409ba"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/examples/visual/app_agent_example.yaml",
+      "size_bytes": 26949,
+      "sha256": "f76f969d671d4aa88992f9531dfaf66b79515b575f37aac790bdd05eb2384fa1"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/examples/visual/app_agent_example_as.yaml",
+      "size_bytes": 28435,
+      "sha256": "2a3123f17ebc3d68df247cd554862cb7dac1738a375c797d8f294a62b799f3b2"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/examples/visual/host_agent_example.yaml",
+      "size_bytes": 14780,
+      "sha256": "f136e2622c2403790a7fe06f6c5b2f81428cc02ca10711a3ae9c9d5885b68328"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/experience/experience_summary.yaml",
+      "size_bytes": 7447,
+      "sha256": "a1593fa049a0eccb5ef155e2772098739927c63087f9fb918295f04bf09bc805"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/share/base/api.yaml",
+      "size_bytes": 9097,
+      "sha256": "f549db752fc8dd992c999279ce6f180bd83c54ee19a3e3084d170d93a630a25d"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/share/base/app_agent.yaml",
+      "size_bytes": 41914,
+      "sha256": "c2a9bd72457476329beab3b06469a19b21a33f1af04a7427b2e5bd124819878a"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/share/base/host_agent.yaml",
+      "size_bytes": 18652,
+      "sha256": "474691b6202b46de0cd21d07af502ace22f159d583c60e6bb3a1c65899efc2fd"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/third_party/linux_agent.yaml",
+      "size_bytes": 5234,
+      "sha256": "71bdf422ee20e6720d75735bd23a85ab3521f12becd4d0563fab9b8c2ccb37fb"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/third_party/linux_agent_example.yaml",
+      "size_bytes": 10564,
+      "sha256": "76198ab7386429808190ecdb2e10b8bac945c5098e2c36eb84a1177a5cb08e5c"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/third_party/mobile_agent.yaml",
+      "size_bytes": 5302,
+      "sha256": "8b4ce21aeadd0af76dea7e1cb118835e942b8e8958b463f15305c6874d2fa466"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/prompts/third_party/mobile_agent_example.yaml",
+      "size_bytes": 14343,
+      "sha256": "7a0c3fec79a65a163541e4529a0061288dd9b875f44cd65ad774a2994071a019"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/rag/__init__.py",
+      "size_bytes": 73,
+      "sha256": "8394f16a6e26147d8350cab2352022fcf9a4ec6496ad88c92016186fc56f2ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/rag/retriever.py",
+      "size_bytes": 6707,
+      "sha256": "393b6f92596f6aac6d2109608957c7ce986cf11b02780ec01fdf24efa8a7ece6"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/rag/web_search.py",
+      "size_bytes": 5273,
+      "sha256": "2f592eb2e30f84c2360358f6ef8a9012a78c450f46ee97064d0fa47eb3de61f6"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/README.md",
+      "size_bytes": 23108,
+      "sha256": "dcd967425f8457f2c8235e92b757ff5d4a488080cd5f33a089c3e8e3d3c335a2"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/README_UFO_V1.md",
+      "size_bytes": 22038,
+      "sha256": "0c238d7ab5f6d1defe72b68d9d8671b57d914b890966d7b852eca852e44d6360"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/README_ZH.md",
+      "size_bytes": 21461,
+      "sha256": "e3d033efd1f02d2356faf4cc6f9292fe2c65bd4a41635076b7f3586f0eec4ac6"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/server/app.py",
+      "size_bytes": 5178,
+      "sha256": "9621bee8a36a9b47bc2587d07af085175afdbf577944a88b7be5f2e925b6bb26"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/server/services/api.py",
+      "size_bytes": 4706,
+      "sha256": "378616066b8da63188a8ac9f626e2ebd30829456523aabe733993e914f09ec9a"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/server/services/client_connection_manager.py",
+      "size_bytes": 16588,
+      "sha256": "580d950851e6e87216a0c0aabe9edcbeace16abda8850d53db8f6cff7435a458"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/server/services/session_manager.py",
+      "size_bytes": 25819,
+      "sha256": "1487544d044c6b9cd3764d8f271d9babd90169bb8a2f18a1f8031f7bc4d3ef8f"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/server/ws/handler.py",
+      "size_bytes": 51316,
+      "sha256": "3dc9b5761229e38a24c6753f0f3449e831bc06e930ea8c24026bc5fc05f821ae"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/tools/convert_config.py",
+      "size_bytes": 19808,
+      "sha256": "d2c47322f511c91b78b53259483efeb2581327a098b9d3e93112f667b0500675"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/tools/migrate_config.py",
+      "size_bytes": 10951,
+      "sha256": "45113507ecac7cc9aed452c47a707711bd8065be1f5b821f2264560ba92c6111"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/tools/README_CONFIG.md",
+      "size_bytes": 7241,
+      "sha256": "60f5c995598bad5e21fbebccc0ed3fbec64bcf067ec35c58c63dd15755aafe95"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/tools/test_config.py",
+      "size_bytes": 5634,
+      "sha256": "1381f7a2869c9466f3e389d5b11b1718e56f910b34d18b462b75c617fe2f535d"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/tools/validate_config.py",
+      "size_bytes": 13373,
+      "sha256": "613cb9e73db0606de4356c4b68807722fce6705b17080bc90abff964329adb46"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/trajectory/parser.py",
+      "size_bytes": 16138,
+      "sha256": "f4fabba3b351996f961f616e919490e06089ead4abcf5e0dd308c35a20a70a6d"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/ufo.py",
+      "size_bytes": 2291,
+      "sha256": "cd7c8017e097ff4b8705f9998c6f7609ddb0a94be92b5bb3645ad05aed49c624"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/utils/__init__.py",
+      "size_bytes": 16287,
+      "sha256": "3c9456002d307b201ec50fd41ff6ad476241c5e135b186f40aa3d1f023c2f900"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/candidate/ufo/utils/url_security.py",
+      "size_bytes": 15152,
+      "sha256": "1a57cf7ec14ecc5633604e20614b4459f18404060ae4ec5c1e951ce3a062964a"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/aip-expand.json",
+      "size_bytes": 311,
+      "sha256": "0c8bbff59347352e83025d1d7e82d4c62870b55495a5ebfa7e98e27cfed21a35"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/candidate-manifest.json",
+      "size_bytes": 45449,
+      "sha256": "5075cf5655773992375be1d287a67ab78e167325cfb4f168359dddc43f7529a3"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/candidate.patch",
+      "size_bytes": 589,
+      "sha256": "af6bb111cf6018b99096fb79cb22f6a16fd53f84a0d12e1d2754ea3f63765ea5"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/environment-and-patch.json",
+      "size_bytes": 881,
+      "sha256": "e127134f1f41d5d19e61dd6ce917c52e7fd227730050b1cfdf6945a6b526f901"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/agent-events.json",
+      "size_bytes": 23853,
+      "sha256": "77dab64ba6e95eba11c792b9089cf26ccb4b2cdcff5fd1a9206bf52095661b93"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/agent-report.md",
+      "size_bytes": 1966,
+      "sha256": "5fa933c8232b7221fec71a4f00a4335b1a7d3894d9b5c544be3ac0a669505c76"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/hash-audit.json",
+      "size_bytes": 371,
+      "sha256": "86656302439ff5757978ba2bf43cdc8a96dc34b889f0c5ac8e42d4de460d0440"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/protocol.json",
+      "size_bytes": 447,
+      "sha256": "6ef40488d5895e5390b6e17efa41c34edac11d8a1d94686149290ef82f66f376"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/start.json",
+      "size_bytes": 409,
+      "sha256": "c529e901a37107919585b5286cbaad36588aac971a81bda6c095d19c2f58a992"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/import-probe-01.json",
+      "size_bytes": 9532,
+      "sha256": "7c9be4fd51a1c9595f7a78694b79f50aa518ff3f892aaf8c7988e170e94844bc"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/import-probe-02.json",
+      "size_bytes": 2376,
+      "sha256": "7d6bd26c15c1cec21fb3b124dbaeee29f48efb8e6d07deefec876d022cee9330"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/model-probe-result.json",
+      "size_bytes": 1222,
+      "sha256": "f32fcefc9bcf48e9bc562e4b2af7af2200870fc176350dd422389558cd544ccf"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/model-probe.py",
+      "size_bytes": 3263,
+      "sha256": "0ccae7b7b30a941e393bcf61bf0dd6beccf012928d0f4ca9a0757a22ff4790cb"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/native-command-import.json",
+      "size_bytes": 1715,
+      "sha256": "c399f3518bac5aa396074fd65f932bfbb31712b747e76d6aa1759741637da561"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/native-dependency-dry-run.json",
+      "size_bytes": 1425,
+      "sha256": "e44327baf2adeb2332d3f23e5f70240aee2dd12b13b81ffa79dba409f80ed437"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/native-path-review.md",
+      "size_bytes": 9003,
+      "sha256": "6ecf347c6695880a321b09cecb310338cf76e23b15ae8ce0b2893b69d8b47b8a"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/openspec-validation-followup.json",
+      "size_bytes": 446,
+      "sha256": "8c8b0f516f9d7494435fd02652d1b1deb348af49a7c9637c535208ecd55faeb1"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/organizer-errors.json",
+      "size_bytes": 2094,
+      "sha256": "01bb3ce9001ccb8a39afe415d3763743315c54618b292d61c6717058cb81c333"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/start.json",
+      "size_bytes": 1405,
+      "sha256": "0c8b1022d7d33838c2c6a9eab8706ab24c26eb94625d61546812dc2990f2e7ef"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/validation.json",
+      "size_bytes": 1714,
+      "sha256": "5c8bde9859abceaa9d99f0fa3ce4b38aa8ae53cea61061949e93b21c7e638c3c"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/env/requirements-resolved.txt",
+      "size_bytes": 773,
+      "sha256": "b6b16c0e5c9ce6f3d4f11eec5840139e79aaa8d7b9f6fb8e78c608621c3daf5a"
+    },
+    {
+      "path": "evaluation/software-exploration/ufo-admission-01/admission-report.md",
+      "size_bytes": 6213,
+      "sha256": "12985d5199bf3471ec3f9caf55cf2449bc9c9c745c892afd0f92c155ae99f069"
+    },
+    {
+      "path": "evaluation/software-exploration/ufo-admission-01/index.md",
+      "size_bytes": 493,
+      "sha256": "f640dbe19f5499e7e81e0f7c80a7501a22d504bab88b903287feb086ffb900a4"
+    },
+    {
+      "path": "evaluation/software-exploration/ufo-admission-01/integrity-verification.json",
+      "size_bytes": 2548,
+      "sha256": "a6ea77f1f8b7df44f6f6ce5e1babd7e002f08451d6e12cca77315bb39fc80122"
+    },
+    {
+      "path": "evaluation/software-exploration/ufo-admission-01/quality-review.md",
+      "size_bytes": 7023,
+      "sha256": "80487d1660a6dea4723f430473a61a8a39be80dda4805fa26cb1663c1c876b52"
+    },
+    {
+      "path": "evaluation/software-exploration/ufo-admission-01/status-report.md",
+      "size_bytes": 4193,
+      "sha256": "fcb3ebb22bf9ead25d4c3bf7f29d9fb1050236a83de6067d3d2faaecb097144b"
+    },
+    {
+      "path": "scripts/ufo_admission_probe.py",
+      "size_bytes": 8003,
+      "sha256": "fca8994c313efbe2b86b9e00fb93c397da66f497b0a9d88f9a79e69dbc84e479"
+    },
+    {
+      "path": "tests/unit/test_ufo_admission_probe.py",
+      "size_bytes": 7355,
+      "sha256": "164c597c1d134ef93349969c3c06001d1a73b7835c3dc32b0fe8f84b76c57ed6"
+    }
+  ]
+}

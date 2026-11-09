@@ -1,0 +1,30 @@
+{
+  "id": "ufo-uia-admission",
+  "name": "ufo-uia-admission",
+  "title": "UFO 单机纯 UIA 最小接入验证",
+  "description": "在隔离目录验证固定UFO版本的最小依赖、既有模型兼容、纯UIA目标窗口与动作预算，完成无副作用健康检查并给出比较准入结论。",
+  "status": "in_progress",
+  "dev_type": null,
+  "scope": null,
+  "package": null,
+  "priority": "P2",
+  "creator": "--help",
+  "assignee": "--help",
+  "createdAt": "2026-10-29",
+  "completedAt": null,
+  "branch": "main",
+  "base_branch": "main",
+  "worktree_path": null,
+  "commit": null,
+  "pr_url": null,
+  "subtasks": [],
+  "children": [],
+  "parent": null,
+  "relatedFiles": [
+    "scripts/ufo_admission_probe.py",
+    "tests/unit/test_ufo_admission_probe.py",
+    "evaluation/software-exploration/ufo-admission-01/status-report.md"
+  ],
+  "notes": "2026-10-29：最小接入验证部分通过。固定候选唯一补丁为ClaudeService自定义endpoint/SDK重试0/60秒timeout；真实通用中文模型调用1次成功。局部dispatcher33项fake callback测试通过，尚未native连接。独立Sky健康4动作150.514秒通过，非UFO native。完整Host/App因依赖与多策略直接截图耦合NOT_ADMITTED，正式比较NOT_STARTED。pytest116、OpenSpec3、compile、uv lock通过；旧55/35/21锁一致。详见evaluation/software-exploration/ufo-admission-01；不提交/归档。",
+  "meta": {}
+}

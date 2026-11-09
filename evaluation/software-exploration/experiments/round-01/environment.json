@@ -1,0 +1,17 @@
+{
+  "schema_version": "software-exploration-environment/v1",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.14.3",
+  "git_head": "e0adf976af2674ffd09291a758ac24d11907a6b2",
+  "working_tree_changes": [
+    "?? .trellis/tasks/10-27-software-exploration-s2/",
+    "?? evaluation/software-exploration/",
+    "?? schemas/software-exploration-report.schema.json",
+    "?? scripts/prepare_software_exploration_s2.py",
+    "?? tests/unit/test_software_exploration_s2.py"
+  ],
+  "computer_use_bundle": "26.1021.31345",
+  "computer_use_skill_sha256": "8211e4b11a19a0dc4f0ace91096c74c5b36037ca4cb2c8988f0f535bb209e951",
+  "uia_entry": "mcp__node_repl__js + @oai/sky",
+  "pid": 23432
+}

@@ -1,0 +1,49 @@
+{
+  "recorded_at": "2026-10-29T11:35:23.0967486+08:00",
+  "source_head": "e0adf976af2674ffd09291a758ac24d11907a6b2",
+  "worktree_status": [
+    "?? .trellis/tasks/10-27-software-exploration-s2/",
+    "?? evaluation/software-exploration/",
+    "?? schemas/software-exploration-report.schema.json",
+    "?? scripts/capture_software_exploration_report.py",
+    "?? scripts/evaluate_software_exploration_s2.py",
+    "?? scripts/prepare_software_exploration_calibration.py",
+    "?? scripts/prepare_software_exploration_s2.py",
+    "?? tests/unit/test_capture_software_exploration_report.py",
+    "?? tests/unit/test_evaluate_software_exploration_s2.py",
+    "?? tests/unit/test_software_exploration_calibration.py",
+    "?? tests/unit/test_software_exploration_s2.py"
+  ],
+  "os": {
+    "caption": "Microsoft Windows 10 专业版",
+    "version": "10.0.19045",
+    "build": "19045",
+    "architecture": "64 位"
+  },
+  "timezone": "Asia/Shanghai",
+  "native_host_log": "C:/Users/28320/AppData/Local/Codex/Logs/2026/10/29/codex-desktop-046d9556-e263-4364-a759-78b44175116b-48160-t0-i1-025321-0.log",
+  "native_pipe": "\\\\.\\pipe\\codex-computer-use-3a35d687-1317-4c9d-a7f0-e3ef14b1cf25",
+  "sky_package_version": "0.7.13",
+  "sky_package_json_sha256": "c826178bafb09675de42b8d8e9f6d685d4c2e9b7065504e1b0b7edaa06d5f949",
+  "tool_guide_version": "26.1023.50603",
+  "freeze_sha256": "c689bba13f56beaf5f711036a2cee31a059105eeb73a760380692be9dccb7228",
+  "formal_dispatch_method": "桌面协作；中性派发读取原文，fork_turns=none",
+  "isolation_strength": "流程和认知隔离，不是OS级沙箱",
+  "source_packet_attestation_limit": "派发方核验源文件SHA；持久化spawn message字段为加密文本，评估方不能将该字段直接与明文输入逐字节比较，不宣称已独立验证传输明文相等。",
+  "unchanged": [
+    "MiniOrder业务实现",
+    "中文需求",
+    "种子",
+    "正式A/B输入",
+    "正式预算",
+    "评分门槛"
+  ],
+  "not_verified": [
+    "点击几何恢复",
+    "截图路径",
+    "UIA即时回读可靠性",
+    "跨软件泛化"
+  ],
+  "permissions_changed": false,
+  "runtime_installed": false
+}

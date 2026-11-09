@@ -1,0 +1,1877 @@
+{
+  "schema_version": "software-exploration-adjudication/v1",
+  "run_id": "s2-b",
+  "report_lock": {
+    "lock_path": "D:/project/agent/automated-testing/artifacts/software-exploration/s2-completion-01/runs/s2-b/report-lock.json",
+    "lock_file_sha256": "d928ad8e378579f6314dab7eeea04f8a3b04c78f545549b325fbd9e92ffb0a2b",
+    "recorded_lock_sha256": "5e65966830cb4bdd474c87745a33b715a87f7cd5e6fd2e9d82e5c7fa9296946b",
+    "recorded_lock_sha256_verified": false,
+    "verification_scope": "只复算 files 条目的大小和 SHA-256；仓库没有 lock_sha256 的生成算法，未声称复算该声明值。",
+    "valid": true,
+    "files": [
+      {
+        "path": "adapter-events/events-e0d0254abaed4edf8d2e1ede2891099a.jsonl",
+        "expected_size_bytes": 84084,
+        "actual_size_bytes": 84084,
+        "expected_sha256": "b0c0b3e63fcade4943aa238185937967ae7fef663feae6a856226bc55fba595e",
+        "actual_sha256": "b0c0b3e63fcade4943aa238185937967ae7fef663feae6a856226bc55fba595e"
+      },
+      {
+        "path": "adapter-events/session.json",
+        "expected_size_bytes": 554,
+        "actual_size_bytes": 554,
+        "expected_sha256": "a9dc8cd5fa38293b64dfbc6357aa99ee8b536391ed65f5f61f68a945bffa2e0e",
+        "actual_sha256": "a9dc8cd5fa38293b64dfbc6357aa99ee8b536391ed65f5f61f68a945bffa2e0e"
+      },
+      {
+        "path": "capture-manifest.json",
+        "expected_size_bytes": 543,
+        "actual_size_bytes": 543,
+        "expected_sha256": "b7c412255e6c22406d4ce2df1371a0bbcc0db29b2ed866a2aac7f0d4ed3ee4ea",
+        "actual_sha256": "b7c412255e6c22406d4ce2df1371a0bbcc0db29b2ed866a2aac7f0d4ed3ee4ea"
+      },
+      {
+        "path": "config.json",
+        "expected_size_bytes": 483,
+        "actual_size_bytes": 483,
+        "expected_sha256": "f6de5a86efe40ebbb48cc63e4e135abdb109baacfebdd66bb6ec576169167efa",
+        "actual_sha256": "f6de5a86efe40ebbb48cc63e4e135abdb109baacfebdd66bb6ec576169167efa"
+      },
+      {
+        "path": "dispatch-prompt.md",
+        "expected_size_bytes": 4535,
+        "actual_size_bytes": 4535,
+        "expected_sha256": "b7f0e217fed1c3b2a5850d268eadb56f09d9f41a22369607d757e4a1058e2793",
+        "actual_sha256": "b7f0e217fed1c3b2a5850d268eadb56f09d9f41a22369607d757e4a1058e2793"
+      },
+      {
+        "path": "organizer-start.json",
+        "expected_size_bytes": 1552,
+        "actual_size_bytes": 1552,
+        "expected_sha256": "9672e706db60fd3db466fda39a61b1c8eb7bbf8ccbe0df209cb7f559ab4dd446",
+        "actual_sha256": "9672e706db60fd3db466fda39a61b1c8eb7bbf8ccbe0df209cb7f559ab4dd446"
+      },
+      {
+        "path": "raw-report.json",
+        "expected_size_bytes": 34092,
+        "actual_size_bytes": 34092,
+        "expected_sha256": "16d97b6a872d4a2977cf132e535c00bfb9df875ca0ebdaba2094a155c18420c4",
+        "actual_sha256": "16d97b6a872d4a2977cf132e535c00bfb9df875ca0ebdaba2094a155c18420c4"
+      },
+      {
+        "path": "session.jsonl",
+        "expected_size_bytes": 574996,
+        "actual_size_bytes": 574996,
+        "expected_sha256": "03523fdc792f2f752112bc5d9a91cec355c7b4c6104da52a40535926ce21b1b9",
+        "actual_sha256": "03523fdc792f2f752112bc5d9a91cec355c7b4c6104da52a40535926ce21b1b9"
+      }
+    ]
+  },
+  "schema_validation": {
+    "valid": true,
+    "error_count": 0,
+    "categories": {
+      "unexpected_root_property": 0,
+      "confidence_type": 0,
+      "summary_type": 0,
+      "other": 0
+    }
+  },
+  "budget_usage": {
+    "elapsed_minutes": 6,
+    "gui_actions": 3,
+    "same_action_retries": 0,
+    "window_rebinds": 0
+  },
+  "metrics": {
+    "critical_entry_recall": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "ui_requirement_mapping_recall": {
+      "numerator": 30,
+      "denominator": 46,
+      "value": 0.6521739130434783
+    },
+    "mapping_precision": {
+      "numerator": 30,
+      "denominator": 30,
+      "value": 1.0
+    },
+    "reproducible_path_rate": {
+      "numerator": 30,
+      "denominator": 30,
+      "value": 1.0
+    },
+    "unsupported_control_rate": {
+      "numerator": 0,
+      "denominator": 17,
+      "value": 0.0
+    },
+    "exact_status_match_rate": {
+      "numerator": 31,
+      "denominator": 52,
+      "value": 0.5961538461538461
+    },
+    "classification_family_accuracy": {
+      "numerator": 34,
+      "denominator": 52,
+      "value": 0.6538461538461539
+    },
+    "tool_classification_accuracy": {
+      "numerator": null,
+      "denominator": null,
+      "value": null,
+      "status": "INDETERMINATE",
+      "reason": "正式运行未冻结独立的逐次工具调用日志，无法在锁后独立核验 Agent 对每次工具状态的分类。"
+    },
+    "non_mapping_classification_accuracy": {
+      "numerator": 4,
+      "denominator": 22,
+      "value": 0.18181818181818182
+    },
+    "persistent_side_effects": 0,
+    "human_interventions": 0
+  },
+  "thresholds": {
+    "critical_entry_recall": true,
+    "ui_requirement_mapping_recall": false,
+    "mapping_precision": true,
+    "reproducible_path_rate": true,
+    "unsupported_control_rate": true,
+    "persistent_side_effects": true
+  },
+  "all_frozen_thresholds_met": false,
+  "critical_entries": {
+    "新建订单": true,
+    "查询订单": true
+  },
+  "inventory_adjudications": [
+    {
+      "automation_id": "MiniOrderMainWindow",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 3,
+          "index": 0,
+          "name": "MiniOrder 主窗口",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 5,
+          "index": 0,
+          "name": "MiniOrder 主窗口",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 0,
+          "name": "MiniOrder 主窗口",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 0,
+          "name": "MiniOrder 主窗口",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 0,
+          "name": "MiniOrder 主窗口",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 0,
+          "name": "MiniOrder 主窗口",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "MainTabs",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 1,
+          "name": "订单工作区",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 1,
+          "name": "订单工作区",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 1,
+          "name": "订单工作区",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 1,
+          "name": "订单工作区",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 1,
+          "name": "订单工作区",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "CreateOrderTab",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。 相同AutomationId有PaneControl index2和TabItemControl index18；此处采用后者，selected=true。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 18,
+          "name": "新建订单",
+          "value": null,
+          "selected": true,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 18,
+          "name": "新建订单",
+          "value": null,
+          "selected": true,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 18,
+          "name": "新建订单",
+          "value": null,
+          "selected": true,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 18,
+          "name": "新建订单",
+          "value": null,
+          "selected": true,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 18,
+          "name": "新建订单",
+          "value": null,
+          "selected": true,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "QueryOrderTab",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。 index19 selected=false，仅入口发现，未进入。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 19,
+          "name": "查询订单",
+          "value": null,
+          "selected": false,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 19,
+          "name": "查询订单",
+          "value": null,
+          "selected": false,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 19,
+          "name": "查询订单",
+          "value": null,
+          "selected": false,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 19,
+          "name": "查询订单",
+          "value": null,
+          "selected": false,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 19,
+          "name": "查询订单",
+          "value": null,
+          "selected": false,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "CustomerNameLabel",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 4,
+          "name": "客户名称（必填）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 8,
+          "index": 4,
+          "name": "客户名称（必填）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 13,
+          "index": 4,
+          "name": "客户名称（必填）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 18,
+          "index": 4,
+          "name": "客户名称（必填）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 22,
+          "index": 4,
+          "name": "客户名称（必填）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        }
+      ]
+    },
+    {
+      "automation_id": "CustomerNameInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 5,
+          "name": "客户名称",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 5,
+          "name": "客户名称",
+          "value": "S2探索",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 5,
+          "name": "客户名称",
+          "value": "S2探索",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 5,
+          "name": "客户名称",
+          "value": "S2探索",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 5,
+          "name": "客户名称",
+          "value": "S2探索",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "ProductNameLabel",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 6,
+          "name": "商品名称（必填）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 8,
+          "index": 6,
+          "name": "商品名称（必填）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 13,
+          "index": 6,
+          "name": "商品名称（必填）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 18,
+          "index": 6,
+          "name": "商品名称（必填）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 22,
+          "index": 6,
+          "name": "商品名称（必填）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        }
+      ]
+    },
+    {
+      "automation_id": "ProductNameInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 7,
+          "name": "商品名称",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 7,
+          "name": "商品名称",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 7,
+          "name": "商品名称",
+          "value": "探索商品",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 7,
+          "name": "商品名称",
+          "value": "探索商品",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 7,
+          "name": "商品名称",
+          "value": "探索商品",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "QuantityLabel",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 8,
+          "name": "数量（1～999）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 8,
+          "index": 8,
+          "name": "数量（1～999）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 13,
+          "index": 8,
+          "name": "数量（1～999）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 18,
+          "index": 8,
+          "name": "数量（1～999）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 22,
+          "index": 8,
+          "name": "数量（1～999）",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        }
+      ]
+    },
+    {
+      "automation_id": "QuantityInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002",
+        "OBS-005",
+        "OBS-006"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。 原日志为空→i→空，只支持UNRESOLVED，不支持设置成功。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 9,
+          "name": "数量",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 9,
+          "name": "数量",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 9,
+          "name": "数量",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 9,
+          "name": "数量",
+          "value": "i",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 9,
+          "name": "数量",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "UnitPriceInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 11,
+          "name": "单价",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 11,
+          "name": "单价",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 11,
+          "name": "单价",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 11,
+          "name": "单价",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 11,
+          "name": "单价",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "OrderAmountOutput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。 无set_value是适配器动作证据，不能替代IsReadOnly直接回读。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 13,
+          "name": "订单金额",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 13,
+          "name": "订单金额",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 13,
+          "name": "订单金额",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 13,
+          "name": "订单金额",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 13,
+          "name": "订单金额",
+          "value": "",
+          "selected": null,
+          "available_actions": [
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "SaveOrderButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 15,
+          "name": "保存订单",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 15,
+          "name": "保存订单",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 15,
+          "name": "保存订单",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 15,
+          "name": "保存订单",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 15,
+          "name": "保存订单",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "ClearOrderButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 16,
+          "name": "清空",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 16,
+          "name": "清空",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 16,
+          "name": "清空",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 16,
+          "name": "清空",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 16,
+          "name": "清空",
+          "value": null,
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "OrderFormStatus",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 17,
+          "name": "订单录入状态",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 8,
+          "index": 17,
+          "name": "订单录入状态",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 13,
+          "index": 17,
+          "name": "订单录入状态",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 18,
+          "index": 17,
+          "name": "订单录入状态",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 22,
+          "index": 17,
+          "name": "订单录入状态",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        }
+      ]
+    },
+    {
+      "automation_id": "MainStatusStrip",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。",
+      "matched_nodes": [
+        {
+          "adapter_line": 5,
+          "index": 20,
+          "name": "主状态栏",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 8,
+          "index": 20,
+          "name": "主状态栏",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 13,
+          "index": 20,
+          "name": "主状态栏",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 18,
+          "index": 20,
+          "name": "主状态栏",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        },
+        {
+          "adapter_line": 22,
+          "index": 20,
+          "name": "主状态栏",
+          "value": null,
+          "selected": null,
+          "available_actions": []
+        }
+      ]
+    },
+    {
+      "automation_id": "TitleBar",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-002"
+      ],
+      "basis": "AutomationId、control_type和名称/状态有直接原始UIA节点支持。 UIA name实际为空；报告visible_name取自value，标题值有证据，但不是Name属性。",
+      "matched_nodes": [
+        {
+          "adapter_line": 3,
+          "index": 1,
+          "name": "",
+          "value": "MiniOrder - 订单管理",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 5,
+          "index": 22,
+          "name": "",
+          "value": "MiniOrder - 订单管理",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 8,
+          "index": 22,
+          "name": "",
+          "value": "MiniOrder - 订单管理",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 13,
+          "index": 22,
+          "name": "",
+          "value": "MiniOrder - 订单管理",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 18,
+          "index": 22,
+          "name": "",
+          "value": "MiniOrder - 订单管理",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "adapter_line": 22,
+          "index": 22,
+          "name": "",
+          "value": "MiniOrder - 订单管理",
+          "selected": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        }
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "requirement_id": "REQ-001",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-002",
+      "expected_status": "MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": false,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-003",
+      "expected_status": "MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": false,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-004",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    },
+    {
+      "requirement_id": "REQ-005",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-006",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-007",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-008",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-009",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-010",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-011",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-012",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-013",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-014",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-015",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-016",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-017",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-018",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-019",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-020",
+      "expected_status": "MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": false,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-021",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-022",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-023",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-024",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-025",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-026",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-027",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-028",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-029",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-030",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-031",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-032",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-033",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-034",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-035",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-036",
+      "expected_status": "MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-037",
+      "expected_status": "MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-038",
+      "expected_status": "MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-039",
+      "expected_status": "MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-040",
+      "expected_status": "MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-041",
+      "expected_status": "MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-042",
+      "expected_status": "MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-043",
+      "expected_status": "MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-044",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-045",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "INDETERMINATE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    },
+    {
+      "requirement_id": "REQ-046",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-047",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-048",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "INDETERMINATE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-049",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "INDETERMINATE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    },
+    {
+      "requirement_id": "REQ-050",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    },
+    {
+      "requirement_id": "REQ-051",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    },
+    {
+      "requirement_id": "REQ-052",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    }
+  ],
+  "notes": [
+    "映射召回和精确率按冻结协议将有证据的 MAPPED 与 PARTIALLY_MAPPED 都视为正式映射。",
+    "exact_status_match_rate 单独呈现，不用于替换冻结的映射召回率口径。",
+    "映射支持、路径复现和控件存在性均来自 adjudication-decisions.json 的显式锁后裁决，不由字段非空自动推断。",
+    "PARTIALLY_MAPPED 只声称到达安全前缀时可判 REPRODUCIBLE_SAFE_PREFIX；声称保存后状态却没有执行证据时不计入路径复现分子。",
+    "状态分类提供诊断指标；工具分类准确率因缺少独立冻结的逐次工具调用日志而保留为 INDETERMINATE，不计入冻结门槛。"
+  ]
+}

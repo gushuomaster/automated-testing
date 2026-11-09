@@ -1,0 +1,69 @@
+{
+  "schema_version": "ufo-admission-integrity/v1",
+  "checked_at": "2026-10-29T07:11:30.951208+00:00",
+  "source_head": "e0adf976af2674ffd09291a758ac24d11907a6b2",
+  "historical_locks": [
+    {
+      "manifest": "evaluation/software-exploration/solution-comparison-01/evidence-lock.json",
+      "total": 55,
+      "matched": 55,
+      "mismatches": []
+    },
+    {
+      "manifest": "evaluation/software-exploration/experiments/round-02/freeze.json",
+      "total": 35,
+      "matched": 35,
+      "mismatches": []
+    },
+    {
+      "manifest": "evaluation/software-exploration/experiments/round-02/results-lock-revision-01.json",
+      "total": 21,
+      "matched": 21,
+      "mismatches": []
+    }
+  ],
+  "candidate_files": 252,
+  "candidate_modified_existing_files": [
+    "ufo/llm/claude.py"
+  ],
+  "original_ufo_worktree_clean": true,
+  "project_dependency_files": [
+    {
+      "path": "pyproject.toml",
+      "sha256": "d5adb315e4b88bec6d1598778af7c63eff9455029ebe22a0eec4ed76e8da7688",
+      "text_matches_head": true
+    },
+    {
+      "path": "uv.lock",
+      "sha256": "75f11dce3eda0c03c0c9a00d355d9579b460eb05dc376b0387edf569e3b9dda6",
+      "text_matches_head": true
+    }
+  ],
+  "health_seed_unchanged": true,
+  "health_exe_sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+  "utf8_json_check": {
+    "files": 32,
+    "errors": []
+  },
+  "current_git_status": [
+    " M .trellis/spec/backend/index.md",
+    "?? .trellis/spec/backend/ufo-admission-contracts.md",
+    "?? .trellis/tasks/10-27-software-exploration-s2/",
+    "?? .trellis/tasks/10-29-software-exploration-solution-comparison/",
+    "?? .trellis/tasks/10-29-ufo-uia-admission/",
+    "?? evaluation/software-exploration/",
+    "?? schemas/software-exploration-report.schema.json",
+    "?? scripts/capture_software_exploration_report.py",
+    "?? scripts/evaluate_software_exploration_s2.py",
+    "?? scripts/prepare_software_exploration_calibration.py",
+    "?? scripts/prepare_software_exploration_s2.py",
+    "?? scripts/ufo_admission_probe.py",
+    "?? tests/unit/test_capture_software_exploration_report.py",
+    "?? tests/unit/test_evaluate_software_exploration_s2.py",
+    "?? tests/unit/test_software_exploration_calibration.py",
+    "?? tests/unit/test_software_exploration_s2.py",
+    "?? tests/unit/test_ufo_admission_probe.py"
+  ],
+  "formal_comparison_started": false,
+  "independent_review": "evaluation/software-exploration/ufo-admission-01/quality-review.md"
+}

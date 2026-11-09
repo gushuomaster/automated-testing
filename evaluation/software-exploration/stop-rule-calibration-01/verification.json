@@ -1,0 +1,196 @@
+{
+  "recorded_at": "2026-10-29T08:45:09.897235+00:00",
+  "historical_locks": [
+    {
+      "path": "evaluation/software-exploration/ufo-admission-01/evidence-lock.json",
+      "lock_bytes_unchanged": true,
+      "matched": 290,
+      "total": 290,
+      "bad": []
+    },
+    {
+      "path": "evaluation/software-exploration/solution-comparison-01/evidence-lock.json",
+      "lock_bytes_unchanged": true,
+      "matched": 55,
+      "total": 55,
+      "bad": []
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/results-lock-revision-01.json",
+      "lock_bytes_unchanged": true,
+      "matched": 21,
+      "total": 21,
+      "bad": []
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/freeze.json",
+      "lock_bytes_unchanged": true,
+      "matched": 35,
+      "total": 35,
+      "bad": []
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/results-lock.json",
+      "lock_bytes_unchanged": true,
+      "matched": 39,
+      "total": 39,
+      "bad": []
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/freeze.json",
+      "lock_bytes_unchanged": true,
+      "matched": 16,
+      "total": 16,
+      "bad": []
+    }
+  ],
+  "regression_sources": [
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/adjudications/runtime-audit.json",
+      "matches": true
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/run-01/session.jsonl",
+      "matches": true
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/run-01/raw-report.json",
+      "matches": true
+    }
+  ],
+  "encoding_checks": [
+    {
+      "path": "scripts/audit_exploration_stop.py",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": "tests/unit/test_audit_exploration_stop.py",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": "docs/software-exploration/stop-decision-card.md",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": ".trellis/spec/backend/exploration-stop-audit.md",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-calibration-01/index.md",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-calibration-01/report.md",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-calibration-01/validation-plan.md",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-calibration-01/regression-checkpoints.json",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/check.jsonl",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/design.md",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/implement.jsonl",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/implement.md",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/prd.md",
+      "utf8": true,
+      "has_bom": false
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/task.json",
+      "utf8": true,
+      "has_bom": false
+    }
+  ],
+  "checks": [
+    {
+      "command": ".venv/Scripts/python.exe -m pytest -q",
+      "exit_code": 0,
+      "passed": 163
+    },
+    {
+      "command": "python -m pytest tests/unit/test_audit_exploration_stop.py -q",
+      "exit_code": 0,
+      "passed": 47,
+      "scope": "实现方与独立复核方均执行"
+    },
+    {
+      "command": ".venv/Scripts/python.exe -m compileall -q scripts/audit_exploration_stop.py tests/unit/test_audit_exploration_stop.py",
+      "exit_code": 0
+    },
+    {
+      "command": "uv lock --check",
+      "exit_code": 0
+    },
+    {
+      "command": "openspec validate --all --strict --no-interactive",
+      "exit_code": 0,
+      "passed": 3
+    },
+    {
+      "command": "python -m pytest -q",
+      "exit_code": 1,
+      "stage": "首次误用系统Python3.14，9项收集错误；缺少testing_platform/docx；切现有.venv修正，未安装依赖"
+    },
+    {
+      "command": "python scripts/audit_exploration_stop.py --runtime-audit <locked round03 runtime> --checkpoints <new 5 checkpoints> --output <new regression-result>",
+      "exit_code": 1,
+      "meaning": "预期检出2处旧偏离，正常写报告；不是审计输入/执行错误"
+    }
+  ],
+  "no_new_gui_or_formal_experiment": true,
+  "workspace_status": [
+    " M .trellis/spec/backend/index.md",
+    "?? .trellis/spec/backend/exploration-stop-audit.md",
+    "?? .trellis/spec/backend/ufo-admission-contracts.md",
+    "?? .trellis/tasks/10-27-software-exploration-s2/",
+    "?? .trellis/tasks/10-29-software-exploration-s2-round03/",
+    "?? .trellis/tasks/10-29-software-exploration-solution-comparison/",
+    "?? .trellis/tasks/10-29-software-exploration-stop-audit/",
+    "?? .trellis/tasks/10-29-ufo-uia-admission/",
+    "?? docs/software-exploration/",
+    "?? evaluation/software-exploration/",
+    "?? schemas/software-exploration-report.schema.json",
+    "?? scripts/audit_exploration_stop.py",
+    "?? scripts/capture_software_exploration_report.py",
+    "?? scripts/evaluate_software_exploration_s2.py",
+    "?? scripts/prepare_software_exploration_calibration.py",
+    "?? scripts/prepare_software_exploration_s2.py",
+    "?? scripts/ufo_admission_probe.py",
+    "?? tests/unit/test_audit_exploration_stop.py",
+    "?? tests/unit/test_capture_software_exploration_report.py",
+    "?? tests/unit/test_evaluate_software_exploration_s2.py",
+    "?? tests/unit/test_software_exploration_calibration.py",
+    "?? tests/unit/test_software_exploration_s2.py",
+    "?? tests/unit/test_ufo_admission_probe.py"
+  ],
+  "all_integrity_checks_valid": true
+}

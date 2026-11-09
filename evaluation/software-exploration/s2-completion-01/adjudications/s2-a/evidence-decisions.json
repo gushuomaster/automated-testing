@@ -1,0 +1,2486 @@
+{
+  "schema_version": "software-exploration-evidence-decisions/v1",
+  "run_id": "s2-a",
+  "strict_protocol_pass": false,
+  "strict_verdict": "FAIL_COMPLETE_SESSION_BUDGET",
+  "assessment_scope": "锁后原日志/原真值静态裁决；无新GUI操作；独立新副本复验待执行。",
+  "supported_mapping_ids": [
+    "REQ-001",
+    "REQ-002",
+    "REQ-003",
+    "REQ-005",
+    "REQ-006",
+    "REQ-007",
+    "REQ-008",
+    "REQ-009",
+    "REQ-010",
+    "REQ-011",
+    "REQ-012",
+    "REQ-013",
+    "REQ-014",
+    "REQ-015",
+    "REQ-016",
+    "REQ-017",
+    "REQ-018",
+    "REQ-019",
+    "REQ-020",
+    "REQ-021",
+    "REQ-022",
+    "REQ-023",
+    "REQ-024",
+    "REQ-025",
+    "REQ-026",
+    "REQ-027",
+    "REQ-028",
+    "REQ-029",
+    "REQ-030",
+    "REQ-031",
+    "REQ-032",
+    "REQ-033",
+    "REQ-034",
+    "REQ-035",
+    "REQ-036",
+    "REQ-037",
+    "REQ-038",
+    "REQ-039",
+    "REQ-040",
+    "REQ-041",
+    "REQ-042",
+    "REQ-043",
+    "REQ-044",
+    "REQ-046",
+    "REQ-047"
+  ],
+  "unsupported_mapping_ids": [
+    "REQ-045"
+  ],
+  "fully_reproducible_path_ids": [
+    "REQ-001",
+    "REQ-003",
+    "REQ-005",
+    "REQ-006",
+    "REQ-007",
+    "REQ-008",
+    "REQ-009",
+    "REQ-020",
+    "REQ-021",
+    "REQ-022",
+    "REQ-023",
+    "REQ-036",
+    "REQ-040",
+    "REQ-041",
+    "REQ-042",
+    "REQ-043"
+  ],
+  "safe_prefix_path_ids": [
+    "REQ-002",
+    "REQ-010",
+    "REQ-011",
+    "REQ-012",
+    "REQ-013",
+    "REQ-014",
+    "REQ-015",
+    "REQ-016",
+    "REQ-017",
+    "REQ-018",
+    "REQ-019",
+    "REQ-024",
+    "REQ-025",
+    "REQ-026",
+    "REQ-027",
+    "REQ-028",
+    "REQ-029",
+    "REQ-030",
+    "REQ-031",
+    "REQ-032",
+    "REQ-033",
+    "REQ-034",
+    "REQ-035",
+    "REQ-037",
+    "REQ-038",
+    "REQ-039",
+    "REQ-044",
+    "REQ-045",
+    "REQ-046",
+    "REQ-047"
+  ],
+  "non_reproducible_paths": {},
+  "compatibility_warning": "三个路径字段仅为原adjudicate函数兼容的原日志声明路径分组；字段名中的reproducible不代表已独立复现。全部46条正式声明路径仍需独立新副本GUI复验，正式路径复现率暂为PENDING。full仅指报告限定路线完整，非完整业务需求。",
+  "inventory": [
+    {
+      "automation_id": "MiniOrderMainWindow",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "MiniOrder 主窗口",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 0,
+          "name": "MiniOrder 主窗口",
+          "control_type": "WindowControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "MainTabs",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "订单工作区",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 1,
+          "name": "订单工作区",
+          "control_type": "TabControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "CreateOrderTab",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-006"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "新建订单",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 18,
+          "name": "新建订单",
+          "control_type": "TabItemControl",
+          "value": null,
+          "selected": true,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        },
+        {
+          "evidence_id": "OBS-006",
+          "node_index": 42,
+          "name": "新建订单",
+          "control_type": "TabItemControl",
+          "value": null,
+          "selected": false,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "QueryOrderTab",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-006"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "查询订单",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 19,
+          "name": "查询订单",
+          "control_type": "TabItemControl",
+          "value": null,
+          "selected": false,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        },
+        {
+          "evidence_id": "OBS-006",
+          "node_index": 43,
+          "name": "查询订单",
+          "control_type": "TabItemControl",
+          "value": null,
+          "selected": true,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "select"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "CustomerNameInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-003",
+        "OBS-005"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "客户名称",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 5,
+          "name": "客户名称",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-003",
+          "node_index": 5,
+          "name": "客户名称",
+          "control_type": "EditControl",
+          "value": "S2探索客户",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-005",
+          "node_index": 5,
+          "name": "客户名称",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "ProductNameInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-004",
+        "OBS-005"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "商品名称",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 7,
+          "name": "商品名称",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-004",
+          "node_index": 7,
+          "name": "商品名称",
+          "control_type": "EditControl",
+          "value": "S2探索商品",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-005",
+          "node_index": 7,
+          "name": "商品名称",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "QuantityInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-001",
+        "OBS-005"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "数量",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 9,
+          "name": "数量",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-001",
+          "node_index": 9,
+          "name": "数量",
+          "control_type": "EditControl",
+          "value": "2",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-005",
+          "node_index": 9,
+          "name": "数量",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "UnitPriceInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-002",
+        "OBS-005"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "单价",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 11,
+          "name": "单价",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-002",
+          "node_index": 11,
+          "name": "单价",
+          "control_type": "EditControl",
+          "value": "12.50",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-005",
+          "node_index": 11,
+          "name": "单价",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "OrderAmountOutput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-002",
+        "OBS-005"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "订单金额",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 13,
+          "name": "订单金额",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "evidence_id": "OBS-002",
+          "node_index": 13,
+          "name": "订单金额",
+          "control_type": "EditControl",
+          "value": "25.00",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "evidence_id": "OBS-005",
+          "node_index": 13,
+          "name": "订单金额",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "SaveOrderButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-004"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "保存订单",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 15,
+          "name": "保存订单",
+          "control_type": "ButtonControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "evidence_id": "OBS-004",
+          "node_index": 15,
+          "name": "保存订单",
+          "control_type": "ButtonControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "ClearOrderButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-005"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "清空",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 16,
+          "name": "清空",
+          "control_type": "ButtonControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "evidence_id": "OBS-005",
+          "node_index": 16,
+          "name": "清空",
+          "control_type": "ButtonControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "OrderFormStatus",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-005"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "订单录入状态",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-000",
+          "node_index": 17,
+          "name": "订单录入状态",
+          "control_type": "TextControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": []
+        },
+        {
+          "evidence_id": "OBS-005",
+          "node_index": 17,
+          "name": "OrderFormStatus",
+          "control_type": "TextControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": []
+        }
+      ]
+    },
+    {
+      "automation_id": "QueryKeywordInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-010",
+        "OBS-012",
+        "OBS-014"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "查询关键字",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-006",
+          "node_index": 5,
+          "name": "查询关键字",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-010",
+          "node_index": 5,
+          "name": "查询关键字",
+          "control_type": "EditControl",
+          "value": "海风",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-012",
+          "node_index": 5,
+          "name": "查询关键字",
+          "control_type": "EditControl",
+          "value": "S2探索检索词",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        },
+        {
+          "evidence_id": "OBS-014",
+          "node_index": 5,
+          "name": "查询关键字",
+          "control_type": "EditControl",
+          "value": "",
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "set_value"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "StatusFilter",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-007",
+        "OBS-008",
+        "OBS-009",
+        "OBS-014"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "订单状态筛选",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-006",
+          "node_index": 7,
+          "name": "订单状态筛选",
+          "control_type": "ComboBoxControl",
+          "value": "全部",
+          "selected": null,
+          "expanded_state": 0,
+          "available_actions": [
+            "focus",
+            "invoke",
+            "set_value",
+            "expand",
+            "collapse"
+          ]
+        },
+        {
+          "evidence_id": "OBS-007",
+          "node_index": 7,
+          "name": "订单状态筛选",
+          "control_type": "ComboBoxControl",
+          "value": "全部",
+          "selected": null,
+          "expanded_state": 1,
+          "available_actions": [
+            "focus",
+            "invoke",
+            "set_value",
+            "expand",
+            "collapse"
+          ]
+        },
+        {
+          "evidence_id": "OBS-008",
+          "node_index": 7,
+          "name": "订单状态筛选",
+          "control_type": "ComboBoxControl",
+          "value": "新建",
+          "selected": null,
+          "expanded_state": 1,
+          "available_actions": [
+            "focus",
+            "invoke",
+            "set_value",
+            "expand",
+            "collapse"
+          ]
+        },
+        {
+          "evidence_id": "OBS-009",
+          "node_index": 7,
+          "name": "订单状态筛选",
+          "control_type": "ComboBoxControl",
+          "value": "新建",
+          "selected": null,
+          "expanded_state": 0,
+          "available_actions": [
+            "focus",
+            "invoke",
+            "set_value",
+            "expand",
+            "collapse"
+          ]
+        },
+        {
+          "evidence_id": "OBS-014",
+          "node_index": 7,
+          "name": "订单状态筛选",
+          "control_type": "ComboBoxControl",
+          "value": "全部",
+          "selected": null,
+          "expanded_state": 0,
+          "available_actions": [
+            "focus",
+            "invoke",
+            "set_value",
+            "expand",
+            "collapse"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-007",
+        "OBS-008"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "全部",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-007",
+          "node_index": 9,
+          "name": "全部",
+          "control_type": "ListItemControl",
+          "value": null,
+          "selected": true,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke",
+            "select"
+          ]
+        },
+        {
+          "evidence_id": "OBS-008",
+          "node_index": 9,
+          "name": "全部",
+          "control_type": "ListItemControl",
+          "value": null,
+          "selected": false,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke",
+            "select"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-007",
+        "OBS-008"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "新建",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-007",
+          "node_index": 10,
+          "name": "新建",
+          "control_type": "ListItemControl",
+          "value": null,
+          "selected": false,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke",
+            "select"
+          ]
+        },
+        {
+          "evidence_id": "OBS-008",
+          "node_index": 10,
+          "name": "新建",
+          "control_type": "ListItemControl",
+          "value": null,
+          "selected": true,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke",
+            "select"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "QueryOrdersButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-011",
+        "OBS-013"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "查询",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-006",
+          "node_index": 11,
+          "name": "查询",
+          "control_type": "ButtonControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "evidence_id": "OBS-011",
+          "node_index": 11,
+          "name": "查询",
+          "control_type": "ButtonControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "evidence_id": "OBS-013",
+          "node_index": 11,
+          "name": "查询",
+          "control_type": "ButtonControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "ClearFiltersButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-014"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "清除筛选",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-006",
+          "node_index": 12,
+          "name": "清除筛选",
+          "control_type": "ButtonControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        },
+        {
+          "evidence_id": "OBS-014",
+          "node_index": 12,
+          "name": "清除筛选",
+          "control_type": "ButtonControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus",
+            "invoke"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "QueryResultCount",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-011",
+        "OBS-013",
+        "OBS-014"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "找到 2 条订单",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-006",
+          "node_index": 13,
+          "name": "找到 2 条订单",
+          "control_type": "TextControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": []
+        },
+        {
+          "evidence_id": "OBS-011",
+          "node_index": 13,
+          "name": "找到 1 条订单",
+          "control_type": "TextControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": []
+        },
+        {
+          "evidence_id": "OBS-013",
+          "node_index": 13,
+          "name": "找到 0 条订单",
+          "control_type": "TextControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": []
+        },
+        {
+          "evidence_id": "OBS-014",
+          "node_index": 13,
+          "name": "找到 2 条订单",
+          "control_type": "TextControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": []
+        }
+      ]
+    },
+    {
+      "automation_id": "OrderResultsGrid",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-011",
+        "OBS-014"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "订单查询结果",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-006",
+          "node_index": 14,
+          "name": "订单查询结果",
+          "control_type": "DataGridControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "evidence_id": "OBS-011",
+          "node_index": 14,
+          "name": "订单查询结果",
+          "control_type": "DataGridControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus"
+          ]
+        },
+        {
+          "evidence_id": "OBS-014",
+          "node_index": 14,
+          "name": "订单查询结果",
+          "control_type": "DataGridControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": [
+            "focus"
+          ]
+        }
+      ]
+    },
+    {
+      "automation_id": "",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-014"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "行 0",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-006",
+          "node_index": 24,
+          "name": "行 0",
+          "control_type": "CustomControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": []
+        },
+        {
+          "evidence_id": "OBS-014",
+          "node_index": 24,
+          "name": "行 0",
+          "control_type": "CustomControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": []
+        }
+      ]
+    },
+    {
+      "automation_id": "",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-014"
+      ],
+      "basis": "与真实快照按AutomationId、ControlType及匿名节点名称交叉定位；状态值、选项选择、计数/行内容与原日志一致。仅控件存在和报告限定状态获支持，不推导业务规则。",
+      "visible_name": "行 1",
+      "node_matches": [
+        {
+          "evidence_id": "OBS-006",
+          "node_index": 33,
+          "name": "行 1",
+          "control_type": "CustomControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": []
+        },
+        {
+          "evidence_id": "OBS-014",
+          "node_index": 33,
+          "name": "行 1",
+          "control_type": "CustomControl",
+          "value": null,
+          "selected": null,
+          "expanded_state": null,
+          "available_actions": []
+        }
+      ]
+    }
+  ],
+  "mapping_decisions": [
+    {
+      "requirement_id": "REQ-001",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000"
+      ],
+      "basis": "OBS-000 的 MiniOrderMainWindow 为可见 WindowControl，标题栏值为 MiniOrder - 订单管理；支持桌面窗口定位。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-002",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-001",
+        "OBS-002",
+        "OBS-003",
+        "OBS-004"
+      ],
+      "basis": "OBS-000～004 具有新建页、四字段具体回读及金额25.00；仅支持报告声明的保存前路线。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-003",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-011",
+        "OBS-013"
+      ],
+      "basis": "OBS-006 页签 selected=true，OBS-011/013 的1条/0条结果确实到达。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-004",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "truth_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "verdict": "CORRECT_NON_UI",
+      "evidence_ids": [],
+      "basis": "原真值为非UI需求范围；报告未声称界面可证明需求文档范围，分类正确。",
+      "path_static_classification": "NO_DECLARED_ROUTE",
+      "independent_gui_replay": "NOT_APPLICABLE"
+    },
+    {
+      "requirement_id": "REQ-005",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-003"
+      ],
+      "basis": "OBS-000 CustomerNameInput 可见且可 set_value；OBS-003 value=S2探索客户。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-006",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-004"
+      ],
+      "basis": "OBS-000 ProductNameInput 可见且可 set_value；OBS-004 value=S2探索商品。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-007",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-001"
+      ],
+      "basis": "OBS-001 QuantityInput.value=2。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-008",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-002"
+      ],
+      "basis": "OBS-002 UnitPriceInput.value=12.50。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-009",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-002"
+      ],
+      "basis": "OBS-002 OrderAmountOutput.value=25.00。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-010",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-003"
+      ],
+      "basis": "OBS-000 客户名称（必填）标签与输入框存在，OBS-003普通值回读；未宣称保存拒绝规则已到达。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-011",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-003"
+      ],
+      "basis": "OBS-003 普通客户值真实回读；仅字段/普通输入安全前缀，不支持长度边界能力。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-012",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-004"
+      ],
+      "basis": "OBS-000 商品名称（必填）标签与输入框存在，OBS-004普通值回读；未宣称校验已执行。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-013",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-004"
+      ],
+      "basis": "OBS-004 普通商品值真实回读；仅长度规则关联字段前缀。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-014",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-001"
+      ],
+      "basis": "OBS-000 数量及保存按钮可见，OBS-001普通输入；没有空数量保存状态，报告边界正确。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-015",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ],
+      "basis": "OBS-001整数2回读支持对应字段路线，不证明拒绝非整数。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-016",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-001"
+      ],
+      "basis": "OBS-000 数量（1～999）标签及OBS-001值2支持范围提示/字段前缀，不证明边界校验。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-017",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-002"
+      ],
+      "basis": "OBS-000 单价和保存入口，OBS-002普通值回读；没有必填拒绝证据，报告只声称前缀。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-018",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "OBS-002 十进制12.50和输出25.00真实，不支持超两位小数拒绝，报告已限定。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-019",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "OBS-002普通值可回读，报告未声称范围约束经过验证。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-020",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-002"
+      ],
+      "basis": "OBS-000/002 OrderAmountOutput ValuePattern available，available_actions仅focus而无set_value；支持报告限定的公开只读操作形态，不等于实际写入攻击测试。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-021",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-005"
+      ],
+      "basis": "OBS-000及005四个可编辑字段都为空字符串；支持初始与清空状态。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-022",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-005"
+      ],
+      "basis": "OBS-000及005金额为空字符串。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-023",
+      "reported_status": "MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-002"
+      ],
+      "basis": "OBS-001数量2后金额为空；OBS-002单价12.50后金额25.00支持本实例更新及两位小数；MAPPED较真值PARTIALLY_MAPPED更强，但报告未声明实时性能已验证，正式映射仍获支持。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-024",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-001",
+        "OBS-005"
+      ],
+      "basis": "OBS-000/001/005缺失操作数的金额为空，报告只声明缺失分支安全状态，不扩展到所有非法格式。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-025",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-004"
+      ],
+      "basis": "OBS-000/004四字段及保存入口真实，只到invoke之前。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-026",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000"
+      ],
+      "basis": "OBS-000保存按钮可见可用，报告明确不执行无效保存，仅安全前缀。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-027",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-005"
+      ],
+      "basis": "OBS-000/005 OrderFormStatus及保存入口/字段真实；报告明确无错误状态，未把状态控件猜作确定的错误承载形式。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-028",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-002",
+        "OBS-003",
+        "OBS-004",
+        "OBS-005"
+      ],
+      "basis": "OBS-001～005输入字段焦点和保存入口真实；仅定位可读焦点属性，非无效字段焦点行为证明。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-029",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-004"
+      ],
+      "basis": "OBS-004完整普通表单和保存按钮真实；没有订单新增数量证据，报告仅保存前缀。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-030",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000"
+      ],
+      "basis": "OBS-000保存按钮与OrderFormStatus TextControl真实；没有成功消息，报告明确不指定必然承载位置。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-031",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-000",
+        "OBS-006"
+      ],
+      "basis": "OBS-000保存入口及OBS-006既有编号列真实；不证明生成或唯一性，支持限定前缀/显示位置。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-032",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006"
+      ],
+      "basis": "OBS-006两编号MO-20260115-0002/0001真实；仅既有格式实例，不是新生成路径。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-033",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006"
+      ],
+      "basis": "OBS-006编号日期20260115及可见创建日期2026-01-15真实；没有保存当天本地日期比较。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-034",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006"
+      ],
+      "basis": "OBS-006既有0001/09:30及0002/10:15真实；不证明生成顺序或起始值。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-035",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006"
+      ],
+      "basis": "OBS-006既有行状态均新建；没有新保存订单的转换，报告只定位状态显示。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-036",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-014"
+      ],
+      "basis": "OBS-006及014存在2条既有订单及八字段值，支持可见列表。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-037",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-010",
+        "OBS-011"
+      ],
+      "basis": "OBS-010海风回读；OBS-011结果只余海风科技；支持客户名称包含查询前缀，未覆盖编号/商品/大小写。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-038",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-007",
+        "OBS-008",
+        "OBS-009",
+        "OBS-011"
+      ],
+      "basis": "OBS-007展开，008值新建和选项selected，009收起，011结果状态新建；全为新建无法区分精确筛选效果，报告已限定。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-039",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-008",
+        "OBS-010",
+        "OBS-011"
+      ],
+      "basis": "OBS-008/010两个条件回读，011只余海风科技新建；支持组合路径，不证明状态条件独立效力。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-040",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-013",
+        "OBS-014"
+      ],
+      "basis": "OBS-013零行后014关键字空/全部/2行16格恢复，支持本轮初始列表恢复。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-041",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-012",
+        "OBS-013"
+      ],
+      "basis": "OBS-013仅表头，无数据行和DataItemControl。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-042",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-013"
+      ],
+      "basis": "OBS-013 QueryResultCount.name=找到 0 条订单。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-043",
+      "reported_status": "MAPPED",
+      "truth_status": "MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-011",
+        "OBS-014"
+      ],
+      "basis": "OBS-006/011/014八列表头与真实DataItem值齐全。",
+      "path_static_classification": "LOG_SUPPORTED_FULL_DECLARED_ROUTE",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-044",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-004",
+        "OBS-006",
+        "OBS-011",
+        "OBS-014"
+      ],
+      "basis": "OBS-004输入端、006/011/014既有显示端真实；仅两端定位，没有同订单保存前后比较，报告未越界。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-045",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "verdict": "UNSUPPORTED",
+      "evidence_ids": [
+        "OBS-000"
+      ],
+      "basis": "原真值scored_as_ui_related=false、expected_status=NOT_UI_OBSERVABLE；保存按钮存在不能把指定数据目录持久化改为正式UI映射，故不支持此正式映射。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-046",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006"
+      ],
+      "basis": "OBS-006本次启动既有列表真实；报告明确未重启，只支持查询端安全前缀。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-047",
+      "reported_status": "PARTIALLY_MAPPED",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-006",
+        "OBS-014"
+      ],
+      "basis": "OBS-006/014本次运行八字段真实；报告明确无重启前后证据，只支持显示端前缀。",
+      "path_static_classification": "LOG_SUPPORTED_SAFE_PREFIX_ONLY",
+      "independent_gui_replay": "PENDING"
+    },
+    {
+      "requirement_id": "REQ-048",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "truth_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "verdict": "MISCLASSIFIED_UI_OMISSION",
+      "evidence_ids": [],
+      "basis": "原真值scored_as_ui_related=true、expected_status=PARTIALLY_MAPPED；报告NOT_UI_OBSERVABLE且无入口/路径/证据，漏掉应计的查询端安全前缀。不得因目录设置禁止而改真值为非UI。",
+      "path_static_classification": "NO_DECLARED_ROUTE",
+      "independent_gui_replay": "NOT_APPLICABLE"
+    },
+    {
+      "requirement_id": "REQ-049",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "truth_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "verdict": "CORRECT_NON_UI",
+      "evidence_ids": [],
+      "basis": "原真值非UI；成功操作不能证明无网络依赖，分类正确。",
+      "path_static_classification": "NO_DECLARED_ROUTE",
+      "independent_gui_replay": "NOT_APPLICABLE"
+    },
+    {
+      "requirement_id": "REQ-050",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "truth_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "verdict": "CORRECT_NON_UI",
+      "evidence_ids": [],
+      "basis": "原真值非UI；UIA无法证明无设备依赖，分类正确。",
+      "path_static_classification": "NO_DECLARED_ROUTE",
+      "independent_gui_replay": "NOT_APPLICABLE"
+    },
+    {
+      "requirement_id": "REQ-051",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "truth_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "verdict": "CORRECT_NON_UI",
+      "evidence_ids": [],
+      "basis": "原真值非UI；未观察配置或服务器依赖，分类正确。",
+      "path_static_classification": "NO_DECLARED_ROUTE",
+      "independent_gui_replay": "NOT_APPLICABLE"
+    },
+    {
+      "requirement_id": "REQ-052",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "truth_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "verdict": "CORRECT_NON_UI",
+      "evidence_ids": [],
+      "basis": "原真值非UI；已启动界面不能证明启动权限要求，分类正确。",
+      "path_static_classification": "NO_DECLARED_ROUTE",
+      "independent_gui_replay": "NOT_APPLICABLE"
+    }
+  ],
+  "lock_verification": {
+    "valid": true,
+    "files": [
+      {
+        "path": "adapter-events/events-15c7243a572e4fdb8592f4aa93d5f797.jsonl",
+        "size_valid": true,
+        "sha256_valid": true
+      },
+      {
+        "path": "adapter-events/session.json",
+        "size_valid": true,
+        "sha256_valid": true
+      },
+      {
+        "path": "capture-manifest.json",
+        "size_valid": true,
+        "sha256_valid": true
+      },
+      {
+        "path": "config.json",
+        "size_valid": true,
+        "sha256_valid": true
+      },
+      {
+        "path": "dispatch-prompt.md",
+        "size_valid": true,
+        "sha256_valid": true
+      },
+      {
+        "path": "organizer-start.json",
+        "size_valid": true,
+        "sha256_valid": true
+      },
+      {
+        "path": "raw-report.json",
+        "size_valid": true,
+        "sha256_valid": true
+      },
+      {
+        "path": "session.jsonl",
+        "size_valid": true,
+        "sha256_valid": true
+      }
+    ],
+    "recorded_lock_sha256_verified": true,
+    "canonical_lock_sha256": "dacdb97013553a9b26c448d84f85c52c6e4f69224a5ee0dbba0f14f0a5e8ee0f",
+    "raw_report_exact_task_complete_utf8": true,
+    "source_capture_hash_valid": true
+  },
+  "material_verification": [
+    {
+      "path": "D:/project/agent/automated-testing/evaluation/software-exploration/s2-completion-01/inputs/s2-a-verified-requirements.json",
+      "expected_sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497",
+      "actual_sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497"
+    },
+    {
+      "path": "D:/project/agent/automated-testing/evaluation/software-exploration/s2-completion-01/inputs/report.schema.json",
+      "expected_sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72",
+      "actual_sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72"
+    },
+    {
+      "path": "D:/project/agent/automated-testing/evaluation/software-exploration/s2-completion-01/protocol.md",
+      "expected_sha256": "2099bf2a6fdde1954d2f1290608aa9bae523eb70bb09b0f382632425708a803b",
+      "actual_sha256": "2099bf2a6fdde1954d2f1290608aa9bae523eb70bb09b0f382632425708a803b"
+    },
+    {
+      "path": "D:/project/agent/automated-testing/evaluation/software-exploration/s2-completion-01/tool-guide.md",
+      "expected_sha256": "de75b1b4751dcaa03a910872fe81d686a1a0f0181ee843660ae8cc165875fd5e",
+      "actual_sha256": "de75b1b4751dcaa03a910872fe81d686a1a0f0181ee843660ae8cc165875fd5e"
+    }
+  ],
+  "budget_audit": {
+    "task_started_line": 2,
+    "task_complete_line": 175,
+    "start_utc": "2026-10-30T01:50:41.474Z",
+    "finish_utc": "2026-10-30T02:06:39.062Z",
+    "elapsed_seconds": 957.588,
+    "limit_seconds": 900,
+    "overrun_seconds": 57.587999999999965,
+    "hard_input_deadline_utc": "2026-10-30T02:05:28.232197+00:00",
+    "gui_native_inputs": 14,
+    "failed_native_inputs": 0,
+    "rejected_requests": 0,
+    "passive_observations": 1,
+    "semantic_acknowledgements": 14,
+    "same_failed_action_retries": 0,
+    "window_rebinds": 0,
+    "all_gui_inputs_and_returns_before_deadline": true,
+    "report_self_elapsed_minutes": 6.0,
+    "actual_elapsed_minutes": 15.9598,
+    "self_report_understatement_seconds": 597.588,
+    "deadline_to_finish_overrun_seconds": 70.829803
+  },
+  "session_audit": {
+    "session_lines_read": 175,
+    "adapter_event_lines_read": 73,
+    "tool_calls": [
+      {
+        "line": 14,
+        "utc": "2026-10-30T01:51:00.660Z",
+        "name": "exec",
+        "input": "const r = await tools.exec_command({cmd:\"python -c \\\"from pathlib import Path; import hashlib; p=Path('D:/project/agent/automated-testing/artifacts/software-exploration/s2-completion-01/runs/s2-a/dispatch-prompt.md'); b=p.read_bytes(); print('SHA-256:',hashlib.sha256(b).hexdigest()); print(b.decode('utf-8'))\\\"\",\"workdir\":\"D:/project/agent/automated-testing\",\"max_output_tokens\":20000}); text(r);\n"
+      },
+      {
+        "line": 21,
+        "utc": "2026-10-30T01:51:09.689Z",
+        "name": "exec",
+        "input": "text(await tools.exec_command({cmd:\"$OutputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false); python -X utf8 -c \\\"from pathlib import Path; import hashlib; p=Path('D:/project/agent/automated-testing/artifacts/software-exploration/s2-completion-01/runs/s2-a/dispatch-prompt.md'); b=p.read_bytes(); print('SHA-256:',hashlib.sha256(b).hexdigest()); print(b.decode('utf-8'))\\\"\",\"workdir\":\"D:/project/agent/automated-testing\",\"max_output_tokens\":20000}));\n"
+      },
+      {
+        "line": 26,
+        "utc": "2026-10-30T01:51:15.734Z",
+        "name": "exec",
+        "input": "text(await tools.exec_command({cmd:\"$OutputEncoding = [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false); python -X utf8 -c \\\"from pathlib import Path; import hashlib; ps=['D:/project/agent/automated-testing/evaluation/software-exploration/s2-completion-01/inputs/s2-a-verified-requirements.json','D:/project/agent/automated-testing/evaluation/software-exploration/s2-completion-01/inputs/report.schema.json','D:/project/agent/automated-testing/evaluation/software-exploration/s2-completion-01/protocol.md','D:/project/agent/automated-testing/evaluation/software-exploration/s2-completion-01/tool-guide.md']; [(print('FILE:',p),print('SHA-256:',hashlib.sha256(b).hexdigest()),print(b.decode('utf-8'))) for p in ps for b in [Path(p).read_bytes()]]\\\"\",\"workdir\":\"D:/project/agent/automated-testing\",\"max_output_tokens\":30000}));\n"
+      },
+      {
+        "line": 33,
+        "utc": "2026-10-30T01:51:28.320Z",
+        "name": "exec",
+        "input": "text(await tools.exec_command({cmd:\"$OutputEncoding=[Console]::OutputEncoding=[Text.UTF8Encoding]::new($false); & 'D:/project/agent/automated-testing/artifacts/software-exploration/s2-completion-01/runtime/Scripts/python.exe' -X utf8 'D:/project/agent/automated-testing/scripts/s2_windows_mcp.py' --config 'D:/project/agent/automated-testing/artifacts/software-exploration/s2-completion-01/runs/s2-a/config.json'\",\"workdir\":\"D:/project/agent/automated-testing\",\"tty\":true,\"max_output_tokens\":5000}));\n"
+      },
+      {
+        "line": 37,
+        "utc": "2026-10-30T01:51:59.535Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"observe\\\"}\\n\",\"max_output_tokens\":20000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 43,
+        "utc": "2026-10-30T01:52:06.848Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"ffac0f3441b247a59ab35a7bcbec1cc6\\\",\\\"index\\\":9,\\\"action\\\":\\\"set_value\\\",\\\"value\\\":\\\"2\\\"}\\n\",\"max_output_tokens\":15000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 47,
+        "utc": "2026-10-30T01:52:18.033Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照04343404中QuantityInput.value为2且focused=true，确认数量瞬时录入为2；订单金额仍为空且单价为空，不据此判断业务规则。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 51,
+        "utc": "2026-10-30T01:52:25.770Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"04343404fc8d4de5a943f6006c1c1a4b\\\",\\\"index\\\":11,\\\"action\\\":\\\"set_value\\\",\\\"value\\\":\\\"12.50\\\"}\\n\",\"max_output_tokens\":15000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 55,
+        "utc": "2026-10-30T01:52:33.856Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照0b61e47a中UnitPriceInput.value=12.50，QuantityInput.value=2，OrderAmountOutput.value=25.00，确认单价录入和金额可见更新。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 61,
+        "utc": "2026-10-30T01:52:41.287Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"0b61e47a7a0a4e148ae359bc4cd39d34\\\",\\\"index\\\":5,\\\"action\\\":\\\"set_value\\\",\\\"value\\\":\\\"S2探索客户\\\"}\\n\",\"max_output_tokens\":12000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 65,
+        "utc": "2026-10-30T01:53:00.837Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照f1798e68的CustomerNameInput.value为S2探索客户，focused=true，确认瞬时客户名称录入。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 69,
+        "utc": "2026-10-30T01:53:08.521Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"f1798e68743b4952a36d79aa55670973\\\",\\\"index\\\":7,\\\"action\\\":\\\"set_value\\\",\\\"value\\\":\\\"S2探索商品\\\"}\\n\",\"max_output_tokens\":12000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 73,
+        "utc": "2026-10-30T01:53:15.355Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照9c6c85d6的ProductNameInput.value为S2探索商品且focused=true；客户、数量2、单价12.50及金额25.00均仍可回读，确认商品录入。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 77,
+        "utc": "2026-10-30T01:53:22.636Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"9c6c85d604594cb9820e8813a00de2d6\\\",\\\"index\\\":16,\\\"action\\\":\\\"invoke\\\"}\\n\",\"max_output_tokens\":12000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 81,
+        "utc": "2026-10-30T01:53:29.652Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照7f60d072中客户、商品、数量、单价、订单金额的value均为空字符串，客户框focused=true，确认清空使瞬时表单恢复为空。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 85,
+        "utc": "2026-10-30T01:53:35.433Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"7f60d0723fb9476a928c6403e1670044\\\",\\\"index\\\":19,\\\"action\\\":\\\"select\\\"}\\n\",\"max_output_tokens\":22000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 89,
+        "utc": "2026-10-30T01:53:44.553Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照5687d1a2中QueryOrderTab的TabItem selected=true，新建selected=false；查询关键字、订单状态筛选、查询及清除筛选按钮和含两行八列的OrderResultsGrid出现，确认查询页面已到达。\\\"}\\n\",\"max_output_tokens\":1500,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 95,
+        "utc": "2026-10-30T01:54:02.722Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"5687d1a2af554ad5895392373eb03c9f\\\",\\\"index\\\":7,\\\"action\\\":\\\"expand\\\"}\\n\",\"max_output_tokens\":22000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 99,
+        "utc": "2026-10-30T01:54:10.788Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照2b83f4a5中StatusFilter.expanded_state=1，新增可见ListControl及全部(selected=true)、新建(selected=false)两选项，确认组合框已展开。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 103,
+        "utc": "2026-10-30T01:54:20.953Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"2b83f4a5dcb341048b463773e5c6c7c1\\\",\\\"index\\\":10,\\\"action\\\":\\\"select\\\"}\\n\",\"max_output_tokens\":22000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 107,
+        "utc": "2026-10-30T01:54:30.970Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照e79adfd8中StatusFilter.value=新建，ListItem新建selected=true、全部selected=false，确认选中状态条件；尚未声称查询结果更新。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 113,
+        "utc": "2026-10-30T01:54:40.201Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"e79adfd846c949d68002be177cf3bbdc\\\",\\\"index\\\":7,\\\"action\\\":\\\"collapse\\\"}\\n\",\"max_output_tokens\":22000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 117,
+        "utc": "2026-10-30T01:55:02.902Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照6a89a658中StatusFilter.expanded_state=0且value仍为新建，展开ListControl及选项节点已不在树中，确认已收起并保留状态条件。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 123,
+        "utc": "2026-10-30T01:55:12.056Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"6a89a6587cc74b3a886f37f14c299959\\\",\\\"index\\\":5,\\\"action\\\":\\\"set_value\\\",\\\"value\\\":\\\"海风\\\"}\\n\",\"max_output_tokens\":22000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 127,
+        "utc": "2026-10-30T01:55:24.841Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照ceae41c3中QueryKeywordInput.value=海风且focused=true，StatusFilter.value仍为新建，确认两个筛选条件已同时置入；结果仍为原两行，未声称已执行查询。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 131,
+        "utc": "2026-10-30T01:55:35.985Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"ceae41c334e34b569260551329ec9f19\\\",\\\"index\\\":11,\\\"action\\\":\\\"invoke\\\"}\\n\",\"max_output_tokens\":18000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 137,
+        "utc": "2026-10-30T01:56:08.255Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照c9a25b83的QueryResultCount为找到1条订单，Grid仅行0海风科技/显示器支架/MO-20260115-0002/新建，关键字仍海风且状态仍新建，确认查询后可见列表已缩为该一行。\\\"}\\n\",\"max_output_tokens\":1500,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 143,
+        "utc": "2026-10-30T01:56:25.185Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"c9a25b83ab8a4813aa316c224ab79e04\\\",\\\"index\\\":5,\\\"action\\\":\\\"set_value\\\",\\\"value\\\":\\\"S2探索检索词\\\"}\\n\",\"max_output_tokens\":18000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 147,
+        "utc": "2026-10-30T01:56:38.394Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照35498fcb中QueryKeywordInput.value为S2探索检索词且focused=true，确认已替换瞬时关键字；结果仍显示先前一行，不据此确认查询行为。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 151,
+        "utc": "2026-10-30T01:57:01.911Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"35498fcb1e584256b391d70573895e78\\\",\\\"index\\\":11,\\\"action\\\":\\\"invoke\\\"}\\n\",\"max_output_tokens\":15000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 155,
+        "utc": "2026-10-30T01:57:14.542Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照24d61ead中QueryResultCount.name为找到 0 条订单，OrderResultsGrid只含首行和八个表头，无行0或DataItemControl，确认已到达空结果可见状态。\\\"}\\n\",\"max_output_tokens\":1000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 159,
+        "utc": "2026-10-30T01:57:25.564Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"act\\\",\\\"token\\\":\\\"24d61eadf54842f7a5743a4ed45332a9\\\",\\\"index\\\":12,\\\"action\\\":\\\"invoke\\\"}\\n\",\"max_output_tokens\":22000,\"yield_time_ms\":1000}));\n"
+      },
+      {
+        "line": 163,
+        "utc": "2026-10-30T01:57:37.911Z",
+        "name": "exec",
+        "input": "text(await tools.write_stdin({session_id:46093,chars:\"{\\\"op\\\":\\\"ack\\\",\\\"outcome\\\":\\\"CONFIRMED\\\",\\\"reason\\\":\\\"新快照3b8d0216中QueryKeywordInput.value为空，StatusFilter.value=全部，QueryResultCount=找到 2 条订单；海风科技和晨光商店两行八字段值与首次查询页观察一致，确认清除筛选恢复本轮初始可见列表。\\\"}\\n\",\"max_output_tokens\":1500,\"yield_time_ms\":1000}));\n"
+      }
+    ],
+    "tool_call_count": 33,
+    "tool_call_parameters": "33个custom_tool_call参数均明文可审计；4个exec_command（启动文件读取两次、四材料读取、固定CLI启动），其余29个为同一session_id 46093的stdin交互。",
+    "communication_records": [
+      {
+        "line": 13,
+        "author": "/root",
+        "recipient": "/root/s2_completion_a",
+        "type": "initial_dispatch",
+        "payload_visibility": "encrypted_content，仅NEW_TASK信封可读"
+      }
+    ],
+    "additional_inbound_or_outbound_communications_observed": 0,
+    "no_unauthorized_file_network_gui_or_script_calls_in_visible_tool_calls": true,
+    "isolation_limitations": [
+      "初始派发payload加密，不能验证实际收到的派发明文或严格证明未继承其他历史。",
+      "11条reasoning内容加密，不能审计其内部计划。",
+      "非OS沙箱，日志不能排除外部物理输入或未记录渠道。",
+      "protocol.md明文暴露46个UI相关项/6个非UI项的真值聚合数量，无ID对应；可向Agent提供分类先验，违反完全答案隔离目标，不能宣称严格盲测成功；没有据此修改冻结协议。"
+    ],
+    "initial_plan_before_first_input": {
+      "verdict": "UNVERIFIABLE",
+      "first_native_input_response_utc": "2026-10-30T01:52:07.461040+00:00",
+      "basis": "首输入前没有可读助手计划消息；只有加密reasoning。最终initial_plan存在但不能反证它在首输入前已形成；不得武断说未规划，也不得判已满足。"
+    },
+    "encoding_recovery": {
+      "verified": true,
+      "first_call_line": 14,
+      "first_output_line": 17,
+      "recovery_call_line": 21,
+      "recovery_output_line": 24,
+      "materials_call_line": 26,
+      "materials_output_line": 29,
+      "basis": "首次PowerShell/python读取启动文件未指定输出UTF8，真实输出含乱码/替换字符；下一调用设置Console/OutputEncoding UTF8并python -X utf8重读同一文件，输出中文正常，SHA256相同；随后才读取四材料，全部输出未截断且无替换字符。"
+    },
+    "dispatch_metadata_hash_discrepancy": {
+      "organizer_recorded_sha256": "0783a76d6d3d30496a03df9dc35d882f3126aefccd9f2c98cc78fb0f6047f94b",
+      "locked_file_actual_sha256": "b5df58a890bf2b8f65d61b82ded94ed168cca6c3f8d36fcdcd47b7ea17b225c5",
+      "basis": "organizer-start声明与锁定启动文件实际SHA不同；Agent两次读取实际值均为b5df...，原文件锁有效，不能据此推断锁后篡改；加密派发payload阻止对实际收到明文的直接核验。"
+    }
+  },
+  "tool_call_adjudications": [
+    {
+      "input_number": 1,
+      "evidence_id": "OBS-001",
+      "response_line": 6,
+      "ack_line": 8,
+      "utc": "2026-10-30T01:52:07.461040+00:00",
+      "target_automation_id": "QuantityInput",
+      "target_name": "数量",
+      "action": "set_value",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "04343404fc8d4de5a943f6006c1c1a4b",
+      "agent_ack_reason": "新快照04343404中QuantityInput.value为2且focused=true，确认数量瞬时录入为2；订单金额仍为空且单价为空，不据此判断业务规则。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "QuantityInput.value=2；不把焦点作为唯一依据。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 2,
+      "evidence_id": "OBS-002",
+      "response_line": 11,
+      "ack_line": 13,
+      "utc": "2026-10-30T01:52:26.375022+00:00",
+      "target_automation_id": "UnitPriceInput",
+      "target_name": "单价",
+      "action": "set_value",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "0b61e47a7a0a4e148ae359bc4cd39d34",
+      "agent_ack_reason": "新快照0b61e47a中UnitPriceInput.value=12.50，QuantityInput.value=2，OrderAmountOutput.value=25.00，确认单价录入和金额可见更新。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "UnitPriceInput.value=12.50；不把焦点作为唯一依据。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 3,
+      "evidence_id": "OBS-003",
+      "response_line": 16,
+      "ack_line": 18,
+      "utc": "2026-10-30T01:52:41.892931+00:00",
+      "target_automation_id": "CustomerNameInput",
+      "target_name": "客户名称",
+      "action": "set_value",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "f1798e68743b4952a36d79aa55670973",
+      "agent_ack_reason": "新快照f1798e68的CustomerNameInput.value为S2探索客户，focused=true，确认瞬时客户名称录入。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "CustomerNameInput.value=S2探索客户；不把焦点作为唯一依据。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 4,
+      "evidence_id": "OBS-004",
+      "response_line": 21,
+      "ack_line": 23,
+      "utc": "2026-10-30T01:53:09.121901+00:00",
+      "target_automation_id": "ProductNameInput",
+      "target_name": "商品名称",
+      "action": "set_value",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "9c6c85d604594cb9820e8813a00de2d6",
+      "agent_ack_reason": "新快照9c6c85d6的ProductNameInput.value为S2探索商品且focused=true；客户、数量2、单价12.50及金额25.00均仍可回读，确认商品录入。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "ProductNameInput.value=S2探索商品；不把焦点作为唯一依据。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 5,
+      "evidence_id": "OBS-005",
+      "response_line": 26,
+      "ack_line": 28,
+      "utc": "2026-10-30T01:53:23.253009+00:00",
+      "target_automation_id": "ClearOrderButton",
+      "target_name": "清空",
+      "action": "invoke",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "7f60d0723fb9476a928c6403e1670044",
+      "agent_ack_reason": "新快照7f60d072中客户、商品、数量、单价、订单金额的value均为空字符串，客户框focused=true，确认清空使瞬时表单恢复为空。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "五个字段value全部为空。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 6,
+      "evidence_id": "OBS-006",
+      "response_line": 31,
+      "ack_line": 33,
+      "utc": "2026-10-30T01:53:36.176114+00:00",
+      "target_automation_id": "QueryOrderTab",
+      "target_name": "查询订单",
+      "action": "select",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "5687d1a2af554ad5895392373eb03c9f",
+      "agent_ack_reason": "新快照5687d1a2中QueryOrderTab的TabItem selected=true，新建selected=false；查询关键字、订单状态筛选、查询及清除筛选按钮和含两行八列的OrderResultsGrid出现，确认查询页面已到达。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "查询页签selected=true，新建false，Grid与条件控件出现。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 7,
+      "evidence_id": "OBS-007",
+      "response_line": 36,
+      "ack_line": 38,
+      "utc": "2026-10-30T01:54:03.550500+00:00",
+      "target_automation_id": "StatusFilter",
+      "target_name": "订单状态筛选",
+      "action": "expand",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "2b83f4a5dcb341048b463773e5c6c7c1",
+      "agent_ack_reason": "新快照2b83f4a5中StatusFilter.expanded_state=1，新增可见ListControl及全部(selected=true)、新建(selected=false)两选项，确认组合框已展开。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "expanded_state=1，公开列表及全部/新建选项出现。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 8,
+      "evidence_id": "OBS-008",
+      "response_line": 41,
+      "ack_line": 43,
+      "utc": "2026-10-30T01:54:21.602238+00:00",
+      "target_automation_id": "",
+      "target_name": "新建",
+      "action": "select",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "e79adfd846c949d68002be177cf3bbdc",
+      "agent_ack_reason": "新快照e79adfd8中StatusFilter.value=新建，ListItem新建selected=true、全部selected=false，确认选中状态条件；尚未声称查询结果更新。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "StatusFilter.value=新建；新建selected=true、全部false，未据此声称列表已筛选。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 9,
+      "evidence_id": "OBS-009",
+      "response_line": 46,
+      "ack_line": 48,
+      "utc": "2026-10-30T01:54:40.844049+00:00",
+      "target_automation_id": "StatusFilter",
+      "target_name": "订单状态筛选",
+      "action": "collapse",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "6a89a6587cc74b3a886f37f14c299959",
+      "agent_ack_reason": "新快照6a89a658中StatusFilter.expanded_state=0且value仍为新建，展开ListControl及选项节点已不在树中，确认已收起并保留状态条件。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "expanded_state=0，选项消失，value仍新建。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 10,
+      "evidence_id": "OBS-010",
+      "response_line": 51,
+      "ack_line": 53,
+      "utc": "2026-10-30T01:55:12.723177+00:00",
+      "target_automation_id": "QueryKeywordInput",
+      "target_name": "查询关键字",
+      "action": "set_value",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "ceae41c334e34b569260551329ec9f19",
+      "agent_ack_reason": "新快照ceae41c3中QueryKeywordInput.value=海风且focused=true，StatusFilter.value仍为新建，确认两个筛选条件已同时置入；结果仍为原两行，未声称已执行查询。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "QueryKeywordInput.value=海风；不把焦点作为唯一依据。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 11,
+      "evidence_id": "OBS-011",
+      "response_line": 56,
+      "ack_line": 58,
+      "utc": "2026-10-30T01:55:36.616132+00:00",
+      "target_automation_id": "QueryOrdersButton",
+      "target_name": "查询",
+      "action": "invoke",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "c9a25b83ab8a4813aa316c224ab79e04",
+      "agent_ack_reason": "新快照c9a25b83的QueryResultCount为找到1条订单，Grid仅行0海风科技/显示器支架/MO-20260115-0002/新建，关键字仍海风且状态仍新建，确认查询后可见列表已缩为该一行。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "计数1且仅海风科技一行八格；关键字海风和状态新建保留。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 12,
+      "evidence_id": "OBS-012",
+      "response_line": 61,
+      "ack_line": 63,
+      "utc": "2026-10-30T01:56:25.813644+00:00",
+      "target_automation_id": "QueryKeywordInput",
+      "target_name": "查询关键字",
+      "action": "set_value",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "35498fcb1e584256b391d70573895e78",
+      "agent_ack_reason": "新快照35498fcb中QueryKeywordInput.value为S2探索检索词且focused=true，确认已替换瞬时关键字；结果仍显示先前一行，不据此确认查询行为。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "QueryKeywordInput.value=S2探索检索词；不把焦点作为唯一依据。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 13,
+      "evidence_id": "OBS-013",
+      "response_line": 66,
+      "ack_line": 68,
+      "utc": "2026-10-30T01:57:02.520065+00:00",
+      "target_automation_id": "QueryOrdersButton",
+      "target_name": "查询",
+      "action": "invoke",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "24d61eadf54842f7a5743a4ed45332a9",
+      "agent_ack_reason": "新快照24d61ead中QueryResultCount.name为找到 0 条订单，OrderResultsGrid只含首行和八个表头，无行0或DataItemControl，确认已到达空结果可见状态。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "计数0且无数据行/数据单元格。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    },
+    {
+      "input_number": 14,
+      "evidence_id": "OBS-014",
+      "response_line": 71,
+      "ack_line": 73,
+      "utc": "2026-10-30T01:57:26.208475+00:00",
+      "target_automation_id": "ClearFiltersButton",
+      "target_name": "清除筛选",
+      "action": "invoke",
+      "native_status": "ACTION_RETURNED",
+      "native_return": true,
+      "snapshot_token": "3b8d02166b2146eca2fc65f179167081",
+      "agent_ack_reason": "新快照3b8d0216中QueryKeywordInput.value为空，StatusFilter.value=全部，QueryResultCount=找到 2 条订单；海风科技和晨光商店两行八字段值与首次查询页观察一致，确认清除筛选恢复本轮初始可见列表。",
+      "semantic_verdict": "SUPPORTED",
+      "basis": "关键字空、状态全部、计数2，16格与初始查询列表一致。",
+      "within_deadline": true,
+      "report_tool_classification_correct": true
+    }
+  ],
+  "tool_classification_audit": {
+    "observation_status_correct": 1,
+    "native_action_status_correct": 14,
+    "ack_semantics_supported": 14,
+    "native_action_status_denominator": 14,
+    "all_snapshot_status_ok": true,
+    "all_snapshots_untruncated": true,
+    "old_scorer_missing_log_note_applicable": false,
+    "basis": "原评分器固定缺日志说明保留在legacy-score.json；本轮有已锁原始独立逐次事件日志，此处按每次实际快照另裁决。"
+  },
+  "scope_audit": {
+    "persistent_side_effects_observed": 0,
+    "human_interventions_observed": 0,
+    "prohibited_save_delete_export_close_or_restart_calls": 0,
+    "stop_branch": "NOT_EXERCISED",
+    "basis": "实际输入仅set_value、select、expand、collapse、查询invoke及精确授权清空/清除筛选；无失败或未决分支，不以没有违规证明停止能力。持久副作用0指日志可见范围，未通过内部存储读取独立证明。"
+  },
+  "freeze_verification": {
+    "freeze_lock_valid": true,
+    "files": [
+      {
+        "path": "evaluation/software-exploration/s2-completion-01/protocol.md",
+        "sha256": "2099bf2a6fdde1954d2f1290608aa9bae523eb70bb09b0f382632425708a803b",
+        "valid": true
+      },
+      {
+        "path": "evaluation/software-exploration/s2-completion-01/inputs/report.schema.json",
+        "sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72",
+        "valid": true
+      },
+      {
+        "path": "evaluation/software-exploration/ground-truth/miniorder-v1.json",
+        "sha256": "becac5dc7adb502fd7bdea8d1031b2b53e7d8bc75bf7042c11ad1dad970ae574",
+        "valid": true
+      },
+      {
+        "path": "scripts/evaluate_software_exploration_s2.py",
+        "sha256": "3af78ee7c1382ed678b09844f03bac812ce67189f4ebb1f261f2897056201cda",
+        "valid": true
+      },
+      {
+        "path": "evaluation/software-exploration/s2-completion-01/inputs/s2-a-verified-requirements.json",
+        "sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497",
+        "valid": true
+      },
+      {
+        "path": "evaluation/software-exploration/s2-completion-01/tool-guide.md",
+        "sha256": "de75b1b4751dcaa03a910872fe81d686a1a0f0181ee843660ae8cc165875fd5e",
+        "valid": true
+      }
+    ],
+    "scope": "只列裁决所需A材料、原真值和原评分器；未读取B报告或其他历史答案。"
+  },
+  "strict_conditions": {
+    "schema": "PASS",
+    "all_requirement_ids_once": "PASS",
+    "scope_no_prohibited_native_input_observed": "PASS_WITH_LOG_SCOPE",
+    "native_input_budget": "PASS",
+    "whole_session_budget": "FAIL",
+    "initial_plan_before_first_input": "UNVERIFIABLE_ENCRYPTED_REASONING",
+    "single_input_then_semantic_ack": "PASS_14_OF_14",
+    "input_and_communication_boundary": "NO_UNAUTHORIZED_VISIBLE_CALLS_DISPATCH_CONTENT_ENCRYPTED",
+    "complete_answer_isolation": "NOT_ESTABLISHED_AGGREGATE_TRUTH_COUNTS_EXPOSED",
+    "independent_path_replay": "PENDING",
+    "unresolved_stop_branch": "NOT_EXERCISED"
+  },
+  "diagnostic_metrics": {
+    "critical_entry_recall": {
+      "numerator": 2,
+      "denominator": 2
+    },
+    "ui_requirement_mapping_recall": {
+      "numerator": 45,
+      "denominator": 46
+    },
+    "mapping_precision": {
+      "numerator": 45,
+      "denominator": 46
+    },
+    "unsupported_controls": {
+      "numerator": 0,
+      "denominator": 22
+    },
+    "static_declared_routes_full": 16,
+    "static_declared_routes_safe_prefix": 30,
+    "independent_path_replay_rate": null,
+    "independent_path_replay_status": "PENDING",
+    "formal_protocol_pass": false
+  }
+}

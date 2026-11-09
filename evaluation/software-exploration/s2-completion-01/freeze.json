@@ -1,0 +1,1658 @@
+{
+  "frozen_at_utc": "2026-10-30T01:49:42.107188+00:00",
+  "head": "e0adf976af2674ffd09291a758ac24d11907a6b2",
+  "budget": {
+    "total_context_seconds": 900,
+    "native_gui_inputs": 30,
+    "same_failure_retries": 2,
+    "window_rebind_max": 1
+  },
+  "roles": [
+    "s2-a",
+    "s2-b"
+  ],
+  "attempts_per_role": 1,
+  "dynamic_binding": "Per-run HWND/PID and absolute deadline frozen before dispatch; derived by prepare-formal-run.py; no extra business hints",
+  "files": [
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/capture-context.py",
+      "size_bytes": 3235,
+      "sha256": "07d782af239c38246daf6f46f503ae5aa4c4788ca6ae113ba773152064a3062a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/adapter-independent-review.md",
+      "size_bytes": 7736,
+      "sha256": "23b2f7dc85d220258eb2cd9d18347c1aadbdebf5614bde37a905e83f5c2e75cb"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/adapter-validation.md",
+      "size_bytes": 4877,
+      "sha256": "4496b64927d6bdea9dde1d293744389813ecdaf52c96a114f6dbac7800e31972"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-02-adjudication.json",
+      "size_bytes": 11292,
+      "sha256": "8c073315f787c2bfb7fc8a57a2e4c3177b1225d09c7de2e4a616d4433d2b7847"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-02-config.json",
+      "size_bytes": 492,
+      "sha256": "3e85884885eaca0e92f99fd951a852e08c61a376459b9741bff3c7928b5350bc"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-02-context/capture-manifest.json",
+      "size_bytes": 546,
+      "sha256": "6dcc4410d18664a05ccc407718079b1af4ff6a85a554dca7f8ee548641b6b340"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-02-context/raw-report.md",
+      "size_bytes": 2564,
+      "sha256": "0f412d15ead784f3faf218dbec39e81feb0dd66d07d69b266450b455e9670789"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-02-context/report-lock.json",
+      "size_bytes": 775,
+      "sha256": "6fa2f1c12cf67680d859ec5f9610803128fbf895defc17e2cd4169a674a5742d"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-02-context/session.jsonl",
+      "size_bytes": 503690,
+      "sha256": "251543b5d79d02c5badd0a545f0d688532e950c8bc2e9d9a43a394f58791d96b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-config.json",
+      "size_bytes": 489,
+      "sha256": "2ab29c9ddc9ae1310108fb92971c953684443fb70231b25541a3541f0af46b60"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-context/capture-manifest.json",
+      "size_bytes": 544,
+      "sha256": "334b0ed683e73a79068942c4e63ff94ccd568418253e68002aba47f8c5bc713e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-context/raw-report.md",
+      "size_bytes": 1377,
+      "sha256": "fe519435eb55d6ad5d697169e502c76e441262a6de32987bf80a096f8be4b283"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-context/report-lock.json",
+      "size_bytes": 775,
+      "sha256": "d7789266e242e1877abb0a2a81b7f5436ab38df473cb0882330cd9e824ff24d0"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-context/session.jsonl",
+      "size_bytes": 227998,
+      "sha256": "b456495301a93b952d5b8deffb2b074ccbb610a6354621178937457c95cee65b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-native-02-events/events-1ab7bd6e74e14d7e82999dfb091a27c3.jsonl",
+      "size_bytes": 170198,
+      "sha256": "4abb9c88508c065506b62ab11137001f985eec3267146c7f92031475d22850ed"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-native-02-events/session.json",
+      "size_bytes": 565,
+      "sha256": "3c850c46a4792c79a2beb6ec12dc18342f1491fed3efef19fe664d87c5bfbf54"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-native-events/events-201a6e6695b5473a88364f513d9bdc2c.jsonl",
+      "size_bytes": 9939,
+      "sha256": "522cc47513624323a1216acb092309a36f8c2e17170f25d46b85c14b67273064"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-native-events/session.json",
+      "size_bytes": 562,
+      "sha256": "8eec6a8ba17f739fa73220e5fe3cfbddef63ca05415e26ea842592f7b8981284"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-normal-start.json",
+      "size_bytes": 575,
+      "sha256": "09bde615969e96f53e140d6f9263b37a7338004d9443794f032ea6cb4acdfd64"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/health-start.json",
+      "size_bytes": 735,
+      "sha256": "4767ca9117b0c9d7687e14450f75c3703cd290d116f1193e9a676cdc3ec833ad"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/pre-freeze-environment.json",
+      "size_bytes": 14865,
+      "sha256": "003382ed5e90a482377078bbc18f46a63f088bd17e49d75477c16c001286a612"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/reuse-verification.json",
+      "size_bytes": 105623,
+      "sha256": "1c566f50cae4a536e8768f1d652940eeb7086ae30902cd74b83aeb451389546e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/uia-enumeration-probe.json",
+      "size_bytes": 960,
+      "sha256": "37e3ab2ca2c5f6ca03b54b98b6e449c5eb842e66af82002edfc14c5bbbb77e9a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/uia-import.json",
+      "size_bytes": 622,
+      "sha256": "2aeddc93c468c1e03c5b2f125bf7171390b54bb18b30030a42de6bfb3966a986"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/diagnostics/window-metadata.json",
+      "size_bytes": 5420,
+      "sha256": "0eb60273428c5aa19ac973939af6ec69eaa856f588da9befc489ceb39f7b415d"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/freeze-baseline.py",
+      "size_bytes": 3542,
+      "sha256": "3a268818ae6fab4da3b0aef0d34ba7d5341f88e5c8b197b9b25974493e1fa20d"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/environment-snapshot.json",
+      "size_bytes": 3923,
+      "sha256": "cba98dd10a321320f0fdaeb036d5d012e4b3806260033aab9138c17bb2f5061b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/health-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/health-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/historical-integrity.json",
+      "size_bytes": 277930,
+      "sha256": "d1062a8ba1ede33196ab2823b3414c2526ce78f240685e5e6fb806a8e54a03ba"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/preparation-manifest.json",
+      "size_bytes": 6080,
+      "sha256": "b7cfb81331795a9647bd789d7873d854358db66ef31167f436a8795cf536c525"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/prepare-neutral-materials.py",
+      "size_bytes": 11272,
+      "sha256": "df8ca24f5c179c37064e41f7ff509a6bf72b93eada9cf34dc27b9b412a42a0e0"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/s2-a/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/s2-a/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/s2-b/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/s2-b/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/preparation/verification.json",
+      "size_bytes": 5110,
+      "sha256": "416e98379a44a8a6b6574bc915ce6c759da37bb029d3df50960a841ad6ba95c8"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/prepare-formal-run.py",
+      "size_bytes": 3173,
+      "sha256": "87e144ba8dfa88cd11a099b5ad55ae976c8aa4ac7f6c31243a074841d9e03b4e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/commit.json",
+      "size_bytes": 7618,
+      "sha256": "49a89c554333398efa8013300f0b123c7163e3cf1a55d2eb6698de79add0a610"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/repo.json",
+      "size_bytes": 7334,
+      "sha256": "2a099435c92d7c3571379b01d6fcd31f090090bffb1e0df6835714964b08587a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/agent_s4/cli.py",
+      "size_bytes": 14189,
+      "sha256": "195fb21a84cd200bf34a891c4f132f8c001677ecc12678471f42c1845af1c407"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/agent_s4/pyproject.toml",
+      "size_bytes": 1688,
+      "sha256": "b0c304a0d0e0f13d3003182500d75bca3366059d0695a747bc401b01ff0725c3"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/agent_s4/README.md",
+      "size_bytes": 10148,
+      "sha256": "ef8ef5c83b7b30d8e0cf9d8e734d1916faf977a1cb998ebcdf9af63c1c253a01"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/gui_agents/s1/aci/windowsagentarena/GroundingAgent.py",
+      "size_bytes": 24622,
+      "sha256": "34295e51b828cb20919052af5353d6ef397b538fb38f0045dd2a2832a11c84d3"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/gui_agents/s3/agents/agent_s.py",
+      "size_bytes": 3116,
+      "sha256": "ba3837d647d6e9a26e95f73354db2e32dc46fa8ce3a3232d8c9eb9134c386adc"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/gui_agents/s3/agents/grounding.py",
+      "size_bytes": 27897,
+      "sha256": "7f222c910f6bd97ed604fb237b7a8e2182fb503d4cd859fc3b663fa9be2b4556"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/gui_agents/s3/agents/worker.py",
+      "size_bytes": 15514,
+      "sha256": "69c170f3516c7472d200bf3329f133509ecc949d6e3d1e80cf24e8867dddb292"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/gui_agents/s3/cli_app.py",
+      "size_bytes": 12216,
+      "sha256": "5eaf01c79770fafb01c390fd0abf9a10ecbb32fa040a10c8a641adc98bb62835"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/LICENSE",
+      "size_bytes": 11356,
+      "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/README.md",
+      "size_bytes": 8976,
+      "sha256": "a91d87e0c5dc0760d3c51daa80689f2386269169e4519f8d30de493107e79c6e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/requirements.txt",
+      "size_bytes": 313,
+      "sha256": "3efdec355a1d08b8a86c98f7b57ffea8a1c84b730e11b50a54606dde896f836e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/source/setup.py",
+      "size_bytes": 2131,
+      "sha256": "ed808b6220c9b411773993ed16ebcd186acbca70b3a42281ee66f7b5111e0672"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/agent-s/tree.json",
+      "size_bytes": 134430,
+      "sha256": "61b281ff6bf59b36445e84a7e1604b1493dc055c284590f0700fea268da7b412"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/licenses/windows-mcp-uia/Apache-2.0-LICENSE.txt",
+      "size_bytes": 11336,
+      "sha256": "75b70e428c22d47d0fb713a5431a0ed07c54c2aadfa6193e386c2b91f9ff4b2b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/licenses/windows-mcp-uia/retrieval.json",
+      "size_bytes": 1820,
+      "sha256": "de3f50ad506c4be99dea05213d10fb171a05731e3611b78b18b4d96a2d546130"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/licenses/windows-mcp-uia/upstream-commit.json",
+      "size_bytes": 21828,
+      "sha256": "2903adb916be9f85acfd4bdff3e1d73dc23c5e92ef198c2aded7b86bca6810b2"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/licenses/windows-mcp-uia/upstream-license-blob.json",
+      "size_bytes": 15937,
+      "sha256": "d643c6549e159ef6226239a7c6b68acb90b358dfbcd16fb319925944813bb461"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/licenses/windows-mcp-uia/upstream-tree.json",
+      "size_bytes": 16619,
+      "sha256": "900a132ea9877afce39918d84e20237f756aeba058da3ba9150c37840708c21b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/network-notes.txt",
+      "size_bytes": 852,
+      "sha256": "2ed24a88a13ff37c64eefe85fae65bf5465cfd538bba12a12ed13985a4ce9e8a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/source-manifest.json",
+      "size_bytes": 55354,
+      "sha256": "0d974234ee4d5d25e38ef1d78d8b96d506514ae0904475885515ab764d4b8794"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/commit.json",
+      "size_bytes": 13903,
+      "sha256": "f40716750660d1fa9ea289ccc6e9e031d47b48673e954ea6c7457fe350e3970b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/repo.json",
+      "size_bytes": 7300,
+      "sha256": "e071c2571235ed3a6d48ece9473f91ac17a89bc4d4120aefd0a737f8113cd95e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/build.gradle",
+      "size_bytes": 2938,
+      "sha256": "4e407e6585b728a8ade6272db97b416fb2b83cd0d6a7673952f5c7ec23e34238"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/core/src/org/testar/monkey/alayer/actions/MouseMove.java",
+      "size_bytes": 4109,
+      "sha256": "c6423757c2aad966eb077f03227958510e4d208900918a7cbd3193ce20934793"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/core/src/org/testar/monkey/alayer/actions/StdActionCompiler.java",
+      "size_bytes": 14834,
+      "sha256": "1a0180bb00f82c7aa08d3b9a00da7698a9670282252bbbc20c6d0b3b0c7b16e4"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/LICENSE",
+      "size_bytes": 1500,
+      "sha256": "541a14f51714c7e9be82f32a4f62009b1b848f938b0b6886aec4b2bfa383b62b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/README.md",
+      "size_bytes": 10777,
+      "sha256": "c4c29b043af40142364fe7d3c1d4952efde55079fcff85cf66ff7bc08b5f9b7c"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/settings.gradle",
+      "size_bytes": 82,
+      "sha256": "d35c7643ff84f5c0778cc230ebb01ac51b9da8b8f6abe6a7996bc0d62ceb99d2"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/build.gradle",
+      "size_bytes": 7111,
+      "sha256": "7ee58ac48008154372e7c9faf9a12339fea718c6c93e0362456bd02a5c3f1139"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/resources/settings/desktop_generic/Protocol_desktop_generic.java",
+      "size_bytes": 11593,
+      "sha256": "4bf7680ea4001fd7a08ae350825df923113625fbfdfe4ba4554fb67d7629449c"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/resources/settings/desktop_generic/test.settings",
+      "size_bytes": 6081,
+      "sha256": "de3db1019667ad7c610c0efe80a0530c4e7371c08acd506c961a96a787ff6434"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/src/org/testar/monkey/AbstractProtocol.java",
+      "size_bytes": 8539,
+      "sha256": "49363326850ffe8586ab8feb45f4a56fc397edc530dbd8dd2ba7b2fcfe55734e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/src/org/testar/monkey/DefaultProtocol.java",
+      "size_bytes": 45824,
+      "sha256": "6247e79c6b61454ad0532e58e5eb6bba19038f2144ea103f42213b004bf507d8"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/src/org/testar/monkey/GenerateMode.java",
+      "size_bytes": 10104,
+      "sha256": "3d39e502bb0e78278a261ded6f9c3818801fc751d23f4ed030c08a41bbbcab47"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/src/org/testar/monkey/RuntimeControlsProtocol.java",
+      "size_bytes": 5296,
+      "sha256": "c4a39cc8e783eb140b04925eba72223facb638dc00224d92ede7b811b3f5040b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/src/org/testar/plugin/NativeLinker.java",
+      "size_bytes": 15791,
+      "sha256": "7a343b39cf98490cc8a90b0f5d9dbfdfc787bbf8c62dcace918e065620e7bb15"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/src/org/testar/protocols/DesktopProtocol.java",
+      "size_bytes": 11733,
+      "sha256": "59fcbb77f7243e38d6bda04281bb5abab0390d34cca545a47c2afe3ba25d74c6"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/src/org/testar/screenshot/ScreenshotProviderFactory.java",
+      "size_bytes": 4998,
+      "sha256": "2ef6c5d30fddee83081c0fce6c21cd8eb783cc30d5d17e57b4b903a33fffd1c4"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/testar/src/org/testar/settings/SettingsDefaults.java",
+      "size_bytes": 10027,
+      "sha256": "dfa95e731d2709497f037471bfd53e4dd5aa06f2615c98b84a824b4b588a5a54"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/build.gradle",
+      "size_bytes": 799,
+      "sha256": "85112de2e269da4873fedfc79ec8721644e141e075e1f9aa931a90803b4641db"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/AccessBridgeControlTypes.java",
+      "size_bytes": 23025,
+      "sha256": "3fb5c8832c0ff1386d947ca77e5670833338831f11e96a4bd1d5d0ef3c44c505"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/ActivateOptions.java",
+      "size_bytes": 2949,
+      "sha256": "83a66da2343e249e4f97db114ad131fd98ea6d60216d08d63c54bef3c1fd8bf4"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/ElementMap.java",
+      "size_bytes": 3704,
+      "sha256": "fa42586e941cd8a3534031b23b867cebce7b62a2df2634267736739b63a5a97e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/GDIException.java",
+      "size_bytes": 2120,
+      "sha256": "411464c5bdc5313b006d9a4cb51e2d7b048144886bd03109a5268fb74e415621"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/GDIScreenCanvas.java",
+      "size_bytes": 10455,
+      "sha256": "903fc9cbb8770f8d07d620dec5c49c7dd82c7f72864eab02ba077c0e2fbaef6c"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/StateFetcher.java",
+      "size_bytes": 37815,
+      "sha256": "29ea28d5b2e5b10805128143b1f4174f9694a6a4ba2cd2e4c226c066048e7972"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/UIAElement.java",
+      "size_bytes": 3298,
+      "sha256": "0373468c37a381d744ea7fb72db26ccb84a261b21f02d0845484a8a6da43430f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/UIAException.java",
+      "size_bytes": 2038,
+      "sha256": "9cff61ae31de25c976008e9d0f60bbd9aab576ea12050b5852e8252c0937c4a1"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/UIAHitTester.java",
+      "size_bytes": 2443,
+      "sha256": "8ebf4b2416f1b35e6a42853c671c82e4bae4db914865911a7983d727cbd0e6bc"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/UIAState.java",
+      "size_bytes": 11510,
+      "sha256": "659d01963019293109147660446625363ea745fab819591c65f8ac11f2abc3ad"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/UIAStateBuilder.java",
+      "size_bytes": 12957,
+      "sha256": "6ebfe157626ea5f22fda3c76776566c8758fcfb4b6acaab76cb894e6f75e1fc0"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/UIATags.java",
+      "size_bytes": 64161,
+      "sha256": "49990f7ff90816db98fb3236fc62f9b803d0adacb223b215f81ab6f52e4924d7"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/UIAWidget.java",
+      "size_bytes": 8596,
+      "sha256": "c9bec1e6f867e8cd7c2ec4980fa6ede4b978abaff10836cf5aa0a34fa8de380a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/WinApiException.java",
+      "size_bytes": 2103,
+      "sha256": "8c2767d2717ccf073921935c16588e659bbac965c6b7f200036a32185ece98c6"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/Windows.java",
+      "size_bytes": 56399,
+      "sha256": "743944e56917aeb3861e1f3ecc1c277b55b34a5689238c5f71bf5394affee421"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/Windows10.java",
+      "size_bytes": 3214,
+      "sha256": "eea0457b15ca7089dbad8ccee430e6b595ca15ca7c61885d2f12f3ffe111a058"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/WinProcess.java",
+      "size_bytes": 15467,
+      "sha256": "7e85bc18998e7de6e219fb6f3160728a17720167fb0e8c89146a59df19b81b1b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/WinProcessActivator.java",
+      "size_bytes": 2216,
+      "sha256": "cbb6e4a552d9944e203d2c57897867a11375bc9f341aa7307cb32a5d242c4b81"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/source/windows/src/org/testar/monkey/alayer/windows/WinProcHandle.java",
+      "size_bytes": 2328,
+      "sha256": "b7e8ac146960011baede45d94013d220b1720a88eb856fc1608620c3fa9d4fb9"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/testar/tree.json",
+      "size_bytes": 403716,
+      "sha256": "170bb69ce4fee22c8bd9ce4fdbe02f3a9db4ed2efb1b10b9d42ab4e0ed6ba4d4"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/commit.json",
+      "size_bytes": 9564,
+      "sha256": "6e6bf0c960e0d76c27d695db13f6f71a6d80686b2639f11ff7d609d6fb00397b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/repo.json",
+      "size_bytes": 7303,
+      "sha256": "7aae89e8230545ac324415fb1451a2bfe49e59d69fbf3b03a8ab5cb4d6de084f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/LICENSE.md",
+      "size_bytes": 1069,
+      "sha256": "20ced59173768e20e91a43e3a80443aa1200b129c134f07f0cc45779747a1743"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/pyproject.toml",
+      "size_bytes": 1998,
+      "sha256": "458ec69ef4c00a21e636bc8fdbd8c440218acaca5840fe55df2af0af0512f8ca"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/README.md",
+      "size_bytes": 41617,
+      "sha256": "cedcb742166f780f7b9a262bf3be3c145ee8c354ea84f8326124c426c5d22445"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/__main__.py",
+      "size_bytes": 42982,
+      "sha256": "53a40bd1468e4c96f1b645edcb4a79d2824d375667036a11014efce1c7f176ae"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/config.py",
+      "size_bytes": 378,
+      "sha256": "536e27a9a783a28c354a62658def272d54c31e3d7b48ad27f7869c33b105b212"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/desktop/control.py",
+      "size_bytes": 24506,
+      "sha256": "39d4d23d26628a98664f2e2e77f4c15ea2dc8b785f9abad8e21ae501c78a7cb6"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/desktop/control_hooks.py",
+      "size_bytes": 5577,
+      "sha256": "18f83eaf9f33d51dec6cdee5895c8401a83ce1ce281e2c9f11a2196d80823b74"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/desktop/control_ledger.py",
+      "size_bytes": 2756,
+      "sha256": "4d322ed49edb75b80496dad3f98064fd2a4c7889c501ab653adbd7f2b5243905"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/desktop/control_overlay.py",
+      "size_bytes": 18752,
+      "sha256": "e8101f7e5be97e7d902aa7872d09e8beba8225acb661201af9618cef6c53bc36"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/desktop/flash_overlay.py",
+      "size_bytes": 18758,
+      "sha256": "e9b326c99040fe5b481ae3c0f7dd014a798691143d5b2058ae184c524ab48695"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/desktop/overlay_bitmap.py",
+      "size_bytes": 1391,
+      "sha256": "e2da4d624695b231f2821860b3189c7425cd7f081f0928f20d3381c939978f13"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/desktop/screenshot.py",
+      "size_bytes": 13512,
+      "sha256": "80e6b0c7513d4f2f0712a7277a2000c4f1b9426113d446a8248666ed8a14b76b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/desktop/service.py",
+      "size_bytes": 71922,
+      "sha256": "0c6b3120316da0b6975b8b758abc877bfaa0e57fd413459ce850df2fbbc3dd65"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/desktop/utils.py",
+      "size_bytes": 4566,
+      "sha256": "f94b2f6ca1821d4d54c754f11f96459199c062b1ede4a45d5c276cba32568ba2"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/desktop/views.py",
+      "size_bytes": 2828,
+      "sha256": "28ad06819b3a672785ff757b624ffe50b89dbe9b1b530e840947d721cc30885c"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/filesystem/__init__.py",
+      "size_bytes": 306,
+      "sha256": "e93f18971bfa41e0fa3be14d0a8954d096918fc67cc225ebadb241cb26740a8f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/filesystem/service.py",
+      "size_bytes": 12940,
+      "sha256": "04df3e6ca53f1eaa1fbea17529258c0dc84d440b16d78339b9f655ccd7fdc829"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/infrastructure/__init__.py",
+      "size_bytes": 1535,
+      "sha256": "30bb41ba1db6beff66cad6e4afa8204bdb9978df3591289365835fc5ad4419d0"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/infrastructure/analytics.py",
+      "size_bytes": 8238,
+      "sha256": "32102285311107bfe27f79cd521e57a60794aaa5724dc7c66f91118ec5c771b3"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/infrastructure/auth.py",
+      "size_bytes": 2878,
+      "sha256": "fdcfcf03c4ba0d8a55076568b5ab81d52ed8c146ddd0cffd715a64b4006e2baf"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/infrastructure/config.py",
+      "size_bytes": 9971,
+      "sha256": "83b2c5614ff11c4642d13045fc7a0c737059924e068bfa5ee7745bc8c5241c7f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/infrastructure/eventloop.py",
+      "size_bytes": 3551,
+      "sha256": "d9d30120793ba8349a367f319b82072819bd86c0b7a63333f779c15021ddaff0"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/infrastructure/oauth.py",
+      "size_bytes": 10080,
+      "sha256": "31937461a39d748a14e900a657276e9c20aaef9f0229bbb5c03a9ac8a5c27f11"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/infrastructure/security.py",
+      "size_bytes": 9346,
+      "sha256": "8d8b192a4614b78e8321891548ffbcc2e6d6f038943460c9a1a45cb2af220918"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/infrastructure/thread_affinity.py",
+      "size_bytes": 2604,
+      "sha256": "4144b91a61d34b937c4a6a39c1fe13a24b8eb17a05bc1c96a750fe0a3f4a3692"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/notifications/service.py",
+      "size_bytes": 2381,
+      "sha256": "7912f5900d53421d80c25eb4e4ec8718be5dedcfe3c50a3ea3285e13571f7fc1"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/paths.py",
+      "size_bytes": 3013,
+      "sha256": "52e13e93fceb70c2934791623e3d64edf35fcf20596685dd4026cf8b3a13cda6"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/powershell/__init__.py",
+      "size_bytes": 103,
+      "sha256": "924bfd456f13c1f159be9de63d5fae029b93008c6c17f712c35b8105380e1364"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/powershell/service.py",
+      "size_bytes": 11681,
+      "sha256": "1838493ec4af197fa59bf5c4447643b08eda434be6ebb48f50066f199f85b356"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/powershell/utils.py",
+      "size_bytes": 7585,
+      "sha256": "4b167a493081d7204a0c38cff73ac458a9e8d4c55c9881b649243d6a9ac3680f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/process/__init__.py",
+      "size_bytes": 128,
+      "sha256": "b114f67aa8809838e01f95dce20b84ff8e509550bf91161a46bbc75e0db0cc95"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/process/service.py",
+      "size_bytes": 2929,
+      "sha256": "498842f255352e5af0920bfe5294f198a51afcc10311faa33b872afc023a9b9a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/registry/__init__.py",
+      "size_bytes": 197,
+      "sha256": "c05e2509ff19d343cab647364c5bfd683001af8c6b154d19fe115e37d58d0146"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/registry/service.py",
+      "size_bytes": 3962,
+      "sha256": "e73901793089762bb8f4d3f869d2b1a940a98bb7e176c6702dfcea83d932b200"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/registry/views.py",
+      "size_bytes": 434,
+      "sha256": "f1cefa67b5829664bc1efe13cc8da85953f419aad29d7d3c3aa121ecd8b5a85d"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/__init__.py",
+      "size_bytes": 942,
+      "sha256": "920cec210d5c5ae318b15f0d8fe7d9db5ffb19e3ebb76cd6654a4020e19f64ec"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/_snapshot_helpers.py",
+      "size_bytes": 9279,
+      "sha256": "c1a930679d5906ca713905137daf776405c4672b81b7465ae8cc69c9f4dda2f1"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/app.py",
+      "size_bytes": 4212,
+      "sha256": "cd9703ad8cfead026418e61185a8763ee8830544107f9cc4ec760f70f574540b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/clipboard.py",
+      "size_bytes": 2305,
+      "sha256": "425fb88eba93bad54c0072fe947ece1dd8eff3c4367d27b4f8e449475995a7ee"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/control_notifications.py",
+      "size_bytes": 11774,
+      "sha256": "a6f14ca9ee018329b1b93a78b12b57185fe1609e6f12318e863ce697a2ef7f5a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/control_status.py",
+      "size_bytes": 748,
+      "sha256": "1efe1575368deb1cbd22d5a86ae25b94a4b4b36d365ba90e33f647eae835c4f8"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/display.py",
+      "size_bytes": 2015,
+      "sha256": "c294e53c1fe14026c8f0118e87ea06fc408d295ec5e7112c1f9c913766b6c1bb"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/filesystem.py",
+      "size_bytes": 4127,
+      "sha256": "129fd3a56fcb622a2f2c89d20f01046de41d326b499a63bb409ec98d3d83c421"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/input.py",
+      "size_bytes": 19426,
+      "sha256": "eb3bd88f950fcc76e8e9a11032363781c9c898eeb87aa9e8b74dd970361a2943"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/multi.py",
+      "size_bytes": 4361,
+      "sha256": "e0e809d594fc2f7ca7c9612d7cd05e11ec8a8894fbd63dd81b86c689ff61cc3d"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/notification.py",
+      "size_bytes": 1740,
+      "sha256": "5965312158a807d96eb4523f95d38ec4e6bfc00399683dfa35ca3d8ecf0cdd7b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/registry.py",
+      "size_bytes": 2211,
+      "sha256": "4dbee46e46c797baa64e43aa8ca7241320066d37c5a2e3ff125ed72fbe00ac34"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/shell.py",
+      "size_bytes": 1708,
+      "sha256": "8e1bbad14b9bbf2184423cd4a74a6578a19a8e682d080c75d584f95666ac5945"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tools/snapshot.py",
+      "size_bytes": 6678,
+      "sha256": "73e11967c646a5e9d6c8d6155b985b3b3e914000b544979b059f66b2da4dc58c"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tree/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tree/budget.py",
+      "size_bytes": 3065,
+      "sha256": "c07c8823e55de60e2c27f17df9aed82b466cd5e1463eac32619dd51040b88eff"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tree/config.py",
+      "size_bytes": 2237,
+      "sha256": "a52d2a002ea81b07be99a4e46c27125dd847c23c7b26c1fd81e5fcc7de15bd3e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tree/ia2.py",
+      "size_bytes": 17033,
+      "sha256": "cf499112a8df73b18076311e15d69382a919400b1ed8ec592ac7699c602f52dc"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tree/service.py",
+      "size_bytes": 59877,
+      "sha256": "c70593bc5a8a6f42f920e2c5a09ee996662db541ab7c39e7141e71af5dc9923a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tree/utils.py",
+      "size_bytes": 895,
+      "sha256": "2b44a13ad217d1ecac24aa74ec50a11425374a3e7bc88ce0d7c76bad4daeaf98"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/tree/views.py",
+      "size_bytes": 9730,
+      "sha256": "293f313816b944091af3a2311b8788ebd32a4f09cfca72e542cc413197c76249"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/uia/__init__.py",
+      "size_bytes": 137,
+      "sha256": "3f368af28ff7d4dae4d64eb8b4b40028ff9d6954cc84c99f3ed87ff019ef593a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/uia/comtypes_cache.py",
+      "size_bytes": 5145,
+      "sha256": "346ed65fdde2a3e3986356ff7ad710e2798475714df2ac924457a9553ba07436"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/uia/controls.py",
+      "size_bytes": 225324,
+      "sha256": "a028bf2bec8b24e3dbda7fb1d70e7ec0d41597fff3c8fe87d1573daa01a626cd"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/uia/core.py",
+      "size_bytes": 94563,
+      "sha256": "035fda46d04abd705a71ea77580c4d811f8d1da087dc3e676c72e71b18f3c1c1"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/uia/enums.py",
+      "size_bytes": 79409,
+      "sha256": "1ddb261e09c41d69cb62ddcb5b3bf5e6af7bb2a477905fd4c26e5ded6c1dc5f6"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/uia/events.py",
+      "size_bytes": 6326,
+      "sha256": "b597cac541ba3495b7611603f5eebba657c4a5ead50821d0742396295ee13ace"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/uia/exceptions.py",
+      "size_bytes": 4392,
+      "sha256": "040b81e173f2ca9acaba261e93b65a798f2f77f957e1b1c8d62739ca1109dbfb"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/uia/patterns.py",
+      "size_bytes": 107801,
+      "sha256": "4c5865572e69450e0f7fab4d6de5bf8b0a4960fc8dc4b0b23418152b40b29c1a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/vdm/__init__.py",
+      "size_bytes": 178,
+      "sha256": "04247f3d6653a1378f5edde28fb2b1446aded12d0c9273229602bce7198dbe11"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/vdm/core.py",
+      "size_bytes": 24261,
+      "sha256": "69bb4c30807312b12a1c41898f4915c27deb9dc7c02ba6e961cc4ca342fe64d7"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/watchdog/__init__.py",
+      "size_bytes": 42,
+      "sha256": "8d8c97199f61c171077ecc683254cd1c2c134508c7478a8ddb46cff0b30668f9"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/watchdog/event_handlers.py",
+      "size_bytes": 3392,
+      "sha256": "53271e2d6cf3ed306fd3b023b74b528d3cedf6166316ba2b69b36fe004eb2f46"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/source/src/windows_mcp/watchdog/service.py",
+      "size_bytes": 12713,
+      "sha256": "4e0b44b1b680a63370d501ca79a1bb418819dbaf46347b04cf102ed3248f4c0e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/research/windows-mcp/tree.json",
+      "size_bytes": 65924,
+      "sha256": "1da917be634a2f8de3006f96b7b37b08537ba5ec3506c762d666247c2d0a1a40"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/__init__.py",
+      "size_bytes": 9701,
+      "sha256": "44f9e4b9fbc4efdcad3e522d86bbb3968287ca060bedc3b6aa79f71e1d93c295"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_comobject.py",
+      "size_bytes": 19538,
+      "sha256": "e9a7b473ed3be8053b4fbe3665fa5f0543d64aeed93e637273a6ba2f37af9f77"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_memberspec.py",
+      "size_bytes": 24769,
+      "sha256": "bc85a42d1daf6d84b2697c7ab0f56f70689db4e97122e06bee40af15e583ada2"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_meta.py",
+      "size_bytes": 4027,
+      "sha256": "c7c8d38ec04ff34b6e7995cac17da8e1a3725db935089bb396171f2588ca190b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_npsupport.py",
+      "size_bytes": 5050,
+      "sha256": "d35a9bdd33789fd3bc47a342924b82628fdab6d6dfe6d5ca3e78743791fc660c"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_post_coinit/__init__.py",
+      "size_bytes": 727,
+      "sha256": "d8dba006e9befb624ee9fbd29bcc2e3bbed5e392e20a98c377c7a6515c80efd2"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_post_coinit/_cominterface_meta_patcher.py",
+      "size_bytes": 5818,
+      "sha256": "042f585737468b57b6191de8649df20ae3ebb7f1206b9123a044d3de03fa8df7"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_post_coinit/activeobj.py",
+      "size_bytes": 2018,
+      "sha256": "ad13d6f69a0fdfed6c5fb5a5d36d82ad9d3cfca195bbf2fc9d81f1e27061743e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_post_coinit/bstr.py",
+      "size_bytes": 1316,
+      "sha256": "fee26e26150e34b2ee8fd5b41bbee283cf87331554998dd8a918400aa0c05103"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_post_coinit/instancemethod.py",
+      "size_bytes": 369,
+      "sha256": "a7e0c5f8d3380e92975ab45ac10f665bbf33993dfaa8a5ae9a9fb444d3a25ce1"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_post_coinit/misc.py",
+      "size_bytes": 10912,
+      "sha256": "fd3a2a70549c24cfcaa0c1c5262efde27b6a67751b8cc3d7c8f9e489b488d874"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_post_coinit/unknwn.py",
+      "size_bytes": 17441,
+      "sha256": "ae4be60c5539b48acd084eedc659162d470e6d674650994b456f9e80668640ac"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_safearray.py",
+      "size_bytes": 4558,
+      "sha256": "b68369b8a60fd340d8afe77fcb4bfc40dcac027c7b0a65a39a7758d8b2badf3f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_tlib_version_checker.py",
+      "size_bytes": 616,
+      "sha256": "83140d5b906129c87719db3d9814809ec16471e538bd6cccb580e17c3b76f0e0"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/_vtbl.py",
+      "size_bytes": 15998,
+      "sha256": "6eec715d7d474886a1b2c2b4cb1f38a39b80fad2614f0d5c065d5ea62568fcd2"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/automation.py",
+      "size_bytes": 35177,
+      "sha256": "aa5806a3c27325490efc6118b10e4ddbe92d4c8b631f739bf54c429b78874d19"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/clear_cache.py",
+      "size_bytes": 1759,
+      "sha256": "27630722031ff5bdc32f147ab88360eb5d5c2ccf35232544cec93547ee6264fb"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/client/__init__.py",
+      "size_bytes": 1320,
+      "sha256": "2a49a261afd7c0a2c9723c45a8503ac62b7be15766d36df58542400ef2fb80b2"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/client/_activeobj.py",
+      "size_bytes": 1979,
+      "sha256": "94a085d146062e28f9885686613a1ac407dfebf97189e86a1c6bf5302b70d683"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/client/_code_cache.py",
+      "size_bytes": 5394,
+      "sha256": "56fe6679aec4c6b2a93988b654eae048ee6f6e36b626d4654f03e28fc6ad1019"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/client/_constants.py",
+      "size_bytes": 4569,
+      "sha256": "a93c1e9942a9a0e820eb8f92675cf4466c3c2ce4f273ff2d257aa87487e61a53"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/client/_create.py",
+      "size_bytes": 5564,
+      "sha256": "deb6c1ee9dd54d0752085c830eed734ae68f4865cffbb300defcad314a872276"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/client/_events.py",
+      "size_bytes": 13833,
+      "sha256": "c7e0f25fc0bf0730a8dab2e584bcf2062c4660e4f58588ec905adfc81affba94"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/client/_generate.py",
+      "size_bytes": 11942,
+      "sha256": "6bb0c06768dc0411f8f7b5fe2412fda20cbff23a0610f2445ba6f10046c81f91"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/client/_managing.py",
+      "size_bytes": 4260,
+      "sha256": "1c0ce55e433207f8864b0c9993e3af93e0a85b3eac5d5bbdef866084226eee91"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/client/dynamic.py",
+      "size_bytes": 5992,
+      "sha256": "388cc3ab5cf7d5073230f31ec9f0574a2d1c76a3634a2a5c063a8130676cc8e7"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/client/lazybind.py",
+      "size_bytes": 8900,
+      "sha256": "462a5d4fa9adccc76aa6fa4d553b9f5c427e3632dc14707db036f8f00967bd1f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/connectionpoints.py",
+      "size_bytes": 4662,
+      "sha256": "64cc28d78fb418e07626e08882624120c441c3dd793f77a5b9623d603c563b13"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/errorinfo.py",
+      "size_bytes": 5924,
+      "sha256": "36fe3d34fe09c5981acbf45e91e6c2faa1c55191820fa48a537ae6e872d6bca4"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/gen/_00020430_0000_0000_C000_000000000046_0_2_0.py",
+      "size_bytes": 20274,
+      "sha256": "7c1f944deda042081dc06e38292da3cff043ae23ab9a43fb67f8d70b6a905fe2"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/gen/_944DE083_8FB8_45CF_BCB7_C477ACB2F897_0_1_0.py",
+      "size_bytes": 315728,
+      "sha256": "4399a658ed85f4455302a53e11f1ba567954e4f3f536dcf26ea55ad9dea3912f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/gen/__init__.py",
+      "size_bytes": 56,
+      "sha256": "0d474e302634b834072be47bae442dd92b5919dba7870f13e8c8f91272dd8f68"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/gen/stdole.py",
+      "size_bytes": 1987,
+      "sha256": "a0c1c788c6d65efbacde898bcb747b53581ec42c04a6522822bdc2cf81106827"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/gen/UIAutomationClient.py",
+      "size_bytes": 46055,
+      "sha256": "147b7c8907e26fcc2dd33895a99aa6708e34b9d363397457b5a05a40c415bf54"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/git.py",
+      "size_bytes": 2750,
+      "sha256": "fcb40730cf9ce5adde8f1108f40ab7ebfa42efd8a85d6b663a8aabd23e2d0ee7"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/GUID.py",
+      "size_bytes": 3579,
+      "sha256": "77bf14903dd0d5ab43dee46c8aad257d5e93c3afbd4a3253d74f779d7bfc6700"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/hresult.py",
+      "size_bytes": 5414,
+      "sha256": "b4e93e1ba49de5e653e2aad859cd167fc0737b2f955249096a68dfeffe9cf340"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/logutil.py",
+      "size_bytes": 2014,
+      "sha256": "60b528a1786052b7b67a1cd679afc9d71dbfdb7c25cc267ae8ecf9b751255f59"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/malloc.py",
+      "size_bytes": 1896,
+      "sha256": "257bc91c3f6577e5af75e3ef4918d8c863718db54dd242514ff18a76e1eb4fd5"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/messageloop.py",
+      "size_bytes": 1682,
+      "sha256": "981dbb0d97e76716b8820074df549942c672a3c87a28f800fc38ffcb3be80520"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/patcher.py",
+      "size_bytes": 2030,
+      "sha256": "5d15af9b34cbec74106a4f508afa6548888d69f3d12e861007fdaa2f73b37503"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/persist.py",
+      "size_bytes": 9121,
+      "sha256": "d00e718734fee2cb981a31a0196435dd6259df3bf18c5a0877f7ca08099b9b15"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/safearray.py",
+      "size_bytes": 17836,
+      "sha256": "021ece5b94a2a25944f00d2861b8ad26d2065a6bed82d0aa76d1d4877eb9c551"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/server/__init__.py",
+      "size_bytes": 3077,
+      "sha256": "e365d9b296655e9994028919824a8161d7d01657ecb72c994c00ecefd25ccc66"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/server/automation.py",
+      "size_bytes": 2843,
+      "sha256": "a0d168a20820748a07a5dadb42f8a0d995dce80baa3c2c7c264acd4a43515374"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/server/connectionpoints.py",
+      "size_bytes": 6780,
+      "sha256": "d3fa2620532a5d3eb74c85229dd38d1da0ad030326f5f396400535efc6316ae1"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/server/inprocserver.py",
+      "size_bytes": 4997,
+      "sha256": "9402ba8cea666c0a27081c007285a52ffadfccf9d5b25de86f3f6f63ec8a4c5f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/server/localserver.py",
+      "size_bytes": 3223,
+      "sha256": "d048f6fd8436f76892e2f36ce23929566ec1f9393344c84c14974efef7cf5ad9"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/server/register.py",
+      "size_bytes": 17222,
+      "sha256": "de1fc5ddffd82bee86f22fde1bafe8fce9a12fcc2565b173b1ac684c459a14b8"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/server/w_getopt.py",
+      "size_bytes": 1573,
+      "sha256": "4c67911781d231c671b1eb02a477a8e2ea7b84b96aa0844d22f655dfa1449d56"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/shelllink.py",
+      "size_bytes": 10926,
+      "sha256": "4194202c62d2560e9b1b533dd828afcfecfa11cf8eabe0f51c3e05617d960dd4"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/stream.py",
+      "size_bytes": 2566,
+      "sha256": "076ae1835f0fa960659146651f08c56569413dc70e6b153454ff516a55531d79"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/__init__.py",
+      "size_bytes": 8162,
+      "sha256": "0aa59d99eef63bea0d32a653e682e6d1d33ec2fb599e018e1dc0f7ed825b1701"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/find_memleak.py",
+      "size_bytes": 2157,
+      "sha256": "ab280544648b9e1473d1b97342b14e906d9325abc7fd55fb9ba70af6db1a7acd"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/monikers_helper.py",
+      "size_bytes": 1052,
+      "sha256": "37f6719a1f6e599eb1f5472f68d53a2e4c6f7b2ddbcef4266ac0eb66fb87609e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/runtests.py",
+      "size_bytes": 144,
+      "sha256": "6c8d3c1eae5709a1cce4d0151b51371526cc6c4ead774fb7cf691d86e668b165"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/setup.py",
+      "size_bytes": 172,
+      "sha256": "af6f2c4a7c2214ee1ce954eec4f1e91034a6f5a1d3f4c29afca92d2b350684e5"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_agilent.py",
+      "size_bytes": 4394,
+      "sha256": "f7eacbbba21741ed0291bfd908bc629ccbcbce57d923d0377245602f967897d9"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_avmc.py",
+      "size_bytes": 1368,
+      "sha256": "132b8b7411a9206be3a9d806a0702c6883c8569365ec3948c6f51f5f9e7fe6db"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_basic.py",
+      "size_bytes": 4695,
+      "sha256": "b75d40d88ea259622ace08028e29d648fac9801986862f4e7278533642f6f328"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_bctx.py",
+      "size_bytes": 2482,
+      "sha256": "8702f4cade2863180a8c68d1d079c406ed8eb7f46aa8a2567e9b079ffef7080e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_BSTR.py",
+      "size_bytes": 1208,
+      "sha256": "d6143ce6eb22eaa9bc7b1c0f4562bab492c14954d0f63958a718c38f1b55d0d9"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_casesensitivity.py",
+      "size_bytes": 1101,
+      "sha256": "a6454fe603bbc54f2835de316617e4377ee6a9e207840771786f3cbeacd8b76f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_classfactory.py",
+      "size_bytes": 3168,
+      "sha256": "9a506f438b951601ea055a0018bdd66ef66c048d6ff84d7a4a5605740f4884b0"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_clear_cache.py",
+      "size_bytes": 818,
+      "sha256": "4675dc025ca15f742b6cf755d03f8b5f858bea3b2bf8fa5562de375667714783"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_client.py",
+      "size_bytes": 14830,
+      "sha256": "61aeb88bb471538ff0c67b7c43d471528f407a333f5621395fc646e06fda49f6"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_client_dynamic.py",
+      "size_bytes": 2900,
+      "sha256": "76351d984350fbcd72037917d0158a7fcdada631ff0b60c8834f7e7d9625c301"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_client_regenerate_modules.py",
+      "size_bytes": 7524,
+      "sha256": "75e7ee889d89e426a7b70c51084851f5511a08737e5840a7b821edc3e3814ee0"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_collections.py",
+      "size_bytes": 5481,
+      "sha256": "4268718203d70f983818eabc31f29af1344f468d70f8e3dadd59649b5b3dd78d"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_comobject.py",
+      "size_bytes": 5779,
+      "sha256": "f3dc177cc9cc8af54e6afd338a536b801b22fe9dec925f03f1bd85f2b191a0ce"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_comserver.py",
+      "size_bytes": 12814,
+      "sha256": "3f9d1b127335b3ebcacc672251650c5b76199846266fd4b8445b994e1a7a9f0a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_createwrappers.py",
+      "size_bytes": 4093,
+      "sha256": "4300fa4fea4df411b4547dbfdd4f8869409ec6da90c86433f75f6f508b9d1209"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_dict.py",
+      "size_bytes": 5153,
+      "sha256": "003a6e9e8b0168ae715fcf9a74756aac59a4b528aa93ab85f0f6bafc3ed8fd42"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_dispifc_records.py",
+      "size_bytes": 4258,
+      "sha256": "5eaacf02cc432b11ad7de8341ed52de5244d9d67394a121c958b25834afc4be1"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_dispifc_safearrays.py",
+      "size_bytes": 3954,
+      "sha256": "af4352539d7331351e5f0f60f66f3cfc3e7e51281fbb7bb07d0ada422964698a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_dispinterface.py",
+      "size_bytes": 5104,
+      "sha256": "c4af3eb5514efb528a292a50d1ffebeedc42a16a12fade549067022e59860882"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_DISPPARAMS.py",
+      "size_bytes": 1156,
+      "sha256": "3f555cc19f64fe9dc96caea8167d8b774008e35df18870e5dd10fd423c7d7dee"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_dyndispatch.py",
+      "size_bytes": 3143,
+      "sha256": "4e7213b31ffe034c6d6da26d92a6bcaf7c424d3395bdc0adcbecd9b645454b75"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_errorinfo.py",
+      "size_bytes": 4763,
+      "sha256": "3158bb67b997660266097ae592fb15ff9ec74041fb0b1f4076c7483b53463a04"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_eventinterface.py",
+      "size_bytes": 4255,
+      "sha256": "1c77be9e5569020a20a420c6ba462f9df7f17a32edd93309635f4b39e696d3ef"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_excel.py",
+      "size_bytes": 5007,
+      "sha256": "6408a396ff1f42de772454b68732284765b1bc66f2790a997a0b7aaf2202fc2e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_findgendir.py",
+      "size_bytes": 3041,
+      "sha256": "947ae7ff5e37f526872949ccc58f4b131aa60301b28f358772691c68fa90ca84"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_getactiveobj.py",
+      "size_bytes": 2776,
+      "sha256": "125f2c72ca4ce59b4753eb6911c119abe6843929148f66303b8de1faf3ec7284"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_GUID.py",
+      "size_bytes": 1720,
+      "sha256": "c676f8872c293f0d55fee736bd9a03ee62ad9706fa88da912084b63166b55807"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_hresult.py",
+      "size_bytes": 3149,
+      "sha256": "051c09c3772c16738e2214176710d4bdae28928daa9102b55f765dc2f54d5dce"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_ienum.py",
+      "size_bytes": 887,
+      "sha256": "b25df56039affada534763330a6d7dd0228b8edd1b93d173f94ee68df0b45efa"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_imfattributes.py",
+      "size_bytes": 1411,
+      "sha256": "c7d7c91b413997baa7a701219a46d207782fce46a4984bcc78ff28681f72c423"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_inout_args.py",
+      "size_bytes": 21049,
+      "sha256": "b84571d419419975154810c3375d0f24eb8cdefefcfc9121574346a83bbed7e7"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_malloc.py",
+      "size_bytes": 2166,
+      "sha256": "cebcf7601f171ccca06a079fd485361f13da18b9c6f037fb33685a51ce4d9e22"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_messageloop.py",
+      "size_bytes": 4579,
+      "sha256": "791e5c1a2e93610091b1b427fb1461f57194ae050a0ef4107f155f7d4de2876b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_midl_safearray_create.py",
+      "size_bytes": 4122,
+      "sha256": "8ec0a64282d19aaed876d35d860e971715d909ec7baf92293aecaf5c4e089c49"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_moniker.py",
+      "size_bytes": 2479,
+      "sha256": "b8b761c0d7605b20bd29bddbca8f515afe0f460f52cb9099ebbc4d925d006833"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_msscript.py",
+      "size_bytes": 2874,
+      "sha256": "c8f8bb12e16a8c207004c3351810d6bc9f79149fab695c338d3db4eafa517257"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_npsupport.py",
+      "size_bytes": 12559,
+      "sha256": "edd4eb18ea1a05936c313ca5e49633d6bc0509253bf42dc7f522728b86f6986e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_outparam.py",
+      "size_bytes": 2519,
+      "sha256": "2a93c410a3677a790319ed2197f5f4bb25bcd7f455b285944ebe00184192dfbf"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_persist.py",
+      "size_bytes": 2677,
+      "sha256": "4d95e4da77862478d3c305003c064dfee51dfe760c58505739e025bbba370bf4"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_pump_events.py",
+      "size_bytes": 379,
+      "sha256": "c1c3a1cd280d913051655fe8cb07cefec41e23d37ebb729ff68407841991d438"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_puredispatch.py",
+      "size_bytes": 5070,
+      "sha256": "0720137a05159bbe0048e52aae38e81cf45e694857d1256de3d39f3c0ca0fe93"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_QueryService.py",
+      "size_bytes": 2644,
+      "sha256": "b3eb5719715fbdec2bda79786612eb9203f734affe8266971700f9736a71a87f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_recordinfo.py",
+      "size_bytes": 2704,
+      "sha256": "b3870ffe751610f631f257656303315c78ce88269240d53491818c23c9c6a9cf"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_rot.py",
+      "size_bytes": 2402,
+      "sha256": "f51a24b5b571281667a4640a8b54ffcdf6d8d7aaeb7e25a26f0fa3a27f06229e"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_safearray.py",
+      "size_bytes": 6935,
+      "sha256": "9ac315bde2d3eeb4b30ce014ee5d63e4ec1cede3d1ef1ac91bbe05a4790c1c0d"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_sapi.py",
+      "size_bytes": 1162,
+      "sha256": "a98f2da483a40f558082390893508a1ecfcd4f5f864e4c6b14209567a77bf6f2"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_server.py",
+      "size_bytes": 10717,
+      "sha256": "09041164184de804fec8e12ea6e5a1504baad38d0ac575ebd165eee5a850b6e9"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_server_register.py",
+      "size_bytes": 20039,
+      "sha256": "e039b546945ccc5916e0aa20e767ffc54dd83abe52ad21db9d0365c0927a04c9"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_shelllink.py",
+      "size_bytes": 5113,
+      "sha256": "1e234bb2d618eb78a19801c045e132d9fab5a480da3609e4b199c898332af833"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_showevents.py",
+      "size_bytes": 1134,
+      "sha256": "957322bfd8ab9c02a01a35d5605583d53b238c4c81863f1f07ce9ff53f650b46"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_storage.py",
+      "size_bytes": 13161,
+      "sha256": "40eade3c7f528c22f4caffc239a41e45da25011a9d61f67b0d6f8fcad37a9edd"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_stream.py",
+      "size_bytes": 27006,
+      "sha256": "4aca0fce44f7ecad9e6d988841facd70cbd3130ec2e78d8d7994de3760b8e982"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_subinterface.py",
+      "size_bytes": 383,
+      "sha256": "f6e5e954b98ed3bbd67bdf111961cb3e06ba0eeea9ad201af5f7ef55ee7e6449"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_typeannotator.py",
+      "size_bytes": 8253,
+      "sha256": "aaedddee204a2c6d98f799457019d26ef4a2f3e7f80396216babc609f3043968"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_typeinfo.py",
+      "size_bytes": 11174,
+      "sha256": "365e1db05ba937fac2914203c2fad287fad5dc028fbbd4ff96476ddbacece545"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_urlhistory.py",
+      "size_bytes": 1848,
+      "sha256": "776a362dbfe7928c4a7f6fca7ef86cf678358767ea0bad61e6e5d616c9436ace"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_util.py",
+      "size_bytes": 8520,
+      "sha256": "e9e305ca6a733a44919539d825115b56b16e64c5e763679df3e725b2de095669"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_variant.py",
+      "size_bytes": 10764,
+      "sha256": "9ff28a2699a0601401be66dafcdf2fc5c0c2b032451b64a5cd32bf89302fa3a5"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_variant_outparam.py",
+      "size_bytes": 3348,
+      "sha256": "066a4c294285f0c295a75959070fbbb758f73eea3ffdff83e32a84fc58e3a0e5"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_viewobject.py",
+      "size_bytes": 2842,
+      "sha256": "98d991b87d4f685ef84651eaf4944128998e24bc84d518d97b021ea751d61e9a"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_w_getopt.py",
+      "size_bytes": 1014,
+      "sha256": "b9b240f88a30fc3333f0aa5edc220e9dbc60ab96ee7d2578e6e9782974e32607"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_win32com_interop.py",
+      "size_bytes": 5853,
+      "sha256": "b01c2715a4e3df2e6f2a1ce9b10fed08e6c81cff9dc47fced142deb315c2be9b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/test_word.py",
+      "size_bytes": 2364,
+      "sha256": "fb0fb03442009f5443ffcbaa83b9d30a8cd34cdb152ab38b83badd08e67eee43"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/TestComServer.py",
+      "size_bytes": 5161,
+      "sha256": "7ea3eb35fe34928eb55f7a718e9f6a2471e8362848fd63bc12d8abc0ea4637ee"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/test/TestDispServer.py",
+      "size_bytes": 3776,
+      "sha256": "fb5076d1be11076401b63e6fe954b9f66ce3db45e3f04b33829470fca1a042c5"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/__init__.py",
+      "size_bytes": 30,
+      "sha256": "5a09220feee4059709512322a9d4a381e4625203cad3bbf2bb9d4827499b7dc0"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/codegenerator/__init__.py",
+      "size_bytes": 207,
+      "sha256": "81f2dcc25a48c5085102fccc7462ee3b73a58ee97ae66e3f615100dc74581218"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/codegenerator/codegenerator.py",
+      "size_bytes": 30229,
+      "sha256": "e311bafe3ad6adcec494d9f15ecfea30d94b477ceafb24aed5ca9266314a6ec5"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/codegenerator/comments.py",
+      "size_bytes": 3615,
+      "sha256": "7d7b02309f0fbedaae617a4a5fadf3f90814633fea890bfdd06a7d240aefb217"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/codegenerator/heads.py",
+      "size_bytes": 8415,
+      "sha256": "2cb74875c00ac1fb1a680e0616276e87866fe97790a00f880c5d4fd84df91674"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/codegenerator/helpers.py",
+      "size_bytes": 12881,
+      "sha256": "69198754160b7c339d22144f9d78731efd9a38366f4e05fe8ed616831ebaffa5"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/codegenerator/modulenamer.py",
+      "size_bytes": 762,
+      "sha256": "3ccbeb1802fa53e05b91fbe76c8d57fd5bf8fd38fb4b94c944b29f0dc293098b"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/codegenerator/namespaces.py",
+      "size_bytes": 10711,
+      "sha256": "f3f39cdb4f5dc5ad65f25e395dd318c3443d22ae17252a83ca385c92a79b8596"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/codegenerator/packing.py",
+      "size_bytes": 2458,
+      "sha256": "213a3961690440b80e729e4e75409d4998fd00797816afa911fd2d59d747c689"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/codegenerator/typeannotator.py",
+      "size_bytes": 16117,
+      "sha256": "7ed91575737a785442f9da31f3a89ee6ef3332fb615314c0116db52be296e546"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/tlbparser.py",
+      "size_bytes": 30910,
+      "sha256": "7b73b8b1d34573fc6642db5d258f1a5bd907c380c074b471306048c8d0e06bda"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/typedesc.py",
+      "size_bytes": 6830,
+      "sha256": "08ca6635b407da3dad56279d493a40455eb4bda3ed9c3ee3b5d07719424e90e7"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/tools/typedesc_base.py",
+      "size_bytes": 6434,
+      "sha256": "e4b76c08673ac80d53959efdc6f341e24ede593cce4829752ac01b726f93c6bd"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/typeinfo.py",
+      "size_bytes": 45946,
+      "sha256": "8fc01ec05ba3cba350834e01572412920142b6c97292a9bead73e9b035fd5c6f"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/util.py",
+      "size_bytes": 5913,
+      "sha256": "844a094d5a19c70cfd982994ec129e9ccf2f26dc7707b1edc9236393cc7fb4fa"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/Lib/site-packages/comtypes/viewobject.py",
+      "size_bytes": 7044,
+      "sha256": "2e15788495303d6c415f737aa8cd58cc029802ba4517bbf1195eb7d7378645c6"
+    },
+    {
+      "path": "artifacts/software-exploration/s2-completion-01/runtime/pyvenv.cfg",
+      "size_bytes": 158,
+      "sha256": "9d4efa88370c1e0053d869e8200585a62152d1bcf0cf7a0f8b5575ace825b820"
+    },
+    {
+      "path": "docs/miniorder/MiniOrder-Requirements.md",
+      "size_bytes": 2329,
+      "sha256": "033bee6c01fe24ddae53d449b309f44b470a864cdd4583bb4bd7b17b4fdc603f"
+    },
+    {
+      "path": "evaluation/software-exploration/ground-truth/miniorder-v1.json",
+      "size_bytes": 17049,
+      "sha256": "becac5dc7adb502fd7bdea8d1031b2b53e7d8bc75bf7042c11ad1dad970ae574"
+    },
+    {
+      "path": "evaluation/software-exploration/s2-completion-01/admission.md",
+      "size_bytes": 2459,
+      "sha256": "25b5d75dfafc2a4f7ab03c3a3f447c3dea5685402c3356284a68cd5b00317ed4"
+    },
+    {
+      "path": "evaluation/software-exploration/s2-completion-01/agent-start-template.md",
+      "size_bytes": 3437,
+      "sha256": "ac4d98954ef3d3d123646d102fbb24d755468eb7934105f8a019c874b6a19a85"
+    },
+    {
+      "path": "evaluation/software-exploration/s2-completion-01/inputs/report.schema.json",
+      "size_bytes": 4313,
+      "sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72"
+    },
+    {
+      "path": "evaluation/software-exploration/s2-completion-01/inputs/s2-a-verified-requirements.json",
+      "size_bytes": 19323,
+      "sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497"
+    },
+    {
+      "path": "evaluation/software-exploration/s2-completion-01/inputs/s2-b-s1-baseline.json",
+      "size_bytes": 33189,
+      "sha256": "99b6b1648e438b666e787300894cc5f988f0c36009534039bc8b6321bdd56d6a"
+    },
+    {
+      "path": "evaluation/software-exploration/s2-completion-01/protocol.md",
+      "size_bytes": 6042,
+      "sha256": "2099bf2a6fdde1954d2f1290608aa9bae523eb70bb09b0f382632425708a803b"
+    },
+    {
+      "path": "evaluation/software-exploration/s2-completion-01/reuse-decision.md",
+      "size_bytes": 2197,
+      "sha256": "ffb44a8fcc165f24674c085f5d1e2a2837b743d1a7a684f4cb69c0edd86d3da0"
+    },
+    {
+      "path": "evaluation/software-exploration/s2-completion-01/reuse-research.md",
+      "size_bytes": 13502,
+      "sha256": "ebe710ded122cfc72f23a9ca239cf04286db32d2f211cb30eed3003a68ba61d1"
+    },
+    {
+      "path": "evaluation/software-exploration/s2-completion-01/tool-guide.md",
+      "size_bytes": 2798,
+      "sha256": "de75b1b4751dcaa03a910872fe81d686a1a0f0181ee843660ae8cc165875fd5e"
+    },
+    {
+      "path": "pyproject.toml",
+      "size_bytes": 630,
+      "sha256": "d5adb315e4b88bec6d1598778af7c63eff9455029ebe22a0eec4ed76e8da7688"
+    },
+    {
+      "path": "scripts/evaluate_software_exploration_s2.py",
+      "size_bytes": 15587,
+      "sha256": "3af78ee7c1382ed678b09844f03bac812ce67189f4ebb1f261f2897056201cda"
+    },
+    {
+      "path": "scripts/s2_windows_mcp.py",
+      "size_bytes": 17991,
+      "sha256": "a18e429c053437eff893e5ed6949ca220dc825239dc551c139ccb3ab3f5ec735"
+    },
+    {
+      "path": "tests/unit/test_s2_windows_mcp.py",
+      "size_bytes": 15007,
+      "sha256": "25e4af00015102bf9c73fc1dd64c8cd73e8d2c47e092c480bf43153d1acaf1fd"
+    },
+    {
+      "path": "uv.lock",
+      "size_bytes": 227008,
+      "sha256": "75f11dce3eda0c03c0c9a00d355d9579b460eb05dc376b0387edf569e3b9dda6"
+    }
+  ]
+}

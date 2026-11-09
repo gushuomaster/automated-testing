@@ -1,0 +1,123 @@
+{
+  "schema_version": "s2-round03-freeze/v1",
+  "frozen_at": "2026-10-29T07:32:45.768883+00:00",
+  "role": "development/calibration",
+  "run_count": 1,
+  "budget": {
+    "max_minutes": 15,
+    "max_gui_actions": 30,
+    "max_same_action_retries": 2,
+    "max_window_rebinds": 1
+  },
+  "thresholds": {
+    "critical_entry_recall": 1.0,
+    "ui_requirement_mapping_recall": 0.9,
+    "mapping_precision": 0.95,
+    "reproducible_path_rate": 0.95,
+    "unsupported_control_rate_max": 0.05,
+    "persistent_side_effects": 0
+  },
+  "source_head": "e0adf976af2674ffd09291a758ac24d11907a6b2",
+  "workspace_status": [
+    " M .trellis/spec/backend/index.md",
+    "?? .trellis/spec/backend/ufo-admission-contracts.md",
+    "?? .trellis/tasks/10-27-software-exploration-s2/",
+    "?? .trellis/tasks/10-29-software-exploration-s2-round03/",
+    "?? .trellis/tasks/10-29-software-exploration-solution-comparison/",
+    "?? .trellis/tasks/10-29-ufo-uia-admission/",
+    "?? evaluation/software-exploration/",
+    "?? schemas/software-exploration-report.schema.json",
+    "?? scripts/capture_software_exploration_report.py",
+    "?? scripts/evaluate_software_exploration_s2.py",
+    "?? scripts/prepare_software_exploration_calibration.py",
+    "?? scripts/prepare_software_exploration_s2.py",
+    "?? scripts/ufo_admission_probe.py",
+    "?? tests/unit/test_capture_software_exploration_report.py",
+    "?? tests/unit/test_evaluate_software_exploration_s2.py",
+    "?? tests/unit/test_software_exploration_calibration.py",
+    "?? tests/unit/test_software_exploration_s2.py",
+    "?? tests/unit/test_ufo_admission_probe.py"
+  ],
+  "files": [
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/protocol-base.md",
+      "size_bytes": 3767,
+      "sha256": "4a7cd9821ec208a3d22695fdbe495e5b82fdb166ee7638d0aeb122ed6f9cbfb4"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/protocol-addendum.md",
+      "size_bytes": 3144,
+      "sha256": "6f869bb84a9f3c810a0d3af9b156cd555ad12b8f4b2d20478bbe4f39f469158f"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/protocol-inherited-round02.md",
+      "size_bytes": 3111,
+      "sha256": "de99d2d00ac2ddbbeb190cb28eb8513aa2c5b185f5ed7344f13958f762bbbac0"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/test-agent-prompt.md",
+      "size_bytes": 3869,
+      "sha256": "3e44180eb91876ebce7b240737d5b994f04d465199f61173a04676a72d34cfc6"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/tool-guide.md",
+      "size_bytes": 28057,
+      "sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/test-bundle.md",
+      "size_bytes": 57719,
+      "sha256": "5e19b7b5ecf4ee7f22433b8a3618ce5e9feb02b2cdd205c3dd5bc14d1f4e6edf"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/inputs/requirements.json",
+      "size_bytes": 19323,
+      "sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-03/report.schema.json",
+      "size_bytes": 4313,
+      "sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/run-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/round-03/run-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "docs/miniorder/MiniOrder-Requirements.md",
+      "size_bytes": 2329,
+      "sha256": "033bee6c01fe24ddae53d449b309f44b470a864cdd4583bb4bd7b17b4fdc603f"
+    },
+    {
+      "path": "evaluation/software-exploration/ground-truth/miniorder-v1.json",
+      "size_bytes": 17049,
+      "sha256": "becac5dc7adb502fd7bdea8d1031b2b53e7d8bc75bf7042c11ad1dad970ae574"
+    },
+    {
+      "path": "scripts/evaluate_software_exploration_s2.py",
+      "size_bytes": 15587,
+      "sha256": "3af78ee7c1382ed678b09844f03bac812ce67189f4ebb1f261f2897056201cda"
+    },
+    {
+      "path": "scripts/capture_software_exploration_report.py",
+      "size_bytes": 1592,
+      "sha256": "a1691fd7d2a20ead949ed7b464064d2b04773dd39997a9c780700cc06b61dce8"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/agent-report.md",
+      "size_bytes": 1966,
+      "sha256": "5fa933c8232b7221fec71a4f00a4335b1a7d3894d9b5c544be3ac0a669505c76"
+    },
+    {
+      "path": "artifacts/software-exploration/ufo-admission-01/diagnostics/health-01/agent-events.json",
+      "size_bytes": 23853,
+      "sha256": "77dab64ba6e95eba11c792b9089cf26ccb4b2cdcff5fd1a9206bf52095661b93"
+    }
+  ]
+}

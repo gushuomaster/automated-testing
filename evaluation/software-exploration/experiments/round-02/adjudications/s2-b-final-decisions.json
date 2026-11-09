@@ -1,0 +1,255 @@
+{
+  "supported_mapping_ids": [
+    "REQ-001",
+    "REQ-002",
+    "REQ-003",
+    "REQ-005",
+    "REQ-006",
+    "REQ-007",
+    "REQ-008",
+    "REQ-009",
+    "REQ-010",
+    "REQ-011",
+    "REQ-012",
+    "REQ-013",
+    "REQ-014",
+    "REQ-015",
+    "REQ-016",
+    "REQ-017",
+    "REQ-018",
+    "REQ-019",
+    "REQ-020",
+    "REQ-021",
+    "REQ-022",
+    "REQ-023",
+    "REQ-024",
+    "REQ-025",
+    "REQ-026",
+    "REQ-027",
+    "REQ-028",
+    "REQ-029",
+    "REQ-030",
+    "REQ-031",
+    "REQ-032",
+    "REQ-033",
+    "REQ-034",
+    "REQ-035",
+    "REQ-036",
+    "REQ-037",
+    "REQ-038",
+    "REQ-039",
+    "REQ-040",
+    "REQ-041",
+    "REQ-042",
+    "REQ-043",
+    "REQ-044",
+    "REQ-046",
+    "REQ-047"
+  ],
+  "unsupported_mapping_ids": [],
+  "fully_reproducible_path_ids": [
+    "REQ-001",
+    "REQ-003",
+    "REQ-005",
+    "REQ-006",
+    "REQ-007",
+    "REQ-008",
+    "REQ-009",
+    "REQ-020",
+    "REQ-021",
+    "REQ-022",
+    "REQ-023",
+    "REQ-036",
+    "REQ-037",
+    "REQ-038",
+    "REQ-039",
+    "REQ-040",
+    "REQ-043"
+  ],
+  "safe_prefix_path_ids": [
+    "REQ-002",
+    "REQ-011",
+    "REQ-013",
+    "REQ-014",
+    "REQ-015",
+    "REQ-016",
+    "REQ-017",
+    "REQ-018",
+    "REQ-019",
+    "REQ-024",
+    "REQ-025",
+    "REQ-026",
+    "REQ-027",
+    "REQ-028",
+    "REQ-029",
+    "REQ-030",
+    "REQ-031",
+    "REQ-032",
+    "REQ-033",
+    "REQ-034",
+    "REQ-035",
+    "REQ-044",
+    "REQ-046",
+    "REQ-047",
+    "REQ-010",
+    "REQ-012"
+  ],
+  "non_reproducible_paths": {
+    "REQ-041": "INDETERMINATE：原正式日志有支持；锁后复验相同关键字时状态为新建，未对全部状态执行Return。不是已证实路径失败。",
+    "REQ-042": "INDETERMINATE：原正式日志有支持；锁后复验相同关键字时状态为新建，未对全部状态执行Return。不是已证实路径失败。"
+  },
+  "inventory": [
+    {
+      "automation_id": "MiniOrderMainWindow",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "MainTabs",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "CreateOrderTab",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "QueryOrderTab",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "CustomerNameInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "ProductNameInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "QuantityInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "UnitPriceInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "OrderAmountOutput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "SaveOrderButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "ClearOrderButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "OrderFormStatus",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "QueryKeywordInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-011"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "StatusFilter",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-011"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "QueryOrdersButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-011"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "ClearFiltersButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-011"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "QueryResultCount",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-011"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "OrderResultsGrid",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-011"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    },
+    {
+      "automation_id": "MainStatusStrip",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ],
+      "basis": "原始UIA及锁后新建/查询页观察存在；仅支持可见控件及报告所述边界，不证明按钮已成功执行。"
+    }
+  ]
+}

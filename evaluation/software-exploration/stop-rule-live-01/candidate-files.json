@@ -1,0 +1,121 @@
+{
+  "schema_version": "stop-live-candidate-files/v1",
+  "status": "CANDIDATE_NOT_FINAL_FROZEN",
+  "scope": "准备方文件快照；主方健康产物和最终 freeze 需另纳入；本文件不自哈希",
+  "files": [
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/inputs/requirements.json",
+      "size_bytes": 19323,
+      "sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497",
+      "characters": 15170,
+      "lf_normalized_characters": 15170,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/isolation.md",
+      "size_bytes": 1885,
+      "sha256": "b08a809b27892ab92b3624eb4b5ba6bf4d2a69c75b4cb9e8595d328db0977f0c",
+      "characters": 749,
+      "lf_normalized_characters": 749,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/launch-instructions.md",
+      "size_bytes": 1756,
+      "sha256": "134f7a4fb622fc7521d64c324d1179eadefecacc2c07f1880e1130fb695bd0f0",
+      "characters": 802,
+      "lf_normalized_characters": 802,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/preparation.json",
+      "size_bytes": 3409,
+      "sha256": "18f94a4126df86191ddc9796f10b5357f31b9b512c69eb1d07e699886fcfe1ad",
+      "characters": 3305,
+      "lf_normalized_characters": 3305,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/protocol.md",
+      "size_bytes": 4988,
+      "sha256": "3234d6b8d316f56ec76ca6de52422f6d05df0f44bb5d520ab025c763972537d2",
+      "characters": 2134,
+      "lf_normalized_characters": 2134,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/report.schema.json",
+      "size_bytes": 4313,
+      "sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72",
+      "characters": 4297,
+      "lf_normalized_characters": 4297,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/stop-rules.md",
+      "size_bytes": 1984,
+      "sha256": "5b5abbb529217cd52e1be11c5dd4ed86b49442a8a6823036b8010f8d0ed30fea",
+      "characters": 812,
+      "lf_normalized_characters": 812,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/test-agent-prompt.md",
+      "size_bytes": 6845,
+      "sha256": "9164a599eaec39f1ed799a30bf799c36e0952b5612b5b1c9be34d71d9e75b3c4",
+      "characters": 2927,
+      "lf_normalized_characters": 2927,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/test-bundle.md",
+      "size_bytes": 60732,
+      "sha256": "78292338ba18a84447af3406eabdc6dd8ee835b5f2ca35318c2917671d18f5fd",
+      "characters": 51355,
+      "lf_normalized_characters": 51355,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/tool-guide.md",
+      "size_bytes": 28057,
+      "sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227",
+      "characters": 28035,
+      "lf_normalized_characters": 28035,
+      "utf8_bom": false
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/historical-lock-verification.json",
+      "size_bytes": 27421,
+      "sha256": "8b76fa61c203d50bcd0eb81039a3fb181244e35ab55fb5facc99f98a9fb70f37",
+      "characters": 27421,
+      "lf_normalized_characters": 27421,
+      "utf8_bom": false
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "characters": 552,
+      "lf_normalized_characters": 552,
+      "utf8_bom": false
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "characters": 552,
+      "lf_normalized_characters": 552,
+      "utf8_bom": false
+    }
+  ]
+}

@@ -1,0 +1,904 @@
+{
+  "schema_version": "software-exploration-adjudication/v1",
+  "run_id": "s2-b",
+  "report_lock": {
+    "lock_path": "D:/project/agent/automated-testing/artifacts/software-exploration/round-01/s2-b/report-lock.json",
+    "lock_file_sha256": "099c617df90e20caaf38abae109d24e1559653c5ca3f345727982c27e1645dff",
+    "recorded_lock_sha256": "668c52f2427a89649eacb43fd005a5f3f29efcc74a6b4b63f581bfc83ffe38e9",
+    "recorded_lock_sha256_verified": false,
+    "verification_scope": "只复算 files 条目的大小和 SHA-256；仓库没有 lock_sha256 的生成算法，未声称复算该声明值。",
+    "valid": true,
+    "files": [
+      {
+        "path": "raw-report.json",
+        "expected_size_bytes": 32519,
+        "actual_size_bytes": 32519,
+        "expected_sha256": "adae9aab59e3dc9a83eb6b54fc81bf7e8c3376156e5e0789c637ae22a8ccbb0b",
+        "actual_sha256": "adae9aab59e3dc9a83eb6b54fc81bf7e8c3376156e5e0789c637ae22a8ccbb0b"
+      }
+    ]
+  },
+  "schema_validation": {
+    "valid": false,
+    "error_count": 53,
+    "categories": {
+      "unexpected_root_property": 1,
+      "confidence_type": 52,
+      "summary_type": 0,
+      "other": 0
+    }
+  },
+  "budget_usage": {
+    "elapsed_minutes": 14,
+    "gui_actions": 30,
+    "same_action_retries": 0,
+    "window_rebinds": 0
+  },
+  "metrics": {
+    "critical_entry_recall": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "ui_requirement_mapping_recall": {
+      "numerator": 43,
+      "denominator": 46,
+      "value": 0.9347826086956522
+    },
+    "mapping_precision": {
+      "numerator": 43,
+      "denominator": 43,
+      "value": 1.0
+    },
+    "reproducible_path_rate": {
+      "numerator": 41,
+      "denominator": 43,
+      "value": 0.9534883720930233
+    },
+    "unsupported_control_rate": {
+      "numerator": 0,
+      "denominator": 15,
+      "value": 0.0
+    },
+    "exact_status_match_rate": {
+      "numerator": 43,
+      "denominator": 52,
+      "value": 0.8269230769230769
+    },
+    "classification_family_accuracy": {
+      "numerator": 49,
+      "denominator": 52,
+      "value": 0.9423076923076923
+    },
+    "tool_classification_accuracy": {
+      "numerator": null,
+      "denominator": null,
+      "value": null,
+      "status": "INDETERMINATE",
+      "reason": "正式运行未冻结独立的逐次工具调用日志，无法在锁后独立核验 Agent 对每次工具状态的分类。"
+    },
+    "non_mapping_classification_accuracy": {
+      "numerator": 6,
+      "denominator": 9,
+      "value": 0.6666666666666666
+    },
+    "persistent_side_effects": 0,
+    "human_interventions": 0
+  },
+  "thresholds": {
+    "critical_entry_recall": true,
+    "ui_requirement_mapping_recall": true,
+    "mapping_precision": true,
+    "reproducible_path_rate": true,
+    "unsupported_control_rate": true,
+    "persistent_side_effects": true
+  },
+  "all_frozen_thresholds_met": true,
+  "critical_entries": {
+    "新建订单": true,
+    "查询订单": true
+  },
+  "inventory_adjudications": [
+    {
+      "automation_id": "MiniOrderMainWindow",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001"
+      ]
+    },
+    {
+      "automation_id": "MainTabs",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-001",
+        "OBS-003"
+      ]
+    },
+    {
+      "automation_id": "CustomerNameInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ]
+    },
+    {
+      "automation_id": "ProductNameInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ]
+    },
+    {
+      "automation_id": "QuantityInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002",
+        "OBS-005"
+      ]
+    },
+    {
+      "automation_id": "UnitPriceInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002",
+        "OBS-006"
+      ]
+    },
+    {
+      "automation_id": "OrderAmountOutput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002",
+        "OBS-006"
+      ]
+    },
+    {
+      "automation_id": "SaveOrderButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ]
+    },
+    {
+      "automation_id": "ClearOrderButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-002"
+      ]
+    },
+    {
+      "automation_id": "QueryKeywordInput",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-003",
+        "OBS-011"
+      ]
+    },
+    {
+      "automation_id": "StatusFilter",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-003",
+        "OBS-004"
+      ]
+    },
+    {
+      "automation_id": "QueryOrdersButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-003",
+        "OBS-011"
+      ]
+    },
+    {
+      "automation_id": "ClearFiltersButton",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-003"
+      ]
+    },
+    {
+      "automation_id": "QueryResultCount",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-003",
+        "OBS-008",
+        "OBS-009"
+      ]
+    },
+    {
+      "automation_id": "OrderResultsGrid",
+      "verdict": "SUPPORTED",
+      "evidence_ids": [
+        "OBS-003",
+        "OBS-011",
+        "OBS-012"
+      ]
+    }
+  ],
+  "mappings": [
+    {
+      "requirement_id": "REQ-001",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-002",
+      "expected_status": "MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": false,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-003",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-004",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    },
+    {
+      "requirement_id": "REQ-005",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-006",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-007",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-008",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-009",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-010",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": false,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-011",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-012",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": false,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-013",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-014",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-015",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-016",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-017",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-018",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-019",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-020",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-021",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-022",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-023",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": false,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-024",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-025",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-026",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-027",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-028",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-029",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_SAFE_PREFIX",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-030",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_REPRODUCIBLE",
+      "path_adjudication_reason": "路径要求成功保存后的状态，正式运行未执行保存。",
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-031",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-032",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-033",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-034",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-035",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-036",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-037",
+      "expected_status": "MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": false,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-038",
+      "expected_status": "MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": false,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-039",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-040",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-041",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-042",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-043",
+      "expected_status": "MAPPED",
+      "reported_status": "MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "REPRODUCIBLE_FULL",
+      "path_adjudication_reason": null,
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-044",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "PARTIALLY_MAPPED",
+      "ui_related": true,
+      "mapping_supported": true,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_REPRODUCIBLE",
+      "path_adjudication_reason": "路径要求保存后再查询并对照，本轮只有既存结果行证据。",
+      "adjudication_note": "正式映射由报告内有效 UIA 观察支持。"
+    },
+    {
+      "requirement_id": "REQ-045",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    },
+    {
+      "requirement_id": "REQ-046",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "UNREACHABLE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-047",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "UNREACHABLE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-048",
+      "expected_status": "PARTIALLY_MAPPED",
+      "reported_status": "UNREACHABLE",
+      "ui_related": true,
+      "mapping_supported": false,
+      "exact_status_match": false,
+      "classification_family_correct": false,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "未形成计入召回率的正式 UI 映射。"
+    },
+    {
+      "requirement_id": "REQ-049",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    },
+    {
+      "requirement_id": "REQ-050",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    },
+    {
+      "requirement_id": "REQ-051",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    },
+    {
+      "requirement_id": "REQ-052",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "reported_status": "NOT_UI_OBSERVABLE",
+      "ui_related": false,
+      "mapping_supported": false,
+      "exact_status_match": true,
+      "classification_family_correct": true,
+      "evidence_references_valid": true,
+      "path_adjudication": "NOT_SCORED",
+      "path_adjudication_reason": null,
+      "adjudication_note": "非 UI 项按分类正确性裁决。"
+    }
+  ],
+  "notes": [
+    "映射召回和精确率按冻结协议将有证据的 MAPPED 与 PARTIALLY_MAPPED 都视为正式映射。",
+    "exact_status_match_rate 单独呈现，不用于替换冻结的映射召回率口径。",
+    "映射支持、路径复现和控件存在性均来自 adjudication-decisions.json 的显式锁后裁决，不由字段非空自动推断。",
+    "PARTIALLY_MAPPED 只声称到达安全前缀时可判 REPRODUCIBLE_SAFE_PREFIX；声称保存后状态却没有执行证据时不计入路径复现分子。",
+    "状态分类提供诊断指标；工具分类准确率因缺少独立冻结的逐次工具调用日志而保留为 INDETERMINATE，不计入冻结门槛。"
+  ]
+}

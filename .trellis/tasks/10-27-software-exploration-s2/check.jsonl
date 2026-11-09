@@ -1,0 +1,6 @@
+{"file":"CS-Autonomous-Testing-Framework-v0.1.md","reason":"复核交付是否只覆盖 S2 而未混入 S3-S5"}
+{"file":"evaluation/miniorder/readiness-report.md","reason":"复核 EXE、种子、UIA 事实和工具限制未被夸大"}
+{"file":"evaluation/miniorder/experiments/round-02/isolation.md","reason":"复核独立上下文和流程隔离边界"}
+{"file":"evaluation/miniorder/experiments/round-02/final-evaluation.md","reason":"识别旧端到端实验与独立 S2 证据的差异"}
+{"file":"openspec/specs/requirement-analysis/spec.md","reason":"复核 S1 实际输出如何作为 S2-B 输入且不重新解析"}
+{"file":".trellis/spec/frontend/component-guidelines.md","reason":"复核 UIA 观察、索引刷新和产品/工具归因规则"}

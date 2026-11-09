@@ -1,0 +1,3 @@
+{"file":".trellis/tasks/10-29-software-exploration-stop-audit/design.md","reason":"授权边界、输入契约和局部验证限制"}
+{"file":".trellis/spec/backend/requirement-analysis-contracts.md","reason":"原始报告锁不可改、开发回归不能冒充正式泛化"}
+{"file":"evaluation/software-exploration/experiments/round-03/quality-review.md","reason":"旧偏离及已解决滞后事实，仅评估/开发方可读"}

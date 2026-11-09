@@ -1,0 +1,196 @@
+{
+  "schema_version": "software-exploration-freeze/v1",
+  "role": "calibration",
+  "frozen": true,
+  "budget": {
+    "max_minutes": 15,
+    "max_gui_actions": 30,
+    "max_same_action_retries": 2,
+    "max_window_rebinds": 1
+  },
+  "thresholds": {
+    "critical_entry_recall": 1.0,
+    "ui_requirement_mapping_recall": 0.9,
+    "mapping_precision": 0.95,
+    "reproducible_path_rate": 0.95,
+    "unsupported_control_rate_max": 0.05,
+    "persistent_side_effects": 0
+  },
+  "files": [
+    {
+      "path": "artifacts/miniorder/blackbox-run/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/requirement-analysis/preruns/calibration/3960ded9-e5fc-4079-a214-d9ee43e4a74f/artifacts/10d57fe2-6b9a-49de-929a-ffb6988d28e1/requirement-baseline-initial.json",
+      "size_bytes": 110270,
+      "sha256": "e7b6d9e8bee33b24dd3b51268db71d53b6f799d8aeb1ffcf4a4e8bb85a03f60c"
+    },
+    {
+      "path": "artifacts/software-exploration/round-01/s2-a/raw-report.json",
+      "size_bytes": 35640,
+      "sha256": "24cfde3b6f51ddbfb6305cdbb434c4f33202f1d145dd993585fa09f6b2a6d310"
+    },
+    {
+      "path": "artifacts/software-exploration/round-01/s2-a/report-lock.json",
+      "size_bytes": 299,
+      "sha256": "6a52f4a3bca7f6e95b702786076507dcf52f85c20ef9e1a045cee3148e1666f3"
+    },
+    {
+      "path": "artifacts/software-exploration/round-01/s2-b/raw-report.json",
+      "size_bytes": 32519,
+      "sha256": "adae9aab59e3dc9a83eb6b54fc81bf7e8c3376156e5e0789c637ae22a8ccbb0b"
+    },
+    {
+      "path": "artifacts/software-exploration/round-01/s2-b/report-lock.json",
+      "size_bytes": 299,
+      "sha256": "099c617df90e20caaf38abae109d24e1559653c5ca3f345727982c27e1645dff"
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/health-check/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/health-check/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/s2-a/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/s2-a/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/s2-b/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/s2-b/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "docs/miniorder/MiniOrder-Requirements.md",
+      "size_bytes": 2329,
+      "sha256": "033bee6c01fe24ddae53d449b309f44b470a864cdd4583bb4bd7b17b4fdc603f"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-01/environment.json",
+      "size_bytes": 685,
+      "sha256": "ef01440abfae5c34f362b2c86c7eb43666a13b2ee6b7de91030b79556f7c6f58"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-01/inputs/s2-a-verified-requirements.json",
+      "size_bytes": 19323,
+      "sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-01/inputs/s2-b-s1-baseline.json",
+      "size_bytes": 33189,
+      "sha256": "99b6b1648e438b666e787300894cc5f988f0c36009534039bc8b6321bdd56d6a"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-01/protocol.md",
+      "size_bytes": 3767,
+      "sha256": "4a7cd9821ec208a3d22695fdbe495e5b82fdb166ee7638d0aeb122ed6f9cbfb4"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-01/test-agent-prompt.md",
+      "size_bytes": 2147,
+      "sha256": "4b5aeb444f98bab88eb7b71dd4fbbfddba7da0b7ad6833672e8bc6a436255689"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/dispatch/s2-a.md",
+      "size_bytes": 55686,
+      "sha256": "89e9a997b01a078fdd6045427fe8a7006415c620e4aeb80ddfbbddf1f1d75bd1"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/dispatch/s2-b.md",
+      "size_bytes": 69551,
+      "sha256": "a306c6a3dcda0909f309e194bbe94c4c5180abcb3891a6de6bf994c08b49f537"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/environment.json",
+      "size_bytes": 2128,
+      "sha256": "be6889ede4619ba6761e93a6183637af0ae51ca5bb2c4ebc8671e89fe1e5434f"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/inputs/s2-a-verified-requirements.json",
+      "size_bytes": 19323,
+      "sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/inputs/s2-b-s1-baseline.json",
+      "size_bytes": 33189,
+      "sha256": "99b6b1648e438b666e787300894cc5f988f0c36009534039bc8b6321bdd56d6a"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/isolation.md",
+      "size_bytes": 838,
+      "sha256": "26519fcb0d01c3284d743c9e84b8f3de66036e36cd7f353e04ecd7d901ea542c"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/launch-instructions.md",
+      "size_bytes": 4554,
+      "sha256": "fc283b2af8cb3d4c1fe652ec79c9032a3a8721a16aeb46616a9b9d14c005a70f"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/protocol-addendum.md",
+      "size_bytes": 3111,
+      "sha256": "de99d2d00ac2ddbbeb190cb28eb8513aa2c5b185f5ed7344f13958f762bbbac0"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/protocol-base.md",
+      "size_bytes": 3767,
+      "sha256": "4a7cd9821ec208a3d22695fdbe495e5b82fdb166ee7638d0aeb122ed6f9cbfb4"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/report.schema.json",
+      "size_bytes": 4313,
+      "sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/test-agent-prompt.md",
+      "size_bytes": 3869,
+      "sha256": "3e44180eb91876ebce7b240737d5b994f04d465199f61173a04676a72d34cfc6"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/tool-guide.md",
+      "size_bytes": 28057,
+      "sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227"
+    },
+    {
+      "path": "evaluation/software-exploration/ground-truth/miniorder-v1.json",
+      "size_bytes": 17049,
+      "sha256": "becac5dc7adb502fd7bdea8d1031b2b53e7d8bc75bf7042c11ad1dad970ae574"
+    },
+    {
+      "path": "samples/MiniOrder/evaluation/seed/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "schemas/software-exploration-report.schema.json",
+      "size_bytes": 4313,
+      "sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72"
+    },
+    {
+      "path": "scripts/evaluate_software_exploration_s2.py",
+      "size_bytes": 15587,
+      "sha256": "3af78ee7c1382ed678b09844f03bac812ce67189f4ebb1f261f2897056201cda"
+    },
+    {
+      "path": "scripts/prepare_software_exploration_calibration.py",
+      "size_bytes": 6318,
+      "sha256": "2e890b7fe6b9e1923c4c34b7a1dab1d24049934842096a1d01a62a84d0dee43f"
+    }
+  ]
+}

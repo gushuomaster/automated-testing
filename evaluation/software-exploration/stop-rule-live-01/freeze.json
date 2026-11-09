@@ -1,0 +1,189 @@
+{
+  "schema_version": "stop-live-freeze/v1",
+  "frozen_at": "2026-10-29T09:02:12.975827+00:00",
+  "status": "FROZEN_FOR_SINGLE_LIVE_ATTEMPT",
+  "run_id": "stop-live01-run01",
+  "role": "development/calibration; targeted stop behavior only",
+  "source_head": "e0adf976af2674ffd09291a758ac24d11907a6b2",
+  "workspace_status": [
+    " M .trellis/spec/backend/index.md",
+    "?? .trellis/spec/backend/exploration-stop-audit.md",
+    "?? .trellis/spec/backend/ufo-admission-contracts.md",
+    "?? .trellis/tasks/10-27-software-exploration-s2/",
+    "?? .trellis/tasks/10-29-software-exploration-s2-round03/",
+    "?? .trellis/tasks/10-29-software-exploration-solution-comparison/",
+    "?? .trellis/tasks/10-29-software-exploration-stop-audit/",
+    "?? .trellis/tasks/10-29-software-exploration-stop-live/",
+    "?? .trellis/tasks/10-29-ufo-uia-admission/",
+    "?? docs/software-exploration/",
+    "?? evaluation/software-exploration/",
+    "?? schemas/software-exploration-report.schema.json",
+    "?? scripts/audit_exploration_stop.py",
+    "?? scripts/capture_software_exploration_report.py",
+    "?? scripts/evaluate_software_exploration_s2.py",
+    "?? scripts/prepare_software_exploration_calibration.py",
+    "?? scripts/prepare_software_exploration_s2.py",
+    "?? scripts/ufo_admission_probe.py",
+    "?? tests/unit/test_audit_exploration_stop.py",
+    "?? tests/unit/test_capture_software_exploration_report.py",
+    "?? tests/unit/test_evaluate_software_exploration_s2.py",
+    "?? tests/unit/test_software_exploration_calibration.py",
+    "?? tests/unit/test_software_exploration_s2.py",
+    "?? tests/unit/test_ufo_admission_probe.py"
+  ],
+  "budget": {
+    "max_seconds": 900,
+    "max_gui_inputs": 30,
+    "max_same_failure_retries": 2,
+    "max_rebinds_after_initial": 1
+  },
+  "preregistered_stop_verdicts": [
+    "SUPPORTED_SINGLE_TRIGGER",
+    "DEVIATION",
+    "NOT_EXERCISED",
+    "INDETERMINATE"
+  ],
+  "full_s2_scoring": false,
+  "health_passed": true,
+  "health_task_complete_at": "2026-10-29T08:59:40.341Z",
+  "tool_docs_version": "computer-use26.1023.50603",
+  "sky_package_version_scope": "0.7.13为历史记录，本轮不称再次获取包版本",
+  "physical_input_gate": false,
+  "files": [
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/capture-run.py",
+      "size_bytes": 3632,
+      "sha256": "63b36c26fe6571ac57b6d137a9d97dccafbc618993a29774a3b870d1e1ec07f5"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/agent-events.json",
+      "size_bytes": 32062,
+      "sha256": "b156dd548356fc48b2b1742ffcbbd27f7b86bb55ece4cc7ce0c54cf4b9b4e1bd"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/agent-report.md",
+      "size_bytes": 1462,
+      "sha256": "d667e06a3747d685cfcdd3630ea879c5d51556d6836bbe47852a5baf3130f5bb"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/capture-manifest.json",
+      "size_bytes": 347,
+      "sha256": "fc9761dc2dc18ec381adf24ab0200d4ea1a583ab8ec1506d0a3b336c9a2c9911"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/organizer-finish.json",
+      "size_bytes": 269,
+      "sha256": "c01bbe32e4434e106175d22b1325ca61e21716f07fc6ad1aab61acdcfd4e616e"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/organizer-start.json",
+      "size_bytes": 452,
+      "sha256": "aa131b2da706a5cce38852d5917097fc6aa67c7885de8780e4e8a9851c693af1"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/session.jsonl",
+      "size_bytes": 402687,
+      "sha256": "81b68ee162c7590f5659d9e92e3b37da56c9dcd5dbeb3c6a7a3d0caebdad0bda"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/historical-lock-verification.json",
+      "size_bytes": 27421,
+      "sha256": "8b76fa61c203d50bcd0eb81039a3fb181244e35ab55fb5facc99f98a9fb70f37"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/pre-run-integrity.json",
+      "size_bytes": 1803,
+      "sha256": "99189f163f853aef55951bf963c34335efcfbfac159972c020e15c7634526bc9"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "docs/miniorder/MiniOrder-Requirements.md",
+      "size_bytes": 2329,
+      "sha256": "033bee6c01fe24ddae53d449b309f44b470a864cdd4583bb4bd7b17b4fdc603f"
+    },
+    {
+      "path": "docs/software-exploration/stop-decision-card.md",
+      "size_bytes": 4653,
+      "sha256": "ed6ee179f19b0858b0d3a748ad571c10945103d7b5fd047a23379a6e17c43b0c"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/candidate-files.json",
+      "size_bytes": 4552,
+      "sha256": "6f47e3361d84e2e7c75a29c33eadd8834d1d65ebd873c2847041168530cda836"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/inputs/requirements.json",
+      "size_bytes": 19323,
+      "sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/isolation.md",
+      "size_bytes": 1885,
+      "sha256": "b08a809b27892ab92b3624eb4b5ba6bf4d2a69c75b4cb9e8595d328db0977f0c"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/launch-instructions.md",
+      "size_bytes": 1756,
+      "sha256": "134f7a4fb622fc7521d64c324d1179eadefecacc2c07f1880e1130fb695bd0f0"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/preparation.json",
+      "size_bytes": 3409,
+      "sha256": "18f94a4126df86191ddc9796f10b5357f31b9b512c69eb1d07e699886fcfe1ad"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/protocol.md",
+      "size_bytes": 4988,
+      "sha256": "3234d6b8d316f56ec76ca6de52422f6d05df0f44bb5d520ab025c763972537d2"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/report.schema.json",
+      "size_bytes": 4313,
+      "sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/stop-rules.md",
+      "size_bytes": 1984,
+      "sha256": "5b5abbb529217cd52e1be11c5dd4ed86b49442a8a6823036b8010f8d0ed30fea"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/test-agent-prompt.md",
+      "size_bytes": 6845,
+      "sha256": "9164a599eaec39f1ed799a30bf799c36e0952b5612b5b1c9be34d71d9e75b3c4"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/test-bundle.md",
+      "size_bytes": 60732,
+      "sha256": "78292338ba18a84447af3406eabdc6dd8ee835b5f2ca35318c2917671d18f5fd"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/tool-guide.md",
+      "size_bytes": 28057,
+      "sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227"
+    },
+    {
+      "path": "scripts/audit_exploration_stop.py",
+      "size_bytes": 12859,
+      "sha256": "2c804d6e268234edbe3ec478ada8fcca6401934a368d10ab4c1105a5f4588bd1"
+    }
+  ]
+}

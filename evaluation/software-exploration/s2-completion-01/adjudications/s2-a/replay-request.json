@@ -1,0 +1,597 @@
+{
+  "schema_version": "software-exploration-replay-request/v1",
+  "run_id": "s2-a",
+  "purpose": "独立诊断方新副本复验；不是正式探索重派，不能改变超时失败或补写锁定报告。",
+  "status": "PENDING",
+  "source_report_sha256": "4bc95fa2c221b8801cc513ce37964c9a8bfea7dd1cd22965967087c5ff7fd228",
+  "boundary": [
+    "只能使用组织方新MiniOrder程序和种子副本，不能复用正式运行状态。",
+    "保留真实逐操作日志与快照；禁止保存、删除、导出、关闭、重启及坐标/键盘回退。",
+    "动态AutomationId/索引/Token必须以新快照重新定位，不能照抄旧索引。",
+    "同类安全前缀可一组覆盖多项；没有执行保存的状态绝不能计为完整业务路径。",
+    "REQ-045控件路线虽可复验，但真值非UI，不能修正成支持映射。REQ-048未声明路线，不为它补造复验路线。"
+  ],
+  "expected_seed_rows": [
+    [
+      "MO-20260115-0002",
+      "海风科技",
+      "显示器支架",
+      "1",
+      "299.00",
+      "299.00",
+      "新建",
+      "2026-01-15 10:15:00"
+    ],
+    [
+      "MO-20260115-0001",
+      "晨光商店",
+      "无线键盘",
+      "2",
+      "129.50",
+      "259.00",
+      "新建",
+      "2026-01-15 09:30:00"
+    ]
+  ],
+  "groups": [
+    {
+      "id": "create-form-and-safe-prefix",
+      "requirement_ids": [
+        "REQ-001",
+        "REQ-002",
+        "REQ-005",
+        "REQ-006",
+        "REQ-007",
+        "REQ-008",
+        "REQ-009",
+        "REQ-010",
+        "REQ-011",
+        "REQ-012",
+        "REQ-013",
+        "REQ-014",
+        "REQ-015",
+        "REQ-016",
+        "REQ-017",
+        "REQ-018",
+        "REQ-019",
+        "REQ-020",
+        "REQ-021",
+        "REQ-022",
+        "REQ-023",
+        "REQ-024",
+        "REQ-025",
+        "REQ-026",
+        "REQ-027",
+        "REQ-028",
+        "REQ-029",
+        "REQ-030",
+        "REQ-045"
+      ],
+      "steps": [
+        "被动观察主窗口/新建页空字段、标签、保存入口、只读金额公开操作形态。",
+        "按原报告次序数量=2，单价=12.50，客户=S2探索客户，商品=S2探索商品；每步只发一个输入并用新快照确认。",
+        "验证数量2且单价空时金额空；单价12.50后金额25.00；四输入回读。",
+        "仅invoke清空；确认五字段空。禁止invoke保存。"
+      ],
+      "claims": [
+        {
+          "requirement_id": "REQ-001",
+          "reported_status": "MAPPED",
+          "path": "固定窗口→被动observe",
+          "observed_state": "公开Windows UIA呈现MiniOrder WindowControl、标题栏和桌面窗口控件。",
+          "evidence_ids": [
+            "OBS-000"
+          ]
+        },
+        {
+          "requirement_id": "REQ-002",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "初始新建订单页→四字段瞬时录入→观察金额；止于保存前",
+          "observed_state": "四个输入框、金额及保存订单按钮可见；普通值可回读。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-001",
+            "OBS-002",
+            "OBS-003",
+            "OBS-004"
+          ]
+        },
+        {
+          "requirement_id": "REQ-005",
+          "reported_status": "MAPPED",
+          "path": "新建订单→客户名称",
+          "observed_state": "EditControl可见，可编辑，普通名称已回读。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-003"
+          ]
+        },
+        {
+          "requirement_id": "REQ-006",
+          "reported_status": "MAPPED",
+          "path": "新建订单→商品名称",
+          "observed_state": "EditControl可见，可编辑，普通名称已回读。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-004"
+          ]
+        },
+        {
+          "requirement_id": "REQ-007",
+          "reported_status": "MAPPED",
+          "path": "新建订单→数量",
+          "observed_state": "EditControl可见，set_value后value=2。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-001"
+          ]
+        },
+        {
+          "requirement_id": "REQ-008",
+          "reported_status": "MAPPED",
+          "path": "新建订单→单价",
+          "observed_state": "EditControl可见，set_value后value=12.50。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-002"
+          ]
+        },
+        {
+          "requirement_id": "REQ-009",
+          "reported_status": "MAPPED",
+          "path": "新建订单→订单金额",
+          "observed_state": "金额EditControl可回读，曾显示25.00。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-002"
+          ]
+        },
+        {
+          "requirement_id": "REQ-010",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→客户名称（必填）标签及输入框；不执行保存校验",
+          "observed_state": "标签明确显示客户名称（必填）。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-003"
+          ]
+        },
+        {
+          "requirement_id": "REQ-011",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→客户名称普通值录入；止于长度边界检查前",
+          "observed_state": "S2探索客户可回读。",
+          "evidence_ids": [
+            "OBS-003"
+          ]
+        },
+        {
+          "requirement_id": "REQ-012",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→商品名称（必填）标签及输入框；不执行保存校验",
+          "observed_state": "标签明确显示商品名称（必填）。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-004"
+          ]
+        },
+        {
+          "requirement_id": "REQ-013",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→商品名称普通值录入；止于长度边界检查前",
+          "observed_state": "S2探索商品可回读。",
+          "evidence_ids": [
+            "OBS-004"
+          ]
+        },
+        {
+          "requirement_id": "REQ-014",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→数量→观察保存入口；不调用保存",
+          "observed_state": "数量初始为空，可录入2；保存按钮可见。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-001"
+          ]
+        },
+        {
+          "requirement_id": "REQ-015",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→数量普通整数录入",
+          "observed_state": "value=2可回读。",
+          "evidence_ids": [
+            "OBS-001"
+          ]
+        },
+        {
+          "requirement_id": "REQ-016",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→数量（1～999）标签→普通数量录入",
+          "observed_state": "标签显示1～999，输入值2。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-001"
+          ]
+        },
+        {
+          "requirement_id": "REQ-017",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→单价→观察保存入口；不调用保存",
+          "observed_state": "单价初始为空，可录入12.50。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-002"
+          ]
+        },
+        {
+          "requirement_id": "REQ-018",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→录入普通十进制金额12.50",
+          "observed_state": "value=12.50，金额更新为25.00。",
+          "evidence_ids": [
+            "OBS-002"
+          ]
+        },
+        {
+          "requirement_id": "REQ-019",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→单价普通值录入；止于范围校验前",
+          "observed_state": "12.50可回读。",
+          "evidence_ids": [
+            "OBS-002"
+          ]
+        },
+        {
+          "requirement_id": "REQ-020",
+          "reported_status": "MAPPED",
+          "path": "新建订单→被动读取订单金额元数据和值",
+          "observed_state": "ValuePattern可用，available_actions仅focus，没有set_value；普通操作数更新后可回读25.00。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-002"
+          ]
+        },
+        {
+          "requirement_id": "REQ-021",
+          "reported_status": "MAPPED",
+          "path": "初始观察空白表单；普通录入后→清空→回读四输入框",
+          "observed_state": "初始及清空后四个可编辑字段均为空字符串。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-005"
+          ]
+        },
+        {
+          "requirement_id": "REQ-022",
+          "reported_status": "MAPPED",
+          "path": "观察初始空白表单及清空后的金额",
+          "observed_state": "金额value为空字符串。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-005"
+          ]
+        },
+        {
+          "requirement_id": "REQ-023",
+          "reported_status": "MAPPED",
+          "path": "数量录入2→单价录入12.50→读取金额",
+          "observed_state": "单价动作后的新快照直接显示金额25.00。",
+          "evidence_ids": [
+            "OBS-001",
+            "OBS-002"
+          ]
+        },
+        {
+          "requirement_id": "REQ-024",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "观察空白操作数及仅数量有值时的金额；不构造无效格式",
+          "observed_state": "两个操作数为空以及单价为空时，金额均为空。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-001",
+            "OBS-005"
+          ]
+        },
+        {
+          "requirement_id": "REQ-025",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→观察四字段及保存订单按钮；止于invoke前",
+          "observed_state": "四字段及保存入口均可见。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-004"
+          ]
+        },
+        {
+          "requirement_id": "REQ-026",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→观察保存入口；止于保存前",
+          "observed_state": "保存订单按钮enabled=true、offscreen=false。",
+          "evidence_ids": [
+            "OBS-000"
+          ]
+        },
+        {
+          "requirement_id": "REQ-027",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→观察字段、保存入口和录入状态区域；不触发校验",
+          "observed_state": "OrderFormStatus为TextControl；没有错误提示状态。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-005"
+          ]
+        },
+        {
+          "requirement_id": "REQ-028",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→观察字段focus属性和保存入口；不触发校验",
+          "observed_state": "输入后对应字段focused=true，清空后客户框focused=true；没有校验焦点状态。",
+          "evidence_ids": [
+            "OBS-001",
+            "OBS-002",
+            "OBS-003",
+            "OBS-004",
+            "OBS-005"
+          ]
+        },
+        {
+          "requirement_id": "REQ-029",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "普通填写四字段→观察保存入口；止于保存前",
+          "observed_state": "四个输入值及金额可回读，保存按钮可见。",
+          "evidence_ids": [
+            "OBS-004"
+          ]
+        },
+        {
+          "requirement_id": "REQ-030",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→观察保存及录入状态控件；止于保存前",
+          "observed_state": "保存按钮及录入状态TextControl可见，没有成功信息。",
+          "evidence_ids": [
+            "OBS-000"
+          ]
+        },
+        {
+          "requirement_id": "REQ-045",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "新建订单→观察保存入口；止于保存前",
+          "observed_state": "保存订单按钮存在；未见可确认数据目录的公开字段。",
+          "evidence_ids": [
+            "OBS-000"
+          ]
+        }
+      ],
+      "classification_limit": "只确认报告限定的已声明路线；PARTIALLY_MAPPED统一保留安全前缀边界。"
+    },
+    {
+      "id": "seeded-query-grid-prefix",
+      "requirement_ids": [
+        "REQ-031",
+        "REQ-032",
+        "REQ-033",
+        "REQ-034",
+        "REQ-035",
+        "REQ-036",
+        "REQ-043",
+        "REQ-044",
+        "REQ-046",
+        "REQ-047"
+      ],
+      "steps": [
+        "选择查询订单；确认页签selected。",
+        "核对初始计数2、两行八列表头及16个DataItem值（精确实例见expected_seed_rows）。",
+        "只复验既有显示位置及当前运行列表；不保存、不重启，不测试唯一性或跨目录。"
+      ],
+      "claims": [
+        {
+          "requirement_id": "REQ-031",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "观察保存入口；查询页→读取现有编号列",
+          "observed_state": "现有两行编号为MO-20260115-0002和MO-20260115-0001。",
+          "evidence_ids": [
+            "OBS-000",
+            "OBS-006"
+          ]
+        },
+        {
+          "requirement_id": "REQ-032",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "选择查询订单→读取订单编号单元格",
+          "observed_state": "两个现有编号呈MO-20260115-0002、MO-20260115-0001形式。",
+          "evidence_ids": [
+            "OBS-006"
+          ]
+        },
+        {
+          "requirement_id": "REQ-033",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "选择查询订单→读取现有编号和创建时间",
+          "observed_state": "编号日期部分20260115；可见创建时间均为2026-01-15。",
+          "evidence_ids": [
+            "OBS-006"
+          ]
+        },
+        {
+          "requirement_id": "REQ-034",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "选择查询订单→读取两条现有编号及创建时间",
+          "observed_state": "0001对应09:30:00，0002对应10:15:00。",
+          "evidence_ids": [
+            "OBS-006"
+          ]
+        },
+        {
+          "requirement_id": "REQ-035",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "选择查询订单→读取现有状态列",
+          "observed_state": "两条现有订单状态均为新建。",
+          "evidence_ids": [
+            "OBS-006"
+          ]
+        },
+        {
+          "requirement_id": "REQ-036",
+          "reported_status": "MAPPED",
+          "path": "选择查询订单→观察初始结果列表",
+          "observed_state": "计数2条且两行八字段可读；清除筛选后再次出现同两行。",
+          "evidence_ids": [
+            "OBS-006",
+            "OBS-014"
+          ]
+        },
+        {
+          "requirement_id": "REQ-043",
+          "reported_status": "MAPPED",
+          "path": "选择查询订单→读取八列表头及两行单元格value",
+          "observed_state": "订单编号、客户名称、商品名称、数量、单价、订单金额、状态、创建时间均可见并可回读实例值。",
+          "evidence_ids": [
+            "OBS-006",
+            "OBS-011",
+            "OBS-014"
+          ]
+        },
+        {
+          "requirement_id": "REQ-044",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "观察录入字段及保存入口；查询页读取现有八字段值；不执行保存",
+          "observed_state": "现有行在查询和清除筛选前后保持相同显示值。",
+          "evidence_ids": [
+            "OBS-004",
+            "OBS-006",
+            "OBS-011",
+            "OBS-014"
+          ]
+        },
+        {
+          "requirement_id": "REQ-046",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "本次已启动窗口→选择查询订单→读取现有列表；未关闭或重启",
+          "observed_state": "本次运行可见两条现有订单。",
+          "evidence_ids": [
+            "OBS-006"
+          ]
+        },
+        {
+          "requirement_id": "REQ-047",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "本次运行查询页→读取八字段；未重启",
+          "observed_state": "本次运行的既有八字段值可回读。",
+          "evidence_ids": [
+            "OBS-006",
+            "OBS-014"
+          ]
+        }
+      ],
+      "classification_limit": "只确认报告限定的已声明路线；PARTIALLY_MAPPED统一保留安全前缀边界。"
+    },
+    {
+      "id": "state-and-matching-query",
+      "requirement_ids": [
+        "REQ-003",
+        "REQ-037",
+        "REQ-038",
+        "REQ-039"
+      ],
+      "steps": [
+        "展开StatusFilter；确认全部/新建选项及selected。",
+        "选择新建，确认StatusFilter.value/selected；收起并确认expanded_state=0和列表消失。",
+        "设置关键字海风；确认值且原两行未自动当作查询更新；invoke查询。",
+        "确认计数1，仅海风科技/MO-20260115-0002这一行八值，条件保留；不把全新建种子当状态精确语义证明。"
+      ],
+      "claims": [
+        {
+          "requirement_id": "REQ-003",
+          "reported_status": "MAPPED",
+          "path": "选择查询订单→填写关键字及状态→查询→观察结果",
+          "observed_state": "已到达两条、一条和零条结果状态。",
+          "evidence_ids": [
+            "OBS-006",
+            "OBS-011",
+            "OBS-013"
+          ]
+        },
+        {
+          "requirement_id": "REQ-037",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "查询订单→关键字海风、状态新建→查询",
+          "observed_state": "返回海风科技这一行。",
+          "evidence_ids": [
+            "OBS-010",
+            "OBS-011"
+          ]
+        },
+        {
+          "requirement_id": "REQ-038",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "展开状态→选择可见新建选项→收起→查询",
+          "observed_state": "value和selected明确为新建，查询所得行状态为新建。",
+          "evidence_ids": [
+            "OBS-007",
+            "OBS-008",
+            "OBS-009",
+            "OBS-011"
+          ]
+        },
+        {
+          "requirement_id": "REQ-039",
+          "reported_status": "PARTIALLY_MAPPED",
+          "path": "状态选择新建→关键字海风→查询",
+          "observed_state": "两条件均保留；结果仅海风科技且状态新建。",
+          "evidence_ids": [
+            "OBS-008",
+            "OBS-010",
+            "OBS-011"
+          ]
+        }
+      ],
+      "classification_limit": "只确认报告限定的已声明路线；PARTIALLY_MAPPED统一保留安全前缀边界。"
+    },
+    {
+      "id": "empty-query-and-clear",
+      "requirement_ids": [
+        "REQ-040",
+        "REQ-041",
+        "REQ-042"
+      ],
+      "steps": [
+        "设置关键字S2探索检索词并确认；invoke查询。",
+        "确认QueryResultCount.name=找到 0 条订单，Grid只有八列表头，无数据行/DataItem。",
+        "仅invoke清除筛选；确认关键字空、状态全部、计数2及初始16格完全恢复。"
+      ],
+      "claims": [
+        {
+          "requirement_id": "REQ-040",
+          "reported_status": "MAPPED",
+          "path": "关键字查询至空结果→清除筛选",
+          "observed_state": "关键字清空、状态全部、恢复初次可见的两行及其八字段值。",
+          "evidence_ids": [
+            "OBS-006",
+            "OBS-013",
+            "OBS-014"
+          ]
+        },
+        {
+          "requirement_id": "REQ-041",
+          "reported_status": "MAPPED",
+          "path": "关键字S2探索检索词、状态新建→查询",
+          "observed_state": "Grid仅有八列表头，无数据行。",
+          "evidence_ids": [
+            "OBS-012",
+            "OBS-013"
+          ]
+        },
+        {
+          "requirement_id": "REQ-042",
+          "reported_status": "MAPPED",
+          "path": "关键字S2探索检索词、状态新建→查询→读取结果计数name",
+          "observed_state": "找到 0 条订单。",
+          "evidence_ids": [
+            "OBS-013"
+          ]
+        }
+      ],
+      "classification_limit": "只确认报告限定的已声明路线；PARTIALLY_MAPPED统一保留安全前缀边界。"
+    }
+  ]
+}

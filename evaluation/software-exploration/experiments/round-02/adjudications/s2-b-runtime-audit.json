@@ -1,0 +1,469 @@
+{
+  "run_id": "s2-b",
+  "reviewed_after_report_lock": true,
+  "session_started_at": "2026-10-29T03:44:31.493Z",
+  "session_completed_at": "2026-10-29T03:56:52.459Z",
+  "session_elapsed_minutes": 12.349433333333334,
+  "agent_reported_elapsed_minutes": 4.9048,
+  "api_method_counts": {
+    "list_apps": 1,
+    "get_window": 2,
+    "get_window_state": 27,
+    "set_value": 13,
+    "click": 2,
+    "press_key": 6,
+    "type_text": 1
+  },
+  "gui_actions": 22,
+  "post_initial_get_window_calls": 1,
+  "time_action_retry_rebind_budgets_met": true,
+  "runtime_protocol_conformant": false,
+  "input_interference": {
+    "count": 1,
+    "source": null,
+    "facts": "初次数量设2后为z2且客户i；下一点击返回user input detected；清理后继续。"
+  },
+  "communications": {
+    "outbound_status_messages": 1,
+    "inbound_business_hints": 0,
+    "takeovers_observed": 0,
+    "content_evidence": "派发方转述；持久原消息加密，未独立核验原明文。",
+    "strict_tool_allowlist_conformant": false
+  },
+  "tool_observation_adjudications": [
+    {
+      "observation_id": "OBS-001",
+      "reported_tool_status": "成功；被动发现，不计GUI输入。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-002",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-003",
+      "reported_tool_status": "调用返回成功，但值证据存在冲突，未归因于产品。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-004",
+      "reported_tool_status": "失败：user input was detected in this window; call get_window_state before continuing。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-005",
+      "reported_tool_status": "成功；z2未在本次观察中重现。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-006",
+      "reported_tool_status": "失败：coordinate input geometry is unavailable。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-007",
+      "reported_tool_status": "失败：window capture timed out: timed out waiting on channel。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-008",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-009",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-010",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-011",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-012",
+      "reported_tool_status": "调用返回成功，但输入未反映到UIA值。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-013",
+      "reported_tool_status": "成功；未解决type_text与可见值不一致。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-014",
+      "reported_tool_status": "成功，UIA值与请求一致。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-015",
+      "reported_tool_status": "调用返回成功，但焦点变化未获证实。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-016",
+      "reported_tool_status": "成功，已观察到查询后态。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-017",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-018",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-019",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-020",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-021",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-022",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-023",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-024",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-025",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-026",
+      "reported_tool_status": "设值被拒绝：Cannot set a value for an element that is not settable；后态观察成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-027",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    },
+    {
+      "observation_id": "OBS-028",
+      "reported_tool_status": "成功。",
+      "verdict": "SUPPORTED",
+      "basis": "逐项核对锁定原始请求/回读；成功、拒绝、未体现、焦点不明及截图失败未被宣称为产品缺陷。"
+    }
+  ],
+  "calls": [
+    {
+      "session_line": 18,
+      "timestamp": "2026-10-29T03:45:22.667Z",
+      "call_id": "call_4f92d0c923b64a1bba9080af0f5aeb03",
+      "methods": {}
+    },
+    {
+      "session_line": 22,
+      "timestamp": "2026-10-29T03:47:22.830Z",
+      "call_id": "call_59caa547e3ee4fb99bfc3360aafc1d64",
+      "methods": {
+        "list_apps": 1
+      }
+    },
+    {
+      "session_line": 27,
+      "timestamp": "2026-10-29T03:47:31.245Z",
+      "call_id": "call_a9033687eacb4e44abb67b1f170bd6fe",
+      "methods": {
+        "get_window": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 34,
+      "timestamp": "2026-10-29T03:47:41.108Z",
+      "call_id": "call_a12d191fff16424daee5f18cbc72610a",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 43,
+      "timestamp": "2026-10-29T03:47:51.451Z",
+      "call_id": "call_af007f675d8e404ca031bb74576a7c7b",
+      "methods": {
+        "click": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 55,
+      "timestamp": "2026-10-29T03:48:07.982Z",
+      "call_id": "call_f9038ff3e08f4a318d5b75b05706b2af",
+      "methods": {
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 62,
+      "timestamp": "2026-10-29T03:48:18.582Z",
+      "call_id": "call_558ebb91a57b4e87b3705bf8d4e2641d",
+      "methods": {
+        "click": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 69,
+      "timestamp": "2026-10-29T03:48:30.542Z",
+      "call_id": "call_2729b7e6886c47e0b76706ab1c4756fa",
+      "methods": {
+        "get_window": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 76,
+      "timestamp": "2026-10-29T03:48:44.152Z",
+      "call_id": "call_af34931a6436442cbaa3bcbc78a21289",
+      "methods": {
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 85,
+      "timestamp": "2026-10-29T03:48:53.569Z",
+      "call_id": "call_6ce82eacb1fb422a85462133334de264",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 90,
+      "timestamp": "2026-10-29T03:49:00.240Z",
+      "call_id": "call_38e69a50c6eb4a78a5b4a9add6334606",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 97,
+      "timestamp": "2026-10-29T03:49:08.983Z",
+      "call_id": "call_091100e9bf294a05a5f15577ea87020c",
+      "methods": {
+        "press_key": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 104,
+      "timestamp": "2026-10-29T03:49:23.664Z",
+      "call_id": "call_2e59749ced1c413b8954cd90b4619837",
+      "methods": {
+        "type_text": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 111,
+      "timestamp": "2026-10-29T03:49:32.036Z",
+      "call_id": "call_fc9102f2b11c4c9ba9fe69778c4d0ded",
+      "methods": {
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 118,
+      "timestamp": "2026-10-29T03:49:38.156Z",
+      "call_id": "call_a779cc365a8742d6a9118764b16f8966",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 123,
+      "timestamp": "2026-10-29T03:49:43.552Z",
+      "call_id": "call_6fc1b7bc1065497383f2286623d0a45b",
+      "methods": {
+        "press_key": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 130,
+      "timestamp": "2026-10-29T03:49:57.915Z",
+      "call_id": "call_d57109a24c8d4945b2e49d8e6768c6ad",
+      "methods": {
+        "press_key": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 139,
+      "timestamp": "2026-10-29T03:50:18.463Z",
+      "call_id": "call_35c481c79b2246ae96b64f940d0cece6",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 146,
+      "timestamp": "2026-10-29T03:50:28.433Z",
+      "call_id": "call_128f523abd01412390e9445d0b64202f",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 151,
+      "timestamp": "2026-10-29T03:50:37.315Z",
+      "call_id": "call_a63e76b23bc64484b38adfdc9dd07b9a",
+      "methods": {
+        "press_key": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 158,
+      "timestamp": "2026-10-29T03:50:51.154Z",
+      "call_id": "call_837a6ff96f454ce9a8242c8cb52c38d0",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 163,
+      "timestamp": "2026-10-29T03:51:01.089Z",
+      "call_id": "call_005da5e267a0442d818632e4c99f65ee",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 168,
+      "timestamp": "2026-10-29T03:51:08.366Z",
+      "call_id": "call_cfeab0e191f84c5c87073a358e8b89cb",
+      "methods": {
+        "press_key": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 175,
+      "timestamp": "2026-10-29T03:51:21.129Z",
+      "call_id": "call_6b1e171d02264a1a96a2a3222ab0d6a1",
+      "methods": {
+        "press_key": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 180,
+      "timestamp": "2026-10-29T03:51:33.321Z",
+      "call_id": "call_0df436ed2c3b40b3a6bebcc8ac2f4062",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 185,
+      "timestamp": "2026-10-29T03:51:42.209Z",
+      "call_id": "call_40090252abfb42448a794ec194c17f8e",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 192,
+      "timestamp": "2026-10-29T03:51:55.134Z",
+      "call_id": "call_b06b2e01ae3e4888a182b79a84c50c35",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 201,
+      "timestamp": "2026-10-29T03:52:09.370Z",
+      "call_id": "call_39907d64620844f4b0041fe3c86ad1ce",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    },
+    {
+      "session_line": 206,
+      "timestamp": "2026-10-29T03:52:16.866Z",
+      "call_id": "call_d81430646eb74aa49385e17a00d07139",
+      "methods": {
+        "set_value": 1,
+        "get_window_state": 1
+      }
+    }
+  ],
+  "human_business_interventions": 0,
+  "seed_unchanged": true,
+  "focus_dispute": "Tab后焦点字段不变；Agent停止盲导航，转用公开set_value与Return结果，不声称焦点机制已完全查明。",
+  "agent_reported_budget_usage": {
+    "elapsed_minutes": 4.9048,
+    "gui_actions": 22,
+    "same_action_retries": 1,
+    "window_rebinds": 1
+  },
+  "elapsed_note": "Agent自报从工具计时至末次GUI；完整上下文时间用于15分钟限制。"
+}

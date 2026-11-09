@@ -1,0 +1,95 @@
+{
+  "schema_version": "stop-live-preparation/v1",
+  "prepared_at": "2026-10-29T08:58:58.913345+00:00",
+  "run_id": "stop-live01-run01",
+  "input_role": "verified-upstream",
+  "status": "CANDIDATE_NOT_FINAL_FROZEN",
+  "role": "development/calibration",
+  "formal_attempts": 1,
+  "gui_or_model_actions_performed_by_preparer": false,
+  "historical_lock_counts": [
+    16,
+    39,
+    19
+  ],
+  "historical_locks_all_match": true,
+  "historical_verification": "artifacts/software-exploration/stop-rule-live-01/historical-lock-verification.json",
+  "unchanged_sources": [
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/inputs/requirements.json",
+      "size_bytes": 19323,
+      "sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497",
+      "characters": 15170,
+      "lf_normalized_characters": 15170,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/report.schema.json",
+      "size_bytes": 4313,
+      "sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72",
+      "characters": 4297,
+      "lf_normalized_characters": 4297,
+      "utf8_bom": false
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/tool-guide.md",
+      "size_bytes": 28057,
+      "sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227",
+      "characters": 28035,
+      "lf_normalized_characters": 28035,
+      "utf8_bom": false
+    }
+  ],
+  "copies": [
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "characters": 552,
+      "lf_normalized_characters": 552,
+      "utf8_bom": false
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "characters": 552,
+      "lf_normalized_characters": 552,
+      "utf8_bom": false
+    }
+  ],
+  "stop_rules_source": "docs/software-exploration/stop-decision-card.md before ## 只读审计接口",
+  "bundle": {
+    "path": "evaluation/software-exploration/stop-rule-live-01/test-bundle.md",
+    "size_bytes": 60732,
+    "sha256": "78292338ba18a84447af3406eabdc6dd8ee835b5f2ca35318c2917671d18f5fd",
+    "characters": 51355,
+    "lf_normalized_characters": 51355,
+    "utf8_bom": false
+  },
+  "constraints": {
+    "max_minutes": 15,
+    "max_gui_actions": 30,
+    "max_same_action_retries": 2,
+    "max_rebinds_after_initial": 1,
+    "pure_uia": true,
+    "screenshots": false,
+    "post_unresolved_passive_unresolved_inputs": 0,
+    "full_requirements": 52,
+    "s2_scorer": false
+  },
+  "notes": [
+    "只准备候选材料；未启动程序，未发 GUI 输入，未派发测试。",
+    "主方健康完成后做最终冻结；本清单不等价于 freeze-lock。"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-29T11:29:10.4445034+08:00",
+  "phase": "S2-A派发前补充健康门计数说明",
+  "prior_revision_sha256": "fb1239b92e26356dfaa9be9aca798fba30b10c251f0470889ef501c87f75a8d0",
+  "health_round_trip_confirmed": true,
+  "health_total_get_window_calls": 3,
+  "health_initial_get_window_calls": 1,
+  "health_recovery_get_window_calls": 2,
+  "health_recovery_cycles": 1,
+  "health_activation_calls": 1,
+  "note": "健康诊断一次最小化恢复周期内部调用get_window两次，记录3次总绑定；健康诊断不计正式成绩，也不据此放宽正式协议最多1次窗口重绑定。正式Agent仍原样接收原预算，锁后分别核验原始调用次数和恢复周期。",
+  "formal_protocol_changed": false,
+  "formal_prompt_changed": false,
+  "formal_budget_changed": false,
+  "health_prior_timeout_preserved": true,
+  "health_prior_failures_preserved": true,
+  "files": [
+    {
+      "path": "artifacts/software-exploration/round-02/health-check-attempt-03/report-lock.json",
+      "sha256": "48bb9edad62403d76c2f86a4acbb245ff99b46107c14626e343c9716143a727d"
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/health-check-supplement-01/report-lock.json",
+      "sha256": "e35f0fbc39da73e6f10e1e4acf4dbbfb5576287e7b57a466ca00c3b459842966"
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/health-check-supplement-02/report-lock.json",
+      "sha256": "571be0e5afffc0654a272482242ccd459b3a91578d3db938ff716369778d0d1e"
+    }
+  ]
+}

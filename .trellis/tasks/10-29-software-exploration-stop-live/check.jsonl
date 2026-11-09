@@ -1,0 +1,3 @@
+{"file":".trellis/tasks/10-29-software-exploration-stop-live/prd.md","reason":"验收及未触发不得宣称验证"}
+{"file":".trellis/spec/backend/exploration-stop-audit.md","reason":"目录/人工语义/未知范围边界"}
+{"file":".trellis/spec/backend/requirement-analysis-contracts.md","reason":"锁定、认知隔离与开发样本结论范围"}

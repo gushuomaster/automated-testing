@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-29T11:05:04.7636694+08:00",
+  "phase": "正式A/B开始前",
+  "previous_revision_sha256": "bd997445156250b474dd006258bcc2ac492b3592f75332ff630a76d708711d48",
+  "reason": "CLI独立上下文应用访问被拒绝；改用桌面协作独立上下文，不修改权限配置或Sky执行器",
+  "dispatch_method": "中性派发方仅读取指定冻结输入全文，逐字传给fork_turns=none的测试子上下文；测试方不读文件、不继承派发方或评估方历史",
+  "gui_executor": "mcp__node_repl__js + @oai/sky",
+  "sky_package_version": "0.7.13",
+  "tool_guide_version": "26.1023.50603",
+  "formal_attempts": 0,
+  "formal_inputs_changed": false,
+  "health_prompt_sha256": "a173964cba0556cbd4660bc43e849119c920396b21e9dc5d8a9ae07ad0cef971",
+  "health_attempt_02_lock_sha256": "0b2fd4328cf42531c2e230bba15f120339ddca1d0bd438a4f6556cb9e578c1b8",
+  "budget_unchanged": "15分钟/30 GUI动作",
+  "isolation_limit": "认知与流程隔离，非OS级沙箱；测试工具行为须据逐次日志审计"
+}

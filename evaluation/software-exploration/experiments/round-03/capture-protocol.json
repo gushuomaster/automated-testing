@@ -1,0 +1,22 @@
+{
+  "schema_version": "s2-capture-protocol/v1",
+  "run_id": "s2-r03-run01",
+  "source": "tester session jsonl identified by canonical agent_path; capture after task_complete",
+  "raw_report": "exact last_agent_message bytes as UTF8, plus explicitly recorded single trailing LF only when needed; no parse-reserialize",
+  "tool_log": "all function_call/custom_tool_call items and outputs with original timestamps and call IDs, including functions wrappers and nested tool text",
+  "lock": "report/session/tool/capture/organizer start-finish exact bytes SHA256; lock_sha256 is SHA256 of canonical files list only, algorithm explicit",
+  "timing": "first task_started / complete event timestamp, compare to self report; do not substitute last GUI time",
+  "audit": [
+    "allowed tool names",
+    "initial plan before first input",
+    "initial values",
+    "input actions including failed/activate/recovery",
+    "get_window count after initial",
+    "retries",
+    "incoming/outgoing messages",
+    "external input evidence",
+    "cleanup state and seed hash"
+  ],
+  "scoring": "only after report lock; no original report rewrite; independently reproduce all claimed formal mapping paths by stated scope",
+  "revision_policy": "post-lock addenda separate files, no overwrite original evidence"
+}

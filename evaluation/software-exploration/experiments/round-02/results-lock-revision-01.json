@@ -1,0 +1,129 @@
+{
+  "schema_version": "s2-final-results-lock/v1",
+  "locked_at": "2026-10-29T04:27:54.379105+00:00",
+  "algorithm": "SHA-256 of exact file bytes",
+  "scope": "冻结资产另有freeze-lock，正式原始报告另有各run report-lock；本锁覆盖最终裁决/报告/复验锁及任务快照，不改旧证据。",
+  "formal_attempts_completed": 2,
+  "strict_protocol_passes": 0,
+  "files": [
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/final-evaluation.md",
+      "size_bytes": 9122,
+      "sha256": "faabc292bb6e908f131a3f05e20ce2d764d8f2e37eec04466dd50021f5c8c4a0"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/status-report.md",
+      "size_bytes": 5093,
+      "sha256": "29db5023e32c82014532ff6d725920dac2294e9c7fbeb60bc3dbe31a7620fb61"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/index.md",
+      "size_bytes": 1550,
+      "sha256": "8b3ac990d3d94411b204bc16e5a5d9bf66205c569e36fca0c941aa0b6efbb5db"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/quality-review.md",
+      "size_bytes": 19531,
+      "sha256": "c04a93426885a072f6c9168bb59488cf7783065bdd012d9e045c978fd65b7508"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/existing-solutions-note.md",
+      "size_bytes": 2709,
+      "sha256": "36381ce0435457348e1a8129f3af005af352729c0c0398fd23fc7b2f3833d135"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/connection-restored-20261029.md",
+      "size_bytes": 4421,
+      "sha256": "691b7f725bd932af0fb6195a78149ad9f4f15d454ecf4cb584f024a60a86e1e7"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/execution-baseline.json",
+      "size_bytes": 2212,
+      "sha256": "ff74315572b702d09ea0b716d5033a20efbf5d6a85fa93f1d663bd4184210611"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/health-gate.json",
+      "size_bytes": 925,
+      "sha256": "a535549c8435a566f359ac889dd6e365dbb97a8a41d7f217e99e38c8b89725f3"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/adjudications/final-integrity-verification.json",
+      "size_bytes": 13296,
+      "sha256": "82e0c6be6c9cab131abd90f7680c137c2e1c64e3e85287e67a3239c04e6348d2"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-a-decisions.json",
+      "size_bytes": 7377,
+      "sha256": "3e44e1b72c037b11dfbd576547128ec519fc32ecedd9304f9d0bc3ebf3d57178"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-a-final-decisions.json",
+      "size_bytes": 6815,
+      "sha256": "8c0264ef6a470dcbf052b298247c6f815dda57aa5aa34b0bb359d342054fb111"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-a-final.json",
+      "size_bytes": 35861,
+      "sha256": "85a38dfd045145926b39e2794e5d038a859a9fb053a5a3a19c350163f39aefe1"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-a-runtime-audit.json",
+      "size_bytes": 116722,
+      "sha256": "988e78654e33e56503e96b67a5fc74d721069f83018a546f11334588fa4907cd"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-a.json",
+      "size_bytes": 35298,
+      "sha256": "c05cd6cef5f787a07512a8cdb2d9a065821b282ccfa4b2d8f9fd40cbaffea1b5"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-b-final-decisions.json",
+      "size_bytes": 7203,
+      "sha256": "42a6ffe7efe99ab68d1d958eccdae65dd7ddc55a7f33165ab20f2f25a603dee7"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-b-final.json",
+      "size_bytes": 36452,
+      "sha256": "e9720f30211b90c95ef5be7cdf56e1291e0a8924e8ae14044602b14bca53a9f4"
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-b-runtime-audit.json",
+      "size_bytes": 15946,
+      "sha256": "7f040c600883a9b48c139b2bea7fe160c69dcab2272c04b28b7a765eabaf128e"
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/evaluator-replay/evidence-lock.json",
+      "size_bytes": 1117,
+      "sha256": "62f035679564616106322488023744911782baff041fb26501b2de88aed9fe0e"
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/diagnostics/finalize-evaluation.py",
+      "size_bytes": 10860,
+      "sha256": "e541a13ec4c1c15c344355a98bb966408bd840d64cf45c50f4e1f7a0ad1ae69d"
+    },
+    {
+      "path": ".trellis/tasks/10-27-software-exploration-s2/task.json",
+      "size_bytes": 1309,
+      "sha256": "95c80d0cc1d425d055c4ef41a338144b85c4d4cf0014823198a57e88a2ae4d46"
+    },
+    {
+      "path": ".trellis/tasks/10-27-software-exploration-s2/implement.md",
+      "size_bytes": 5889,
+      "sha256": "a4eafe22cb570a0a210555c1b35357d93254144edea8c6a436816fc9343dcd1c"
+    }
+  ],
+  "revision": 1,
+  "previous_lock": {
+    "path": "evaluation/software-exploration/experiments/round-02/results-lock.json",
+    "sha256": "1c472d8408875a6abbd76f81bde30b0e296337528521817de9e8c0c540ffe0d8",
+    "status": "20/21匹配，quality-review在生成锁时并发追加；旧锁留存，不再作为完整当前结果锁。"
+  },
+  "revision_reason": "独立复核在旧锁生成前后追加了复验锁6/6核验节；仅纳入该段最终复核文本，不改评分/原报告/冻结/复验证据。复核方已停止写入。",
+  "changed_entries": [
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/quality-review.md",
+      "previous_sha256": "0d5cbdbde57958cdcbdd299fcda97575d7a9377a3903cce6452df19b03d974d4",
+      "actual_sha256": "c04a93426885a072f6c9168bb59488cf7783065bdd012d9e045c978fd65b7508"
+    }
+  ]
+}

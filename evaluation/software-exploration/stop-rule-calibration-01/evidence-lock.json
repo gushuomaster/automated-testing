@@ -1,0 +1,106 @@
+{
+  "schema_version": "exploration-stop-calibration-evidence-lock/v1",
+  "locked_at": "2026-10-29T08:47:16.286090+00:00",
+  "role": "development/regression",
+  "algorithm": "SHA256 exact file bytes; paths relative to repository",
+  "new_formal_experiment": false,
+  "physical_input_enforcement": false,
+  "scope": "只锁新增交付、源代码、测试、候选指令和必要产物；quality-unit-tmp临时目录不入锁，旧证据按verification引用保全",
+  "files": [
+    {
+      "path": ".trellis/spec/backend/exploration-stop-audit.md",
+      "size_bytes": 2490,
+      "sha256": "c45e6ec8be4cffb1b4c2197932ff011ed14e07cbbd279a83b9853f60fecaf257"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/check.jsonl",
+      "size_bytes": 340,
+      "sha256": "2d1e7c0cd9a2c1085bcbed87bcd67fc5ba510b004dbea9e5be8a050a6217f3d4"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/design.md",
+      "size_bytes": 2000,
+      "sha256": "be09e7234512b63f30779507b1b3bf80c02f60a1d81609d1d471768a763e657c"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/implement.jsonl",
+      "size_bytes": 431,
+      "sha256": "4c28d0fa37a200022349ca7bfe2c4949158495c210000daca1f079303ac76995"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/implement.md",
+      "size_bytes": 631,
+      "sha256": "2c2b3e91c5e7de9a7c1ad1b773744d1340d083c737ff18c24937ff27f263d76a"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/notes.md",
+      "size_bytes": 1051,
+      "sha256": "4d350e7c527ed4410c1b8a4126f231069b5a789a55901a57b800679c9af0b045"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/prd.md",
+      "size_bytes": 1862,
+      "sha256": "77c240be1902fc9a84fe6b7a373cfbda42f1951445c0e44c8f4c345f079df77d"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-audit/task.json",
+      "size_bytes": 763,
+      "sha256": "bbdfeef6802d7f26889d8293eb9ac13acea5f3c0df0d994934492ce719976e17"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-calibration-01/baseline.json",
+      "size_bytes": 3580,
+      "sha256": "c31bb2728c5e07e17e27a4d50801f032dc160c01a120acc6ff87d6322f2146b5"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-calibration-01/regression-result.json",
+      "size_bytes": 5571,
+      "sha256": "fb3f2d6b956f3c6710fb4bd8a20537a66a6db31655d64be5912a7592cf9d901a"
+    },
+    {
+      "path": "docs/software-exploration/stop-decision-card.md",
+      "size_bytes": 4653,
+      "sha256": "ed6ee179f19b0858b0d3a748ad571c10945103d7b5fd047a23379a6e17c43b0c"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-calibration-01/index.md",
+      "size_bytes": 691,
+      "sha256": "53d823b15ec4381d5d71d3a30586c03f0814e508d77891422c14233b2f87e497"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-calibration-01/quality-review.md",
+      "size_bytes": 5331,
+      "sha256": "1b493052fab12fbd335e541ed4e8038c5c245dfa9f7c52d529da08346620415a"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-calibration-01/regression-checkpoints.json",
+      "size_bytes": 2687,
+      "sha256": "bc59d77cb2e04f831b98feaaae8d38fa7a8e40086b19983dc23d02009f516e4f"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-calibration-01/report.md",
+      "size_bytes": 5651,
+      "sha256": "6e133b841667ee3aa0adaf7217459efdb5eb52d22723c644bf5f7c2bcd081d53"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-calibration-01/validation-plan.md",
+      "size_bytes": 2974,
+      "sha256": "0d853452a288d0bdc0b304ef5ca69f051de87f763518c098386aede9673ae887"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-calibration-01/verification.json",
+      "size_bytes": 6106,
+      "sha256": "0a21eca167d25337c072af4d984748158016385605759b86d57efbb61f024fcf"
+    },
+    {
+      "path": "scripts/audit_exploration_stop.py",
+      "size_bytes": 12859,
+      "sha256": "2c804d6e268234edbe3ec478ada8fcca6401934a368d10ab4c1105a5f4588bd1"
+    },
+    {
+      "path": "tests/unit/test_audit_exploration_stop.py",
+      "size_bytes": 11778,
+      "sha256": "5a44a32b29677843116cc83738adee9fbb03eb2a54401494f6d208275e7b0f4e"
+    }
+  ]
+}

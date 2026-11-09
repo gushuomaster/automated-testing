@@ -1,0 +1,619 @@
+{
+  "schema_version": "software-exploration-ground-truth/v1",
+  "subject": "MiniOrder Baseline",
+  "critical_entries": [
+    {
+      "id": "ENTRY-CREATE",
+      "visible_name": "新建订单"
+    },
+    {
+      "id": "ENTRY-QUERY",
+      "visible_name": "查询订单"
+    }
+  ],
+  "requirements": [
+    {
+      "requirement_id": "REQ-001",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "window",
+      "acceptable_visible_evidence": [
+        "MiniOrder 主窗口"
+      ],
+      "route_class": "startup"
+    },
+    {
+      "requirement_id": "REQ-002",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "新建订单"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-003",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "query_order",
+      "acceptable_visible_evidence": [
+        "查询订单"
+      ],
+      "route_class": "startup > 查询订单"
+    },
+    {
+      "requirement_id": "REQ-004",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "scored_as_ui_related": false,
+      "ui_area": "non_gui",
+      "acceptable_visible_evidence": [],
+      "route_class": "not available through the public GUI"
+    },
+    {
+      "requirement_id": "REQ-005",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "客户名称"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-006",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "商品名称"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-007",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "数量"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-008",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "单价"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-009",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "订单金额"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-010",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "客户名称"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-011",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "客户名称"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-012",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "商品名称"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-013",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "商品名称"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-014",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "数量"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-015",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "数量"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-016",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "数量"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-017",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "单价"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-018",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "单价"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-019",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "单价"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-020",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "订单金额"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-021",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "数量",
+        "单价",
+        "订单金额"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-022",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "订单金额"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-023",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "数量",
+        "单价",
+        "订单金额"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-024",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "数量",
+        "单价",
+        "订单金额"
+      ],
+      "route_class": "startup > 新建订单"
+    },
+    {
+      "requirement_id": "REQ-025",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-026",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-027",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-028",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-029",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-030",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-031",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-032",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-033",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-034",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-035",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "create_order",
+      "acceptable_visible_evidence": [
+        "保存订单",
+        "订单录入状态"
+      ],
+      "route_class": "startup > 新建订单 > 保存订单"
+    },
+    {
+      "requirement_id": "REQ-036",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "query_order",
+      "acceptable_visible_evidence": [
+        "订单查询结果",
+        "订单编号",
+        "客户名称",
+        "商品名称",
+        "数量",
+        "单价",
+        "订单金额",
+        "状态",
+        "创建时间"
+      ],
+      "route_class": "startup > 查询订单"
+    },
+    {
+      "requirement_id": "REQ-037",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "query_order",
+      "acceptable_visible_evidence": [
+        "查询关键字",
+        "订单状态筛选",
+        "查询",
+        "订单查询结果",
+        "查询结果数量"
+      ],
+      "route_class": "startup > 查询订单 > 查询"
+    },
+    {
+      "requirement_id": "REQ-038",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "query_order",
+      "acceptable_visible_evidence": [
+        "查询关键字",
+        "订单状态筛选",
+        "查询",
+        "订单查询结果",
+        "查询结果数量"
+      ],
+      "route_class": "startup > 查询订单 > 查询"
+    },
+    {
+      "requirement_id": "REQ-039",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "query_order",
+      "acceptable_visible_evidence": [
+        "查询关键字",
+        "订单状态筛选",
+        "查询",
+        "订单查询结果",
+        "查询结果数量"
+      ],
+      "route_class": "startup > 查询订单 > 查询"
+    },
+    {
+      "requirement_id": "REQ-040",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "query_order",
+      "acceptable_visible_evidence": [
+        "清除筛选",
+        "订单查询结果",
+        "查询结果数量"
+      ],
+      "route_class": "startup > 查询订单 > 清除筛选"
+    },
+    {
+      "requirement_id": "REQ-041",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "query_order",
+      "acceptable_visible_evidence": [
+        "查询关键字",
+        "订单状态筛选",
+        "查询",
+        "订单查询结果",
+        "查询结果数量"
+      ],
+      "route_class": "startup > 查询订单 > 查询"
+    },
+    {
+      "requirement_id": "REQ-042",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "query_order",
+      "acceptable_visible_evidence": [
+        "查询关键字",
+        "订单状态筛选",
+        "查询",
+        "订单查询结果",
+        "查询结果数量"
+      ],
+      "route_class": "startup > 查询订单 > 查询"
+    },
+    {
+      "requirement_id": "REQ-043",
+      "expected_status": "MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "query_order",
+      "acceptable_visible_evidence": [
+        "订单查询结果",
+        "订单编号",
+        "客户名称",
+        "商品名称",
+        "数量",
+        "单价",
+        "订单金额",
+        "状态",
+        "创建时间"
+      ],
+      "route_class": "startup > 查询订单"
+    },
+    {
+      "requirement_id": "REQ-044",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "query_order",
+      "acceptable_visible_evidence": [
+        "订单查询结果",
+        "订单编号",
+        "客户名称",
+        "商品名称",
+        "数量",
+        "单价",
+        "订单金额",
+        "状态",
+        "创建时间"
+      ],
+      "route_class": "startup > 查询订单"
+    },
+    {
+      "requirement_id": "REQ-045",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "scored_as_ui_related": false,
+      "ui_area": "non_gui",
+      "acceptable_visible_evidence": [],
+      "route_class": "not available through the public GUI"
+    },
+    {
+      "requirement_id": "REQ-046",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "runtime_boundary",
+      "acceptable_visible_evidence": [
+        "查询订单",
+        "订单查询结果",
+        "订单编号",
+        "客户名称",
+        "商品名称",
+        "数量",
+        "单价",
+        "订单金额",
+        "状态",
+        "创建时间"
+      ],
+      "route_class": "restart/data-directory setup > 查询订单"
+    },
+    {
+      "requirement_id": "REQ-047",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "runtime_boundary",
+      "acceptable_visible_evidence": [
+        "查询订单",
+        "订单查询结果",
+        "订单编号",
+        "客户名称",
+        "商品名称",
+        "数量",
+        "单价",
+        "订单金额",
+        "状态",
+        "创建时间"
+      ],
+      "route_class": "restart/data-directory setup > 查询订单"
+    },
+    {
+      "requirement_id": "REQ-048",
+      "expected_status": "PARTIALLY_MAPPED",
+      "scored_as_ui_related": true,
+      "ui_area": "runtime_boundary",
+      "acceptable_visible_evidence": [
+        "查询订单",
+        "订单查询结果",
+        "订单编号",
+        "客户名称",
+        "商品名称",
+        "数量",
+        "单价",
+        "订单金额",
+        "状态",
+        "创建时间"
+      ],
+      "route_class": "restart/data-directory setup > 查询订单"
+    },
+    {
+      "requirement_id": "REQ-049",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "scored_as_ui_related": false,
+      "ui_area": "non_gui",
+      "acceptable_visible_evidence": [],
+      "route_class": "not available through the public GUI"
+    },
+    {
+      "requirement_id": "REQ-050",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "scored_as_ui_related": false,
+      "ui_area": "non_gui",
+      "acceptable_visible_evidence": [],
+      "route_class": "not available through the public GUI"
+    },
+    {
+      "requirement_id": "REQ-051",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "scored_as_ui_related": false,
+      "ui_area": "non_gui",
+      "acceptable_visible_evidence": [],
+      "route_class": "not available through the public GUI"
+    },
+    {
+      "requirement_id": "REQ-052",
+      "expected_status": "NOT_UI_OBSERVABLE",
+      "scored_as_ui_related": false,
+      "ui_area": "non_gui",
+      "acceptable_visible_evidence": [],
+      "route_class": "not available through the public GUI"
+    }
+  ],
+  "classification_counts": {
+    "MAPPED": 19,
+    "PARTIALLY_MAPPED": 27,
+    "NOT_UI_OBSERVABLE": 6
+  }
+}

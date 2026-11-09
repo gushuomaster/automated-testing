@@ -1,0 +1,293 @@
+{
+  "schema_version": "exploration-stop-live-results-lock/v1",
+  "locked_at": "2026-10-29T09:43:42.235407+00:00",
+  "algorithm": "SHA256 exact file bytes; lock_sha256=SHA256 canonical files list ensure_ascii=False sort_keys=True separators comma/colon UTF8 no trailing LF",
+  "scope": "One targeted stop-rule development/calibration; not full S2/business scoring or reliability validation",
+  "formal_attempts_completed": 1,
+  "strict_protocol_passes": 0,
+  "preregistered_stop_verdict": "INDETERMINATE",
+  "physical_input_gate": false,
+  "lock_sha256": "6ee0a55b0934093c8660059db743b4c4e6de54979be72e3016b3ae5b89f217a8",
+  "files": [
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-live/check.jsonl",
+      "size_bytes": 354,
+      "sha256": "b4b837f6b06f17484e199291f1f7fe2c449a726cfc3a261880360fb9a1e8fbdb"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-live/design.md",
+      "size_bytes": 2264,
+      "sha256": "ba22e9ddc35c9377f0eb1d0a705ad4ea8788b88c58f1f691d97a54f9b1b69e1e"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-live/implement.jsonl",
+      "size_bytes": 350,
+      "sha256": "403d972472e637361ed9d066e216db5e9a7c216fd0ca16bf3b0bd542c0a175cd"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-live/implement.md",
+      "size_bytes": 480,
+      "sha256": "b2338fa20c9e398ff6764adfc381e81f837ae07f55fb728c9d8b9386b5e42673"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-live/notes.md",
+      "size_bytes": 1522,
+      "sha256": "2d593f5379c53559cf3b006ea6efc7e9e36ac3223e6d5abe546aab84c8a1ee4a"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-live/prd.md",
+      "size_bytes": 1964,
+      "sha256": "ea16337d31539cda3145ce9626b76cbde48cff9a376117712285cd3047aaaea2"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-stop-live/task.json",
+      "size_bytes": 1253,
+      "sha256": "3eab762113667821172b40a89ea1f24cdb57c4cb2659d599cf2d13ab72f1e5a9"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/capture-run.py",
+      "size_bytes": 3632,
+      "sha256": "63b36c26fe6571ac57b6d137a9d97dccafbc618993a29774a3b870d1e1ec07f5"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/delivery-verification.json",
+      "size_bytes": 1292,
+      "sha256": "88f2795351eae7a937864011425c4acab6d315820cd88473cf555337feb8703a"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/dispatch-addendum.json",
+      "size_bytes": 1418,
+      "sha256": "a15863a0fbf91b4c842aa64337e268496e0554dfbd83d2337be45f7bf94764e1"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/dispatch-manifest.json",
+      "size_bytes": 832,
+      "sha256": "6b4793ede9a2535c01b94e00f2092318559caf843ab3c5879d733d2a67f1fa98"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/dispatch-session.jsonl",
+      "size_bytes": 575443,
+      "sha256": "2bfccd894074d11143d9f6235ca544e989befcded671a704c1a8822f757324b4"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/agent-events.json",
+      "size_bytes": 32062,
+      "sha256": "b156dd548356fc48b2b1742ffcbbd27f7b86bb55ece4cc7ce0c54cf4b9b4e1bd"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/agent-report.md",
+      "size_bytes": 1462,
+      "sha256": "d667e06a3747d685cfcdd3630ea879c5d51556d6836bbe47852a5baf3130f5bb"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/capture-manifest.json",
+      "size_bytes": 347,
+      "sha256": "fc9761dc2dc18ec381adf24ab0200d4ea1a583ab8ec1506d0a3b336c9a2c9911"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/organizer-finish.json",
+      "size_bytes": 269,
+      "sha256": "c01bbe32e4434e106175d22b1325ca61e21716f07fc6ad1aab61acdcfd4e616e"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/organizer-start.json",
+      "size_bytes": 452,
+      "sha256": "aa131b2da706a5cce38852d5917097fc6aa67c7885de8780e4e8a9851c693af1"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/session.jsonl",
+      "size_bytes": 402687,
+      "sha256": "81b68ee162c7590f5659d9e92e3b37da56c9dcd5dbeb3c6a7a3d0caebdad0bda"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/health-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/historical-lock-verification.json",
+      "size_bytes": 27421,
+      "sha256": "8b76fa61c203d50bcd0eb81039a3fb181244e35ab55fb5facc99f98a9fb70f37"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/organizer-cleanup/agent-events.json",
+      "size_bytes": 13176,
+      "sha256": "d3a9045082c785d0d499c1377a4fcd689fb7466a7910d1b1453b027c3a525f91"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/organizer-cleanup/agent-report.md",
+      "size_bytes": 1175,
+      "sha256": "aa0d49b35d5018a1b40ec6254e57ce559e9dd0f6a35bc2fb334709c632e56786"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/organizer-cleanup/capture-manifest.json",
+      "size_bytes": 452,
+      "sha256": "6764413ecb2ee0a9ccc815aafb9e2305c82efad3deb8502089ddea599baded68"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/organizer-cleanup/session.jsonl",
+      "size_bytes": 487875,
+      "sha256": "635098fc9e1418733f12460f30c737da1294ebd36f01b173c77fd93f83252111"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/organizer-finish.json",
+      "size_bytes": 583,
+      "sha256": "0763e23b19fbc5541b1136e92b8b564357a00af12fa9b995c2cca1b6b1bd013f"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/post-run-integrity.json",
+      "size_bytes": 4137,
+      "sha256": "1574de503cb8205984fcb12fd47cf9d0f8b4cea810575b0bd2aed01432e7ec8c"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/pre-run-integrity.json",
+      "size_bytes": 1803,
+      "sha256": "99189f163f853aef55951bf963c34335efcfbfac159972c020e15c7634526bc9"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/capture-manifest.json",
+      "size_bytes": 767,
+      "sha256": "53dc3b359af27cad19c25bfbeca0db35a8f6d4df06316b2e4c2bea19c0d53429"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/organizer-start.json",
+      "size_bytes": 463,
+      "sha256": "5e3a1c23df03de2ad4ebacc837f31a015cfadc9c6db1c3136d6828bcf5b81f08"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/raw-report.json",
+      "size_bytes": 38697,
+      "sha256": "505404270d101b41c489425331e7a29fe23ec3658170e7f300b0e5099b082c76"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/report-lock.json",
+      "size_bytes": 1093,
+      "sha256": "88cc941f1c545c04047646c0ad11137ea7140634dcaaaa2de8b93117eba20cdc"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/session.jsonl",
+      "size_bytes": 705969,
+      "sha256": "ae19418c457132da077a655615e463f7d986a6deed72b693ee8934183b74d9cd"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/stop-rule-live-01/run-01/tool-events.jsonl",
+      "size_bytes": 108389,
+      "sha256": "700982f38b1c535aaa765499db7186f4f76831a7928a43e7fb37807de01b7031"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/adjudications/checkpoints.json",
+      "size_bytes": 6227,
+      "sha256": "ad637ee105a6ab009896ca4bb7bb01127d41e6074ef08d764be6c4981dcdbbce"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/adjudications/lock-verification.json",
+      "size_bytes": 15464,
+      "sha256": "d5b95aff0c344e18b6a0098661af92b57d0113e6505f212cec84a35ec1a1729e"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/adjudications/notes.md",
+      "size_bytes": 3988,
+      "sha256": "a5704f632de6095fcd27c6b88f1f3464215abbd877ab2988560b4a57d5017ea0"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/adjudications/runtime-audit.json",
+      "size_bytes": 40104,
+      "sha256": "421c64197b5c02f534d359a448d7616e3eaec8293ac309d96fc8bf2a2c18bfd3"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/candidate-files.json",
+      "size_bytes": 4552,
+      "sha256": "6f47e3361d84e2e7c75a29c33eadd8834d1d65ebd873c2847041168530cda836"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/final-report.md",
+      "size_bytes": 8211,
+      "sha256": "fe2823a4c281ea693404e6d09177647675514d93d024e229cccd282a17981a0f"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/freeze-lock.json",
+      "size_bytes": 132,
+      "sha256": "7cbf877eb13e7b0c1673e84f91699f8df43b8e90ec40e363caa2d788d462951f"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/freeze.json",
+      "size_bytes": 7836,
+      "sha256": "11c04e2d03a9d8c03b6f0b305ef28cda920d29a794ab048ca1d17a29d9c911fd"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/index.md",
+      "size_bytes": 2399,
+      "sha256": "6cceddd7a3d266bc98d671191c06b21916f7b0deea61ae4d70e72e9cad3dcff4"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/inputs/requirements.json",
+      "size_bytes": 19323,
+      "sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/isolation.md",
+      "size_bytes": 1885,
+      "sha256": "b08a809b27892ab92b3624eb4b5ba6bf4d2a69c75b4cb9e8595d328db0977f0c"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/launch-instructions.md",
+      "size_bytes": 1756,
+      "sha256": "134f7a4fb622fc7521d64c324d1179eadefecacc2c07f1880e1130fb695bd0f0"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/preparation.json",
+      "size_bytes": 3409,
+      "sha256": "18f94a4126df86191ddc9796f10b5357f31b9b512c69eb1d07e699886fcfe1ad"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/protocol.md",
+      "size_bytes": 4988,
+      "sha256": "3234d6b8d316f56ec76ca6de52422f6d05df0f44bb5d520ab025c763972537d2"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/quality-review.md",
+      "size_bytes": 11114,
+      "sha256": "262db8c520c41b3fa758c3470fac02a3e2590fdade3086bef2090673b9b4469d"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/report.schema.json",
+      "size_bytes": 4313,
+      "sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/stop-rules.md",
+      "size_bytes": 1984,
+      "sha256": "5b5abbb529217cd52e1be11c5dd4ed86b49442a8a6823036b8010f8d0ed30fea"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/test-agent-prompt.md",
+      "size_bytes": 6845,
+      "sha256": "9164a599eaec39f1ed799a30bf799c36e0952b5612b5b1c9be34d71d9e75b3c4"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/test-bundle.md",
+      "size_bytes": 60732,
+      "sha256": "78292338ba18a84447af3406eabdc6dd8ee835b5f2ca35318c2917671d18f5fd"
+    },
+    {
+      "path": "evaluation/software-exploration/stop-rule-live-01/tool-guide.md",
+      "size_bytes": 28057,
+      "sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227"
+    }
+  ]
+}

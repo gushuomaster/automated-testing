@@ -1,0 +1,321 @@
+{
+  "schema_version": "stop-live-lock-verification/v1",
+  "reviewer": "/root/s2_stop_live_evaluate",
+  "run_id": "stop-live01-run01",
+  "verified_at": "2026-10-29T09:26:50.531397+00:00",
+  "freeze_lock_matches": true,
+  "report_lock_canonical_list_matches": true,
+  "files": [
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\capture-run.py",
+      "expected_size": 3632,
+      "actual_size": 3632,
+      "expected_sha256": "63b36c26fe6571ac57b6d137a9d97dccafbc618993a29774a3b870d1e1ec07f5",
+      "actual_sha256": "63b36c26fe6571ac57b6d137a9d97dccafbc618993a29774a3b870d1e1ec07f5",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\health-01\\agent-events.json",
+      "expected_size": 32062,
+      "actual_size": 32062,
+      "expected_sha256": "b156dd548356fc48b2b1742ffcbbd27f7b86bb55ece4cc7ce0c54cf4b9b4e1bd",
+      "actual_sha256": "b156dd548356fc48b2b1742ffcbbd27f7b86bb55ece4cc7ce0c54cf4b9b4e1bd",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\health-01\\agent-report.md",
+      "expected_size": 1462,
+      "actual_size": 1462,
+      "expected_sha256": "d667e06a3747d685cfcdd3630ea879c5d51556d6836bbe47852a5baf3130f5bb",
+      "actual_sha256": "d667e06a3747d685cfcdd3630ea879c5d51556d6836bbe47852a5baf3130f5bb",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\health-01\\capture-manifest.json",
+      "expected_size": 347,
+      "actual_size": 347,
+      "expected_sha256": "fc9761dc2dc18ec381adf24ab0200d4ea1a583ab8ec1506d0a3b336c9a2c9911",
+      "actual_sha256": "fc9761dc2dc18ec381adf24ab0200d4ea1a583ab8ec1506d0a3b336c9a2c9911",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\health-01\\data\\orders.json",
+      "expected_size": 594,
+      "actual_size": 594,
+      "expected_sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "actual_sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\health-01\\organizer-finish.json",
+      "expected_size": 269,
+      "actual_size": 269,
+      "expected_sha256": "c01bbe32e4434e106175d22b1325ca61e21716f07fc6ad1aab61acdcfd4e616e",
+      "actual_sha256": "c01bbe32e4434e106175d22b1325ca61e21716f07fc6ad1aab61acdcfd4e616e",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\health-01\\organizer-start.json",
+      "expected_size": 452,
+      "actual_size": 452,
+      "expected_sha256": "aa131b2da706a5cce38852d5917097fc6aa67c7885de8780e4e8a9851c693af1",
+      "actual_sha256": "aa131b2da706a5cce38852d5917097fc6aa67c7885de8780e4e8a9851c693af1",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\health-01\\session.jsonl",
+      "expected_size": 402687,
+      "actual_size": 402687,
+      "expected_sha256": "81b68ee162c7590f5659d9e92e3b37da56c9dcd5dbeb3c6a7a3d0caebdad0bda",
+      "actual_sha256": "81b68ee162c7590f5659d9e92e3b37da56c9dcd5dbeb3c6a7a3d0caebdad0bda",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\health-01\\sut\\MiniOrder.exe",
+      "expected_size": 199790,
+      "actual_size": 199790,
+      "expected_sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+      "actual_sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\historical-lock-verification.json",
+      "expected_size": 27421,
+      "actual_size": 27421,
+      "expected_sha256": "8b76fa61c203d50bcd0eb81039a3fb181244e35ab55fb5facc99f98a9fb70f37",
+      "actual_sha256": "8b76fa61c203d50bcd0eb81039a3fb181244e35ab55fb5facc99f98a9fb70f37",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\pre-run-integrity.json",
+      "expected_size": 1803,
+      "actual_size": 1803,
+      "expected_sha256": "99189f163f853aef55951bf963c34335efcfbfac159972c020e15c7634526bc9",
+      "actual_sha256": "99189f163f853aef55951bf963c34335efcfbfac159972c020e15c7634526bc9",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\run-01\\data\\orders.json",
+      "expected_size": 594,
+      "actual_size": 594,
+      "expected_sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "actual_sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\run-01\\sut\\MiniOrder.exe",
+      "expected_size": 199790,
+      "actual_size": 199790,
+      "expected_sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+      "actual_sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\docs\\miniorder\\MiniOrder-Requirements.md",
+      "expected_size": 2329,
+      "actual_size": 2329,
+      "expected_sha256": "033bee6c01fe24ddae53d449b309f44b470a864cdd4583bb4bd7b17b4fdc603f",
+      "actual_sha256": "033bee6c01fe24ddae53d449b309f44b470a864cdd4583bb4bd7b17b4fdc603f",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\docs\\software-exploration\\stop-decision-card.md",
+      "expected_size": 4653,
+      "actual_size": 4653,
+      "expected_sha256": "ed6ee179f19b0858b0d3a748ad571c10945103d7b5fd047a23379a6e17c43b0c",
+      "actual_sha256": "ed6ee179f19b0858b0d3a748ad571c10945103d7b5fd047a23379a6e17c43b0c",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\candidate-files.json",
+      "expected_size": 4552,
+      "actual_size": 4552,
+      "expected_sha256": "6f47e3361d84e2e7c75a29c33eadd8834d1d65ebd873c2847041168530cda836",
+      "actual_sha256": "6f47e3361d84e2e7c75a29c33eadd8834d1d65ebd873c2847041168530cda836",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\inputs\\requirements.json",
+      "expected_size": 19323,
+      "actual_size": 19323,
+      "expected_sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497",
+      "actual_sha256": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\isolation.md",
+      "expected_size": 1885,
+      "actual_size": 1885,
+      "expected_sha256": "b08a809b27892ab92b3624eb4b5ba6bf4d2a69c75b4cb9e8595d328db0977f0c",
+      "actual_sha256": "b08a809b27892ab92b3624eb4b5ba6bf4d2a69c75b4cb9e8595d328db0977f0c",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\launch-instructions.md",
+      "expected_size": 1756,
+      "actual_size": 1756,
+      "expected_sha256": "134f7a4fb622fc7521d64c324d1179eadefecacc2c07f1880e1130fb695bd0f0",
+      "actual_sha256": "134f7a4fb622fc7521d64c324d1179eadefecacc2c07f1880e1130fb695bd0f0",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\preparation.json",
+      "expected_size": 3409,
+      "actual_size": 3409,
+      "expected_sha256": "18f94a4126df86191ddc9796f10b5357f31b9b512c69eb1d07e699886fcfe1ad",
+      "actual_sha256": "18f94a4126df86191ddc9796f10b5357f31b9b512c69eb1d07e699886fcfe1ad",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\protocol.md",
+      "expected_size": 4988,
+      "actual_size": 4988,
+      "expected_sha256": "3234d6b8d316f56ec76ca6de52422f6d05df0f44bb5d520ab025c763972537d2",
+      "actual_sha256": "3234d6b8d316f56ec76ca6de52422f6d05df0f44bb5d520ab025c763972537d2",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\report.schema.json",
+      "expected_size": 4313,
+      "actual_size": 4313,
+      "expected_sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72",
+      "actual_sha256": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\stop-rules.md",
+      "expected_size": 1984,
+      "actual_size": 1984,
+      "expected_sha256": "5b5abbb529217cd52e1be11c5dd4ed86b49442a8a6823036b8010f8d0ed30fea",
+      "actual_sha256": "5b5abbb529217cd52e1be11c5dd4ed86b49442a8a6823036b8010f8d0ed30fea",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\test-agent-prompt.md",
+      "expected_size": 6845,
+      "actual_size": 6845,
+      "expected_sha256": "9164a599eaec39f1ed799a30bf799c36e0952b5612b5b1c9be34d71d9e75b3c4",
+      "actual_sha256": "9164a599eaec39f1ed799a30bf799c36e0952b5612b5b1c9be34d71d9e75b3c4",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\test-bundle.md",
+      "expected_size": 60732,
+      "actual_size": 60732,
+      "expected_sha256": "78292338ba18a84447af3406eabdc6dd8ee835b5f2ca35318c2917671d18f5fd",
+      "actual_sha256": "78292338ba18a84447af3406eabdc6dd8ee835b5f2ca35318c2917671d18f5fd",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\evaluation\\software-exploration\\stop-rule-live-01\\tool-guide.md",
+      "expected_size": 28057,
+      "actual_size": 28057,
+      "expected_sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227",
+      "actual_sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227",
+      "matches": true
+    },
+    {
+      "category": "freeze",
+      "path": "D:\\project\\agent\\automated-testing\\scripts\\audit_exploration_stop.py",
+      "expected_size": 12859,
+      "actual_size": 12859,
+      "expected_sha256": "2c804d6e268234edbe3ec478ada8fcca6401934a368d10ab4c1105a5f4588bd1",
+      "actual_sha256": "2c804d6e268234edbe3ec478ada8fcca6401934a368d10ab4c1105a5f4588bd1",
+      "matches": true
+    },
+    {
+      "category": "report",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\run-01\\session.jsonl",
+      "expected_size": 705969,
+      "actual_size": 705969,
+      "expected_sha256": "ae19418c457132da077a655615e463f7d986a6deed72b693ee8934183b74d9cd",
+      "actual_sha256": "ae19418c457132da077a655615e463f7d986a6deed72b693ee8934183b74d9cd",
+      "matches": true
+    },
+    {
+      "category": "report",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\run-01\\raw-report.json",
+      "expected_size": 38697,
+      "actual_size": 38697,
+      "expected_sha256": "505404270d101b41c489425331e7a29fe23ec3658170e7f300b0e5099b082c76",
+      "actual_sha256": "505404270d101b41c489425331e7a29fe23ec3658170e7f300b0e5099b082c76",
+      "matches": true
+    },
+    {
+      "category": "report",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\run-01\\tool-events.jsonl",
+      "expected_size": 108389,
+      "actual_size": 108389,
+      "expected_sha256": "700982f38b1c535aaa765499db7186f4f76831a7928a43e7fb37807de01b7031",
+      "actual_sha256": "700982f38b1c535aaa765499db7186f4f76831a7928a43e7fb37807de01b7031",
+      "matches": true
+    },
+    {
+      "category": "report",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\run-01\\capture-manifest.json",
+      "expected_size": 767,
+      "actual_size": 767,
+      "expected_sha256": "53dc3b359af27cad19c25bfbeca0db35a8f6d4df06316b2e4c2bea19c0d53429",
+      "actual_sha256": "53dc3b359af27cad19c25bfbeca0db35a8f6d4df06316b2e4c2bea19c0d53429",
+      "matches": true
+    },
+    {
+      "category": "report",
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\run-01\\organizer-start.json",
+      "expected_size": 463,
+      "actual_size": 463,
+      "expected_sha256": "5e3a1c23df03de2ad4ebacc837f31a015cfadc9c6db1c3136d6828bcf5b81f08",
+      "actual_sha256": "5e3a1c23df03de2ad4ebacc837f31a015cfadc9c6db1c3136d6828bcf5b81f08",
+      "matches": true
+    }
+  ],
+  "all_file_hashes_match": true,
+  "tool_events_exact_selected_objects_match": true,
+  "raw_report_exact_task_complete_utf8_match": true,
+  "session_ordinals_contiguous": true,
+  "scope": "逐字节完整性哈希；未解释或读取MiniOrder内部数据、源码、历史报告或旧答案。冻结清单中可执行文件/种子/健康证据仅流经哈希函数，不作内容审阅。",
+  "additional_postlock_sources": [
+    {
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\dispatch-session.jsonl",
+      "sha256": "2bfccd894074d11143d9f6235ca544e989befcded671a704c1a8822f757324b4"
+    },
+    {
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\dispatch-manifest.json",
+      "sha256": "6b4793ede9a2535c01b94e00f2092318559caf843ab3c5879d733d2a67f1fa98"
+    },
+    {
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\dispatch-addendum.json",
+      "sha256": "a15863a0fbf91b4c842aa64337e268496e0554dfbd83d2337be45f7bf94764e1"
+    },
+    {
+      "path": "D:\\project\\agent\\automated-testing\\artifacts\\software-exploration\\stop-rule-live-01\\organizer-finish.json",
+      "sha256": "0763e23b19fbc5541b1136e92b8b564357a00af12fa9b995c2cca1b6b1bd013f"
+    }
+  ]
+}

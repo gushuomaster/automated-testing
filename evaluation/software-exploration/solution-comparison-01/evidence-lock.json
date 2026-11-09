@@ -1,0 +1,284 @@
+{
+  "schema_version": "solution-comparison-investigation-lock/v1",
+  "locked_at": "2026-10-29T06:32:04.156329+00:00",
+  "algorithm": "SHA-256 of exact file bytes",
+  "scope": "本轮调查、诊断、复核与任务快照；不是正式比较协议冻结，正式比较未启动。固定上游18关键文件由manifest及Git提交追溯；不锁.git对象或未引用源码。",
+  "comparison_started": false,
+  "files": [
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-solution-comparison/check.jsonl",
+      "size_bytes": 128,
+      "sha256": "ea401f6c3bf384ec5c96041ff0e5c8e62f402700a669b12534ba752bb7739722"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-solution-comparison/design.md",
+      "size_bytes": 1395,
+      "sha256": "aa96de6e44e584aabde599349041c6067d3db4bd971ec0710ff087b3ed3c3f93"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-solution-comparison/implement.jsonl",
+      "size_bytes": 172,
+      "sha256": "f3ff8de6a41b2cdf88ca40c7dd1768e705325e939004299a713701cdf12a39b2"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-solution-comparison/implement.md",
+      "size_bytes": 1452,
+      "sha256": "c51bce73f661e47022c50f1a1ef141c6b00f3806b2c26c4430acfb948a4bc344"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-solution-comparison/prd.md",
+      "size_bytes": 2521,
+      "sha256": "52785d795cb9b611e1e6823c3d392b247044aae35faa14b4a594ebb890c84c17"
+    },
+    {
+      "path": ".trellis/tasks/10-29-software-exploration-solution-comparison/task.json",
+      "size_bytes": 1176,
+      "sha256": "3c8f97b020dddde47857aa4888366b1aa0ec4a3110b3fc3e4e8737977ed4c3e2"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/human-input-adjudication.json",
+      "size_bytes": 856,
+      "sha256": "3440b34d12c088aa689c96da1997c9f5751a9f1dc3913e82ee0b81a934907499"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-01/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-01/finish.json",
+      "size_bytes": 397,
+      "sha256": "9c4faa0ae8a2e1b1f544b9574e541f91b25cc15493314f64e8c6e352154955ca"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-01/start.json",
+      "size_bytes": 805,
+      "sha256": "cf545c0340c888f025fb7f2ba2018e99eb3b99587fbd046c0a21039ffb62d3c4"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-01/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-02/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-02/finish.json",
+      "size_bytes": 572,
+      "sha256": "adae348efea721f8bb14765d3d7c2ced8d702bbc18b4bed3db8b2c707536c67d"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-02/start.json",
+      "size_bytes": 653,
+      "sha256": "a1e575ff6ee6ace81b3a2202cf5d5a289c73adecde679d41d8f61d3215759887"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-02/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-03/data/orders.json",
+      "size_bytes": 594,
+      "sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-03/finish.json",
+      "size_bytes": 1139,
+      "sha256": "50b6cfbebdb115e1fa498687de93ccf212cd4e9212a1ca9e45c6bbfa66ced44c"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-03/start.json",
+      "size_bytes": 778,
+      "sha256": "534cde0e5e09ded2ea38a62cacde7f9993faf6bcccf973d04422bc0db8fcdf8f"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-03/sut/MiniOrder.exe",
+      "size_bytes": 199790,
+      "sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/input-gate-03/tool-events.json",
+      "size_bytes": 6047,
+      "sha256": "36006fe8c2bc9775fcae6524d152c2055fcca5921b412edcb5f6112cca5a53db"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/diagnostics/tool-events.json",
+      "size_bytes": 10895,
+      "sha256": "f4ebc74f25a7d2b034220d809f2f4dc1b0bb5ae7244626f3a7989495691db4da"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/environment.json",
+      "size_bytes": 1614,
+      "sha256": "8f32483f963e227ba2be71677d69dc03bcc09b64df38d92fe1e826eb5559b634"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/main-scout/LICENSE",
+      "size_bytes": 1073,
+      "sha256": "fd532481d828e13a0b13ccb598e02338a3617740675a862ee6bdc1541b68e93d"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/main-scout/README.md",
+      "size_bytes": 25432,
+      "sha256": "40d9a4010ab122ab50242a0cd7a5320e2fd16b3e53494d988eecdbd94fd8e6e8"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/main-scout/requirements.txt",
+      "size_bytes": 975,
+      "sha256": "923e394e4269d27adc38cd6e2d1af2aeb0ac034291dec1988f0c7c85184a3d74"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/main-scout/ufo/__main__.py",
+      "size_bytes": 199,
+      "sha256": "e3b516f12e2d159eacdc1fa5e5ee608cbdbe9f02c37be8ee670c16b935eaf67a"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/runtime-probe.json",
+      "size_bytes": 4812,
+      "sha256": "c71ceb1c98f5c19d2af53fe64ff4a3a02c2c09821ed98dd54b5c75b3da6a1ff3"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/scout-results.json",
+      "size_bytes": 11361,
+      "sha256": "46a785fb9687b9c37658e00fbd898825405d8484304bb1d49a53d7e11b7ab62f"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/source-manifest.json",
+      "size_bytes": 31855,
+      "sha256": "9d8e6b8fe57c5f05b2ea46da14a6dd65bd0885079f4f5bec9fd866022eca4115"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/config/ufo/agents.yaml.template",
+      "size_bytes": 6295,
+      "sha256": "a0f58664fee3ded82c452415aa9d2ac904ee5d120cf7cba337b033ccf9806dea"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/config/ufo/mcp.yaml",
+      "size_bytes": 4287,
+      "sha256": "0e6303776c41094efb1cf3de32198b66b9f49854e49a761bd1fdbbfbf8d6f350"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/config/ufo/rag.yaml",
+      "size_bytes": 1311,
+      "sha256": "f1353c7e99dcbc5398c55e2163521ae7a01a9fb34cd0147ad81f3b0588561c1f"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/config/ufo/system.yaml",
+      "size_bytes": 5172,
+      "sha256": "edd0627b13ac0e60ce2e27fe38367e4d61599a7a436a29925599cb70d02e38ac"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/LICENSE",
+      "size_bytes": 1093,
+      "sha256": "903df5512f7d02609fed0c780a9b704f5a3eeb6e4d84ebe42a29845c81899a3c"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/requirements.txt",
+      "size_bytes": 1022,
+      "sha256": "86c66ce6a232100ab3922ddb43ab9902a1080dd43420f7f4158f6cf218574de8"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/agents/processors/app_agent_processor.py",
+      "size_bytes": 12499,
+      "sha256": "111cde640fcd4d311b22db243d52360872ed994e5dafd9676bec817bff90dfbf"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/agents/processors/core/processor_framework.py",
+      "size_bytes": 17455,
+      "sha256": "ee7db7109fe554b7bf90b42e1914430294f0cad46f37eb3d91b290c3caf509d4"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/agents/processors/strategies/app_agent_processing_strategy.py",
+      "size_bytes": 74459,
+      "sha256": "b2ebd7c9b7c37f6ecd40e9a3423c537ca97d560fc4434b66d038b70cdbf8bf80"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/agents/processors/strategies/host_agent_processing_strategy.py",
+      "size_bytes": 52065,
+      "sha256": "34d761766ebe3332e68f34737989e65d31a7ef7d4c0eda0aa3e05fd0766b9255"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/automator/ui_control/controller.py",
+      "size_bytes": 39150,
+      "sha256": "18cbb1815f1fc1e06f6cbef2d76516359a002bb56673ed71514d9e7318f97e8a"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/llm/base.py",
+      "size_bytes": 6319,
+      "sha256": "0af0685c98d7ad0d88eecf416611ffd71ce0a68b15ccebc5d636846d8387171a"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/module/basic.py",
+      "size_bytes": 33754,
+      "sha256": "64d272eb93751f063874661bc89cad576fed2491b6ba1bda0edaf0cc0bcb07fa"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/module/dispatcher.py",
+      "size_bytes": 9436,
+      "sha256": "a9f625db8edf4165d58d8387129a8ca7afd8a62dfb767eab6cfc796d04e69e43"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/module/session_pool.py",
+      "size_bytes": 15384,
+      "sha256": "8bfcdd41bd8f0079608a53bfcaf6a141ff178ae7dd65e3601e7e7bb390ef1238"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/prompter/agent_prompter.py",
+      "size_bytes": 15495,
+      "sha256": "da7b93072e12f8832ef9c877371ab8677acd45d5a2032ceed4804be2343f47bb"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/README.md",
+      "size_bytes": 23108,
+      "sha256": "dcd967425f8457f2c8235e92b757ff5d4a488080cd5f33a089c3e8e3d3c335a2"
+    },
+    {
+      "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/ufo.py",
+      "size_bytes": 2291,
+      "sha256": "cd7c8017e097ff4b8705f9998c6f7609ddb0a94be92b5bb3645ad05aed49c624"
+    },
+    {
+      "path": "evaluation/software-exploration/solution-comparison-01/comparison-protocol.md",
+      "size_bytes": 5772,
+      "sha256": "e9c3bb5e6c91feb1366459ad77c90d484f8d6707bf159d4057b15c9dfba8bfc3"
+    },
+    {
+      "path": "evaluation/software-exploration/solution-comparison-01/feasibility-report.md",
+      "size_bytes": 6439,
+      "sha256": "1831d15c2308bbd6f61d95bc342810ea57f68d95d714267799273c27660cf7e0"
+    },
+    {
+      "path": "evaluation/software-exploration/solution-comparison-01/index.md",
+      "size_bytes": 1030,
+      "sha256": "4ccae78bed4892686242f80a661a5eaff6b4a82a1eca0628e07f281faf3b547a"
+    },
+    {
+      "path": "evaluation/software-exploration/solution-comparison-01/input-isolation-review.md",
+      "size_bytes": 3120,
+      "sha256": "3bab7c2e8f5cd572aebb9cd206d669b8ea3e1adbb8c78ef08d9bf665072882b5"
+    },
+    {
+      "path": "evaluation/software-exploration/solution-comparison-01/integrity-verification.json",
+      "size_bytes": 25818,
+      "sha256": "37b444914f73c180ce9552b6b4e32a9d70ec899ce79c56294674b888c9b01603"
+    },
+    {
+      "path": "evaluation/software-exploration/solution-comparison-01/launch-instructions.md",
+      "size_bytes": 2996,
+      "sha256": "a45f745a0e830d37906303dfd9c8eb30e3093c6c3e13ea11924eb2f8f31ca5eb"
+    },
+    {
+      "path": "evaluation/software-exploration/solution-comparison-01/quality-review.md",
+      "size_bytes": 5993,
+      "sha256": "8d19c1928ca52a54c783bf114f6814e10227cc70fcb9ad408851c1737588c3c3"
+    },
+    {
+      "path": "evaluation/software-exploration/solution-comparison-01/status-report.md",
+      "size_bytes": 3471,
+      "sha256": "855b37b7e8c3bd8728a74b47e6c02c45801b9f6d6d643d679e2935509f43facb"
+    }
+  ]
+}

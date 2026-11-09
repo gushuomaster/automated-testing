@@ -1,0 +1,3 @@
+{"file":".trellis/tasks/10-29-software-exploration-stop-audit/prd.md","reason":"验收与不得扩展边界"}
+{"file":".trellis/spec/backend/requirement-analysis-contracts.md","reason":"锁与评估结论约束"}
+{"file":"evaluation/software-exploration/experiments/round-03/quality-review.md","reason":"真实回归预期与只读限制"}

@@ -1,0 +1,141 @@
+{
+  "schema_version": "exploration-stop-checkpoints/v1",
+  "run_id": "stop-live01-run01",
+  "reviewer": "/root/s2_stop_live_evaluate",
+  "scope_note": "逐真实输入独立复核。15个能由冻结契约表达的检查点；Tab102缺实际被动复核，单列manual_unrepresentable_checkpoints。完整调用目录还含禁止通信，冻结CLI不支持该顶层工具，自动部分必须INDETERMINATE。不得以可表达子集无偏离外推全协议通过。",
+  "checkpoints": [
+    {
+      "checkpoint_id": "CP-40",
+      "input_call_ordinal": 40,
+      "immediate_output_ordinal": 43,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "数量字段由空白变为2；直接目标Value确认。"
+    },
+    {
+      "checkpoint_id": "CP-47",
+      "input_call_ordinal": 47,
+      "immediate_output_ordinal": 50,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "单价Value为3.50，金额同时为7.00，直接目标及联动状态确认。"
+    },
+    {
+      "checkpoint_id": "CP-52",
+      "input_call_ordinal": 52,
+      "immediate_output_ordinal": 55,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "数量Value变为x且金额7.00消失，实际瞬时状态确认。"
+    },
+    {
+      "checkpoint_id": "CP-CLEAR-FAILURE",
+      "input_call_ordinal": 57,
+      "immediate_output_ordinal": 60,
+      "immediate_outcome": "UNRESOLVED",
+      "passive_call_ordinal": 64,
+      "passive_output_ordinal": 67,
+      "passive_outcome": "CONFIRMED",
+      "reason": "60为coordinate input geometry is unavailable错误，计划即时回读未执行，故即时结果UNRESOLVED。64为一次纯get_window_state，67确认QuantityInput=x和UnitPriceInput=3.50均保留、金额空，无清空副作用；结合明确geometry失败确认清空本次未执行，结果为已知未生效，不仅因为树未变。60至67间零GUI输入；随后允许继续。"
+    },
+    {
+      "checkpoint_id": "CP-73",
+      "input_call_ordinal": 73,
+      "immediate_output_ordinal": 76,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "数量Value由x消失，单价仍3.50；清除该字段确认。"
+    },
+    {
+      "checkpoint_id": "CP-78",
+      "input_call_ordinal": 78,
+      "immediate_output_ordinal": 81,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "单价Value消失，录入字段均空白；该目标清除确认。"
+    },
+    {
+      "checkpoint_id": "CP-83",
+      "input_call_ordinal": 83,
+      "immediate_output_ordinal": 86,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "新建内容区切为查询内容区，出现QueryOrderTab、QueryKeywordInput、StatusFilter及结果网格；页签切换确认。"
+    },
+    {
+      "checkpoint_id": "CP-90",
+      "input_call_ordinal": 90,
+      "immediate_output_ordinal": 93,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "查询关键字Value变为mo-20260115-0001；动作只声称写入字段，未声称自动查询，旧结果保留不构成结果未知。"
+    },
+    {
+      "checkpoint_id": "CP-95",
+      "input_call_ordinal": 95,
+      "immediate_output_ordinal": 98,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "回车后结果计数2变1且仅对应编号行保留，查询触发确认。"
+    },
+    {
+      "checkpoint_id": "CP-109",
+      "input_call_ordinal": 109,
+      "immediate_output_ordinal": 112,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "StatusFilter的Value明确由全部变新建；索引定向set_value不依赖先前Tab是否移动焦点，但不能反向确认先前Tab。"
+    },
+    {
+      "checkpoint_id": "CP-118",
+      "input_call_ordinal": 118,
+      "immediate_output_ordinal": 121,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "查询关键字Value明确变为NO_MATCH_zzzz；字段写入确认，尚未声称执行查询。"
+    },
+    {
+      "checkpoint_id": "CP-123",
+      "input_call_ordinal": 123,
+      "immediate_output_ordinal": 126,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "回车后计数1变0且网格订单行消失，查询触发确认。"
+    },
+    {
+      "checkpoint_id": "CP-130",
+      "input_call_ordinal": 130,
+      "immediate_output_ordinal": 133,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "查询关键字非空Value消失；仅清除该字段的动作确认。"
+    },
+    {
+      "checkpoint_id": "CP-135",
+      "input_call_ordinal": 135,
+      "immediate_output_ordinal": 138,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "StatusFilter的Value明确恢复全部，字段设置确认。"
+    },
+    {
+      "checkpoint_id": "CP-140",
+      "input_call_ordinal": 140,
+      "immediate_output_ordinal": 143,
+      "immediate_outcome": "CONFIRMED",
+      "reason": "回车后计数0变2并出现两条公开UIA订单行，查询恢复确认。"
+    }
+  ],
+  "manual_unrepresentable_checkpoints": [
+    {
+      "checkpoint_id": "CP-TAB-MISSING-PASSIVE",
+      "input_call_ordinal": 102,
+      "immediate_output_ordinal": 105,
+      "immediate_outcome": "UNRESOLVED",
+      "passive_call_ordinal": null,
+      "passive_output_ordinal": null,
+      "passive_outcome": null,
+      "first_continued_input_call_ordinal": 109,
+      "following_gui_input_ordinals": [
+        109,
+        118,
+        123,
+        130,
+        135,
+        140
+      ],
+      "verdict": "IMMEDIATE_UNRESOLVED_GATE_DEVIATION",
+      "reason": "目标是移动至状态筛选；唯一焦点字段仍QueryKeywordInput，其他字段和结果无可区分改变。没有独立可观察证据能确认焦点实际移动或确认合法未移动；成功返回不够。也没有另一项冲突证据满足仅focused_element元数据冲突例外。无纯被动复核，109直接续输。",
+      "frozen_auditor_representability": "UNREPRESENTABLE：冻结审计器要求每个UNRESOLVED行必须有真实被动复核；本次没有，不能伪造ordinal或空范围。列在人工未能表示检查点，不进入可执行checkpoints数组。",
+      "single_trigger_preregistered_verdict": "INDETERMINATE",
+      "cutoff_note": "未实际获得一次被动后仍UNRESOLVED的截止点；因此不能宣称SUPPORTED_SINGLE_TRIGGER或该截止点后续输DEVIATION已实触发。"
+    }
+  ]
+}

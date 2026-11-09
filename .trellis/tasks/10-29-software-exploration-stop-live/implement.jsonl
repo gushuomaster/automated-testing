@@ -1,0 +1,3 @@
+{"file":".trellis/tasks/10-29-software-exploration-stop-live/design.md","reason":"单次范围和不泄露旧答案的材料准备"}
+{"file":".trellis/spec/backend/exploration-stop-audit.md","reason":"停止例外与只读审计边界"}
+{"file":"docs/software-exploration/stop-decision-card.md","reason":"候选通用指令，派发仅运行部分"}

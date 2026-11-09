@@ -1,0 +1,55 @@
+{
+  "schema_version": "exploration-stop-checkpoints/v1",
+  "run_id": "s2-r03-run01",
+  "reviewer": "组织评估侧复用round-03独立锁后人工裁决",
+  "scope_note": "development/regression：只审本文件5个已人工核验检查点和runtime-audit提供目录，不自动判断GUI语义，不是新Agent正式实验。ordinal为session JSON的ordinal字段，不是行号。",
+  "checkpoints": [
+    {
+      "checkpoint_id": "resolved-dropdown-lag",
+      "input_call_ordinal": 110,
+      "immediate_output_ordinal": 113,
+      "immediate_outcome": "UNRESOLVED",
+      "passive_call_ordinal": 117,
+      "passive_output_ordinal": 120,
+      "passive_outcome": "CONFIRMED",
+      "reason": "旧独立runtime-audit.strict_stop_rule.resolved_lag_cases：回车后被动读确认下拉收起，属于已解决滞后，不能误判终止。"
+    },
+    {
+      "checkpoint_id": "unresolved-intended-action",
+      "input_call_ordinal": 143,
+      "immediate_output_ordinal": 146,
+      "immediate_outcome": "UNRESOLVED",
+      "passive_call_ordinal": 148,
+      "passive_output_ordinal": 151,
+      "passive_outcome": "UNRESOLVED",
+      "reason": "旧独立runtime-audit STOP-001及原报告OBS020/021：被动回读仍不能确认space是否调用查询；后续Return不是仅被动核验，应列续输。"
+    },
+    {
+      "checkpoint_id": "unresolved-cleanup",
+      "input_call_ordinal": 167,
+      "immediate_output_ordinal": 170,
+      "immediate_outcome": "UNRESOLVED",
+      "passive_call_ordinal": 172,
+      "passive_output_ordinal": 175,
+      "passive_outcome": "UNRESOLVED",
+      "reason": "旧独立runtime-audit STOP-002及原报告OBS024/025：清理按钮调用未确认，被动后直接改字段/刷新仍属输入，清理不能豁免。"
+    },
+    {
+      "checkpoint_id": "resolved-tab-lag",
+      "input_call_ordinal": 198,
+      "immediate_output_ordinal": 201,
+      "immediate_outcome": "UNRESOLVED",
+      "passive_call_ordinal": 205,
+      "passive_output_ordinal": 208,
+      "passive_outcome": "CONFIRMED",
+      "reason": "旧独立runtime-audit.resolved_lag_cases：被动读确认已到空白新建页；此检查点本身已解决，但不撤销先前未决终止截止点。"
+    },
+    {
+      "checkpoint_id": "focus-metadata-only",
+      "input_call_ordinal": 88,
+      "immediate_output_ordinal": 91,
+      "immediate_outcome": "FOCUS_METADATA_ONLY",
+      "reason": "旧独立runtime-audit.interference与OBS011-014：Tab后focused_element未变化仅是单字段冲突，不单独判干扰/产品问题；随后被动95/98及Alt+Down100/103、Down105/108实际行为交叉核验，允许该例外但不是整轮通过。"
+    }
+  ]
+}

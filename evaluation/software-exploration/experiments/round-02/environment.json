@@ -1,0 +1,44 @@
+{
+  "schema_version": "software-exploration-environment/v1",
+  "recorded_at": "2026-10-29T10:30:53.905143+08:00",
+  "role": "calibration",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.14.3",
+  "git_head": "e0adf976af2674ffd09291a758ac24d11907a6b2",
+  "working_tree_changes": [
+    "?? .trellis/tasks/10-27-software-exploration-s2/",
+    "?? evaluation/software-exploration/",
+    "?? schemas/software-exploration-report.schema.json",
+    "?? scripts/capture_software_exploration_report.py",
+    "?? scripts/evaluate_software_exploration_s2.py",
+    "?? scripts/prepare_software_exploration_calibration.py",
+    "?? scripts/prepare_software_exploration_s2.py",
+    "?? tests/unit/test_capture_software_exploration_report.py",
+    "?? tests/unit/test_evaluate_software_exploration_s2.py",
+    "?? tests/unit/test_software_exploration_calibration.py",
+    "?? tests/unit/test_software_exploration_s2.py"
+  ],
+  "computer_use_bundle": "26.1023.50603",
+  "previous_computer_use_bundle": "26.1021.31345",
+  "uia_entry": "mcp__node_repl__js + @oai/sky",
+  "runtime_version_verified": false,
+  "comparability": "文档包版本不同；需恢复后以独立健康检查核实实质行为，不合并成绩。",
+  "tool_documents": [
+    {
+      "path": "C:\\Users\\28320\\.codex\\plugins\\cache\\openai-bundled\\computer-use\\26.1023.50603\\skills\\computer-use\\SKILL.md",
+      "sha256": "8211e4b11a19a0dc4f0ace91096c74c5b36037ca4cb2c8988f0f535bb209e951"
+    },
+    {
+      "path": "C:\\Users\\28320\\.codex\\plugins\\cache\\openai-bundled\\computer-use\\26.1023.50603\\docs\\guidance.md",
+      "sha256": "b171b26bc19f49226bb594bf3ed3f36666e5dd063a996c297986b2b461ac8efd"
+    },
+    {
+      "path": "C:\\Users\\28320\\.codex\\plugins\\cache\\openai-bundled\\computer-use\\26.1023.50603\\docs\\api.md",
+      "sha256": "c36d005fb98ed79837a1a5d4605ebad036cec95864e5646f451425163d5c16af"
+    },
+    {
+      "path": "C:\\Users\\28320\\.codex\\plugins\\cache\\openai-bundled\\computer-use\\26.1023.50603\\docs\\confirmations.md",
+      "sha256": "9c45b3eb20e4a7fb14860e50f635e200b321a52fef6d26f39f7b936bd44be11a"
+    }
+  ]
+}

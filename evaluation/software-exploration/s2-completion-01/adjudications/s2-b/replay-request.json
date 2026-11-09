@@ -1,0 +1,91 @@
+{
+  "schema_version": "software-exploration-replay-request/v1",
+  "run_id": "s2-b",
+  "status": "PENDING",
+  "original_report_sha256": "16d97b6a872d4a2977cf132e535c00bfb9df875ca0ebdaba2094a155c18420c4",
+  "independent_fresh_copy_required": true,
+  "purpose": "只复验B确实声明的限定可达路径，不补未探索分支。",
+  "max_native_inputs_for_claimed_paths": 2,
+  "full_claim_path_ids": [
+    "REQ-001",
+    "REQ-005",
+    "REQ-006",
+    "REQ-007",
+    "REQ-008",
+    "REQ-009",
+    "REQ-021",
+    "REQ-022"
+  ],
+  "safe_prefix_path_ids": [
+    "REQ-002",
+    "REQ-003",
+    "REQ-010",
+    "REQ-011",
+    "REQ-012",
+    "REQ-013",
+    "REQ-014",
+    "REQ-015",
+    "REQ-016",
+    "REQ-017",
+    "REQ-018",
+    "REQ-019",
+    "REQ-020",
+    "REQ-023",
+    "REQ-024",
+    "REQ-025",
+    "REQ-026",
+    "REQ-027",
+    "REQ-028",
+    "REQ-029",
+    "REQ-030",
+    "REQ-031"
+  ],
+  "steps": [
+    {
+      "op": "observe",
+      "claim": "观察主窗口/标题value、新建订单默认已选、查询入口未选、四字段初始空、金额空、必填/范围标签、保存/清空/状态载体。",
+      "constraints": "按control_type区分CreateOrderTab重复AutomationId；不选择QueryOrderTab；状态value=null不猜提示；标题来自value不是name。"
+    },
+    {
+      "op": "act",
+      "automation_id": "CustomerNameInput",
+      "control_type": "EditControl",
+      "action": "set_value",
+      "value": "S2探索",
+      "requirements": [
+        "REQ-002",
+        "REQ-005",
+        "REQ-011",
+        "REQ-028"
+      ],
+      "confirmation": "新鲜客户值精确为S2探索，再ack。"
+    },
+    {
+      "op": "act",
+      "automation_id": "ProductNameInput",
+      "control_type": "EditControl",
+      "action": "set_value",
+      "value": "探索商品",
+      "requirements": [
+        "REQ-002",
+        "REQ-006",
+        "REQ-013",
+        "REQ-028"
+      ],
+      "confirmation": "新鲜商品值精确为探索商品，再ack。"
+    }
+  ],
+  "excluded": [
+    "不进入查询页/查询/筛选/清除筛选",
+    "不重做数量2：报告明确未决，不是成功路径声明",
+    "不设置单价/探索金额计算/清空",
+    "不保存/关闭/重启/切换目录，不补未映射项"
+  ],
+  "stop_rule": "输入未知先UNRESOLVED，仅一次observe，仍未知再次UNRESOLVED并停全部输入，清理不例外。",
+  "result_fields_required": [
+    "原快照与逐调用日志",
+    "每条正式声明的独立复验状态/实际前缀",
+    "完整耗时/GUI计数/UTC",
+    "失败与未知也保留，不用工具返回代替状态确认"
+  ]
+}

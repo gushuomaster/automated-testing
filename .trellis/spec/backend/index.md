@@ -20,6 +20,7 @@ This directory contains guidelines for backend development. Fill in each file wi
 | [Quality Guidelines](./quality-guidelines.md) | Code standards, forbidden patterns | To fill |
 | [Logging Guidelines](./logging-guidelines.md) | Structured logging, log levels | To fill |
 | [Requirement Analysis Contracts](./requirement-analysis-contracts.md) | 文档摄取、Agent 阶段、来源修复、报告锁和正式评分契约 | Active |
+| [UFO Admission Contracts](./ufo-admission-contracts.md) | UFO接入探针的工具边界、预算、失败与局部证据限制 | Active |
 
 ---
 

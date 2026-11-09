@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-10-29T10:59:45.4298363+08:00",
+  "phase": "正式A/B开始前",
+  "reason": "宿主重启后恢复；使用已安装CLI的全新无历史进程传入冻结全文，留存独立工具事件",
+  "original_freeze_sha256": "c689bba13f56beaf5f711036a2cee31a059105eeb73a760380692be9dccb7228",
+  "cli_version": "0.165.0",
+  "default_model": "gpt-6.1-sol",
+  "default_reasoning_effort": "high",
+  "fresh_context": true,
+  "history_inherited": false,
+  "hooks_enabled": false,
+  "shell_tool_enabled": false,
+  "project_doc_max_bytes": 0,
+  "gui_executor_unchanged": "mcp__node_repl__js + @oai/sky",
+  "budget_unchanged": "15分钟/30 GUI动作",
+  "sandbox_limit": "只限制CLI Shell能力；UI工具和共享主机不构成OS级盲测沙箱",
+  "formal_prompt_delivery": "冻结dispatch文件的原始UTF-8字节经stdin传入；不增加业务用例或评分答案",
+  "files": [
+    {
+      "path": "artifacts/software-exploration/round-02/diagnostics/run-isolated-context.py",
+      "sha256": "ba0b3e69bb49568e207b154fec147e11f06ca61bc37ef376ec7ebb54ed1bb059",
+      "size_bytes": 3409
+    },
+    {
+      "path": "artifacts/software-exploration/round-02/diagnostics/health-check-prompt.md",
+      "sha256": "2f103a4e1aff04f75704ff8d75ac63c629b951650c465c434bb8285e38718192",
+      "size_bytes": 29238
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/dispatch/s2-a.md",
+      "sha256": "89e9a997b01a078fdd6045427fe8a7006415c620e4aeb80ddfbbddf1f1d75bd1",
+      "size_bytes": 55686
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/dispatch/s2-b.md",
+      "sha256": "a306c6a3dcda0909f309e194bbe94c4c5180abcb3891a6de6bf994c08b49f537",
+      "size_bytes": 69551
+    },
+    {
+      "path": "evaluation/software-exploration/experiments/round-02/tool-guide.md",
+      "sha256": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227",
+      "size_bytes": 28057
+    }
+  ]
+}

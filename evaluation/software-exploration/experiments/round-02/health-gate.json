@@ -1,0 +1,19 @@
+{
+  "recorded_at": "2026-10-29T11:27:38.3748263+08:00",
+  "connection_restored": true,
+  "independent_health_keyboard_round_trip": true,
+  "health_failed_attempts_preserved": true,
+  "known_limits": [
+    "点击几何不可用未恢复",
+    "UIA操作后可能延迟或空回读",
+    "截图未验证",
+    "独立CLI应用访问曾拒绝，正式使用桌面独立子上下文"
+  ],
+  "health_data_sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+  "health_context": "01a185a0-5179-7713-aaac-edb07c7531d1",
+  "health_report_path": "artifacts/software-exploration/round-02/health-check-supplement-02/raw-report.json",
+  "health_report_sha256": "16ad43fe79db2c637e3e83f9608a9111a02bf8343573bb7dde439e58a26dfb2b",
+  "original_freeze_sha256": "c689bba13f56beaf5f711036a2cee31a059105eeb73a760380692be9dccb7228",
+  "formal_inputs_changed": false,
+  "formal_budget_changed": false
+}

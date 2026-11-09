@@ -1,0 +1,519 @@
+{
+  "schema_version": "solution-comparison-integrity/v1",
+  "checked_at": "2026-10-29T06:32:04.133128+00:00",
+  "source_head": "e0adf976af2674ffd09291a758ac24d11907a6b2",
+  "old_freeze_lock_matches": true,
+  "old_freeze": {
+    "total": 35,
+    "matched": 35,
+    "checks": [
+      {
+        "path": "artifacts/miniorder/blackbox-run/MiniOrder.exe",
+        "expected": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+        "actual": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+        "ok": true
+      },
+      {
+        "path": "artifacts/requirement-analysis/preruns/calibration/3960ded9-e5fc-4079-a214-d9ee43e4a74f/artifacts/10d57fe2-6b9a-49de-929a-ffb6988d28e1/requirement-baseline-initial.json",
+        "expected": "e7b6d9e8bee33b24dd3b51268db71d53b6f799d8aeb1ffcf4a4e8bb85a03f60c",
+        "actual": "e7b6d9e8bee33b24dd3b51268db71d53b6f799d8aeb1ffcf4a4e8bb85a03f60c",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-01/s2-a/raw-report.json",
+        "expected": "24cfde3b6f51ddbfb6305cdbb434c4f33202f1d145dd993585fa09f6b2a6d310",
+        "actual": "24cfde3b6f51ddbfb6305cdbb434c4f33202f1d145dd993585fa09f6b2a6d310",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-01/s2-a/report-lock.json",
+        "expected": "6a52f4a3bca7f6e95b702786076507dcf52f85c20ef9e1a045cee3148e1666f3",
+        "actual": "6a52f4a3bca7f6e95b702786076507dcf52f85c20ef9e1a045cee3148e1666f3",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-01/s2-b/raw-report.json",
+        "expected": "adae9aab59e3dc9a83eb6b54fc81bf7e8c3376156e5e0789c637ae22a8ccbb0b",
+        "actual": "adae9aab59e3dc9a83eb6b54fc81bf7e8c3376156e5e0789c637ae22a8ccbb0b",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-01/s2-b/report-lock.json",
+        "expected": "099c617df90e20caaf38abae109d24e1559653c5ca3f345727982c27e1645dff",
+        "actual": "099c617df90e20caaf38abae109d24e1559653c5ca3f345727982c27e1645dff",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-02/health-check/data/orders.json",
+        "expected": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+        "actual": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-02/health-check/sut/MiniOrder.exe",
+        "expected": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+        "actual": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-02/s2-a/data/orders.json",
+        "expected": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+        "actual": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-02/s2-a/sut/MiniOrder.exe",
+        "expected": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+        "actual": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-02/s2-b/data/orders.json",
+        "expected": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+        "actual": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-02/s2-b/sut/MiniOrder.exe",
+        "expected": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+        "actual": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+        "ok": true
+      },
+      {
+        "path": "docs/miniorder/MiniOrder-Requirements.md",
+        "expected": "033bee6c01fe24ddae53d449b309f44b470a864cdd4583bb4bd7b17b4fdc603f",
+        "actual": "033bee6c01fe24ddae53d449b309f44b470a864cdd4583bb4bd7b17b4fdc603f",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-01/environment.json",
+        "expected": "ef01440abfae5c34f362b2c86c7eb43666a13b2ee6b7de91030b79556f7c6f58",
+        "actual": "ef01440abfae5c34f362b2c86c7eb43666a13b2ee6b7de91030b79556f7c6f58",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-01/inputs/s2-a-verified-requirements.json",
+        "expected": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497",
+        "actual": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-01/inputs/s2-b-s1-baseline.json",
+        "expected": "99b6b1648e438b666e787300894cc5f988f0c36009534039bc8b6321bdd56d6a",
+        "actual": "99b6b1648e438b666e787300894cc5f988f0c36009534039bc8b6321bdd56d6a",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-01/protocol.md",
+        "expected": "4a7cd9821ec208a3d22695fdbe495e5b82fdb166ee7638d0aeb122ed6f9cbfb4",
+        "actual": "4a7cd9821ec208a3d22695fdbe495e5b82fdb166ee7638d0aeb122ed6f9cbfb4",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-01/test-agent-prompt.md",
+        "expected": "4b5aeb444f98bab88eb7b71dd4fbbfddba7da0b7ad6833672e8bc6a436255689",
+        "actual": "4b5aeb444f98bab88eb7b71dd4fbbfddba7da0b7ad6833672e8bc6a436255689",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/dispatch/s2-a.md",
+        "expected": "89e9a997b01a078fdd6045427fe8a7006415c620e4aeb80ddfbbddf1f1d75bd1",
+        "actual": "89e9a997b01a078fdd6045427fe8a7006415c620e4aeb80ddfbbddf1f1d75bd1",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/dispatch/s2-b.md",
+        "expected": "a306c6a3dcda0909f309e194bbe94c4c5180abcb3891a6de6bf994c08b49f537",
+        "actual": "a306c6a3dcda0909f309e194bbe94c4c5180abcb3891a6de6bf994c08b49f537",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/environment.json",
+        "expected": "be6889ede4619ba6761e93a6183637af0ae51ca5bb2c4ebc8671e89fe1e5434f",
+        "actual": "be6889ede4619ba6761e93a6183637af0ae51ca5bb2c4ebc8671e89fe1e5434f",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/inputs/s2-a-verified-requirements.json",
+        "expected": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497",
+        "actual": "2cf98871d5872614e84f652dfb7f74c42eb7f37e5a23b53a92ba96599c7cc497",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/inputs/s2-b-s1-baseline.json",
+        "expected": "99b6b1648e438b666e787300894cc5f988f0c36009534039bc8b6321bdd56d6a",
+        "actual": "99b6b1648e438b666e787300894cc5f988f0c36009534039bc8b6321bdd56d6a",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/isolation.md",
+        "expected": "26519fcb0d01c3284d743c9e84b8f3de66036e36cd7f353e04ecd7d901ea542c",
+        "actual": "26519fcb0d01c3284d743c9e84b8f3de66036e36cd7f353e04ecd7d901ea542c",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/launch-instructions.md",
+        "expected": "fc283b2af8cb3d4c1fe652ec79c9032a3a8721a16aeb46616a9b9d14c005a70f",
+        "actual": "fc283b2af8cb3d4c1fe652ec79c9032a3a8721a16aeb46616a9b9d14c005a70f",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/protocol-addendum.md",
+        "expected": "de99d2d00ac2ddbbeb190cb28eb8513aa2c5b185f5ed7344f13958f762bbbac0",
+        "actual": "de99d2d00ac2ddbbeb190cb28eb8513aa2c5b185f5ed7344f13958f762bbbac0",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/protocol-base.md",
+        "expected": "4a7cd9821ec208a3d22695fdbe495e5b82fdb166ee7638d0aeb122ed6f9cbfb4",
+        "actual": "4a7cd9821ec208a3d22695fdbe495e5b82fdb166ee7638d0aeb122ed6f9cbfb4",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/report.schema.json",
+        "expected": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72",
+        "actual": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/test-agent-prompt.md",
+        "expected": "3e44180eb91876ebce7b240737d5b994f04d465199f61173a04676a72d34cfc6",
+        "actual": "3e44180eb91876ebce7b240737d5b994f04d465199f61173a04676a72d34cfc6",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/tool-guide.md",
+        "expected": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227",
+        "actual": "07bf683b0439525172e3dd0d49a0b3a011f6ae39de597b56fc3b5b58018d6227",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/ground-truth/miniorder-v1.json",
+        "expected": "becac5dc7adb502fd7bdea8d1031b2b53e7d8bc75bf7042c11ad1dad970ae574",
+        "actual": "becac5dc7adb502fd7bdea8d1031b2b53e7d8bc75bf7042c11ad1dad970ae574",
+        "ok": true
+      },
+      {
+        "path": "samples/MiniOrder/evaluation/seed/orders.json",
+        "expected": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+        "actual": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+        "ok": true
+      },
+      {
+        "path": "schemas/software-exploration-report.schema.json",
+        "expected": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72",
+        "actual": "f4e470ca038a0ef891182aab2f9db24f320d5a5d3abd55c49cad3864acb8fd72",
+        "ok": true
+      },
+      {
+        "path": "scripts/evaluate_software_exploration_s2.py",
+        "expected": "3af78ee7c1382ed678b09844f03bac812ce67189f4ebb1f261f2897056201cda",
+        "actual": "3af78ee7c1382ed678b09844f03bac812ce67189f4ebb1f261f2897056201cda",
+        "ok": true
+      },
+      {
+        "path": "scripts/prepare_software_exploration_calibration.py",
+        "expected": "2e890b7fe6b9e1923c4c34b7a1dab1d24049934842096a1d01a62a84d0dee43f",
+        "actual": "2e890b7fe6b9e1923c4c34b7a1dab1d24049934842096a1d01a62a84d0dee43f",
+        "ok": true
+      }
+    ]
+  },
+  "old_results_revision_01": {
+    "total": 21,
+    "matched": 21,
+    "checks": [
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/final-evaluation.md",
+        "expected": "faabc292bb6e908f131a3f05e20ce2d764d8f2e37eec04466dd50021f5c8c4a0",
+        "actual": "faabc292bb6e908f131a3f05e20ce2d764d8f2e37eec04466dd50021f5c8c4a0",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/status-report.md",
+        "expected": "29db5023e32c82014532ff6d725920dac2294e9c7fbeb60bc3dbe31a7620fb61",
+        "actual": "29db5023e32c82014532ff6d725920dac2294e9c7fbeb60bc3dbe31a7620fb61",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/index.md",
+        "expected": "8b3ac990d3d94411b204bc16e5a5d9bf66205c569e36fca0c941aa0b6efbb5db",
+        "actual": "8b3ac990d3d94411b204bc16e5a5d9bf66205c569e36fca0c941aa0b6efbb5db",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/quality-review.md",
+        "expected": "c04a93426885a072f6c9168bb59488cf7783065bdd012d9e045c978fd65b7508",
+        "actual": "c04a93426885a072f6c9168bb59488cf7783065bdd012d9e045c978fd65b7508",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/existing-solutions-note.md",
+        "expected": "36381ce0435457348e1a8129f3af005af352729c0c0398fd23fc7b2f3833d135",
+        "actual": "36381ce0435457348e1a8129f3af005af352729c0c0398fd23fc7b2f3833d135",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/connection-restored-20261029.md",
+        "expected": "691b7f725bd932af0fb6195a78149ad9f4f15d454ecf4cb584f024a60a86e1e7",
+        "actual": "691b7f725bd932af0fb6195a78149ad9f4f15d454ecf4cb584f024a60a86e1e7",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/execution-baseline.json",
+        "expected": "ff74315572b702d09ea0b716d5033a20efbf5d6a85fa93f1d663bd4184210611",
+        "actual": "ff74315572b702d09ea0b716d5033a20efbf5d6a85fa93f1d663bd4184210611",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/health-gate.json",
+        "expected": "a535549c8435a566f359ac889dd6e365dbb97a8a41d7f217e99e38c8b89725f3",
+        "actual": "a535549c8435a566f359ac889dd6e365dbb97a8a41d7f217e99e38c8b89725f3",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/adjudications/final-integrity-verification.json",
+        "expected": "82e0c6be6c9cab131abd90f7680c137c2e1c64e3e85287e67a3239c04e6348d2",
+        "actual": "82e0c6be6c9cab131abd90f7680c137c2e1c64e3e85287e67a3239c04e6348d2",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-a-decisions.json",
+        "expected": "3e44e1b72c037b11dfbd576547128ec519fc32ecedd9304f9d0bc3ebf3d57178",
+        "actual": "3e44e1b72c037b11dfbd576547128ec519fc32ecedd9304f9d0bc3ebf3d57178",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-a-final-decisions.json",
+        "expected": "8c0264ef6a470dcbf052b298247c6f815dda57aa5aa34b0bb359d342054fb111",
+        "actual": "8c0264ef6a470dcbf052b298247c6f815dda57aa5aa34b0bb359d342054fb111",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-a-final.json",
+        "expected": "85a38dfd045145926b39e2794e5d038a859a9fb053a5a3a19c350163f39aefe1",
+        "actual": "85a38dfd045145926b39e2794e5d038a859a9fb053a5a3a19c350163f39aefe1",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-a-runtime-audit.json",
+        "expected": "988e78654e33e56503e96b67a5fc74d721069f83018a546f11334588fa4907cd",
+        "actual": "988e78654e33e56503e96b67a5fc74d721069f83018a546f11334588fa4907cd",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-a.json",
+        "expected": "c05cd6cef5f787a07512a8cdb2d9a065821b282ccfa4b2d8f9fd40cbaffea1b5",
+        "actual": "c05cd6cef5f787a07512a8cdb2d9a065821b282ccfa4b2d8f9fd40cbaffea1b5",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-b-final-decisions.json",
+        "expected": "42a6ffe7efe99ab68d1d958eccdae65dd7ddc55a7f33165ab20f2f25a603dee7",
+        "actual": "42a6ffe7efe99ab68d1d958eccdae65dd7ddc55a7f33165ab20f2f25a603dee7",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-b-final.json",
+        "expected": "e9720f30211b90c95ef5be7cdf56e1291e0a8924e8ae14044602b14bca53a9f4",
+        "actual": "e9720f30211b90c95ef5be7cdf56e1291e0a8924e8ae14044602b14bca53a9f4",
+        "ok": true
+      },
+      {
+        "path": "evaluation/software-exploration/experiments/round-02/adjudications/s2-b-runtime-audit.json",
+        "expected": "7f040c600883a9b48c139b2bea7fe160c69dcab2272c04b28b7a765eabaf128e",
+        "actual": "7f040c600883a9b48c139b2bea7fe160c69dcab2272c04b28b7a765eabaf128e",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-02/evaluator-replay/evidence-lock.json",
+        "expected": "62f035679564616106322488023744911782baff041fb26501b2de88aed9fe0e",
+        "actual": "62f035679564616106322488023744911782baff041fb26501b2de88aed9fe0e",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/round-02/diagnostics/finalize-evaluation.py",
+        "expected": "e541a13ec4c1c15c344355a98bb966408bd840d64cf45c50f4e1f7a0ad1ae69d",
+        "actual": "e541a13ec4c1c15c344355a98bb966408bd840d64cf45c50f4e1f7a0ad1ae69d",
+        "ok": true
+      },
+      {
+        "path": ".trellis/tasks/10-27-software-exploration-s2/task.json",
+        "expected": "95c80d0cc1d425d055c4ef41a338144b85c4d4cf0014823198a57e88a2ae4d46",
+        "actual": "95c80d0cc1d425d055c4ef41a338144b85c4d4cf0014823198a57e88a2ae4d46",
+        "ok": true
+      },
+      {
+        "path": ".trellis/tasks/10-27-software-exploration-s2/implement.md",
+        "expected": "a4eafe22cb570a0a210555c1b35357d93254144edea8c6a436816fc9343dcd1c",
+        "actual": "a4eafe22cb570a0a210555c1b35357d93254144edea8c6a436816fc9343dcd1c",
+        "ok": true
+      }
+    ]
+  },
+  "source_manifest": {
+    "total": 18,
+    "matched": 18,
+    "checks": [
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/requirements.txt",
+        "expected": "86c66ce6a232100ab3922ddb43ab9902a1080dd43420f7f4158f6cf218574de8",
+        "actual": "86c66ce6a232100ab3922ddb43ab9902a1080dd43420f7f4158f6cf218574de8",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/LICENSE",
+        "expected": "903df5512f7d02609fed0c780a9b704f5a3eeb6e4d84ebe42a29845c81899a3c",
+        "actual": "903df5512f7d02609fed0c780a9b704f5a3eeb6e4d84ebe42a29845c81899a3c",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/README.md",
+        "expected": "dcd967425f8457f2c8235e92b757ff5d4a488080cd5f33a089c3e8e3d3c335a2",
+        "actual": "dcd967425f8457f2c8235e92b757ff5d4a488080cd5f33a089c3e8e3d3c335a2",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/ufo.py",
+        "expected": "cd7c8017e097ff4b8705f9998c6f7609ddb0a94be92b5bb3645ad05aed49c624",
+        "actual": "cd7c8017e097ff4b8705f9998c6f7609ddb0a94be92b5bb3645ad05aed49c624",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/module/session_pool.py",
+        "expected": "8bfcdd41bd8f0079608a53bfcaf6a141ff178ae7dd65e3601e7e7bb390ef1238",
+        "actual": "8bfcdd41bd8f0079608a53bfcaf6a141ff178ae7dd65e3601e7e7bb390ef1238",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/config/ufo/system.yaml",
+        "expected": "edd0627b13ac0e60ce2e27fe38367e4d61599a7a436a29925599cb70d02e38ac",
+        "actual": "edd0627b13ac0e60ce2e27fe38367e4d61599a7a436a29925599cb70d02e38ac",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/config/ufo/agents.yaml.template",
+        "expected": "a0f58664fee3ded82c452415aa9d2ac904ee5d120cf7cba337b033ccf9806dea",
+        "actual": "a0f58664fee3ded82c452415aa9d2ac904ee5d120cf7cba337b033ccf9806dea",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/config/ufo/mcp.yaml",
+        "expected": "0e6303776c41094efb1cf3de32198b66b9f49854e49a761bd1fdbbfbf8d6f350",
+        "actual": "0e6303776c41094efb1cf3de32198b66b9f49854e49a761bd1fdbbfbf8d6f350",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/config/ufo/rag.yaml",
+        "expected": "f1353c7e99dcbc5398c55e2163521ae7a01a9fb34cd0147ad81f3b0588561c1f",
+        "actual": "f1353c7e99dcbc5398c55e2163521ae7a01a9fb34cd0147ad81f3b0588561c1f",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/agents/processors/app_agent_processor.py",
+        "expected": "111cde640fcd4d311b22db243d52360872ed994e5dafd9676bec817bff90dfbf",
+        "actual": "111cde640fcd4d311b22db243d52360872ed994e5dafd9676bec817bff90dfbf",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/agents/processors/strategies/app_agent_processing_strategy.py",
+        "expected": "b2ebd7c9b7c37f6ecd40e9a3423c537ca97d560fc4434b66d038b70cdbf8bf80",
+        "actual": "b2ebd7c9b7c37f6ecd40e9a3423c537ca97d560fc4434b66d038b70cdbf8bf80",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/agents/processors/strategies/host_agent_processing_strategy.py",
+        "expected": "34d761766ebe3332e68f34737989e65d31a7ef7d4c0eda0aa3e05fd0766b9255",
+        "actual": "34d761766ebe3332e68f34737989e65d31a7ef7d4c0eda0aa3e05fd0766b9255",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/prompter/agent_prompter.py",
+        "expected": "da7b93072e12f8832ef9c877371ab8677acd45d5a2032ceed4804be2343f47bb",
+        "actual": "da7b93072e12f8832ef9c877371ab8677acd45d5a2032ceed4804be2343f47bb",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/agents/processors/core/processor_framework.py",
+        "expected": "ee7db7109fe554b7bf90b42e1914430294f0cad46f37eb3d91b290c3caf509d4",
+        "actual": "ee7db7109fe554b7bf90b42e1914430294f0cad46f37eb3d91b290c3caf509d4",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/module/dispatcher.py",
+        "expected": "a9f625db8edf4165d58d8387129a8ca7afd8a62dfb767eab6cfc796d04e69e43",
+        "actual": "a9f625db8edf4165d58d8387129a8ca7afd8a62dfb767eab6cfc796d04e69e43",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/automator/ui_control/controller.py",
+        "expected": "18cbb1815f1fc1e06f6cbef2d76516359a002bb56673ed71514d9e7318f97e8a",
+        "actual": "18cbb1815f1fc1e06f6cbef2d76516359a002bb56673ed71514d9e7318f97e8a",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/module/basic.py",
+        "expected": "64d272eb93751f063874661bc89cad576fed2491b6ba1bda0edaf0cc0bcb07fa",
+        "actual": "64d272eb93751f063874661bc89cad576fed2491b6ba1bda0edaf0cc0bcb07fa",
+        "ok": true
+      },
+      {
+        "path": "artifacts/software-exploration/solution-comparison-01/research/UFO/ufo/llm/base.py",
+        "expected": "0af0685c98d7ad0d88eecf416611ffd71ce0a68b15ccebc5d636846d8387171a",
+        "actual": "0af0685c98d7ad0d88eecf416611ffd71ce0a68b15ccebc5d636846d8387171a",
+        "ok": true
+      }
+    ]
+  },
+  "source_anchors": {
+    "total": 166,
+    "matched": 166,
+    "mismatches": []
+  },
+  "diagnostics": [
+    {
+      "gate": "input-gate-01",
+      "seed_sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "seed_unchanged": true,
+      "exe_sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+      "exe_unchanged": true
+    },
+    {
+      "gate": "input-gate-02",
+      "seed_sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "seed_unchanged": true,
+      "exe_sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+      "exe_unchanged": true
+    },
+    {
+      "gate": "input-gate-03",
+      "seed_sha256": "800b20351b36e56e68afa23053b87e70391020236fcee6208f38ec807fd933e7",
+      "seed_unchanged": true,
+      "exe_sha256": "62105e53aa16b042bc86168f4d420d9fc4ccd012b75cf27f7048786c79534b15",
+      "exe_unchanged": true
+    }
+  ],
+  "upstream_head": "eae3c0a8d168c47cb10df0652e293e092eda1078",
+  "upstream_clean": true,
+  "workspace_status": [
+    "?? .trellis/tasks/10-27-software-exploration-s2/",
+    "?? .trellis/tasks/10-29-software-exploration-solution-comparison/",
+    "?? evaluation/software-exploration/",
+    "?? schemas/software-exploration-report.schema.json",
+    "?? scripts/capture_software_exploration_report.py",
+    "?? scripts/evaluate_software_exploration_s2.py",
+    "?? scripts/prepare_software_exploration_calibration.py",
+    "?? scripts/prepare_software_exploration_s2.py",
+    "?? tests/unit/test_capture_software_exploration_report.py",
+    "?? tests/unit/test_evaluate_software_exploration_s2.py",
+    "?? tests/unit/test_software_exploration_calibration.py",
+    "?? tests/unit/test_software_exploration_s2.py"
+  ],
+  "new_utf8_json_check": {
+    "files": 31,
+    "errors": []
+  },
+  "comparison_started": false,
+  "method": "Exact bytes SHA-256; anchor equality at 1-based lines; UTF-8 strict read; JSON parse; no product/score execution.",
+  "independent_review": "evaluation/software-exploration/solution-comparison-01/quality-review.md"
+}

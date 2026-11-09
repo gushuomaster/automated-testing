@@ -1,0 +1,989 @@
+{
+  "schema_version": "s2-round03-independent-runtime-audit/v1",
+  "run_id": "s2-r03-run01",
+  "audited_at": "2026-10-29T07:55:39.178096+00:00",
+  "sources": [
+    "artifacts/software-exploration/round-03/run-01/session.jsonl",
+    "artifacts/software-exploration/round-03/run-01/tool-events.jsonl",
+    "artifacts/software-exploration/round-03/run-01/raw-report.json",
+    "artifacts/software-exploration/round-03/run-01/organizer-start.json",
+    "artifacts/software-exploration/round-03/run-01/organizer-finish.json",
+    "artifacts/software-exploration/round-03/run-01/organizer-cleanup.json"
+  ],
+  "lock_verification": "lock-verification.json",
+  "plan_before_input": {
+    "pass": true,
+    "plan_ordinal": 16,
+    "plan_time": "2026-10-29T07:38:01.655Z",
+    "first_gui_input_ordinal": 33,
+    "first_gui_input_time": "2026-10-29T07:38:23.291Z",
+    "note": "首批计划覆盖需求组、区域、动作、风险与证据方法。正式报告细分计划事后整理，不把该细分文本倒当成全部事前内容。"
+  },
+  "initial_state": {
+    "pass": true,
+    "initial_bind_call_ordinal": 26,
+    "initial_observation_output_ordinal": 29,
+    "window_uniqueness_source_call_ordinal": 21,
+    "window_uniqueness_source_output_ordinal": 24,
+    "business_inputs_before_initial_check": 0,
+    "visible_fields_without_value": [
+      "CustomerNameInput",
+      "ProductNameInput",
+      "QuantityInput",
+      "UnitPriceInput",
+      "OrderAmountOutput"
+    ],
+    "basis": "首次被动UIA树中四输入框与金额无Value；该证据支持可观察空白初态，不从内部状态作推断。"
+  },
+  "budget": {
+    "max_gui_actions": 30,
+    "actual_gui_actions": 23,
+    "reported_gui_actions": 23,
+    "gui_action_count_matches": true,
+    "sky_method_counts": {
+      "list_apps": 1,
+      "get_window": 1,
+      "get_window_state": 30,
+      "set_value": 8,
+      "click": 1,
+      "press_key": 14
+    },
+    "failed_input_calls_counted": 1,
+    "activation_calls": 0,
+    "get_window_calls": 1,
+    "initial_bindings": 1,
+    "actual_window_rebinds": 0,
+    "reported_window_rebinds": 0,
+    "max_window_rebinds": 1,
+    "actual_same_action_retries": 0,
+    "reported_same_action_retries": 0,
+    "max_same_failure_retries": 2,
+    "retry_basis": "失败的click无重试；不同意图的space/Return不是同一失败动作直接重试。恢复调用仍计GUI输入。",
+    "start_time": "2026-10-29T07:37:51.937Z",
+    "finish_time": "2026-10-29T07:46:56.964Z",
+    "start_time_basis": "完整材料交付时task_started记录，ordinal1；NEW_TASK入站ordinal12=07:37:52.006Z，差69ms，按更早task_started保守计时。",
+    "elapsed_seconds": 545.027,
+    "elapsed_minutes": 9.083783333333335,
+    "reported_elapsed_minutes": 8.5,
+    "reported_time_accurate": false,
+    "underreported_seconds": 35.027000000000044,
+    "tester_local_timer_start": "2026-10-29T07:38:08.321Z",
+    "tester_local_timer_start_delay_seconds": 16.384,
+    "last_gui_input_call_time": "2026-10-29T07:42:49.460Z",
+    "last_gui_input_call_ordinal": 198,
+    "last_passive_read_call_ordinal": 205,
+    "last_passive_output_ordinal": 208,
+    "last_passive_local_elapsed_minutes": 4.885083333333333,
+    "full_wallclock_within_15_minutes": true,
+    "inputs_within_30": true,
+    "note": "工具等待、最终报告生成均计入545.027秒，不能用4.885工具计时或末次GUI替代。8.5分钟自报与完整计时不符，但没有超15分钟。"
+  },
+  "tool_allowlist": {
+    "pass": true,
+    "top_level_call_count": 32,
+    "top_level_names": {
+      "exec": 32
+    },
+    "discovery_calls": 1,
+    "node_repl_forward_calls": 31,
+    "node_repl_only_import": "@oai/sky",
+    "file_or_terminal_or_network_calls": 0,
+    "collaboration_or_spawn_calls": 0,
+    "screenshot_requests": 0,
+    "all_get_window_state_screenshot_false_text_true": true,
+    "fresh_observation_after_each_input": true,
+    "observation_after_failed_click": "click抛错导致同cell回读未执行；下个调用57仅被动读，未追加输入。",
+    "old_index_cross_state_reuse_observed": false,
+    "state_handling": "每次动作取上一完整state的window与索引，置空state后重新读取。"
+  },
+  "communications": {
+    "inbound_agent_message_count": 1,
+    "inbound_agent_message_ordinals": [
+      12
+    ],
+    "initial_dispatch_only": true,
+    "mid_run_inbound_messages": 0,
+    "outbound_messages_or_spawn_tools": 0,
+    "initial_dispatch_content_independently_readable": false,
+    "initial_dispatch_content_limitation": "初始NEW_TASK正文加密，日志可独立核验作者/接收者/一次入站，但不能逐字审计bundle明文。dispatch-manifest提供fork_turns:none与全文派发确认，不能把它当解密逐字证据。"
+  },
+  "interference": {
+    "external_input_warning_observed": false,
+    "unexpected_initial_nonempty_field_observed": false,
+    "non_agent_value_change_observed": false,
+    "focus_metadata_conflict_observed": true,
+    "focus_conflict_evidence_ordinals": [
+      91,
+      98,
+      103,
+      108
+    ],
+    "focus_conflict_handling": "先被动读98，再用Alt+Down展开状态列表103与Down改变新建108交叉验证，不用focused_element单独判干扰。",
+    "os_exclusivity_proven": false,
+    "conclusion": "未观察到外部输入干扰；无输入钩子/独占桌面，不能证明OS级独占。"
+  },
+  "tool_classification": {
+    "status": "EVALUABLE",
+    "metric_scope": "报告30个observations的工具结果/证据状态，与原始Sky调用及返回逐一对照；不把GUI复验作为该诊断前提，也不沿用评分器的历史无日志INDETERMINATE文案。",
+    "numerator": 30,
+    "denominator": 30,
+    "value": 1.0,
+    "not_frozen_threshold": true,
+    "observation_verdicts": [
+      {
+        "observation_id": "OBS-001",
+        "call_ordinal": 26,
+        "output_ordinal": 29,
+        "report_tool_status": "成功；无截图；初次绑定不计重绑定。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-002",
+        "call_ordinal": 33,
+        "output_ordinal": 36,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-003",
+        "call_ordinal": 38,
+        "output_ordinal": 41,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-004",
+        "call_ordinal": 45,
+        "output_ordinal": 48,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-005",
+        "call_ordinal": 50,
+        "output_ordinal": 53,
+        "report_tool_status": "工具失败；未使用旧索引重试。",
+        "correct": true,
+        "classification": "TOOL_ACTION_FAILURE"
+      },
+      {
+        "observation_id": "OBS-006",
+        "call_ordinal": 57,
+        "output_ordinal": 60,
+        "report_tool_status": "成功；未发现该失败点击清除了字段。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-007",
+        "call_ordinal": 66,
+        "output_ordinal": 69,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-008",
+        "call_ordinal": 71,
+        "output_ordinal": 74,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-009",
+        "call_ordinal": 78,
+        "output_ordinal": 81,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-010",
+        "call_ordinal": 83,
+        "output_ordinal": 86,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-011",
+        "call_ordinal": 88,
+        "output_ordinal": 91,
+        "report_tool_status": "输入调用成功；焦点回读不足以确认实际焦点。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-012",
+        "call_ordinal": 95,
+        "output_ordinal": 98,
+        "report_tool_status": "成功；回读冲突尚未解决。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-013",
+        "call_ordinal": 100,
+        "output_ordinal": 103,
+        "report_tool_status": "成功；独立界面行为证实键盘已作用于状态控件，焦点字段不可靠。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-014",
+        "call_ordinal": 105,
+        "output_ordinal": 108,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-015",
+        "call_ordinal": 110,
+        "output_ordinal": 113,
+        "report_tool_status": "输入调用成功；即时结果存在滞后可能。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__IMMEDIATE_READBACK_LAG_CONFIRMED_BY_LATER_PASSIVE_READ"
+      },
+      {
+        "observation_id": "OBS-016",
+        "call_ordinal": 117,
+        "output_ordinal": 120,
+        "report_tool_status": "成功；被动复核确认收起状态。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-017",
+        "call_ordinal": 126,
+        "output_ordinal": 129,
+        "report_tool_status": "调用成功；按钮焦点未能通过焦点字段确认。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-018",
+        "call_ordinal": 131,
+        "output_ordinal": 134,
+        "report_tool_status": "调用成功；观察到列表刷新，未仅凭焦点字段命名实际焦点。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-019",
+        "call_ordinal": 138,
+        "output_ordinal": 141,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-020",
+        "call_ordinal": 143,
+        "output_ordinal": 146,
+        "report_tool_status": "调用成功；动作是否执行查询不能确定。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED"
+      },
+      {
+        "observation_id": "OBS-021",
+        "call_ordinal": 148,
+        "output_ordinal": 151,
+        "report_tool_status": "成功；保留该次动作结果不确定性。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED"
+      },
+      {
+        "observation_id": "OBS-022",
+        "call_ordinal": 155,
+        "output_ordinal": 158,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-023",
+        "call_ordinal": 162,
+        "output_ordinal": 165,
+        "report_tool_status": "调用成功；实际焦点不能确认。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-024",
+        "call_ordinal": 167,
+        "output_ordinal": 170,
+        "report_tool_status": "调用成功；没有证据证明清除筛选按钮被调用。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED"
+      },
+      {
+        "observation_id": "OBS-025",
+        "call_ordinal": 172,
+        "output_ordinal": 175,
+        "report_tool_status": "成功；该按钮路径保持不确定。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED"
+      },
+      {
+        "observation_id": "OBS-026",
+        "call_ordinal": 179,
+        "output_ordinal": 182,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-027",
+        "call_ordinal": 184,
+        "output_ordinal": 187,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-028",
+        "call_ordinal": 189,
+        "output_ordinal": 192,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-029",
+        "call_ordinal": 198,
+        "output_ordinal": 201,
+        "report_tool_status": "调用成功；即时回读可能滞后，未追加输入。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__IMMEDIATE_READBACK_LAG_CONFIRMED_BY_LATER_PASSIVE_READ"
+      },
+      {
+        "observation_id": "OBS-030",
+        "call_ordinal": 205,
+        "output_ordinal": 208,
+        "report_tool_status": "成功；无重绑定。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      }
+    ],
+    "outcome_vs_compliance": "保留未确认动作、焦点冲突和回读滞后的报告分类正确；分类如实不等于满足遇到未决状态必须结束的协议。"
+  },
+  "strict_stop_rule": {
+    "pass": false,
+    "violations": [
+      {
+        "id": "STOP-001",
+        "protocol_file": "evaluation/software-exploration/experiments/round-03/protocol-addendum.md",
+        "frozen_clause": "主动输入后一次回读未及时更新不直接认定干扰：先仅被动回读区分时序滞后，不能充分判断则INDETERMINATE并结束。",
+        "trigger_call_ordinal": 143,
+        "immediate_output_ordinal": 146,
+        "passive_call_ordinal": 148,
+        "passive_output_ordinal": 151,
+        "continued_input_ordinal": 155,
+        "report_observations": [
+          "OBS-020",
+          "OBS-021",
+          "OBS-022"
+        ],
+        "finding": "space意图查询后，立即和被动回读均仍为两行；报告OBS-021明确不能确认该space调用了查询。该次状态未被独立行为证实，随后Return是新输入，未按冻结规则结束。",
+        "interpretation": "这是对无法判明动作结果的严格停止条款的适用；不将未变化本身当外部输入，也不将focused_element冲突单独视为干扰。",
+        "verdict": "FAIL"
+      },
+      {
+        "id": "STOP-002",
+        "protocol_file": "evaluation/software-exploration/experiments/round-03/protocol-addendum.md",
+        "frozen_clause": "主动输入后一次回读未及时更新不直接认定干扰：先仅被动回读区分时序滞后，不能充分判断则INDETERMINATE并结束。",
+        "trigger_call_ordinal": 167,
+        "immediate_output_ordinal": 170,
+        "passive_call_ordinal": 172,
+        "passive_output_ordinal": 175,
+        "continued_input_ordinals": [
+          179,
+          184,
+          189
+        ],
+        "report_observations": [
+          "OBS-024",
+          "OBS-025",
+          "OBS-026",
+          "OBS-027",
+          "OBS-028"
+        ],
+        "finding": "space意图清除筛选后，立即和被动读仍有关键字/新建状态/零行；报告明确按钮路径不确定，随后直接清字段、设全部并Return。清理成功不消除前面的停止规则偏离。",
+        "verdict": "FAIL"
+      }
+    ],
+    "resolved_lag_cases": [
+      {
+        "input_ordinal": 110,
+        "immediate_output_ordinal": 113,
+        "passive_output_ordinal": 120,
+        "finding": "Return后下拉列表在被动读中收起，得以判明时序滞后。"
+      },
+      {
+        "input_ordinal": 198,
+        "immediate_output_ordinal": 201,
+        "passive_output_ordinal": 208,
+        "finding": "Ctrl+Tab后被动读显示空白新建页，得以判明时序滞后。"
+      }
+    ]
+  },
+  "persistent_side_effects": {
+    "reported_count": 0,
+    "save_or_delete_calls_observed": 0,
+    "organizer_seed_hash_unchanged": true,
+    "independent_frozen_seed_hash_unchanged": true,
+    "scope": "仅对冻结订单种子的字节不变和已公开GUI动作可核验，不扩张为整个OS无任何副作用。"
+  },
+  "strict_protocol_pass": false,
+  "strict_protocol_failure_reasons": [
+    "STOP-001未决查询动作在被动复核后未按冻结规则停止",
+    "STOP-002未决清理动作在被动复核后继续恢复输入"
+  ],
+  "report_accuracy_findings": [
+    "budget_usage.elapsed_minutes=8.5低于完整会话9.083783333分钟，差35.027秒；没有超预算。"
+  ],
+  "final_score_computed": false,
+  "independent_gui_replay_status": "PENDING_OTHER_INDEPENDENT_CONTEXT",
+  "tool_calls": [
+    {
+      "call_ordinal": 17,
+      "output_ordinal": 19,
+      "call_time": "2026-10-29T07:38:01.664Z",
+      "output_time": "2026-10-29T07:38:01.965Z",
+      "top_level_tool": "exec",
+      "sky_methods": [],
+      "gui_input_count": 0,
+      "gui_input_number": null,
+      "observation_id": null,
+      "classification": "DISCOVERY_ALLOWED",
+      "agent_classification_correct": true,
+      "basis": "仅发现node_repl工具元数据，无GUI/文件/网络操作。"
+    },
+    {
+      "call_ordinal": 21,
+      "output_ordinal": 24,
+      "call_time": "2026-10-29T07:38:08.090Z",
+      "output_time": "2026-10-29T07:38:09.485Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "list_apps"
+      ],
+      "gui_input_count": 0,
+      "gui_input_number": null,
+      "observation_id": null,
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 26,
+      "output_ordinal": 29,
+      "call_time": "2026-10-29T07:38:14.510Z",
+      "output_time": "2026-10-29T07:38:14.870Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "get_window",
+        "get_window_state"
+      ],
+      "gui_input_count": 0,
+      "gui_input_number": null,
+      "observation_id": "OBS-001",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 33,
+      "output_ordinal": 36,
+      "call_time": "2026-10-29T07:38:23.291Z",
+      "output_time": "2026-10-29T07:38:24.516Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "set_value",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 1,
+      "observation_id": "OBS-002",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 38,
+      "output_ordinal": 41,
+      "call_time": "2026-10-29T07:38:31.646Z",
+      "output_time": "2026-10-29T07:38:32.267Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "set_value",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 2,
+      "observation_id": "OBS-003",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 45,
+      "output_ordinal": 48,
+      "call_time": "2026-10-29T07:38:40.840Z",
+      "output_time": "2026-10-29T07:38:41.474Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "set_value",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 3,
+      "observation_id": "OBS-004",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 50,
+      "output_ordinal": 53,
+      "call_time": "2026-10-29T07:38:48.900Z",
+      "output_time": "2026-10-29T07:38:49.614Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "click",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 4,
+      "observation_id": "OBS-005",
+      "classification": "TOOL_ACTION_FAILURE",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 57,
+      "output_ordinal": 60,
+      "call_time": "2026-10-29T07:38:55.216Z",
+      "output_time": "2026-10-29T07:38:55.559Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "get_window_state"
+      ],
+      "gui_input_count": 0,
+      "gui_input_number": null,
+      "observation_id": "OBS-006",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 66,
+      "output_ordinal": 69,
+      "call_time": "2026-10-29T07:39:05.239Z",
+      "output_time": "2026-10-29T07:39:06.168Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "set_value",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 5,
+      "observation_id": "OBS-007",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 71,
+      "output_ordinal": 74,
+      "call_time": "2026-10-29T07:39:13.577Z",
+      "output_time": "2026-10-29T07:39:15.656Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 6,
+      "observation_id": "OBS-008",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 78,
+      "output_ordinal": 81,
+      "call_time": "2026-10-29T07:39:27.432Z",
+      "output_time": "2026-10-29T07:39:28.258Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "set_value",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 7,
+      "observation_id": "OBS-009",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 83,
+      "output_ordinal": 86,
+      "call_time": "2026-10-29T07:39:37.828Z",
+      "output_time": "2026-10-29T07:39:38.923Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 8,
+      "observation_id": "OBS-010",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 88,
+      "output_ordinal": 91,
+      "call_time": "2026-10-29T07:39:45.723Z",
+      "output_time": "2026-10-29T07:39:46.918Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 9,
+      "observation_id": "OBS-011",
+      "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 95,
+      "output_ordinal": 98,
+      "call_time": "2026-10-29T07:39:55.214Z",
+      "output_time": "2026-10-29T07:39:55.560Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "get_window_state"
+      ],
+      "gui_input_count": 0,
+      "gui_input_number": null,
+      "observation_id": "OBS-012",
+      "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 100,
+      "output_ordinal": 103,
+      "call_time": "2026-10-29T07:40:01.652Z",
+      "output_time": "2026-10-29T07:40:02.996Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 10,
+      "observation_id": "OBS-013",
+      "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 105,
+      "output_ordinal": 108,
+      "call_time": "2026-10-29T07:40:08.277Z",
+      "output_time": "2026-10-29T07:40:08.724Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 11,
+      "observation_id": "OBS-014",
+      "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 110,
+      "output_ordinal": 113,
+      "call_time": "2026-10-29T07:40:16.714Z",
+      "output_time": "2026-10-29T07:40:17.185Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 12,
+      "observation_id": "OBS-015",
+      "classification": "TOOL_CALL_SUCCESS__IMMEDIATE_READBACK_LAG_CONFIRMED_BY_LATER_PASSIVE_READ",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 117,
+      "output_ordinal": 120,
+      "call_time": "2026-10-29T07:40:24.736Z",
+      "output_time": "2026-10-29T07:40:25.093Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "get_window_state"
+      ],
+      "gui_input_count": 0,
+      "gui_input_number": null,
+      "observation_id": "OBS-016",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 126,
+      "output_ordinal": 129,
+      "call_time": "2026-10-29T07:40:37.678Z",
+      "output_time": "2026-10-29T07:40:38.151Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 13,
+      "observation_id": "OBS-017",
+      "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 131,
+      "output_ordinal": 134,
+      "call_time": "2026-10-29T07:40:45.361Z",
+      "output_time": "2026-10-29T07:40:46.596Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 14,
+      "observation_id": "OBS-018",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 138,
+      "output_ordinal": 141,
+      "call_time": "2026-10-29T07:40:56.158Z",
+      "output_time": "2026-10-29T07:40:56.787Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "set_value",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 15,
+      "observation_id": "OBS-019",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 143,
+      "output_ordinal": 146,
+      "call_time": "2026-10-29T07:41:05.033Z",
+      "output_time": "2026-10-29T07:41:05.591Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 16,
+      "observation_id": "OBS-020",
+      "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 148,
+      "output_ordinal": 151,
+      "call_time": "2026-10-29T07:41:12.917Z",
+      "output_time": "2026-10-29T07:41:13.314Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "get_window_state"
+      ],
+      "gui_input_count": 0,
+      "gui_input_number": null,
+      "observation_id": "OBS-021",
+      "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 155,
+      "output_ordinal": 158,
+      "call_time": "2026-10-29T07:41:32.635Z",
+      "output_time": "2026-10-29T07:41:33.471Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 17,
+      "observation_id": "OBS-022",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 162,
+      "output_ordinal": 165,
+      "call_time": "2026-10-29T07:41:45.877Z",
+      "output_time": "2026-10-29T07:41:46.349Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 18,
+      "observation_id": "OBS-023",
+      "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 167,
+      "output_ordinal": 170,
+      "call_time": "2026-10-29T07:41:54.220Z",
+      "output_time": "2026-10-29T07:41:54.715Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 19,
+      "observation_id": "OBS-024",
+      "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 172,
+      "output_ordinal": 175,
+      "call_time": "2026-10-29T07:42:09.174Z",
+      "output_time": "2026-10-29T07:42:09.585Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "get_window_state"
+      ],
+      "gui_input_count": 0,
+      "gui_input_number": null,
+      "observation_id": "OBS-025",
+      "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 179,
+      "output_ordinal": 182,
+      "call_time": "2026-10-29T07:42:16.535Z",
+      "output_time": "2026-10-29T07:42:17.138Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "set_value",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 20,
+      "observation_id": "OBS-026",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 184,
+      "output_ordinal": 187,
+      "call_time": "2026-10-29T07:42:25.276Z",
+      "output_time": "2026-10-29T07:42:25.863Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "set_value",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 21,
+      "observation_id": "OBS-027",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 189,
+      "output_ordinal": 192,
+      "call_time": "2026-10-29T07:42:33.861Z",
+      "output_time": "2026-10-29T07:42:34.980Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 22,
+      "observation_id": "OBS-028",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 198,
+      "output_ordinal": 201,
+      "call_time": "2026-10-29T07:42:49.460Z",
+      "output_time": "2026-10-29T07:42:50.168Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "press_key",
+        "get_window_state"
+      ],
+      "gui_input_count": 1,
+      "gui_input_number": 23,
+      "observation_id": "OBS-029",
+      "classification": "TOOL_CALL_SUCCESS__IMMEDIATE_READBACK_LAG_CONFIRMED_BY_LATER_PASSIVE_READ",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    },
+    {
+      "call_ordinal": 205,
+      "output_ordinal": 208,
+      "call_time": "2026-10-29T07:43:01.088Z",
+      "output_time": "2026-10-29T07:43:01.518Z",
+      "top_level_tool": "exec",
+      "sky_methods": [
+        "get_window_state"
+      ],
+      "gui_input_count": 0,
+      "gui_input_number": null,
+      "observation_id": "OBS-030",
+      "classification": "TOOL_CALL_SUCCESS",
+      "agent_classification_correct": true,
+      "basis": "原始调用和返回支持报告的工具结果分类；API成功仅表示调用返回，不等于按钮业务动作成功。"
+    }
+  ]
+}

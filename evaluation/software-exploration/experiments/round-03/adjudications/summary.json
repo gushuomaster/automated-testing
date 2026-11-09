@@ -1,0 +1,360 @@
+{
+  "formal_reports_completed": 1,
+  "formal_reports_expected": 1,
+  "strict_protocol_passes": 0,
+  "strict_protocol_denominator": 1,
+  "strict_protocol_pass": false,
+  "all_frozen_mapping_thresholds_met": true,
+  "schema_valid": true,
+  "metrics": {
+    "critical_entry_recall": {
+      "numerator": 2,
+      "denominator": 2,
+      "value": 1.0
+    },
+    "ui_requirement_mapping_recall": {
+      "numerator": 46,
+      "denominator": 46,
+      "value": 1.0
+    },
+    "mapping_precision": {
+      "numerator": 46,
+      "denominator": 46,
+      "value": 1.0
+    },
+    "reproducible_path_rate": {
+      "numerator": 46,
+      "denominator": 46,
+      "value": 1.0
+    },
+    "unsupported_control_rate": {
+      "numerator": 0,
+      "denominator": 17,
+      "value": 0.0
+    },
+    "exact_status_match_rate": {
+      "numerator": 46,
+      "denominator": 52,
+      "value": 0.8846153846153846
+    },
+    "classification_family_accuracy": {
+      "numerator": 51,
+      "denominator": 52,
+      "value": 0.9807692307692307
+    },
+    "tool_classification_accuracy": {
+      "numerator": null,
+      "denominator": null,
+      "value": null,
+      "status": "INDETERMINATE",
+      "reason": "正式运行未冻结独立的逐次工具调用日志，无法在锁后独立核验 Agent 对每次工具状态的分类。"
+    },
+    "non_mapping_classification_accuracy": {
+      "numerator": 5,
+      "denominator": 6,
+      "value": 0.8333333333333334
+    },
+    "persistent_side_effects": 0,
+    "human_interventions": 0
+  },
+  "runtime": {
+    "max_gui_actions": 30,
+    "actual_gui_actions": 23,
+    "reported_gui_actions": 23,
+    "gui_action_count_matches": true,
+    "sky_method_counts": {
+      "list_apps": 1,
+      "get_window": 1,
+      "get_window_state": 30,
+      "set_value": 8,
+      "click": 1,
+      "press_key": 14
+    },
+    "failed_input_calls_counted": 1,
+    "activation_calls": 0,
+    "get_window_calls": 1,
+    "initial_bindings": 1,
+    "actual_window_rebinds": 0,
+    "reported_window_rebinds": 0,
+    "max_window_rebinds": 1,
+    "actual_same_action_retries": 0,
+    "reported_same_action_retries": 0,
+    "max_same_failure_retries": 2,
+    "retry_basis": "失败的click无重试；不同意图的space/Return不是同一失败动作直接重试。恢复调用仍计GUI输入。",
+    "start_time": "2026-10-29T07:37:51.937Z",
+    "finish_time": "2026-10-29T07:46:56.964Z",
+    "start_time_basis": "完整材料交付时task_started记录，ordinal1；NEW_TASK入站ordinal12=07:37:52.006Z，差69ms，按更早task_started保守计时。",
+    "elapsed_seconds": 545.027,
+    "elapsed_minutes": 9.083783333333335,
+    "reported_elapsed_minutes": 8.5,
+    "reported_time_accurate": false,
+    "underreported_seconds": 35.027000000000044,
+    "tester_local_timer_start": "2026-10-29T07:38:08.321Z",
+    "tester_local_timer_start_delay_seconds": 16.384,
+    "last_gui_input_call_time": "2026-10-29T07:42:49.460Z",
+    "last_gui_input_call_ordinal": 198,
+    "last_passive_read_call_ordinal": 205,
+    "last_passive_output_ordinal": 208,
+    "last_passive_local_elapsed_minutes": 4.885083333333333,
+    "full_wallclock_within_15_minutes": true,
+    "inputs_within_30": true,
+    "note": "工具等待、最终报告生成均计入545.027秒，不能用4.885工具计时或末次GUI替代。8.5分钟自报与完整计时不符，但没有超15分钟。"
+  },
+  "independent_tool_classification": {
+    "status": "EVALUABLE",
+    "metric_scope": "报告30个observations的工具结果/证据状态，与原始Sky调用及返回逐一对照；不把GUI复验作为该诊断前提，也不沿用评分器的历史无日志INDETERMINATE文案。",
+    "numerator": 30,
+    "denominator": 30,
+    "value": 1.0,
+    "not_frozen_threshold": true,
+    "observation_verdicts": [
+      {
+        "observation_id": "OBS-001",
+        "call_ordinal": 26,
+        "output_ordinal": 29,
+        "report_tool_status": "成功；无截图；初次绑定不计重绑定。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-002",
+        "call_ordinal": 33,
+        "output_ordinal": 36,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-003",
+        "call_ordinal": 38,
+        "output_ordinal": 41,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-004",
+        "call_ordinal": 45,
+        "output_ordinal": 48,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-005",
+        "call_ordinal": 50,
+        "output_ordinal": 53,
+        "report_tool_status": "工具失败；未使用旧索引重试。",
+        "correct": true,
+        "classification": "TOOL_ACTION_FAILURE"
+      },
+      {
+        "observation_id": "OBS-006",
+        "call_ordinal": 57,
+        "output_ordinal": 60,
+        "report_tool_status": "成功；未发现该失败点击清除了字段。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-007",
+        "call_ordinal": 66,
+        "output_ordinal": 69,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-008",
+        "call_ordinal": 71,
+        "output_ordinal": 74,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-009",
+        "call_ordinal": 78,
+        "output_ordinal": 81,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-010",
+        "call_ordinal": 83,
+        "output_ordinal": 86,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-011",
+        "call_ordinal": 88,
+        "output_ordinal": 91,
+        "report_tool_status": "输入调用成功；焦点回读不足以确认实际焦点。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-012",
+        "call_ordinal": 95,
+        "output_ordinal": 98,
+        "report_tool_status": "成功；回读冲突尚未解决。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-013",
+        "call_ordinal": 100,
+        "output_ordinal": 103,
+        "report_tool_status": "成功；独立界面行为证实键盘已作用于状态控件，焦点字段不可靠。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-014",
+        "call_ordinal": 105,
+        "output_ordinal": 108,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-015",
+        "call_ordinal": 110,
+        "output_ordinal": 113,
+        "report_tool_status": "输入调用成功；即时结果存在滞后可能。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__IMMEDIATE_READBACK_LAG_CONFIRMED_BY_LATER_PASSIVE_READ"
+      },
+      {
+        "observation_id": "OBS-016",
+        "call_ordinal": 117,
+        "output_ordinal": 120,
+        "report_tool_status": "成功；被动复核确认收起状态。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-017",
+        "call_ordinal": 126,
+        "output_ordinal": 129,
+        "report_tool_status": "调用成功；按钮焦点未能通过焦点字段确认。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-018",
+        "call_ordinal": 131,
+        "output_ordinal": 134,
+        "report_tool_status": "调用成功；观察到列表刷新，未仅凭焦点字段命名实际焦点。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-019",
+        "call_ordinal": 138,
+        "output_ordinal": 141,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-020",
+        "call_ordinal": 143,
+        "output_ordinal": 146,
+        "report_tool_status": "调用成功；动作是否执行查询不能确定。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED"
+      },
+      {
+        "observation_id": "OBS-021",
+        "call_ordinal": 148,
+        "output_ordinal": 151,
+        "report_tool_status": "成功；保留该次动作结果不确定性。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED"
+      },
+      {
+        "observation_id": "OBS-022",
+        "call_ordinal": 155,
+        "output_ordinal": 158,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-023",
+        "call_ordinal": 162,
+        "output_ordinal": 165,
+        "report_tool_status": "调用成功；实际焦点不能确认。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__FOCUS_METADATA_UNRELIABLE"
+      },
+      {
+        "observation_id": "OBS-024",
+        "call_ordinal": 167,
+        "output_ordinal": 170,
+        "report_tool_status": "调用成功；没有证据证明清除筛选按钮被调用。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED"
+      },
+      {
+        "observation_id": "OBS-025",
+        "call_ordinal": 172,
+        "output_ordinal": 175,
+        "report_tool_status": "成功；该按钮路径保持不确定。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__INTENDED_BUTTON_OUTCOME_UNCONFIRMED"
+      },
+      {
+        "observation_id": "OBS-026",
+        "call_ordinal": 179,
+        "output_ordinal": 182,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-027",
+        "call_ordinal": 184,
+        "output_ordinal": 187,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-028",
+        "call_ordinal": 189,
+        "output_ordinal": 192,
+        "report_tool_status": "成功。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      },
+      {
+        "observation_id": "OBS-029",
+        "call_ordinal": 198,
+        "output_ordinal": 201,
+        "report_tool_status": "调用成功；即时回读可能滞后，未追加输入。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS__IMMEDIATE_READBACK_LAG_CONFIRMED_BY_LATER_PASSIVE_READ"
+      },
+      {
+        "observation_id": "OBS-030",
+        "call_ordinal": 205,
+        "output_ordinal": 208,
+        "report_tool_status": "成功；无重绑定。",
+        "correct": true,
+        "classification": "TOOL_CALL_SUCCESS"
+      }
+    ],
+    "outcome_vs_compliance": "保留未确认动作、焦点冲突和回读滞后的报告分类正确；分类如实不等于满足遇到未决状态必须结束的协议。"
+  },
+  "replay_verdict_counts": {
+    "REPRODUCIBLE_FULL": 18,
+    "REPRODUCIBLE_SAFE_PREFIX": 28
+  },
+  "legacy_scorer_notice": "frozen-scorer-result保留原纯函数遗留无日志工具指标；本轮工具分类诊断以runtime-audit逐OBS裁决为准，不改权重/门槛",
+  "strict_success": false
+}

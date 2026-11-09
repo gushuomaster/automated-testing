@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "software-exploration-report/v1",
+  "title": "软件探索原始报告",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "run_id",
+    "input_role",
+    "initial_plan",
+    "plan_changes",
+    "inventory",
+    "observations",
+    "mappings",
+    "unknowns",
+    "tool_limitations",
+    "budget_usage",
+    "persistent_side_effects",
+    "human_interventions",
+    "summary"
+  ],
+  "properties": {
+    "schema_version": { "const": "software-exploration-report/v1" },
+    "run_id": { "type": "string", "minLength": 1 },
+    "input_role": { "enum": ["verified-upstream", "s1-actual-output"] },
+    "initial_plan": { "type": "array", "items": { "$ref": "#/$defs/planItem" } },
+    "plan_changes": { "type": "array", "items": { "type": "string" } },
+    "inventory": { "type": "array", "items": { "$ref": "#/$defs/inventoryItem" } },
+    "observations": { "type": "array", "items": { "$ref": "#/$defs/observation" } },
+    "mappings": { "type": "array", "minItems": 52, "maxItems": 52, "items": { "$ref": "#/$defs/mapping" } },
+    "unknowns": { "type": "array", "items": { "type": "string" } },
+    "tool_limitations": { "type": "array", "items": { "type": "string" } },
+    "budget_usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["elapsed_minutes", "gui_actions", "same_action_retries", "window_rebinds"],
+      "properties": {
+        "elapsed_minutes": { "type": "number", "minimum": 0 },
+        "gui_actions": { "type": "integer", "minimum": 0, "maximum": 30 },
+        "same_action_retries": { "type": "integer", "minimum": 0 },
+        "window_rebinds": { "type": "integer", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "persistent_side_effects": { "type": "array", "items": { "type": "string" } },
+    "human_interventions": { "type": "array", "items": { "type": "string" } },
+    "summary": { "type": "string" }
+  },
+  "$defs": {
+    "planItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requirement_ids", "target_area", "planned_action", "risk", "evidence_method"],
+      "properties": {
+        "requirement_ids": { "type": "array", "items": { "type": "string" } },
+        "target_area": { "type": "string" },
+        "planned_action": { "type": "string" },
+        "risk": { "type": "string" },
+        "evidence_method": { "type": "string" }
+      }
+    },
+    "inventoryItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["area", "visible_name", "control_type", "automation_id", "state"],
+      "properties": {
+        "area": { "type": "string" },
+        "visible_name": { "type": "string" },
+        "control_type": { "type": "string" },
+        "automation_id": { "type": ["string", "null"] },
+        "state": { "type": "string" }
+      }
+    },
+    "observation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "before_state", "action", "after_state", "tool_status", "side_effect", "requirement_ids"],
+      "properties": {
+        "id": { "type": "string" },
+        "before_state": { "type": "string" },
+        "action": { "type": "string" },
+        "after_state": { "type": "string" },
+        "tool_status": { "type": "string" },
+        "side_effect": { "type": "string" },
+        "requirement_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "mapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requirement_id", "status", "ui_area", "entry", "path", "observed_state", "evidence_ids", "reason", "confidence"],
+      "properties": {
+        "requirement_id": { "type": "string", "pattern": "^REQ-[0-9]{3}$" },
+        "status": { "enum": ["MAPPED", "PARTIALLY_MAPPED", "NOT_UI_OBSERVABLE", "UNREACHABLE", "INDETERMINATE"] },
+        "ui_area": { "type": ["string", "null"] },
+        "entry": { "type": ["string", "null"] },
+        "path": { "type": ["string", "null"] },
+        "observed_state": { "type": ["string", "null"] },
+        "evidence_ids": { "type": "array", "items": { "type": "string" } },
+        "reason": { "type": "string" },
+        "confidence": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    }
+  }
+}
