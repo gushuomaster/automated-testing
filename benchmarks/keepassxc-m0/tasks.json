@@ -1,0 +1,82 @@
+{
+  "suite": "keepassxc-m0",
+  "app": "KeePassXC 2.7.6 (portable, Win64)",
+  "password": "Test@2026",
+  "seed": "seed.kdbx",
+  "notes": "Only `prompt` is shown to the agent. `checks` run after KeePassXC is closed with unsaved changes discarded. `touches` lists entry paths the task may legitimately change; every other seed entry must stay unchanged.",
+  "tasks": [
+    {
+      "id": "T01",
+      "kind": "query",
+      "prompt": "KeePassXC 已打开一个加密数据库（主密码 Test@2026）。请解锁它，然后回答：\"工作\"群组里一共有几个条目？",
+      "checks": [{"type": "answer_number", "value": 3}],
+      "touches": []
+    },
+    {
+      "id": "T02",
+      "kind": "query",
+      "prompt": "KeePassXC 已打开一个加密数据库（主密码 Test@2026）。请解锁它，然后回答：\"建设银行\"这个条目的用户名是什么？",
+      "checks": [{"type": "answer_text", "value": "lisi"}],
+      "touches": []
+    },
+    {
+      "id": "T03",
+      "kind": "create",
+      "prompt": "KeePassXC 已打开一个加密数据库（主密码 Test@2026）。请解锁它，在\"邮箱\"群组中新建一个条目：标题为\"测试邮箱\"，用户名 tester@example.com，密码 Abc#12345。完成后保存数据库。",
+      "checks": [{"type": "entry_fields", "path": "邮箱/测试邮箱", "fields": {"UserName": "tester@example.com", "Password": "Abc#12345"}}],
+      "touches": ["邮箱/测试邮箱"]
+    },
+    {
+      "id": "T04",
+      "kind": "edit",
+      "prompt": "KeePassXC 已打开一个加密数据库（主密码 Test@2026）。请解锁它，把\"工作\"群组中\"VPN\"条目的用户名改为 lisi，其他内容保持不变。完成后保存数据库。",
+      "checks": [{"type": "entry_fields", "path": "工作/VPN", "fields": {"UserName": "lisi", "Password": "Vpn#2026pwd"}}],
+      "touches": ["工作/VPN"]
+    },
+    {
+      "id": "T05",
+      "kind": "delete",
+      "prompt": "KeePassXC 已打开一个加密数据库（主密码 Test@2026）。请解锁它，删除\"工作\"群组中的\"测试服务器\"条目。完成后保存数据库。",
+      "checks": [{"type": "entry_absent", "title": "测试服务器"}],
+      "touches": ["工作/测试服务器"]
+    },
+    {
+      "id": "T06",
+      "kind": "create",
+      "prompt": "KeePassXC 已打开一个加密数据库（主密码 Test@2026）。请解锁它，在数据库的根群组下新建一个名为\"购物\"的群组。完成后保存数据库。",
+      "checks": [{"type": "group_exists", "path": "购物"}],
+      "touches": []
+    },
+    {
+      "id": "T07",
+      "kind": "move",
+      "prompt": "KeePassXC 已打开一个加密数据库（主密码 Test@2026）。请解锁它，把\"邮箱\"群组中的\"个人邮箱\"条目移动到\"工作\"群组。完成后保存数据库。",
+      "checks": [
+        {"type": "entry_fields", "path": "工作/个人邮箱", "fields": {"UserName": "zs1990", "Password": "Home#mail99"}},
+        {"type": "entry_path_absent", "path": "邮箱/个人邮箱"}
+      ],
+      "touches": ["邮箱/个人邮箱", "工作/个人邮箱"]
+    },
+    {
+      "id": "T08",
+      "kind": "edit",
+      "prompt": "KeePassXC 已打开一个加密数据库（主密码 Test@2026）。请解锁它，给\"网银\"群组中\"工商银行\"条目的备注写上：每月15日还款。完成后保存数据库。",
+      "checks": [{"type": "entry_contains", "path": "网银/工商银行", "field": "Notes", "value": "每月15日还款"}],
+      "touches": ["网银/工商银行"]
+    },
+    {
+      "id": "T09",
+      "kind": "create",
+      "prompt": "KeePassXC 已打开一个加密数据库（主密码 Test@2026）。请解锁它，在\"工作\"群组中新建一个标题为\"随机密码测试\"的条目，用 KeePassXC 的密码生成器为它生成一个 24 位长度的密码。完成后保存数据库。",
+      "checks": [{"type": "password_length", "path": "工作/随机密码测试", "length": 24}],
+      "touches": ["工作/随机密码测试"]
+    },
+    {
+      "id": "T10",
+      "kind": "settings",
+      "prompt": "KeePassXC 已打开一个加密数据库（主密码 Test@2026）。请在 KeePassXC 的应用程序设置中开启\"空闲一段时间后自动锁定数据库\"，并把空闲时间设为 120 秒，然后让设置生效。",
+      "checks": [{"type": "config", "section": "Security", "values": {"LockDatabaseIdle": "true", "LockDatabaseIdleSeconds": "120"}}],
+      "touches": []
+    }
+  ]
+}

@@ -7,3 +7,9 @@
 # picking either side (task state lives in task.json, not index.md). See
 # .trellis/spec/cli/backend/directory-structure.md for details.
 .trellis/workspace/*/journal-*.md merge=union
+
+# Frozen evaluation inputs are hash-locked on their LF bytes; keep LF in the
+# working tree regardless of core.autocrlf so lock verification is stable.
+evaluation/**/*.json text=auto eol=lf
+evaluation/**/*.md text=auto eol=lf
+schemas/*.json text=auto eol=lf
