@@ -54,7 +54,7 @@ class ClaudeModel:
     effort: str | None = "medium"
     max_tokens: int = 12000
     use_cache: bool = True
-    timeout: float = 240.0
+    timeout: float = 120.0  # per request; the SDK retries, so a hung relay call is abandoned sooner
     usage: Usage = field(default_factory=Usage)
 
     def __post_init__(self) -> None:

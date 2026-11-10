@@ -138,6 +138,24 @@ def format_observation(obs: dict) -> str:
     return "\n".join(lines)
 
 
+# Focus targets where Ctrl+A, Delete selects and deletes items instead of text.
+NON_TEXT_FOCUS = frozenset({
+    "List", "ListItem", "Tree", "TreeItem", "Table", "DataGrid", "DataItem", "Header", "HeaderItem",
+    "Button", "SplitButton", "CheckBox", "RadioButton", "MenuItem", "Menu", "MenuBar", "Tab", "TabItem",
+    "ToolBar", "Hyperlink", "Image", "Text", "Window", "TitleBar", "ScrollBar", "Slider", "StatusBar",
+})
+
+
+def clear_allowed(control_type: str, read_only: bool | None) -> bool:
+    """Whether clearing the focused control with Ctrl+A, Delete is safe.
+
+    Unknown or generic types (Pane, Custom) are allowed so apps with incomplete UIA still work.
+    """
+    if read_only:
+        return False
+    return control_type not in NON_TEXT_FOCUS
+
+
 def escape_text(text: str) -> str:
     """Escape literal text for pywinauto.keyboard.send_keys."""
     out = []

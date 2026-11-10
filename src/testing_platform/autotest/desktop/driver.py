@@ -25,6 +25,7 @@ import win32process  # noqa: E402
 from .observation import (  # noqa: E402
     Element,
     Frame,
+    clear_allowed,
     escape_text,
     inside,
     keep_element,
@@ -285,12 +286,32 @@ class Driver:
         sx, sy = self.frame.to_screen(x, y)
         return self._click_screen(sx, sy, button, double)
 
+    def _focused(self) -> tuple[str, bool | None, int]:
+        """(control type, read-only or None, pid) of the element with keyboard focus."""
+        from pywinauto.uia_defines import IUIA
+
+        raw = IUIA().iuia.GetFocusedElement()
+        info = UIAElementInfo(raw)
+        read_only = None
+        try:
+            from pywinauto.uia_defines import get_elem_interface
+
+            read_only = bool(get_elem_interface(raw, "Value").CurrentIsReadOnly)
+        except Exception:
+            pass
+        return info.control_type or "", read_only, int(_try(lambda: raw.CurrentProcessId, 0) or 0)
+
     def type_text(self, text: str, element_id: str | None = None, clear_first: bool = False) -> dict:
         if element_id:
             self.click_element(element_id)
         self.focus()
         self._guard_keys()
         if clear_first:
+            # Ctrl+A, Delete on a list/tree would delete items, so only clear a real input box.
+            ctype, read_only, pid = self._focused()
+            if pid not in self.pids or not clear_allowed(ctype, read_only):
+                raise Refused(f"焦点在 {ctype or '未知控件'}{'（只读）' if read_only else ''} 上，不是可编辑输入框；"
+                              f"未执行清空和输入。请先让真正的输入框获得焦点（例如打开该对象的编辑界面）")
             keyboard.send_keys("^a{DELETE}", pause=0.03)
         self._guard_keys()
         keyboard.send_keys(escape_text(text), with_spaces=True, with_tabs=True, with_newlines=True,

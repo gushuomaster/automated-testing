@@ -236,34 +236,49 @@ def parse_finish(args: dict) -> dict:
 
 @dataclass
 class Budget:
+    """`max_seconds` limits the agent's own time (wall time minus waiting for the model API),
+    so a slow relay does not count against the agent; `max_wall_seconds` is a hard cap on both."""
+
     max_actions: int = 30
     max_seconds: float = 480.0
     max_model_calls: int = 45
+    max_wall_seconds: float = 1500.0
     actions: int = 0
     model_calls: int = 0
+    model_wait: float = 0.0
     started: float = field(default_factory=time.monotonic)
 
     def elapsed(self) -> float:
         return time.monotonic() - self.started
 
+    def agent_seconds(self) -> float:
+        return self.elapsed() - self.model_wait
+
     def exhausted(self) -> str | None:
         if self.actions >= self.max_actions:
             return "actions"
-        if self.elapsed() >= self.max_seconds:
+        if self.agent_seconds() >= self.max_seconds:
             return "time"
         if self.model_calls >= self.max_model_calls:
             return "model_calls"
+        if self.elapsed() >= self.max_wall_seconds:
+            return "wall"
         return None
+
+
+INFRA_OUTCOMES = ("infra_error", "budget_wall")
 
 
 @dataclass
 class RunResult:
-    outcome: str  # completed|failed|blocked (self-report) or no_finish|budget_<kind>|refusal|error
+    # completed|failed|blocked (self-report) or no_finish|budget_<kind>|refusal|infra_error
+    outcome: str
     answer: str = ""
     summary: str = ""
     actions: int = 0
     model_calls: int = 0
     seconds: float = 0.0
+    model_wait_seconds: float = 0.0
     tool_errors: int = 0
     refused: int = 0
     timeouts: int = 0
@@ -345,6 +360,7 @@ class Agent:
     def _result(self, outcome: str, **extra) -> RunResult:
         res = RunResult(outcome=outcome, actions=self.budget.actions, model_calls=self.budget.model_calls,
                         seconds=round(self.budget.elapsed(), 1),
+                        model_wait_seconds=round(self.budget.model_wait, 1),
                         usage=self.model.usage.to_dict(getattr(self.model, "model", None)),
                         **self.counters, **extra)
         self.log.write("result", **res.to_dict())
@@ -363,14 +379,17 @@ class Agent:
         while True:
             if self.budget.model_calls >= self.budget.max_model_calls:
                 return self._result("budget_model_calls")
-            if self.budget.elapsed() >= self.budget.max_seconds + 60:
-                return self._result("budget_time")
+            if self.budget.elapsed() >= self.budget.max_wall_seconds + 60:
+                return self._result("budget_wall")
             self.budget.model_calls += 1
+            asked = time.monotonic()
             try:
                 response = self.model.create(system, messages, TOOLS)
             except Exception as exc:  # API errors after SDK retries
+                self.budget.model_wait += time.monotonic() - asked
                 self.log.write("model_error", error=f"{type(exc).__name__}: {exc}")
-                return self._result("error", error=f"{type(exc).__name__}: {exc}")
+                return self._result("infra_error", error=f"{type(exc).__name__}: {exc}")
+            self.budget.model_wait += time.monotonic() - asked
             content = [_block_to_dict(b) for b in response.content]
             self.log.write("model", stop_reason=response.stop_reason,
                            text=[b.get("text") for b in content if b.get("type") == "text"],

@@ -13,7 +13,7 @@ from testing_platform.autotest.apps.keepassxc import parse_export
 from testing_platform.autotest.checks import collateral_changes, evaluate, numbers_in
 from testing_platform.autotest.desktop.client import DesktopClient, ServiceError, ToolTimeout
 from testing_platform.autotest.desktop.observation import (
-    Element, Frame, escape_text, format_element, format_observation, keep_element, scale_for,
+    Element, Frame, clear_allowed, escape_text, format_element, format_observation, keep_element, scale_for,
 )
 from testing_platform.autotest.model import Usage
 
@@ -49,6 +49,14 @@ def test_keep_element_filters_unnamed_containers_and_zero_size():
     assert not keep_element("Pane", "", None, [0, 0, 10, 10])
     assert keep_element("Text", "标签", None, [0, 0, 10, 10])
     assert not keep_element("Button", "x", None, [0, 0, 0, 10])
+
+
+def test_clear_allowed_blocks_item_containers_and_read_only():
+    assert clear_allowed("Edit", False)
+    assert clear_allowed("Pane", None) and clear_allowed("Custom", None)  # incomplete UIA still works
+    for ctype in ("List", "DataItem", "TreeItem", "Table", "Button"):
+        assert not clear_allowed(ctype, None)
+    assert not clear_allowed("Edit", True)
 
 
 def test_escape_text_protects_pywinauto_specials():
@@ -300,3 +308,24 @@ def test_client_timeout_restarts_service(tmp_path):
         with pytest.raises(ServiceError):
             client.call("die", timeout=10)
         assert client.call("ping", timeout=10) == {"op": "ping"}
+
+
+def test_budget_time_excludes_model_wait():
+    budget = Budget(max_seconds=10, max_wall_seconds=100)
+    budget.started -= 50
+    budget.model_wait = 45
+    assert budget.exhausted() is None
+    budget.model_wait = 30
+    assert budget.exhausted() == "time"
+    budget.model_wait = 0
+    budget.started -= 100
+    budget.max_seconds = 1000
+    assert budget.exhausted() == "wall"
+
+
+def test_agent_api_error_is_infra(tmp_path, png):
+    class Broken(FakeModel):
+        def create(self, *a):
+            raise ConnectionError("relay down")
+    result = Agent(Broken([]), FakeDesktop(png), tmp_path).run("t")
+    assert result.outcome == "infra_error" and "relay down" in result.error

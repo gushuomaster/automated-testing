@@ -16,7 +16,7 @@ import traceback
 from datetime import datetime
 from pathlib import Path
 
-from .agent import Agent, Budget, RunResult
+from .agent import INFRA_OUTCOMES, Agent, Budget, RunResult
 from .apps.keepassxc import KeePassXCEnv, parse_export
 from .checks import evaluate
 from .desktop.client import DesktopClient
@@ -45,7 +45,7 @@ def run_task(task: dict, suite: dict, suite_dir: Path, app_dir: Path, out_dir: P
             result = agent.run(task["prompt"])
         except Exception as exc:  # harness bug: record and keep going
             traceback.print_exc()
-            result = agent._result("error", error=f"{type(exc).__name__}: {exc}")
+            result = agent._result("harness_error", error=f"{type(exc).__name__}: {exc}")
     stop_log = env.stop()
 
     snap, snap_error = None, ""
@@ -55,12 +55,15 @@ def run_task(task: dict, suite: dict, suite_dir: Path, app_dir: Path, out_dir: P
         snap_error = str(exc)
     verdict = evaluate(task, snap, seed, env.read_config(), result.answer)
     claimed = result.outcome == "completed"
+    # Runs cut short by the model API (errors, hard wall cap) say nothing about agent capability.
+    infra = result.outcome in INFRA_OUTCOMES or result.error == "budget_wall"
     record = {
         "id": task["id"],
         "kind": task["kind"],
         "passed": verdict["passed"],
         "claimed_success": claimed,
         "false_success": claimed and not verdict["passed"],
+        "infra": infra and not verdict["passed"],
         "outcome": result.outcome,
         "answer": result.answer,
         "summary": result.summary,
@@ -75,6 +78,7 @@ def run_task(task: dict, suite: dict, suite_dir: Path, app_dir: Path, out_dir: P
 
 def summarize(records: list[dict], model: str, effort: str | None) -> dict:
     n = len(records)
+    clean = [r for r in records if not r["infra"]]
     total = Usage()
     for r in records:
         for k, v in r["run"]["usage"].items():
@@ -87,15 +91,18 @@ def summarize(records: list[dict], model: str, effort: str | None) -> dict:
         "tasks": n,
         "passed": sum(r["passed"] for r in records),
         "pass_rate": round(sum(r["passed"] for r in records) / n, 3) if n else None,
+        "infra_failures": n - len(clean),
+        "pass_rate_excluding_infra": round(sum(r["passed"] for r in clean) / len(clean), 3) if clean else None,
         "claimed_success": sum(r["claimed_success"] for r in records),
         "false_success": sum(r["false_success"] for r in records),
         "honest_failure": sum((not r["passed"]) and not r["claimed_success"] for r in records),
         "actions_total": sum(r["run"]["actions"] for r in records),
         "seconds_total": round(sum(r["run"]["seconds"] for r in records), 1),
+        "model_wait_seconds_total": round(sum(r["run"].get("model_wait_seconds", 0) for r in records), 1),
         "refused_total": sum(r["run"]["refused"] for r in records),
         "timeouts_total": sum(r["run"]["timeouts"] for r in records),
         "usage": total.to_dict(model),
-        "per_task": [{k: r[k] for k in ("id", "passed", "outcome", "false_success")}
+        "per_task": [{k: r[k] for k in ("id", "passed", "outcome", "false_success", "infra")}
                      | {"actions": r["run"]["actions"], "seconds": r["run"]["seconds"],
                         "collateral": r["verdict"]["collateral"],
                         "failed_checks": [c["detail"] for c in r["verdict"]["checks"] if not c["ok"]]}
@@ -113,6 +120,7 @@ def main(argv=None) -> int:
     p.add_argument("--max-actions", type=int, default=30)
     p.add_argument("--max-seconds", type=float, default=480)
     p.add_argument("--max-model-calls", type=int, default=45)
+    p.add_argument("--max-wall-seconds", type=float, default=1500)
     p.add_argument("--out", type=Path)
     args = p.parse_args(argv)
 
@@ -127,7 +135,7 @@ def main(argv=None) -> int:
     effort = None if args.effort == "none" else args.effort
     model = ClaudeModel(model=args.model, effort=effort)
     budget_args = {"max_actions": args.max_actions, "max_seconds": args.max_seconds,
-                   "max_model_calls": args.max_model_calls}
+                   "max_model_calls": args.max_model_calls, "max_wall_seconds": args.max_wall_seconds}
 
     records = []
     for task in tasks:
