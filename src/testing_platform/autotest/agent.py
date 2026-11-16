@@ -18,6 +18,8 @@ from .desktop.client import ServiceError, ToolTimeout
 from .desktop.observation import format_observation
 
 FINISH_STATUSES = ("completed", "failed", "blocked")
+# Framework-side tools whose evidence is the latest observation: not accepted after actions in the same turn.
+FRESH_OBSERVATION_TOOLS = frozenset({"report_defect"})
 
 TOOLS = [
     {
@@ -311,8 +313,15 @@ def _block_to_dict(block) -> dict:
 
 class Agent:
     def __init__(self, model, desktop: Desktop, run_dir: str | Path, budget: Budget | None = None,
-                 action_timeout: float = 30.0):
+                 action_timeout: float = 30.0, system_prompt: str | None = None,
+                 extra_tools: list | None = None, handlers: dict | None = None):
+        """`handlers` maps framework-side tool names to fn(args, last_obs) -> message (raise ToolInputError
+        on bad input); they cost no action budget and trigger no observation. `extra_tools` are their schemas."""
         self.model = model
+        self.system_prompt = system_prompt
+        self.handlers = dict(handlers or {})
+        self.tools = TOOLS + list(extra_tools or [])
+        self.last_obs: dict | None = None
         self.desktop = desktop
         self.run_dir = Path(run_dir)
         self.budget = budget or Budget()
@@ -327,6 +336,7 @@ class Agent:
             self.log.write("observe_error", error=str(exc))
             return [{"type": "text", "text": f"观察失败：{exc}"}]
         text = format_observation(obs)
+        self.last_obs = {"screenshot": obs["screenshot"], "annotated": obs["annotated"]}
         self.log.write("observe", annotated=obs["annotated"], screenshot=obs["screenshot"],
                        elements=len(obs["elements"]), windows=[w["title"] for w in obs["windows"]])
         return [{"type": "text", "text": text}, _image_block(obs["annotated"])]
@@ -357,6 +367,17 @@ class Agent:
             self.log.write("action", tool=name, op=op, args=call_args, error=str(exc))
             return f"执行失败（{exc.kind}）：{exc.message}", True
 
+    def _handle(self, name: str, args: dict) -> tuple[str, bool]:
+        """Run a framework-side tool (no desktop action, no budget cost). Returns (message, is_error)."""
+        try:
+            msg = self.handlers[name](args, self.last_obs)
+        except ToolInputError as exc:
+            self.counters["tool_errors"] += 1
+            self.log.write("handler_error", tool=name, args=args, error=str(exc))
+            return f"参数错误：{exc}", True
+        self.log.write("handler", tool=name, args=args, message=msg)
+        return msg, False
+
     def _result(self, outcome: str, **extra) -> RunResult:
         res = RunResult(outcome=outcome, actions=self.budget.actions, model_calls=self.budget.model_calls,
                         seconds=round(self.budget.elapsed(), 1),
@@ -367,7 +388,7 @@ class Agent:
         return res
 
     def run(self, task: str) -> RunResult:
-        system = SYSTEM_PROMPT.format(max_actions=self.budget.max_actions,
+        system = (self.system_prompt or SYSTEM_PROMPT).format(max_actions=self.budget.max_actions,
                                       max_minutes=round(self.budget.max_seconds / 60, 1))
         self.log.write("start", task=task, model=getattr(self.model, "model", None),
                        effort=getattr(self.model, "effort", None), budget=asdict(self.budget))
@@ -384,7 +405,7 @@ class Agent:
             self.budget.model_calls += 1
             asked = time.monotonic()
             try:
-                response = self.model.create(system, messages, TOOLS)
+                response = self.model.create(system, messages, self.tools)
             except Exception as exc:  # API errors after SDK retries
                 self.budget.model_wait += time.monotonic() - asked
                 self.log.write("model_error", error=f"{type(exc).__name__}: {exc}")
@@ -437,6 +458,11 @@ class Agent:
                             return self._result(fin["status"], answer=fin["answer"], summary=fin["summary"])
                         except ToolInputError as exc:
                             msg, is_error = f"参数错误：{exc}", True
+                elif name in self.handlers:
+                    if acted and name in FRESH_OBSERVATION_TOOLS:
+                        msg, is_error = f"未接受：本轮有动作，请先查看动作后的观察再调用 {name}。", True
+                    else:
+                        msg, is_error = self._handle(name, args)
                 elif skip_reason:
                     msg, is_error = skip_reason, True
                 elif self.budget.exhausted():

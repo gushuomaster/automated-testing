@@ -1,0 +1,38 @@
+{
+  "note": "组织方维护，Agent 不可见。只有 repro_status=confirmed 计入召回分母；pending 表示尚未在 2.7.6 上复现确认，excluded 表示确认无法复现或不适用（写明原因）。",
+  "app_version": "2.7.6",
+  "defects": [
+    {
+      "id": "9765",
+      "source": "keepassxreboot/keepassxc#9765",
+      "symptom": "应用设置的安全页面里，Tab 键焦点顺序与控件的视觉顺序不一致",
+      "fixed_in": "2.7.9 / 2.8.0",
+      "repro_status": "pending",
+      "repro_basis": ""
+    },
+    {
+      "id": "pr10667",
+      "source": "keepassxreboot/keepassxc PR 10667",
+      "symptom": "编辑条目时点“应用”保存后，“应用”按钮仍然可用",
+      "fixed_in": "2.7.8",
+      "repro_status": "pending",
+      "repro_basis": ""
+    },
+    {
+      "id": "9865",
+      "source": "keepassxreboot/keepassxc#9865",
+      "symptom": "搜索后默认选中的条目不是结果列表的第一条",
+      "fixed_in": "2.7.7",
+      "repro_status": "pending",
+      "repro_basis": ""
+    },
+    {
+      "id": "9996",
+      "source": "keepassxreboot/keepassxc#9996",
+      "symptom": "开启“隐藏 TOTP”相关设置后重启，首个被查看的条目上该设置不生效",
+      "fixed_in": "2.8.0",
+      "repro_status": "pending",
+      "repro_basis": ""
+    }
+  ]
+}

@@ -162,3 +162,106 @@ def test_execute_reports_bad_requests_instead_of_raising(tmp_path):
     assert resp['ok'] is False
     resp = remote_server.execute(FakeDesktop(tmp_path), threading.Lock(), tmp_path, json.dumps({'id': 3}))
     assert resp['ok'] is False and resp['id'] == 3
+
+
+def test_execute_routes_extra_ops_and_falls_back_to_desktop(tmp_path):
+    fake = FakeDesktop(tmp_path)
+    lock = threading.Lock()
+    seen = []
+
+    def handler(args):
+        seen.append((args, lock.locked()))
+        return {'got': args}
+
+    extra = {'kpxc_ping': handler}
+    line = json.dumps({'id': 7, 'op': 'kpxc_ping', 'args': {'x': 1}})
+    resp = remote_server.execute(fake, lock, tmp_path, line, extra)
+    assert resp == {'id': 7, 'ok': True, 'result': {'got': {'x': 1}}}
+    assert seen == [({'x': 1}, True)]
+    assert fake.calls == []
+
+    line = json.dumps({'id': 8, 'op': 'click', 'args': {'y': 2}})
+    resp = remote_server.execute(fake, lock, tmp_path, line, extra)
+    assert resp['ok'] is True and fake.calls == [('click', None, {'y': 2})]
+
+
+def test_execute_reports_extra_handler_errors(tmp_path):
+    def boom(args):
+        raise RuntimeError('kpxc_reset must be called first')
+
+    line = json.dumps({'id': 9, 'op': 'kpxc_boom', 'args': {}})
+    resp = remote_server.execute(FakeDesktop(tmp_path), threading.Lock(), tmp_path, line, {'kpxc_boom': boom})
+    assert resp['ok'] is False and resp['id'] == 9 and resp['kind'] == 'RuntimeError'
+
+
+def test_guest_reset_refuses_seed_outside_benchmarks(tmp_path):
+    from testing_platform.autotest.apps.keepassxc_guest import GuestKeePassXC
+
+    (tmp_path / 'benchmarks').mkdir()
+    (tmp_path / 'secret.kdbx').write_bytes(b'x')
+    guest = GuestKeePassXC(tmp_path)
+    for bad in ('../secret.kdbx', 'missing.kdbx', ''):
+        with pytest.raises(ValueError):
+            guest.reset(bad, 'pw')
+    with pytest.raises(RuntimeError):
+        guest.launch()
+    assert set(guest.handlers()) == {'kpxc_reset', 'kpxc_launch', 'kpxc_stop', 'kpxc_export', 'kpxc_config'}
+
+
+def test_guest_ops_run_in_child_process_and_errors_come_back(tmp_path):
+    from testing_platform.autotest.apps.keepassxc_guest import GuestKeePassXC
+
+    (tmp_path / 'benchmarks').mkdir()
+    handlers = GuestKeePassXC(tmp_path).handlers()
+    with pytest.raises(RuntimeError, match='ValueError'):
+        handlers['kpxc_reset']({'seed': '../x.kdbx', 'password': 'pw'})
+    with pytest.raises(RuntimeError, match='kpxc_reset must be called first'):
+        handlers['kpxc_config']({})
+
+
+def test_guest_child_output_keeps_non_ascii_text(tmp_path):
+    import json
+
+    from testing_platform.autotest.apps.keepassxc_guest import GuestKeePassXC
+
+    (tmp_path / 'run').mkdir()
+    (tmp_path / 'run' / 'state.json').write_text(json.dumps({'seed': str(tmp_path / 's.kdbx'), 'password': 'pw'}),
+                                                 encoding='utf-8')
+    (tmp_path / 'KeePassXC' / 'config').mkdir(parents=True)
+    text = '[GUI]\n网银=招商银行 工商银行\n'
+    (tmp_path / 'KeePassXC' / 'config' / 'keepassxc.ini').write_text(text, encoding='utf-8')
+    assert GuestKeePassXC(tmp_path).handlers()['kpxc_config']({}) == {'ini': text}
+
+
+def test_guest_state_survives_between_instances(tmp_path, monkeypatch):
+    from testing_platform.autotest.apps import keepassxc_guest
+
+    monkeypatch.setattr(keepassxc_guest.KeePassXCEnv, 'reset', lambda self: {'stopped': []})
+    (tmp_path / 'benchmarks' / 'm1').mkdir(parents=True)
+    (tmp_path / 'benchmarks' / 'm1' / 'seed.kdbx').write_bytes(b'x')
+    keepassxc_guest.GuestKeePassXC(tmp_path).reset('m1/seed.kdbx', 'pw')
+    fresh = keepassxc_guest.GuestKeePassXC(tmp_path)
+    env = fresh._need()
+    assert env.password == 'pw' and env.seed_db.name == 'seed.kdbx'
+    assert fresh.config() == {'ini': ''}
+
+
+def test_guest_child_crash_and_timeout_become_runtime_errors(tmp_path, monkeypatch):
+    import subprocess
+
+    from testing_platform.autotest.apps import keepassxc_guest
+
+    guest = keepassxc_guest.GuestKeePassXC(tmp_path)
+    crashed = subprocess.CompletedProcess([], 3221225477, stdout='', stderr='access violation')
+    monkeypatch.setattr(keepassxc_guest.subprocess, 'run', lambda *a, **k: crashed)
+    with pytest.raises(RuntimeError, match='3221225477'):
+        guest.run_isolated('kpxc_stop', {})
+
+    def hang(*a, **k):
+        raise subprocess.TimeoutExpired('python', 1)
+
+    monkeypatch.setattr(keepassxc_guest.subprocess, 'run', hang)
+    with pytest.raises(RuntimeError, match='timed out'):
+        guest.run_isolated('kpxc_stop', {}, timeout=1)
+    with pytest.raises(ValueError):
+        guest.run_isolated('rm_rf', {})

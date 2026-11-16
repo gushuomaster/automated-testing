@@ -1,0 +1,2 @@
+{"file": ".trellis/spec/backend/index.md", "reason": "检查文档与注释语言是否符合项目中文约定"}
+{"file": ".trellis/spec/backend/exploration-stop-audit.md", "reason": "对照 S2 审计的停止与输出边界，检查 M1 预算耗尽后不再输入、输出不覆盖"}

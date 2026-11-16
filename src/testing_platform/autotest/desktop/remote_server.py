@@ -6,6 +6,7 @@ JSON lines over TCP. The client's first line must be {"auth": "<token>"}; the se
 or just closes the connection. After that each request is {"id", "op", "args", "timeout"} and goes to a
 local desktop service (service.py), so a hung call is still killed and the service restarted. One extra
 op, fetch_file {"path"}, returns a file under --out as base64 so screenshots can travel back to the host.
+The fixed kpxc_* ops (see apps/keepassxc_guest.py) are handled in this process and not forwarded.
 The token is read from a file and never logged.
 """
 
@@ -35,8 +36,11 @@ def fetch_file(out_dir: Path, path: str) -> dict:
     return {"name": target.name, "data": base64.b64encode(target.read_bytes()).decode("ascii")}
 
 
-def execute(client, lock: threading.Lock, out_dir: Path, line: str) -> dict:
-    """Run one request line and return the response dict (never raises)."""
+def execute(client, lock: threading.Lock, out_dir: Path, line: str, extra: dict | None = None) -> dict:
+    """Run one request line and return the response dict (never raises).
+
+    `extra` maps additional op names (e.g. kpxc_*) to handlers taking the args dict.
+    """
     req_id = None
     try:
         req = json.loads(line)
@@ -44,6 +48,9 @@ def execute(client, lock: threading.Lock, out_dir: Path, line: str) -> dict:
         op, args = req["op"], req.get("args") or {}
         if op == "fetch_file":
             result = fetch_file(out_dir, args["path"])
+        elif extra and op in extra:
+            with lock:
+                result = extra[op](args)
         else:
             with lock:
                 result = client.call(op, timeout=req.get("timeout"), **args)
@@ -57,7 +64,8 @@ def execute(client, lock: threading.Lock, out_dir: Path, line: str) -> dict:
         return {"id": req_id, "ok": False, "kind": type(exc).__name__, "error": str(exc)}
 
 
-def serve_connection(conn, client, lock: threading.Lock, out_dir: Path, token: str) -> None:
+def serve_connection(conn, client, lock: threading.Lock, out_dir: Path, token: str,
+                     extra: dict | None = None) -> None:
     try:
         with conn:
             conn.settimeout(AUTH_TIMEOUT)
@@ -74,7 +82,7 @@ def serve_connection(conn, client, lock: threading.Lock, out_dir: Path, token: s
             wr.flush()
             for line in rd:
                 if line.strip():
-                    wr.write(json.dumps(execute(client, lock, out_dir, line), ensure_ascii=False) + "\n")
+                    wr.write(json.dumps(execute(client, lock, out_dir, line, extra), ensure_ascii=False) + "\n")
                     wr.flush()
     except OSError:
         pass
@@ -93,10 +101,13 @@ def main(argv=None) -> None:
         raise SystemExit("token must be at least 16 characters")
     out_dir = Path(args.out)
     lock = threading.Lock()
+    from ..apps.keepassxc_guest import GuestKeePassXC  # imported lazily: only the guest needs it
+
+    extra = GuestKeePassXC().handlers()
     with DesktopClient(out_dir) as client, socket.create_server((args.host, args.port)) as server:
         while True:
             conn, _ = server.accept()
-            threading.Thread(target=serve_connection, args=(conn, client, lock, out_dir, token),
+            threading.Thread(target=serve_connection, args=(conn, client, lock, out_dir, token, extra),
                              daemon=True).start()
 
 
